@@ -1,0 +1,210 @@
+<form #f='ngForm'>
+<div class='container-fluid p-5 '>
+	<div class='row px-5 '>
+		<label class='page-header col-sm-2 '> TAT Definations</label>
+		<label class='col-sm-8 '> {{ crm_tat_def_status }}</label>
+		<div class=' col-sm-2' style='text-align: right'>
+			<div class='btn-group '>
+				<button class='btn btn-primary btn-sm ' id='add_btn' name='add_btn' data-target='#dlg' data-toggle='modal' (click)='clear_crm_tat_def()'>
+					<i class='fa fa-plus'></i> Add
+				</button>
+				<a class='btn btn-primary btn-sm ' id='back_btn' name='back_btn' data-toggle='modal' routerLink='/settings'>
+					<i class='fa fa-arrow-left'></i> Back
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class='row px-5 '>
+		<div class='col-sm-12'>
+			<table class='table table-bordered table-sm '>
+				<thead>
+					<tr>
+						<th>Short code</th>
+						<th>Ticket type</th>
+						<th>Ticket subtype</th>
+						<th>Ticket category</th>
+						<th>TAT duration (Mins)</th>
+						<th>Action code</th>
+						<th>Status</th>
+						<th>System ID</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor='let x of crm_tat_defList'>
+						<td>
+							<a class='' id='short_code' name='short_code' data-target='#dlg' data-toggle='modal' (click)='current_record_crm_tat_def(x)' href='#'>
+								{{ x.short_code }}
+							</a>
+						</td>
+						<td> {{ x.ticket_type_id }} </td>
+						<td> {{ x.ticket_subtype_id }} </td>
+						<td> {{ x.ticket_cat_id }} </td>
+						<td> {{ x.tat_dur }} </td>
+						<td> {{ x.action_code }} </td>
+						<td> {{ x.status }} </td>
+						<td> {{ x.sysid }} </td>
+						<td>
+							<a class='' style='color: red' data-toggle='modal' (click)='delete_crm_tat_def(x.sysid)' href='#'>
+								<i class='fa fa-trash'></i> Delete
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div tabindex='-1' role='dialog' class='modal fade ' id='dlg'>
+		<div class='modal-dialog modal-lg' role='document'>
+			<div class='modal-content'>
+				<div class='modal-header '>
+					<div class='modal-title'><h5>TAT Definations</h5></div>
+					<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+						<span aria-hidden='true'>&times;</span>
+					</button>
+				</div>
+				<div class='modal-body '>
+			<div class='row '>
+				<div class='' class='col-sm-6'>
+					<div class='row '>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='sysid'>System ID</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='sysid' name='sysid' type='text' autocomplete='off' readonly [(ngModel)]='crm_tat_def.sysid' #sysid="ngModel">
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='short_code'>Short code</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='short_code' name='short_code' type='text' autocomplete='off' [(ngModel)]='crm_tat_def.short_code' #short_code="ngModel">
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='ticket_type_id'>Ticket type</label>
+								<div class='col-sm-8'>
+									<select class='form-control ' id='ticket_type_id' name='ticket_type_id' [(ngModel)]='crm_tat_def.ticket_type_id' #ticket_type_id="ngModel">
+										<option value=''></option>
+										<option *ngFor='let x of crm_ticket_typesList' value='{{ x.sysid }}'>{{ x.type_name }}</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='ticket_subtype_id'>Ticket subtype</label>
+								<div class='col-sm-8'>
+									<select class='form-control ' id='ticket_subtype_id' name='ticket_subtype_id' [(ngModel)]='crm_tat_def.ticket_subtype_id' #ticket_subtype_id="ngModel">
+										<option value=''></option>
+										<option *ngFor='let x of crm_ticket_subtypeList' value='{{ x.sysid }}'>{{ x.subtype_name }}</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='ticket_cat_id'>Ticket category</label>
+								<div class='col-sm-8'>
+									<select class='form-control ' id='ticket_cat_id' name='ticket_cat_id' [(ngModel)]='crm_tat_def.ticket_cat_id' #ticket_cat_id="ngModel">
+										<option value=''></option>
+										<option *ngFor='let x of crm_ticket_categoryList' value='{{ x.sysid }}'>{{ x.cat_name }}</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='tat_dur'>TAT duration (Mins)</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='tat_dur' name='tat_dur' type='text' autocomplete='off' [(ngModel)]='crm_tat_def.tat_dur' #tat_dur="ngModel">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='' class='col-sm-6'>
+					<div class='row '>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='action_code'>Action code</label>
+								<div class='col-sm-8'>
+									<select class='form-control ' id='action_code' name='action_code' [(ngModel)]='crm_tat_def.action_code' #action_code="ngModel">
+										<option value=''></option>
+										<option *ngFor='let x of crm_action_codesList' value='{{ x.sysid }}'>{{ x.code_id }}</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='action_owner'>Action owner</label>
+								<div class='col-sm-8'>
+									<select class='form-control ' id='action_owner' name='action_owner' [(ngModel)]='crm_tat_def.action_owner' #action_owner="ngModel">
+										<option value=''></option>
+										<option *ngFor='let x of admin_rolesList' value='{{ x.sysid }}'>{{ x.role_code }}</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='esc_id'>Escalation code</label>
+								<div class='col-sm-8'>
+									<select class='form-control ' id='esc_id' name='esc_id' [(ngModel)]='crm_tat_def.esc_id' #esc_id="ngModel">
+										<option value=''></option>
+										<option *ngFor='let x of crm_esc_matrixList' value='{{ x.sysid }}'>{{ x.matrix_code }}</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='noti_channel_id'>Notification channel code</label>
+								<div class='col-sm-8'>
+									<select class='form-control ' id='noti_channel_id' name='noti_channel_id' [(ngModel)]='crm_tat_def.noti_channel_id' #noti_channel_id="ngModel">
+										<option value=''></option>
+										<option *ngFor='let x of admin_noti_channelsList' value='{{ x.sysid }}'>{{ x.channel_name }}</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='status'>Status</label>
+								<div class='col-sm-8'>
+									<select class='form-control ' id='status' name='status' [(ngModel)]='crm_tat_def.status' #status="ngModel">
+										<option value=''></option>
+										<option value='Active'>Active</option>
+										<option value='Inactive'>Inactive</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+				</div>
+				<div class='modal-footer '>
+			<div class='row '>
+				<label class='pull-left '> {{ crm_tat_def_status }}</label>
+				<div class=' col-sm-5'>
+					<div class='btn-group pull-right '>
+						<button class='btn btn-primary btn-sm ' name='save_btn' (click)='save_crm_tat_def(f)'>
+							<i class='fa fa-save'></i> Save
+						</button>
+						<button class='btn btn-primary btn-sm ' name='close_btn' data-dismiss='modal'>
+							<i class='fa fa-remove'></i> Close
+						</button>
+					</div>
+				</div>
+			</div>
+				</div>
+	</div>
+		</div>
+			</div>
+</div>
+</form>

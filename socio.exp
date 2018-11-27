@@ -1,0 +1,16 @@
+app_dir=C:/Storage/Manish/Bracket1_0/Bracket1_0/projects\socio\src\app
+app_port=9300
+app_type=Web
+assets=C:/Storage/Manish/Bracket1_0/Bracket1_0/projects\socio\src\assets
+base_dir=C:/Storage/Manish/Bracket1_0/Bracket1_0/projects\socio
+cdm_dir=C:/Storage/Manish/Bracket1_0/Bracket1_0/projects\socio\resources\cdm
+db_name=
+global_cdm=C:/Storage/Manish/Bracket1_0/Bracket1_0/release\resources\cdm
+global_dir=C:/Storage/Manish/Bracket1_0/Bracket1_0/release\resources
+models_dir=C:/Storage/Manish/Bracket1_0/Bracket1_0/projects\socio\src\models
+native_base_dir=C:/Storage/Manish/Bracket1_0/Bracket1_0/release
+native_resource_dir=C:/Storage/Manish/Bracket1_0/Bracket1_0/release\resources
+project_loc=C:/Storage/Manish/Bracket1_0/Bracket1_0/projects
+project_name=socio
+resource_dir=C:/Storage/Manish/Bracket1_0/Bracket1_0/projects\socio\resources
+src_dir=C:/Storage/Manish/Bracket1_0/Bracket1_0/projects\socio\src

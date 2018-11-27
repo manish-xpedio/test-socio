@@ -1,0 +1,35 @@
+<form class=''>
+	<div class=' container-fluid p-0'>
+			<nav class='bg-light navbar-light sticky-top shadow navbar navbar-expand-lg'>
+				<img src='./assets/logo4.png' width='152' height='50'>
+				<div class="collapse navbar-collapse px-3" id="navbarNavDropdown">
+                <ul class="navbar-nav" [hidden]='p_flag.hide_logout_btn'>
+                    <li class="nav-item dropdown" *ngFor='let x of all_menus | filter: {parent_id: -1}' >
+                        <a class="nav-link dropdown-toggle main-menu" href="#" data-toggle='modal' id='{{ x.menu_route }}' role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {{ x.menu_name }}
+                        </a>
+                        <ul class="dropdown-menu dropdown-item-color" >
+                            <li *ngFor='let y of all_menus | filter: {parent_id: x.sysid}'>
+                                <a class="dropdown-item" [routerLink]="y.menu_route"> {{ y.menu_name }} </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+				<div class=''>
+					<div class=' col-sm-12 btn-group'>
+						<button id='btRegister' name='register_btn' [hidden]='p_flag.hide_login_btn' class=' col-sm-12 btn btn-secondary btn-sm' #btRegister>
+						<i class='fa fa-cog'></i> Register
+					</button>
+					<button id='btLogin' name='login_btn' data-target='#login_dlg' data-toggle='modal' [hidden]='p_flag.hide_login_btn' class=' col-sm-12 btn btn-primary btn-sm' #btLogin>
+					<i class='fa fa-user'></i> Login
+				</button>
+					<a id='btLogout' name='logout_btn' [routerLink]="['/']" (click)='refreshPage()' [hidden]='p_flag.hide_logout_btn' class=' col-sm-12 btn btn-primary btn-sm' target='_self' #btLogout>
+						<i class='fa fa-cog'></i> Logout
+					</a>
+					</div>
+				</div>
+			</nav>
+		<router-outlet class='' (activate)='getParentFlags($event)'></router-outlet>
+	</div>
+</form>

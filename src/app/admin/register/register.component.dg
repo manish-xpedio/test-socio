@@ -1,0 +1,3173 @@
+{
+    "child": [
+        {
+            "child": [
+                {
+                    "child": [
+                        {
+                            "child": [
+                            ],
+                            "name": "Label",
+                            "props": {
+                                "Class": "page-header",
+                                "Columns": "3",
+                                "DisplayLabel": "",
+                                "For": "",
+                                "FormType": "Standard",
+                                "GroupWidth": "",
+                                "HelpText": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Label class": "",
+                                "Label-type": "span",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Required": "",
+                                "Style": "",
+                                "TableColumnWidth": "",
+                                "Value": "Unit registration"
+                            },
+                            "tabpos": "3",
+                            "type": "Label"
+                        },
+                        {
+                            "child": [
+                            ],
+                            "name": "Label",
+                            "props": {
+                                "Class": "",
+                                "Columns": "5",
+                                "DisplayLabel": "",
+                                "For": "",
+                                "FormType": "Standard",
+                                "GroupWidth": "",
+                                "HelpText": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Label class": "",
+                                "Label-type": "span",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Required": "",
+                                "Style": "",
+                                "TableColumnWidth": "",
+                                "Value": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Label"
+                        },
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Button",
+                                    "props": {
+                                        "Class": "btn btn-primary btn-sm",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "",
+                                        "Fa-icon": "fa fa-save",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Ref": "",
+                                        "RouterLinkActive": "",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Save"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Button"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Button",
+                                    "props": {
+                                        "Class": "btn btn-primary btn-sm",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "",
+                                        "Fa-icon": "fa fa-times",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Ref": "",
+                                        "RouterLinkActive": "",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Delete"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Button"
+                                }
+                            ],
+                            "name": "ButtonGroup",
+                            "props": {
+                                "Class": "btn-group",
+                                "Columns": "4",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "text-align: right",
+                                "Property-binding": "",
+                                "Style": "",
+                                "TableColumnWidth": ""
+                            },
+                            "tabpos": "3",
+                            "type": "ButtonGroup"
+                        },
+                        {
+                            "child": [
+                            ],
+                            "name": "HLine",
+                            "props": {
+                                "Class": "",
+                                "Columns": "12",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "HLine"
+                        }
+                    ],
+                    "name": "Row",
+                    "props": {
+                        "Class": "row mt-3 mx-3",
+                        "DB-table": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Repeat": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Row"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                            ],
+                            "name": "ammenties",
+                            "props": {
+                                "Class": "",
+                                "ClickEvent": "",
+                                "Columns": "2",
+                                "DB-table": "",
+                                "Data-dismiss": "",
+                                "Data-target": "#d1",
+                                "Data-toggle": "modal",
+                                "DisplayLabel": "",
+                                "Fa-icon": "",
+                                "Group-class": "",
+                                "Group-style": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Icon": "",
+                                "Model": "",
+                                "Name": "ammenties",
+                                "Property-binding": "",
+                                "RouterLink": "#",
+                                "RouterParam": "",
+                                "Style": "",
+                                "TableColumnWidth": "",
+                                "Value": "Ammenities"
+                            },
+                            "tabpos": "3",
+                            "type": "Link"
+                        },
+                        {
+                            "child": [
+                            ],
+                            "name": "corp_fac",
+                            "props": {
+                                "Class": "",
+                                "ClickEvent": "",
+                                "Columns": "2",
+                                "DB-table": "",
+                                "Data-dismiss": "",
+                                "Data-target": "#d2",
+                                "Data-toggle": "modal",
+                                "DisplayLabel": "",
+                                "Fa-icon": "",
+                                "Group-class": "",
+                                "Group-style": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Icon": "",
+                                "Model": "",
+                                "Name": "corp_fac",
+                                "Property-binding": "",
+                                "RouterLink": "#",
+                                "RouterParam": "",
+                                "Style": "",
+                                "TableColumnWidth": "",
+                                "Value": "Corporation facilities"
+                            },
+                            "tabpos": "3",
+                            "type": "Link"
+                        },
+                        {
+                            "child": [
+                            ],
+                            "name": "water",
+                            "props": {
+                                "Class": "",
+                                "ClickEvent": "",
+                                "Columns": "2",
+                                "DB-table": "",
+                                "Data-dismiss": "",
+                                "Data-target": "#d3",
+                                "Data-toggle": "modal",
+                                "DisplayLabel": "",
+                                "Fa-icon": "",
+                                "Group-class": "",
+                                "Group-style": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Icon": "",
+                                "Model": "",
+                                "Name": "water",
+                                "Property-binding": "",
+                                "RouterLink": "#",
+                                "RouterParam": "",
+                                "Style": "",
+                                "TableColumnWidth": "",
+                                "Value": "Water provisions"
+                            },
+                            "tabpos": "3",
+                            "type": "Link"
+                        },
+                        {
+                            "child": [
+                            ],
+                            "name": "flat_details",
+                            "props": {
+                                "Class": "",
+                                "ClickEvent": "",
+                                "Columns": "2",
+                                "DB-table": "",
+                                "Data-dismiss": "",
+                                "Data-target": "#d4",
+                                "Data-toggle": "modal",
+                                "DisplayLabel": "",
+                                "Fa-icon": "",
+                                "Group-class": "",
+                                "Group-style": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Icon": "",
+                                "Model": "",
+                                "Name": "flat_details",
+                                "Property-binding": "",
+                                "RouterLink": "#",
+                                "RouterParam": "",
+                                "Style": "",
+                                "TableColumnWidth": "",
+                                "Value": "Flat details"
+                            },
+                            "tabpos": "3",
+                            "type": "Link"
+                        },
+                        {
+                            "child": [
+                            ],
+                            "name": "appex_details",
+                            "props": {
+                                "Class": "",
+                                "ClickEvent": "",
+                                "Columns": "2",
+                                "DB-table": "",
+                                "Data-dismiss": "",
+                                "Data-target": "#d5",
+                                "Data-toggle": "modal",
+                                "DisplayLabel": "",
+                                "Fa-icon": "",
+                                "Group-class": "",
+                                "Group-style": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Icon": "",
+                                "Model": "",
+                                "Name": "appex_details",
+                                "Property-binding": "",
+                                "RouterLink": "#",
+                                "RouterParam": "",
+                                "Style": "",
+                                "TableColumnWidth": "",
+                                "Value": "Appex"
+                            },
+                            "tabpos": "3",
+                            "type": "Link"
+                        },
+                        {
+                            "child": [
+                            ],
+                            "name": "others",
+                            "props": {
+                                "Class": "",
+                                "ClickEvent": "",
+                                "Columns": "2",
+                                "DB-table": "",
+                                "Data-dismiss": "",
+                                "Data-target": "#d6",
+                                "Data-toggle": "modal",
+                                "DisplayLabel": "",
+                                "Fa-icon": "",
+                                "Group-class": "",
+                                "Group-style": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Icon": "",
+                                "Model": "",
+                                "Name": "others",
+                                "Property-binding": "",
+                                "RouterLink": "#",
+                                "RouterParam": "",
+                                "Style": "",
+                                "TableColumnWidth": "",
+                                "Value": "Other attributes"
+                            },
+                            "tabpos": "3",
+                            "type": "Link"
+                        },
+                        {
+                            "child": [
+                            ],
+                            "name": "HLine",
+                            "props": {
+                                "Class": "mt-3",
+                                "Columns": "12",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "HLine"
+                        }
+                    ],
+                    "name": "Row",
+                    "props": {
+                        "Class": "row my-3 mx-3",
+                        "DB-table": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Repeat": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Row"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Row",
+                                    "props": {
+                                        "Class": "row",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Row"
+                                }
+                            ],
+                            "name": "Column",
+                            "props": {
+                                "Class": "",
+                                "Columns": "1",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Column"
+                        },
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "sysid",
+                                            "props": {
+                                                "Auto-complete": "off",
+                                                "ChangeEvent": "",
+                                                "Class": "form-control",
+                                                "Columns": "4,8",
+                                                "Control-type": "text",
+                                                "DB-table": "admin_society",
+                                                "DisplayLabel": "System ID",
+                                                "FormType": "Row",
+                                                "Group-class": "",
+                                                "Group-property-binding": "",
+                                                "Group-style": "",
+                                                "Hidden": "",
+                                                "ID": "sysid",
+                                                "Label-class": "",
+                                                "Label-property-binding": "",
+                                                "Label-style": "",
+                                                "Model": "sysid",
+                                                "Name": "sysid",
+                                                "Placeholder": "",
+                                                "Property-binding": "",
+                                                "Readonly": "true",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Validations": "",
+                                                "Validator-class": "",
+                                                "Validator-style": "",
+                                                "Value": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "TextBox"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "name",
+                                            "props": {
+                                                "Auto-complete": "off",
+                                                "ChangeEvent": "",
+                                                "Class": "form-control",
+                                                "Columns": "4,8",
+                                                "Control-type": "text",
+                                                "DB-table": "admin_society",
+                                                "DisplayLabel": "Name",
+                                                "FormType": "Row",
+                                                "Group-class": "",
+                                                "Group-property-binding": "",
+                                                "Group-style": "",
+                                                "Hidden": "",
+                                                "ID": "name",
+                                                "Label-class": "",
+                                                "Label-property-binding": "",
+                                                "Label-style": "",
+                                                "Model": "name",
+                                                "Name": "name",
+                                                "Placeholder": "",
+                                                "Property-binding": "",
+                                                "Readonly": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Validations": "",
+                                                "Validator-class": "",
+                                                "Validator-style": "",
+                                                "Value": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "TextBox"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "address_line1",
+                                            "props": {
+                                                "Auto-complete": "off",
+                                                "ChangeEvent": "",
+                                                "Class": "form-control",
+                                                "Columns": "4,8",
+                                                "Control-type": "text",
+                                                "DB-table": "admin_society",
+                                                "DisplayLabel": "Address line1",
+                                                "FormType": "Row",
+                                                "Group-class": "",
+                                                "Group-property-binding": "",
+                                                "Group-style": "",
+                                                "Hidden": "",
+                                                "ID": "address_line1",
+                                                "Label-class": "",
+                                                "Label-property-binding": "",
+                                                "Label-style": "",
+                                                "Model": "address_line1",
+                                                "Name": "address_line1",
+                                                "Placeholder": "",
+                                                "Property-binding": "",
+                                                "Readonly": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Validations": "",
+                                                "Validator-class": "",
+                                                "Validator-style": "",
+                                                "Value": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "TextBox"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "address_line2",
+                                            "props": {
+                                                "Auto-complete": "off",
+                                                "ChangeEvent": "",
+                                                "Class": "form-control",
+                                                "Columns": "4,8",
+                                                "Control-type": "text",
+                                                "DB-table": "admin_society",
+                                                "DisplayLabel": "Address line2",
+                                                "FormType": "Row",
+                                                "Group-class": "",
+                                                "Group-property-binding": "",
+                                                "Group-style": "",
+                                                "Hidden": "",
+                                                "ID": "address_line2",
+                                                "Label-class": "",
+                                                "Label-property-binding": "",
+                                                "Label-style": "",
+                                                "Model": "address_line2",
+                                                "Name": "address_line2",
+                                                "Placeholder": "",
+                                                "Property-binding": "",
+                                                "Readonly": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Validations": "",
+                                                "Validator-class": "",
+                                                "Validator-style": "",
+                                                "Value": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "TextBox"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "city",
+                                            "props": {
+                                                "Auto-complete": "off",
+                                                "ChangeEvent": "",
+                                                "Class": "form-control",
+                                                "Columns": "4,8",
+                                                "Control-type": "text",
+                                                "DB-table": "admin_society",
+                                                "DisplayLabel": "City",
+                                                "FormType": "Row",
+                                                "Group-class": "",
+                                                "Group-property-binding": "",
+                                                "Group-style": "",
+                                                "Hidden": "",
+                                                "ID": "city",
+                                                "Label-class": "",
+                                                "Label-property-binding": "",
+                                                "Label-style": "",
+                                                "Model": "city",
+                                                "Name": "city",
+                                                "Placeholder": "",
+                                                "Property-binding": "",
+                                                "Readonly": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Validations": "",
+                                                "Validator-class": "",
+                                                "Validator-style": "",
+                                                "Value": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "TextBox"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "state",
+                                            "props": {
+                                                "Auto-complete": "off",
+                                                "ChangeEvent": "",
+                                                "Class": "form-control",
+                                                "Columns": "4,8",
+                                                "Control-type": "text",
+                                                "DB-table": "admin_society",
+                                                "DisplayLabel": "State",
+                                                "FormType": "Row",
+                                                "Group-class": "",
+                                                "Group-property-binding": "",
+                                                "Group-style": "",
+                                                "Hidden": "",
+                                                "ID": "state",
+                                                "Label-class": "",
+                                                "Label-property-binding": "",
+                                                "Label-style": "",
+                                                "Model": "state",
+                                                "Name": "state",
+                                                "Placeholder": "",
+                                                "Property-binding": "",
+                                                "Readonly": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Validations": "",
+                                                "Validator-class": "",
+                                                "Validator-style": "",
+                                                "Value": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "TextBox"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "soc_type",
+                                            "props": {
+                                                "ChangeEvent": "",
+                                                "Class": "form-control",
+                                                "Columns": "4,8",
+                                                "DB-table": "admin_society",
+                                                "Data-source": "",
+                                                "DisplayLabel": "Society type",
+                                                "FormType": "Row",
+                                                "Group-class": "",
+                                                "Group-style": "",
+                                                "GroupWidth": "",
+                                                "Hidden": "",
+                                                "ID": "soc_type",
+                                                "Init": "Yes",
+                                                "Label-class": "",
+                                                "Label-style": "",
+                                                "Model": "soc_type",
+                                                "Multiple": "No",
+                                                "Name": "soc_type",
+                                                "NeedKeyValue": "No",
+                                                "Property-binding": "",
+                                                "Required": "",
+                                                "Static-values": "Co-operative,Government",
+                                                "Style": "",
+                                                "TableColumnWidth": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "ComboBox"
+                                        }
+                                    ],
+                                    "name": "Row",
+                                    "props": {
+                                        "Class": "row",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Row"
+                                }
+                            ],
+                            "name": "Column",
+                            "props": {
+                                "Class": "",
+                                "Columns": "5",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Column"
+                        },
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "pincode",
+                                            "props": {
+                                                "Auto-complete": "off",
+                                                "ChangeEvent": "",
+                                                "Class": "form-control",
+                                                "Columns": "4,8",
+                                                "Control-type": "text",
+                                                "DB-table": "admin_society",
+                                                "DisplayLabel": "Pincode",
+                                                "FormType": "Row",
+                                                "Group-class": "",
+                                                "Group-property-binding": "",
+                                                "Group-style": "",
+                                                "Hidden": "",
+                                                "ID": "pincode",
+                                                "Label-class": "",
+                                                "Label-property-binding": "",
+                                                "Label-style": "",
+                                                "Model": "pincode",
+                                                "Name": "pincode",
+                                                "Placeholder": "",
+                                                "Property-binding": "",
+                                                "Readonly": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Validations": "",
+                                                "Validator-class": "",
+                                                "Validator-style": "",
+                                                "Value": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "TextBox"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "commencement_date",
+                                            "props": {
+                                                "ChangeEvent": "",
+                                                "Class": "form-control",
+                                                "Columns": "4,8",
+                                                "Control-type": "text",
+                                                "DB-table": "admin_society",
+                                                "Date-type": "",
+                                                "DateFormat": "YYYY-MM-DD",
+                                                "DisplayLabel": "Commencement date",
+                                                "FormType": "Row",
+                                                "GroupWidth": "",
+                                                "HelpText": "",
+                                                "Hidden": "",
+                                                "ID": "commencement_date",
+                                                "Label class": "",
+                                                "Label-type": "label",
+                                                "Model": "commencement_date",
+                                                "Name": "commencement_date",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Readonly": "",
+                                                "Required": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Validations": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "Date"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "reg_no",
+                                            "props": {
+                                                "Auto-complete": "off",
+                                                "ChangeEvent": "",
+                                                "Class": "form-control",
+                                                "Columns": "4,8",
+                                                "Control-type": "text",
+                                                "DB-table": "admin_society",
+                                                "DisplayLabel": "Reg no",
+                                                "FormType": "Row",
+                                                "Group-class": "",
+                                                "Group-property-binding": "",
+                                                "Group-style": "",
+                                                "Hidden": "",
+                                                "ID": "reg_no",
+                                                "Label-class": "",
+                                                "Label-property-binding": "",
+                                                "Label-style": "",
+                                                "Model": "reg_no",
+                                                "Name": "reg_no",
+                                                "Placeholder": "",
+                                                "Property-binding": "",
+                                                "Readonly": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Validations": "",
+                                                "Validator-class": "",
+                                                "Validator-style": "",
+                                                "Value": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "TextBox"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "reg_authority",
+                                            "props": {
+                                                "Auto-complete": "off",
+                                                "ChangeEvent": "",
+                                                "Class": "form-control",
+                                                "Columns": "4,8",
+                                                "Control-type": "text",
+                                                "DB-table": "admin_society",
+                                                "DisplayLabel": "Reg authority",
+                                                "FormType": "Row",
+                                                "Group-class": "",
+                                                "Group-property-binding": "",
+                                                "Group-style": "",
+                                                "Hidden": "",
+                                                "ID": "reg_authority",
+                                                "Label-class": "",
+                                                "Label-property-binding": "",
+                                                "Label-style": "",
+                                                "Model": "reg_authority",
+                                                "Name": "reg_authority",
+                                                "Placeholder": "",
+                                                "Property-binding": "",
+                                                "Readonly": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Validations": "",
+                                                "Validator-class": "",
+                                                "Validator-style": "",
+                                                "Value": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "TextBox"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "reg_jurisdiction",
+                                            "props": {
+                                                "Auto-complete": "off",
+                                                "ChangeEvent": "",
+                                                "Class": "form-control",
+                                                "Columns": "4,8",
+                                                "Control-type": "text",
+                                                "DB-table": "admin_society",
+                                                "DisplayLabel": "Reg jurisdiction",
+                                                "FormType": "Row",
+                                                "Group-class": "",
+                                                "Group-property-binding": "",
+                                                "Group-style": "",
+                                                "Hidden": "",
+                                                "ID": "reg_jurisdiction",
+                                                "Label-class": "",
+                                                "Label-property-binding": "",
+                                                "Label-style": "",
+                                                "Model": "reg_jurisdiction",
+                                                "Name": "reg_jurisdiction",
+                                                "Placeholder": "",
+                                                "Property-binding": "",
+                                                "Readonly": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Validations": "",
+                                                "Validator-class": "",
+                                                "Validator-style": "",
+                                                "Value": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "TextBox"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "wings",
+                                            "props": {
+                                                "Auto-complete": "off",
+                                                "ChangeEvent": "",
+                                                "Class": "form-control",
+                                                "Columns": "4,8",
+                                                "Control-type": "text",
+                                                "DB-table": "admin_society",
+                                                "DisplayLabel": "Total wings",
+                                                "FormType": "Row",
+                                                "Group-class": "",
+                                                "Group-property-binding": "",
+                                                "Group-style": "",
+                                                "Hidden": "",
+                                                "ID": "wings",
+                                                "Label-class": "",
+                                                "Label-property-binding": "",
+                                                "Label-style": "",
+                                                "Model": "wings",
+                                                "Name": "wings",
+                                                "Placeholder": "",
+                                                "Property-binding": "",
+                                                "Readonly": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Validations": "",
+                                                "Validator-class": "",
+                                                "Validator-style": "",
+                                                "Value": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "TextBox"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "status",
+                                            "props": {
+                                                "ChangeEvent": "",
+                                                "Class": "form-control",
+                                                "Columns": "4,8",
+                                                "DB-table": "admin_society",
+                                                "Data-source": "",
+                                                "DisplayLabel": "Status",
+                                                "FormType": "Row",
+                                                "Group-class": "",
+                                                "Group-style": "",
+                                                "GroupWidth": "",
+                                                "Hidden": "",
+                                                "ID": "status",
+                                                "Init": "Yes",
+                                                "Label-class": "",
+                                                "Label-style": "",
+                                                "Model": "status",
+                                                "Multiple": "No",
+                                                "Name": "status",
+                                                "NeedKeyValue": "No",
+                                                "Property-binding": "",
+                                                "Required": "",
+                                                "Static-values": "Active,Inactive",
+                                                "Style": "",
+                                                "TableColumnWidth": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "ComboBox"
+                                        }
+                                    ],
+                                    "name": "Row",
+                                    "props": {
+                                        "Class": "row",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Row"
+                                }
+                            ],
+                            "name": "Column",
+                            "props": {
+                                "Class": "",
+                                "Columns": "5",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Column"
+                        },
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Row",
+                                    "props": {
+                                        "Class": "row",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Row"
+                                }
+                            ],
+                            "name": "Column",
+                            "props": {
+                                "Class": "",
+                                "Columns": "1",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Column"
+                        }
+                    ],
+                    "name": "Row",
+                    "props": {
+                        "Class": "row mt-4",
+                        "DB-table": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Repeat": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Row"
+                }
+            ],
+            "name": "Container",
+            "props": {
+                "Class": "container-fluid",
+                "Hidden": "",
+                "ID": "",
+                "Name": "",
+                "Property-binding": "",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Container"
+        },
+        {
+            "child": [
+                {
+                    "child": [
+                    ],
+                    "name": "Dialog-header",
+                    "props": {
+                        "Class": "modal-header",
+                        "Close-button": "Yes",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": "",
+                        "Title": "Amenities"
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-header"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "swim",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-check-input",
+                                        "Columns": "12",
+                                        "Control-type": "checkbox",
+                                        "DB-table": "",
+                                        "DisplayLabel": "Swimming pool",
+                                        "False-value": "0",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "custom-control-label",
+                                        "Model": "",
+                                        "Name": "swim",
+                                        "Orientation": "Horizontal",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "True-value": "1",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "CheckBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "club",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-check-input",
+                                        "Columns": "12",
+                                        "Control-type": "checkbox",
+                                        "DB-table": "",
+                                        "DisplayLabel": "Club house",
+                                        "False-value": "0",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "custom-control-label",
+                                        "Model": "",
+                                        "Name": "club",
+                                        "Orientation": "Horizontal",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "True-value": "1",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "CheckBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "lib",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-check-input",
+                                        "Columns": "12",
+                                        "Control-type": "checkbox",
+                                        "DB-table": "",
+                                        "DisplayLabel": "Library",
+                                        "False-value": "0",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "custom-control-label",
+                                        "Model": "",
+                                        "Name": "lib",
+                                        "Orientation": "Horizontal",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "True-value": "1",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "CheckBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "amphi",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-check-input",
+                                        "Columns": "12",
+                                        "Control-type": "checkbox",
+                                        "DB-table": "",
+                                        "DisplayLabel": "Amphi theatre",
+                                        "False-value": "0",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "custom-control-label",
+                                        "Model": "",
+                                        "Name": "amphi",
+                                        "Orientation": "Horizontal",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "True-value": "1",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "CheckBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "play",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-check-input",
+                                        "Columns": "12",
+                                        "Control-type": "checkbox",
+                                        "DB-table": "",
+                                        "DisplayLabel": "Play ground",
+                                        "False-value": "0",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "custom-control-label",
+                                        "Model": "",
+                                        "Name": "play",
+                                        "Orientation": "Horizontal",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "True-value": "1",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "CheckBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "garden",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-check-input",
+                                        "Columns": "12",
+                                        "Control-type": "checkbox",
+                                        "DB-table": "",
+                                        "DisplayLabel": "Garden",
+                                        "False-value": "0",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "custom-control-label",
+                                        "Model": "",
+                                        "Name": "garden",
+                                        "Orientation": "Horizontal",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "True-value": "1",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "CheckBox"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-body",
+                    "props": {
+                        "Class": "modal-body",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-body"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Button",
+                                    "props": {
+                                        "Class": "btn btn-primary btn-sm",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "Data-dismiss": "modal",
+                                        "Data-target": "",
+                                        "Data-toggle": "",
+                                        "Fa-icon": "fa fa-check",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Ref": "",
+                                        "RouterLinkActive": "",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Apply changes"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Button"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-footer",
+                    "props": {
+                        "Class": "modal-footer",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-footer"
+                }
+            ],
+            "name": "Dialog",
+            "props": {
+                "Class": "modal fade",
+                "Hidden": "",
+                "ID": "d1",
+                "Name": "",
+                "Property-binding": "",
+                "Size": "Small",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Dialog"
+        },
+        {
+            "child": [
+                {
+                    "child": [
+                    ],
+                    "name": "Dialog-header",
+                    "props": {
+                        "Class": "modal-header",
+                        "Close-button": "Yes",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": "",
+                        "Title": "Corporation facilities"
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-header"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "road",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-check-input",
+                                        "Columns": "12",
+                                        "Control-type": "checkbox",
+                                        "DB-table": "",
+                                        "DisplayLabel": "Roads",
+                                        "False-value": "0",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "custom-control-label",
+                                        "Model": "",
+                                        "Name": "road",
+                                        "Orientation": "Horizontal",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "True-value": "1",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "CheckBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "water",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-check-input",
+                                        "Columns": "12",
+                                        "Control-type": "checkbox",
+                                        "DB-table": "",
+                                        "DisplayLabel": "Water supply",
+                                        "False-value": "0",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "custom-control-label",
+                                        "Model": "",
+                                        "Name": "water",
+                                        "Orientation": "Horizontal",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "True-value": "1",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "CheckBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "lib",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-check-input",
+                                        "Columns": "12",
+                                        "Control-type": "checkbox",
+                                        "DB-table": "",
+                                        "DisplayLabel": "Library",
+                                        "False-value": "0",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "custom-control-label",
+                                        "Model": "",
+                                        "Name": "lib",
+                                        "Orientation": "Horizontal",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "True-value": "1",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "CheckBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "play",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-check-input",
+                                        "Columns": "12",
+                                        "Control-type": "checkbox",
+                                        "DB-table": "",
+                                        "DisplayLabel": "Play ground",
+                                        "False-value": "0",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "custom-control-label",
+                                        "Model": "",
+                                        "Name": "play",
+                                        "Orientation": "Horizontal",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "True-value": "1",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "CheckBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "garden",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-check-input",
+                                        "Columns": "12",
+                                        "Control-type": "checkbox",
+                                        "DB-table": "",
+                                        "DisplayLabel": "Garden",
+                                        "False-value": "0",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "custom-control-label",
+                                        "Model": "",
+                                        "Name": "garden",
+                                        "Orientation": "Horizontal",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "True-value": "1",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "CheckBox"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-body",
+                    "props": {
+                        "Class": "modal-body",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-body"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Button",
+                                    "props": {
+                                        "Class": "btn btn-primary btn-sm",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "Data-dismiss": "modal",
+                                        "Data-target": "",
+                                        "Data-toggle": "",
+                                        "Fa-icon": "fa fa-check",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Ref": "",
+                                        "RouterLinkActive": "",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Apply changes"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Button"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-footer",
+                    "props": {
+                        "Class": "modal-footer",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-footer"
+                }
+            ],
+            "name": "Dialog",
+            "props": {
+                "Class": "modal fade",
+                "Hidden": "",
+                "ID": "d2",
+                "Name": "",
+                "Property-binding": "",
+                "Size": "Small",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Dialog"
+        },
+        {
+            "child": [
+                {
+                    "child": [
+                    ],
+                    "name": "Dialog-header",
+                    "props": {
+                        "Class": "modal-header",
+                        "Close-button": "Yes",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": "",
+                        "Title": "Water provisions"
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-header"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "wells",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-check-input",
+                                        "Columns": "12",
+                                        "Control-type": "checkbox",
+                                        "DB-table": "",
+                                        "DisplayLabel": "Wells",
+                                        "False-value": "0",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "custom-control-label",
+                                        "Model": "",
+                                        "Name": "wells",
+                                        "Orientation": "Horizontal",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "True-value": "1",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "CheckBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "water",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-check-input",
+                                        "Columns": "12",
+                                        "Control-type": "checkbox",
+                                        "DB-table": "",
+                                        "DisplayLabel": "Corporation supply",
+                                        "False-value": "0",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "custom-control-label",
+                                        "Model": "",
+                                        "Name": "water",
+                                        "Orientation": "Horizontal",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "True-value": "1",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "CheckBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "boring",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-check-input",
+                                        "Columns": "12",
+                                        "Control-type": "checkbox",
+                                        "DB-table": "",
+                                        "DisplayLabel": "Boring ground water",
+                                        "False-value": "0",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "custom-control-label",
+                                        "Model": "",
+                                        "Name": "boring",
+                                        "Orientation": "Horizontal",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "True-value": "1",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "CheckBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "tanker",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-check-input",
+                                        "Columns": "12",
+                                        "Control-type": "checkbox",
+                                        "DB-table": "",
+                                        "DisplayLabel": "Tanker supply",
+                                        "False-value": "0",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "custom-control-label",
+                                        "Model": "",
+                                        "Name": "tanker",
+                                        "Orientation": "Horizontal",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "True-value": "1",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "CheckBox"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-body",
+                    "props": {
+                        "Class": "modal-body",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-body"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Button",
+                                    "props": {
+                                        "Class": "btn btn-primary btn-sm",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "Data-dismiss": "modal",
+                                        "Data-target": "",
+                                        "Data-toggle": "",
+                                        "Fa-icon": "fa fa-check",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Ref": "",
+                                        "RouterLinkActive": "",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Apply changes"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Button"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-footer",
+                    "props": {
+                        "Class": "modal-footer",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-footer"
+                }
+            ],
+            "name": "Dialog",
+            "props": {
+                "Class": "modal fade",
+                "Hidden": "",
+                "ID": "d3",
+                "Name": "",
+                "Property-binding": "",
+                "Size": "Small",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Dialog"
+        },
+        {
+            "child": [
+                {
+                    "child": [
+                    ],
+                    "name": "Dialog-header",
+                    "props": {
+                        "Class": "modal-header",
+                        "Close-button": "Yes",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": "",
+                        "Title": "Flat details"
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-header"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "TextBox",
+                                    "props": {
+                                        "Auto-complete": "off",
+                                        "ChangeEvent": "",
+                                        "Class": "form-control",
+                                        "Columns": "12",
+                                        "Control-type": "text",
+                                        "DB-table": "",
+                                        "DisplayLabel": "Total no. of wings",
+                                        "FormType": "Standard",
+                                        "Group-class": "",
+                                        "Group-property-binding": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label-class": "",
+                                        "Label-property-binding": "",
+                                        "Label-style": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Placeholder": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Validations": "",
+                                        "Validator-class": "",
+                                        "Validator-style": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "TextBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "TextBox",
+                                    "props": {
+                                        "Auto-complete": "off",
+                                        "ChangeEvent": "",
+                                        "Class": "form-control",
+                                        "Columns": "12",
+                                        "Control-type": "text",
+                                        "DB-table": "",
+                                        "DisplayLabel": "Total no. of flats",
+                                        "FormType": "Standard",
+                                        "Group-class": "",
+                                        "Group-property-binding": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label-class": "",
+                                        "Label-property-binding": "",
+                                        "Label-style": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Placeholder": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Validations": "",
+                                        "Validator-class": "",
+                                        "Validator-style": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "TextBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "CheckBox",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-check-input",
+                                        "Columns": "6",
+                                        "Control-type": "checkbox",
+                                        "DB-table": "",
+                                        "DisplayLabel": "1 BHK",
+                                        "False-value": "0",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "custom-control-label",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Orientation": "Horizontal",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "True-value": "1",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "CheckBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "CheckBox",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-check-input",
+                                        "Columns": "6",
+                                        "Control-type": "checkbox",
+                                        "DB-table": "",
+                                        "DisplayLabel": "1.5 BHK",
+                                        "False-value": "0",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "custom-control-label",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Orientation": "Horizontal",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "True-value": "1",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "CheckBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "CheckBox",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-check-input",
+                                        "Columns": "6",
+                                        "Control-type": "checkbox",
+                                        "DB-table": "",
+                                        "DisplayLabel": "2 BHK",
+                                        "False-value": "0",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "custom-control-label",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Orientation": "Horizontal",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "True-value": "1",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "CheckBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "CheckBox",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-check-input",
+                                        "Columns": "6",
+                                        "Control-type": "checkbox",
+                                        "DB-table": "",
+                                        "DisplayLabel": "2.5 BHK",
+                                        "False-value": "0",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "custom-control-label",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Orientation": "Horizontal",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "True-value": "1",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "CheckBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "CheckBox",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-check-input",
+                                        "Columns": "12",
+                                        "Control-type": "checkbox",
+                                        "DB-table": "",
+                                        "DisplayLabel": "3 BHK",
+                                        "False-value": "0",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "custom-control-label",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Orientation": "Horizontal",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "True-value": "1",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "CheckBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "CheckBox",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-check-input",
+                                        "Columns": "12",
+                                        "Control-type": "checkbox",
+                                        "DB-table": "",
+                                        "DisplayLabel": "4 BHK",
+                                        "False-value": "0",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "custom-control-label",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Orientation": "Horizontal",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "True-value": "1",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "CheckBox"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-body",
+                    "props": {
+                        "Class": "modal-body",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-body"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Button",
+                                    "props": {
+                                        "Class": "btn btn-primary btn-sm",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "Data-dismiss": "modal",
+                                        "Data-target": "",
+                                        "Data-toggle": "",
+                                        "Fa-icon": "fa fa-check",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Ref": "",
+                                        "RouterLinkActive": "",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Apply changes"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Button"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-footer",
+                    "props": {
+                        "Class": "modal-footer",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-footer"
+                }
+            ],
+            "name": "Dialog",
+            "props": {
+                "Class": "modal fade",
+                "Hidden": "",
+                "ID": "d4",
+                "Name": "",
+                "Property-binding": "",
+                "Size": "Small",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Dialog"
+        },
+        {
+            "child": [
+                {
+                    "child": [
+                    ],
+                    "name": "Dialog-header",
+                    "props": {
+                        "Class": "modal-header",
+                        "Close-button": "Yes",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": "",
+                        "Title": "Appex details"
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-header"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "wells",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-check-input",
+                                        "Columns": "12",
+                                        "Control-type": "checkbox",
+                                        "DB-table": "",
+                                        "DisplayLabel": "Appex body",
+                                        "False-value": "0",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "custom-control-label",
+                                        "Model": "",
+                                        "Name": "wells",
+                                        "Orientation": "Horizontal",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "True-value": "1",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "CheckBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "water",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-check-input",
+                                        "Columns": "12",
+                                        "Control-type": "checkbox",
+                                        "DB-table": "",
+                                        "DisplayLabel": "Central body",
+                                        "False-value": "0",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "custom-control-label",
+                                        "Model": "",
+                                        "Name": "water",
+                                        "Orientation": "Horizontal",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "True-value": "1",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "CheckBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "boring",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-check-input",
+                                        "Columns": "12",
+                                        "Control-type": "checkbox",
+                                        "DB-table": "",
+                                        "DisplayLabel": "Registrar managed",
+                                        "False-value": "0",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "custom-control-label",
+                                        "Model": "",
+                                        "Name": "boring",
+                                        "Orientation": "Horizontal",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "True-value": "1",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "CheckBox"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-body",
+                    "props": {
+                        "Class": "modal-body",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-body"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Button",
+                                    "props": {
+                                        "Class": "btn btn-primary btn-sm",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "Data-dismiss": "modal",
+                                        "Data-target": "",
+                                        "Data-toggle": "",
+                                        "Fa-icon": "fa fa-check",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Ref": "",
+                                        "RouterLinkActive": "",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Apply changes"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Button"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-footer",
+                    "props": {
+                        "Class": "modal-footer",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-footer"
+                }
+            ],
+            "name": "Dialog",
+            "props": {
+                "Class": "modal fade",
+                "Hidden": "",
+                "ID": "d5",
+                "Name": "",
+                "Property-binding": "",
+                "Size": "Small",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Dialog"
+        },
+        {
+            "child": [
+                {
+                    "child": [
+                    ],
+                    "name": "Dialog-header",
+                    "props": {
+                        "Class": "modal-header",
+                        "Close-button": "Yes",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": "",
+                        "Title": "Other details"
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-header"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Label",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "5",
+                                        "DisplayLabel": "",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Name"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Label",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "5",
+                                        "DisplayLabel": "",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Value"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "TextBox",
+                                    "props": {
+                                        "Auto-complete": "off",
+                                        "ChangeEvent": "",
+                                        "Class": "form-control",
+                                        "Columns": "6",
+                                        "Control-type": "text",
+                                        "DB-table": "",
+                                        "DisplayLabel": "  ",
+                                        "FormType": "Standard",
+                                        "Group-class": "",
+                                        "Group-property-binding": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label-class": "",
+                                        "Label-property-binding": "",
+                                        "Label-style": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Placeholder": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Validations": "",
+                                        "Validator-class": "",
+                                        "Validator-style": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "TextBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "TextBox",
+                                    "props": {
+                                        "Auto-complete": "off",
+                                        "ChangeEvent": "",
+                                        "Class": "form-control",
+                                        "Columns": "6",
+                                        "Control-type": "text",
+                                        "DB-table": "",
+                                        "DisplayLabel": "  ",
+                                        "FormType": "Standard",
+                                        "Group-class": "",
+                                        "Group-property-binding": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label-class": "",
+                                        "Label-property-binding": "",
+                                        "Label-style": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Placeholder": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Validations": "",
+                                        "Validator-class": "",
+                                        "Validator-style": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "TextBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "TextBox",
+                                    "props": {
+                                        "Auto-complete": "off",
+                                        "ChangeEvent": "",
+                                        "Class": "form-control",
+                                        "Columns": "6",
+                                        "Control-type": "text",
+                                        "DB-table": "",
+                                        "DisplayLabel": "  ",
+                                        "FormType": "Standard",
+                                        "Group-class": "",
+                                        "Group-property-binding": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label-class": "",
+                                        "Label-property-binding": "",
+                                        "Label-style": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Placeholder": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Validations": "",
+                                        "Validator-class": "",
+                                        "Validator-style": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "TextBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "TextBox",
+                                    "props": {
+                                        "Auto-complete": "off",
+                                        "ChangeEvent": "",
+                                        "Class": "form-control",
+                                        "Columns": "6",
+                                        "Control-type": "text",
+                                        "DB-table": "",
+                                        "DisplayLabel": "  ",
+                                        "FormType": "Standard",
+                                        "Group-class": "",
+                                        "Group-property-binding": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label-class": "",
+                                        "Label-property-binding": "",
+                                        "Label-style": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Placeholder": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Validations": "",
+                                        "Validator-class": "",
+                                        "Validator-style": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "TextBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "TextBox",
+                                    "props": {
+                                        "Auto-complete": "off",
+                                        "ChangeEvent": "",
+                                        "Class": "form-control",
+                                        "Columns": "6",
+                                        "Control-type": "text",
+                                        "DB-table": "",
+                                        "DisplayLabel": "  ",
+                                        "FormType": "Standard",
+                                        "Group-class": "",
+                                        "Group-property-binding": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label-class": "",
+                                        "Label-property-binding": "",
+                                        "Label-style": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Placeholder": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Validations": "",
+                                        "Validator-class": "",
+                                        "Validator-style": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "TextBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "TextBox",
+                                    "props": {
+                                        "Auto-complete": "off",
+                                        "ChangeEvent": "",
+                                        "Class": "form-control",
+                                        "Columns": "6",
+                                        "Control-type": "text",
+                                        "DB-table": "",
+                                        "DisplayLabel": "  ",
+                                        "FormType": "Standard",
+                                        "Group-class": "",
+                                        "Group-property-binding": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label-class": "",
+                                        "Label-property-binding": "",
+                                        "Label-style": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Placeholder": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Validations": "",
+                                        "Validator-class": "",
+                                        "Validator-style": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "TextBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "TextBox",
+                                    "props": {
+                                        "Auto-complete": "off",
+                                        "ChangeEvent": "",
+                                        "Class": "form-control",
+                                        "Columns": "6",
+                                        "Control-type": "text",
+                                        "DB-table": "",
+                                        "DisplayLabel": "  ",
+                                        "FormType": "Standard",
+                                        "Group-class": "",
+                                        "Group-property-binding": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label-class": "",
+                                        "Label-property-binding": "",
+                                        "Label-style": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Placeholder": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Validations": "",
+                                        "Validator-class": "",
+                                        "Validator-style": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "TextBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "TextBox",
+                                    "props": {
+                                        "Auto-complete": "off",
+                                        "ChangeEvent": "",
+                                        "Class": "form-control",
+                                        "Columns": "6",
+                                        "Control-type": "text",
+                                        "DB-table": "",
+                                        "DisplayLabel": "  ",
+                                        "FormType": "Standard",
+                                        "Group-class": "",
+                                        "Group-property-binding": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label-class": "",
+                                        "Label-property-binding": "",
+                                        "Label-style": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Placeholder": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Validations": "",
+                                        "Validator-class": "",
+                                        "Validator-style": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "TextBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "TextBox",
+                                    "props": {
+                                        "Auto-complete": "off",
+                                        "ChangeEvent": "",
+                                        "Class": "form-control",
+                                        "Columns": "6",
+                                        "Control-type": "text",
+                                        "DB-table": "",
+                                        "DisplayLabel": "  ",
+                                        "FormType": "Standard",
+                                        "Group-class": "",
+                                        "Group-property-binding": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label-class": "",
+                                        "Label-property-binding": "",
+                                        "Label-style": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Placeholder": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Validations": "",
+                                        "Validator-class": "",
+                                        "Validator-style": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "TextBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "TextBox",
+                                    "props": {
+                                        "Auto-complete": "off",
+                                        "ChangeEvent": "",
+                                        "Class": "form-control",
+                                        "Columns": "6",
+                                        "Control-type": "text",
+                                        "DB-table": "",
+                                        "DisplayLabel": "  ",
+                                        "FormType": "Standard",
+                                        "Group-class": "",
+                                        "Group-property-binding": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label-class": "",
+                                        "Label-property-binding": "",
+                                        "Label-style": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Placeholder": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Validations": "",
+                                        "Validator-class": "",
+                                        "Validator-style": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "TextBox"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-body",
+                    "props": {
+                        "Class": "modal-body",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-body"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Button",
+                                    "props": {
+                                        "Class": "btn btn-primary btn-sm",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "Data-dismiss": "modal",
+                                        "Data-target": "",
+                                        "Data-toggle": "",
+                                        "Fa-icon": "fa fa-check",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Ref": "",
+                                        "RouterLinkActive": "",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Apply changes"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Button"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-footer",
+                    "props": {
+                        "Class": "modal-footer",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-footer"
+                }
+            ],
+            "name": "Dialog",
+            "props": {
+                "Class": "modal fade",
+                "Hidden": "",
+                "ID": "d6",
+                "Name": "",
+                "Property-binding": "",
+                "Size": "Default",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Dialog"
+        }
+    ],
+    "name": "Form",
+    "props": {
+        "Class": "",
+        "Columns": "12",
+        "Hidden": "",
+        "ID": "",
+        "Name": "",
+        "Parent-class": "",
+        "Parent-style": "",
+        "Property-binding": "",
+        "Style": ""
+    },
+    "tabpos": "0",
+    "type": "Form"
+}

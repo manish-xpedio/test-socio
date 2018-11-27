@@ -1,0 +1,532 @@
+{
+    "child": [
+        {
+            "child": [
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "HtmlPage",
+                                            "props": {
+                                                "Columns": "12",
+                                                "Page-Name": "accmenu"
+                                            },
+                                            "tabpos": "5",
+                                            "type": "HtmlPage"
+                                        }
+                                    ],
+                                    "name": "Row",
+                                    "props": {
+                                        "Class": "row",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Row"
+                                }
+                            ],
+                            "name": "Column",
+                            "props": {
+                                "Class": "",
+                                "Columns": "2",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "8",
+                            "type": "Column"
+                        },
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "Label",
+                                            "props": {
+                                                "Class": "page-header",
+                                                "Columns": "3",
+                                                "DisplayLabel": "",
+                                                "For": "",
+                                                "FormType": "Standard",
+                                                "GroupWidth": "",
+                                                "HelpText": "",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Label class": "",
+                                                "Label-type": "span",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Required": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Value": "Maintainance charges"
+                                            },
+                                            "tabpos": "10",
+                                            "type": "Label"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "Label",
+                                            "props": {
+                                                "Class": "",
+                                                "Columns": "6",
+                                                "DisplayLabel": "",
+                                                "For": "",
+                                                "FormType": "Standard",
+                                                "GroupWidth": "",
+                                                "HelpText": "",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Label class": "",
+                                                "Label-type": "span",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Required": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Value": "{{ fin_maintainance_charges_master_status }}"
+                                            },
+                                            "tabpos": "10",
+                                            "type": "Label"
+                                        },
+                                        {
+                                            "child": [
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "Link",
+                                                    "props": {
+                                                        "Class": "btn btn-primary btn-sm",
+                                                        "ClickEvent": "",
+                                                        "Columns": "12",
+                                                        "DB-table": "",
+                                                        "Data-dismiss": "",
+                                                        "Data-target": "",
+                                                        "Data-toggle": "modal",
+                                                        "DisplayLabel": "",
+                                                        "Fa-icon": "fa fa-plus",
+                                                        "Group-class": "",
+                                                        "Group-style": "",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Icon": "",
+                                                        "Model": "",
+                                                        "Name": "",
+                                                        "Property-binding": "",
+                                                        "RouterLink": "/maintcharge",
+                                                        "RouterParam": "",
+                                                        "Style": "",
+                                                        "TableColumnWidth": "",
+                                                        "Value": "Add"
+                                                    },
+                                                    "tabpos": "11",
+                                                    "type": "Link"
+                                                }
+                                            ],
+                                            "name": "ButtonGroup",
+                                            "props": {
+                                                "Class": "btn-group",
+                                                "Columns": "3",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "text-align: right",
+                                                "Property-binding": "",
+                                                "Style": "",
+                                                "TableColumnWidth": ""
+                                            },
+                                            "tabpos": "10",
+                                            "type": "ButtonGroup"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "HLine",
+                                            "props": {
+                                                "Class": "mb-3",
+                                                "Columns": "12",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Style": ""
+                                            },
+                                            "tabpos": "10",
+                                            "type": "HLine"
+                                        }
+                                    ],
+                                    "name": "Row",
+                                    "props": {
+                                        "Class": "row",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "9",
+                                    "type": "Row"
+                                },
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                                {
+                                                    "child": [
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "fin_year",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "ClickEvent": "",
+                                                                "Columns": "12",
+                                                                "DB-table": "",
+                                                                "Data-dismiss": "",
+                                                                "Data-target": "",
+                                                                "Data-toggle": "modal",
+                                                                "DisplayLabel": "Financial year",
+                                                                "Fa-icon": "",
+                                                                "Group-class": "",
+                                                                "Group-style": "",
+                                                                "Hidden": "",
+                                                                "ID": "fin_year",
+                                                                "Icon": "",
+                                                                "Model": "",
+                                                                "Name": "fin_year",
+                                                                "Property-binding": "",
+                                                                "RouterLink": "/maintcharge",
+                                                                "RouterParam": "{ sysid: x.sysid }",
+                                                                "Style": "",
+                                                                "TableColumnWidth": "",
+                                                                "Value": "{{ x.fin_year }}"
+                                                            },
+                                                            "tabpos": "12",
+                                                            "type": "Link"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "meeting_id",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "Columns": "12",
+                                                                "DisplayLabel": "Meeting ID",
+                                                                "For": "",
+                                                                "FormType": "Standard",
+                                                                "GroupWidth": "",
+                                                                "HelpText": "",
+                                                                "Hidden": "",
+                                                                "ID": "meeting_id",
+                                                                "Label class": "",
+                                                                "Label-type": "span",
+                                                                "Name": "meeting_id",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Required": "",
+                                                                "Style": "",
+                                                                "TableColumnWidth": "",
+                                                                "Value": "{{ x.meeting_id }}"
+                                                            },
+                                                            "tabpos": "12",
+                                                            "type": "Label"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "total_owner_charges",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "Columns": "12",
+                                                                "DisplayLabel": "Total owner charges",
+                                                                "For": "",
+                                                                "FormType": "Standard",
+                                                                "GroupWidth": "",
+                                                                "HelpText": "",
+                                                                "Hidden": "",
+                                                                "ID": "total_owner_charges",
+                                                                "Label class": "",
+                                                                "Label-type": "span",
+                                                                "Name": "total_owner_charges",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Required": "",
+                                                                "Style": "",
+                                                                "TableColumnWidth": "",
+                                                                "Value": "{{ x.total_owner_charges }}"
+                                                            },
+                                                            "tabpos": "12",
+                                                            "type": "Label"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "total_tenant_charges",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "Columns": "12",
+                                                                "DisplayLabel": "Total tenant charges",
+                                                                "For": "",
+                                                                "FormType": "Standard",
+                                                                "GroupWidth": "",
+                                                                "HelpText": "",
+                                                                "Hidden": "",
+                                                                "ID": "total_tenant_charges",
+                                                                "Label class": "",
+                                                                "Label-type": "span",
+                                                                "Name": "total_tenant_charges",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Required": "",
+                                                                "Style": "",
+                                                                "TableColumnWidth": "",
+                                                                "Value": "{{ x.total_tenant_charges }}"
+                                                            },
+                                                            "tabpos": "12",
+                                                            "type": "Label"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "penalty_percent",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "Columns": "12",
+                                                                "DisplayLabel": "Penalty percent",
+                                                                "For": "",
+                                                                "FormType": "Standard",
+                                                                "GroupWidth": "",
+                                                                "HelpText": "",
+                                                                "Hidden": "",
+                                                                "ID": "penalty_percent",
+                                                                "Label class": "",
+                                                                "Label-type": "span",
+                                                                "Name": "penalty_percent",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Required": "",
+                                                                "Style": "",
+                                                                "TableColumnWidth": "",
+                                                                "Value": "{{ x.penalty_percent }}"
+                                                            },
+                                                            "tabpos": "12",
+                                                            "type": "Label"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "sysid",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "Columns": "12",
+                                                                "DisplayLabel": "System ID",
+                                                                "For": "",
+                                                                "FormType": "Standard",
+                                                                "GroupWidth": "",
+                                                                "HelpText": "",
+                                                                "Hidden": "",
+                                                                "ID": "sysid",
+                                                                "Label class": "",
+                                                                "Label-type": "span",
+                                                                "Name": "sysid",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Required": "",
+                                                                "Style": "",
+                                                                "TableColumnWidth": "",
+                                                                "Value": "{{ x.sysid }}"
+                                                            },
+                                                            "tabpos": "12",
+                                                            "type": "Label"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "Link",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "ClickEvent": "delete_fin_maintainance_charges_master(x.sysid)",
+                                                                "Columns": "12",
+                                                                "DB-table": "",
+                                                                "Data-dismiss": "",
+                                                                "Data-target": "",
+                                                                "Data-toggle": "modal",
+                                                                "DisplayLabel": "",
+                                                                "Fa-icon": "fa fa-trash",
+                                                                "Group-class": "",
+                                                                "Group-style": "",
+                                                                "Hidden": "",
+                                                                "ID": "delete_btn",
+                                                                "Icon": "",
+                                                                "Model": "",
+                                                                "Name": "delete_btn",
+                                                                "Property-binding": "",
+                                                                "RouterLink": "#",
+                                                                "RouterParam": "",
+                                                                "Style": "color: red;",
+                                                                "TableColumnWidth": "",
+                                                                "Value": "Delete"
+                                                            },
+                                                            "tabpos": "12",
+                                                            "type": "Link"
+                                                        }
+                                                    ],
+                                                    "name": "TableRow",
+                                                    "props": {
+                                                        "Class": "",
+                                                        "Data-source": "fin_maintainance_charges_masterList",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Name": "",
+                                                        "Property-binding": "",
+                                                        "Style": ""
+                                                    },
+                                                    "tabpos": "11",
+                                                    "type": "TableRow"
+                                                }
+                                            ],
+                                            "name": "Table",
+                                            "props": {
+                                                "Border": "Yes",
+                                                "Caption": "",
+                                                "Class": "table table-bordered table-sm",
+                                                "Columns": "12",
+                                                "DataSource": "",
+                                                "Filter": "",
+                                                "HeaderClass": "",
+                                                "Hidden": "",
+                                                "Hover": "No",
+                                                "ID": "",
+                                                "ItemsPerPage": "12",
+                                                "Name": "",
+                                                "NoOfPagesDisplay": "10",
+                                                "Pagination": "Yes",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Responsive": "",
+                                                "Size": "Small",
+                                                "StripedRows": "No",
+                                                "Style": ""
+                                            },
+                                            "tabpos": "10",
+                                            "type": "Table"
+                                        }
+                                    ],
+                                    "name": "Row",
+                                    "props": {
+                                        "Class": "row",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "9",
+                                    "type": "Row"
+                                }
+                            ],
+                            "name": "Column",
+                            "props": {
+                                "Class": "",
+                                "Columns": "10",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "8",
+                            "type": "Column"
+                        }
+                    ],
+                    "name": "Row",
+                    "props": {
+                        "Class": "row mt-4",
+                        "DB-table": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Repeat": "",
+                        "Style": ""
+                    },
+                    "tabpos": "7",
+                    "type": "Row"
+                }
+            ],
+            "name": "Container",
+            "props": {
+                "Class": "container-fluid px-5 py-3",
+                "Hidden": "",
+                "ID": "",
+                "Name": "",
+                "Property-binding": "",
+                "Style": ""
+            },
+            "tabpos": "6",
+            "type": "Container"
+        }
+    ],
+    "name": "Form",
+    "props": {
+        "Class": "",
+        "Columns": "12",
+        "Hidden": "",
+        "ID": "",
+        "Name": "",
+        "Parent-class": "",
+        "Parent-style": "",
+        "Property-binding": "",
+        "Style": ""
+    },
+    "tabpos": "0",
+    "type": "Form"
+}

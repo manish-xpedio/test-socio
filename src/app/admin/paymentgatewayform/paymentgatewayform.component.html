@@ -1,0 +1,113 @@
+<form #f='ngForm'>
+<div class='container-fluid p-5 '>
+	<div class='row '>
+		<label class='page-header col-sm-3 '> Payment gateway</label>
+		<label class='col-sm-6 '> {{ admin_payment_gateway_status }}</label>
+		<div class=' col-sm-3' style='text-align: right'>
+			<div class='btn-group '>
+				<button class='btn btn-primary btn-sm ' name='save_btn' (click)='save_admin_payment_gateway(f)'>
+					<i class='fa fa-save'></i> Save
+				</button>
+				<a class='btn btn-primary btn-sm ' name='back_btn' data-toggle='modal' routerLink='/paymentgateway'>
+					<i class='fa fa-arrow-left'></i> Back
+				</a>
+			</div>
+		</div>
+		<div class='col-sm-12'>
+			<hr class=''>
+		</div>
+	</div>
+	<div class='row mt-3 '>
+		<div class='' class='col-sm-6'>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<div class='form-group'>
+						<label for='sysid'>System ID</label>
+						<input class='form-control ' id='sysid' name='sysid' type='text' autocomplete='off' readonly [(ngModel)]='admin_payment_gateway.sysid' #sysid="ngModel">
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group'>
+						<label for='short_code'>Short code</label>
+						<input class='form-control ' id='short_code' name='short_code' type='text' autocomplete='off' [(ngModel)]='admin_payment_gateway.short_code' #short_code="ngModel">
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group'>
+						<label for='service_provider'>Service provider</label>
+						<input class='form-control ' id='service_provider' name='service_provider' type='text' autocomplete='off' [(ngModel)]='admin_payment_gateway.service_provider' #service_provider="ngModel">
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group'>
+						<label for='sp_url'>Service provider URL</label>
+						<input class='form-control ' id='sp_url' name='sp_url' type='text' autocomplete='off' [(ngModel)]='admin_payment_gateway.sp_url' #sp_url="ngModel">
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group'>
+						<label for='is_ssl'>Is SSL</label>
+						<select class='form-control ' id='is_ssl' name='is_ssl' [(ngModel)]='admin_payment_gateway.is_ssl' #is_ssl="ngModel">
+							<option value=''></option>
+							<option value='Yes'>Yes</option>
+							<option value='No'>No</option>
+						</select>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group'>
+						<label for='protocol'>Protocol</label>
+						<select class='form-control ' id='protocol' name='protocol' [(ngModel)]='admin_payment_gateway.protocol' #protocol="ngModel">
+							<option value=''></option>
+							<option value='REST'>REST</option>
+							<option value='SOAP'>SOAP</option>
+						</select>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group'>
+						<label for='is_sync'>Is synchronous</label>
+						<select class='form-control ' id='is_sync' name='is_sync' [(ngModel)]='admin_payment_gateway.is_sync' #is_sync="ngModel">
+							<option value=''></option>
+							<option value='Yes'>Yes</option>
+							<option value='No'>No</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='' class='col-sm-6'>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<div class='form-group'>
+						<label for='response_time'>Response time (Sec)</label>
+						<input class='form-control ' id='response_time' name='response_time' type='text' autocomplete='off' [(ngModel)]='admin_payment_gateway.response_time' #response_time="ngModel">
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group'>
+						<label for='url_input_params'>URL input parameters</label>
+						<textarea class='form-control ' id='url_input_params' name='url_input_params' rows='5' autocomplete='off' [(ngModel)]='admin_payment_gateway.url_input_params' #url_input_params="ngModel"></textarea>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group'>
+						<label for='url_output_params'>URL output parameters</label>
+						<textarea class='form-control ' id='url_output_params' name='url_output_params' rows='5' autocomplete='off' [(ngModel)]='admin_payment_gateway.url_output_params' #url_output_params="ngModel"></textarea>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group'>
+						<label for='status'>Status</label>
+						<select class='form-control ' id='status' name='status' [(ngModel)]='admin_payment_gateway.status' #status="ngModel">
+							<option value=''></option>
+							<option value='Active'>Active</option>
+							<option value='Inactive'>Inactive</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</form>

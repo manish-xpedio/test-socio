@@ -1,0 +1,1045 @@
+{
+    "child": [
+        {
+            "child": [
+                {
+                    "child": [
+                    ],
+                    "name": "Label",
+                    "props": {
+                        "Class": "page-header",
+                        "Columns": "3",
+                        "DisplayLabel": "",
+                        "For": "",
+                        "FormType": "Standard",
+                        "GroupWidth": "",
+                        "HelpText": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Label class": "",
+                        "Label-type": "span",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Required": "",
+                        "Style": "",
+                        "TableColumnWidth": "",
+                        "Value": "SMS template"
+                    },
+                    "tabpos": "2",
+                    "type": "Label"
+                },
+                {
+                    "child": [
+                    ],
+                    "name": "Label",
+                    "props": {
+                        "Class": "",
+                        "Columns": "6",
+                        "DisplayLabel": "",
+                        "For": "",
+                        "FormType": "Standard",
+                        "GroupWidth": "",
+                        "HelpText": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Label class": "",
+                        "Label-type": "span",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Required": "",
+                        "Style": "",
+                        "TableColumnWidth": "",
+                        "Value": "{{ admin_sms_template_status }}"
+                    },
+                    "tabpos": "2",
+                    "type": "Label"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                            ],
+                            "name": "save_btn",
+                            "props": {
+                                "Class": "btn btn-primary btn-sm",
+                                "ClickEvent": "save_admin_sms_template(f)",
+                                "Columns": "12",
+                                "Data-dismiss": "",
+                                "Data-target": "",
+                                "Data-toggle": "",
+                                "Fa-icon": "fa fa-save",
+                                "Hidden": "",
+                                "ID": "",
+                                "Icon": "",
+                                "Model": "",
+                                "Name": "save_btn",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Readonly": "",
+                                "Ref": "",
+                                "RouterLinkActive": "",
+                                "RouterParam": "",
+                                "Style": "",
+                                "TableColumnWidth": "",
+                                "Value": "Save"
+                            },
+                            "tabpos": "3",
+                            "type": "Button"
+                        },
+                        {
+                            "child": [
+                            ],
+                            "name": "clear_btn",
+                            "props": {
+                                "Class": "btn btn-primary btn-sm",
+                                "ClickEvent": "clear_admin_sms_template()",
+                                "Columns": "12",
+                                "Data-dismiss": "",
+                                "Data-target": "",
+                                "Data-toggle": "",
+                                "Fa-icon": "fa fa-redo-alt",
+                                "Hidden": "",
+                                "ID": "clear",
+                                "Icon": "",
+                                "Model": "",
+                                "Name": "clear_btn",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Readonly": "",
+                                "Ref": "",
+                                "RouterLinkActive": "",
+                                "RouterParam": "",
+                                "Style": "",
+                                "TableColumnWidth": "",
+                                "Value": "Clear"
+                            },
+                            "tabpos": "3",
+                            "type": "Button"
+                        },
+                        {
+                            "child": [
+                            ],
+                            "name": "back_btn",
+                            "props": {
+                                "Class": "btn btn-primary btn-sm",
+                                "ClickEvent": "",
+                                "Columns": "12",
+                                "DB-table": "",
+                                "Data-dismiss": "",
+                                "Data-target": "",
+                                "Data-toggle": "modal",
+                                "DisplayLabel": "",
+                                "Fa-icon": "fa fa-arrow-left",
+                                "Group-class": "",
+                                "Group-style": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Icon": "",
+                                "Model": "",
+                                "Name": "back_btn",
+                                "Property-binding": "",
+                                "RouterLink": "/settings",
+                                "RouterParam": "",
+                                "Style": "",
+                                "TableColumnWidth": "",
+                                "Value": "Back"
+                            },
+                            "tabpos": "3",
+                            "type": "Link"
+                        }
+                    ],
+                    "name": "ButtonGroup",
+                    "props": {
+                        "Class": "btn-group",
+                        "Columns": "3",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "text-align: right",
+                        "Property-binding": "",
+                        "Style": "",
+                        "TableColumnWidth": ""
+                    },
+                    "tabpos": "2",
+                    "type": "ButtonGroup"
+                },
+                {
+                    "child": [
+                    ],
+                    "name": "HLine",
+                    "props": {
+                        "Class": "",
+                        "Columns": "12",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "HLine"
+                }
+            ],
+            "name": "Row",
+            "props": {
+                "Class": "row",
+                "DB-table": "",
+                "Hidden": "",
+                "ID": "",
+                "Name": "",
+                "Parent-class": "",
+                "Parent-style": "",
+                "Property-binding": "",
+                "Repeat": "",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Row"
+        },
+        {
+            "child": [
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "temp_name",
+                                    "props": {
+                                        "ChangeEvent": "current_record_admin_sms_template(admin_sms_template.sysid)",
+                                        "Class": "form-control",
+                                        "Columns": "6",
+                                        "DB-table": "admin_sms_template",
+                                        "Data-source": "sysid.sms_temp_name.admin_sms_template",
+                                        "DisplayLabel": "Configured templates",
+                                        "FormType": "Standard",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "sysid",
+                                        "Init": "Yes",
+                                        "Label-class": "",
+                                        "Label-style": "",
+                                        "Model": "sysid",
+                                        "Multiple": "No",
+                                        "Name": "temp_name",
+                                        "NeedKeyValue": "No",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Static-values": "",
+                                        "Style": "",
+                                        "TableColumnWidth": ""
+                                    },
+                                    "tabpos": "2",
+                                    "type": "ComboBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "del_btn",
+                                    "props": {
+                                        "Class": "btn btn-primary btn-sm",
+                                        "ClickEvent": "delete_admin_sms_template(admin_sms_template.sysid)",
+                                        "Columns": "2",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "",
+                                        "Fa-icon": "fa fa-trash",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "del_btn",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Ref": "",
+                                        "RouterLinkActive": "",
+                                        "RouterParam": "",
+                                        "Style": "margin-top: 30px",
+                                        "TableColumnWidth": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "2",
+                                    "type": "Button"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "HLine",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "HLine"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "1",
+                            "type": "Row"
+                        },
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "sysid",
+                                                    "props": {
+                                                        "Auto-complete": "off",
+                                                        "ChangeEvent": "",
+                                                        "Class": "form-control",
+                                                        "Columns": "12",
+                                                        "Control-type": "text",
+                                                        "DB-table": "admin_sms_template",
+                                                        "DisplayLabel": "System ID",
+                                                        "FormType": "Standard",
+                                                        "Group-class": "",
+                                                        "Group-property-binding": "",
+                                                        "Group-style": "",
+                                                        "Hidden": "",
+                                                        "ID": "sysid",
+                                                        "Label-class": "",
+                                                        "Label-property-binding": "",
+                                                        "Label-style": "",
+                                                        "Model": "sysid",
+                                                        "Name": "sysid",
+                                                        "Placeholder": "",
+                                                        "Property-binding": "",
+                                                        "Readonly": "true",
+                                                        "Style": "",
+                                                        "TableColumnWidth": "",
+                                                        "Validations": "",
+                                                        "Validator-class": "",
+                                                        "Validator-style": "",
+                                                        "Value": ""
+                                                    },
+                                                    "tabpos": "4",
+                                                    "type": "TextBox"
+                                                }
+                                            ],
+                                            "name": "Row",
+                                            "props": {
+                                                "Class": "row",
+                                                "DB-table": "",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Repeat": "",
+                                                "Style": ""
+                                            },
+                                            "tabpos": "3",
+                                            "type": "Row"
+                                        }
+                                    ],
+                                    "name": "Column",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "4",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "2",
+                                    "type": "Column"
+                                },
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "sms_temp_name",
+                                                    "props": {
+                                                        "Auto-complete": "off",
+                                                        "ChangeEvent": "",
+                                                        "Class": "form-control",
+                                                        "Columns": "12",
+                                                        "Control-type": "text",
+                                                        "DB-table": "admin_sms_template",
+                                                        "DisplayLabel": "Template name",
+                                                        "FormType": "Standard",
+                                                        "Group-class": "",
+                                                        "Group-property-binding": "",
+                                                        "Group-style": "",
+                                                        "Hidden": "",
+                                                        "ID": "sms_temp_name",
+                                                        "Label-class": "",
+                                                        "Label-property-binding": "",
+                                                        "Label-style": "",
+                                                        "Model": "sms_temp_name",
+                                                        "Name": "sms_temp_name",
+                                                        "Placeholder": "",
+                                                        "Property-binding": "",
+                                                        "Readonly": "",
+                                                        "Style": "",
+                                                        "TableColumnWidth": "",
+                                                        "Validations": "",
+                                                        "Validator-class": "",
+                                                        "Validator-style": "",
+                                                        "Value": ""
+                                                    },
+                                                    "tabpos": "4",
+                                                    "type": "TextBox"
+                                                }
+                                            ],
+                                            "name": "Row",
+                                            "props": {
+                                                "Class": "row",
+                                                "DB-table": "",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Repeat": "",
+                                                "Style": ""
+                                            },
+                                            "tabpos": "3",
+                                            "type": "Row"
+                                        }
+                                    ],
+                                    "name": "Column",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "4",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "2",
+                                    "type": "Column"
+                                },
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "status",
+                                                    "props": {
+                                                        "ChangeEvent": "",
+                                                        "Class": "form-control",
+                                                        "Columns": "12",
+                                                        "DB-table": "admin_sms_template",
+                                                        "Data-source": "statusList",
+                                                        "DisplayLabel": "Status",
+                                                        "FormType": "Standard",
+                                                        "Group-class": "",
+                                                        "Group-style": "",
+                                                        "GroupWidth": "",
+                                                        "Hidden": "",
+                                                        "ID": "status",
+                                                        "Init": "Yes",
+                                                        "Label-class": "",
+                                                        "Label-style": "",
+                                                        "Model": "status",
+                                                        "Multiple": "No",
+                                                        "Name": "status",
+                                                        "NeedKeyValue": "No",
+                                                        "Property-binding": "",
+                                                        "Required": "",
+                                                        "Static-values": "Active,Inactive",
+                                                        "Style": "",
+                                                        "TableColumnWidth": ""
+                                                    },
+                                                    "tabpos": "4",
+                                                    "type": "ComboBox"
+                                                }
+                                            ],
+                                            "name": "Row",
+                                            "props": {
+                                                "Class": "row",
+                                                "DB-table": "",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Repeat": "",
+                                                "Style": ""
+                                            },
+                                            "tabpos": "3",
+                                            "type": "Row"
+                                        }
+                                    ],
+                                    "name": "Column",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "4",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "2",
+                                    "type": "Column"
+                                },
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "sms_verb",
+                                                    "props": {
+                                                        "Auto-complete": "off",
+                                                        "ChangeEvent": "",
+                                                        "Class": "form-control",
+                                                        "Columns": "12",
+                                                        "DB-table": "admin_sms_template",
+                                                        "DisplayLabel": "SMS verbiage",
+                                                        "FormType": "Standard",
+                                                        "Group-class": "",
+                                                        "Group-style": "",
+                                                        "GroupWidth": "",
+                                                        "HelpText": "",
+                                                        "Hidden": "",
+                                                        "ID": "sms_verb",
+                                                        "Label class": "",
+                                                        "Label-class": "",
+                                                        "Label-style": "",
+                                                        "Label-type": "label",
+                                                        "Model": "sms_verb",
+                                                        "Name": "sms_verb",
+                                                        "Placeholder": "",
+                                                        "Property-binding": "",
+                                                        "Readonly": "",
+                                                        "Required": "",
+                                                        "Rows": "5",
+                                                        "Style": "",
+                                                        "TableColumnWidth": "",
+                                                        "Validations": "",
+                                                        "Value": ""
+                                                    },
+                                                    "tabpos": "2",
+                                                    "type": "TextArea"
+                                                },
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "Label",
+                                                    "props": {
+                                                        "Class": "",
+                                                        "Columns": "12",
+                                                        "DisplayLabel": "",
+                                                        "For": "",
+                                                        "FormType": "Standard",
+                                                        "GroupWidth": "",
+                                                        "HelpText": "",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Label class": "",
+                                                        "Label-type": "span",
+                                                        "Name": "",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Required": "",
+                                                        "Style": "color: #ff0000",
+                                                        "TableColumnWidth": "",
+                                                        "Value": "<i>Maximum 160 characters allowed. No linebreaks to be entered.</i>"
+                                                    },
+                                                    "tabpos": "4",
+                                                    "type": "Label"
+                                                }
+                                            ],
+                                            "name": "Row",
+                                            "props": {
+                                                "Class": "row",
+                                                "DB-table": "",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Repeat": "",
+                                                "Style": ""
+                                            },
+                                            "tabpos": "3",
+                                            "type": "Row"
+                                        }
+                                    ],
+                                    "name": "Column",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "2",
+                                    "type": "Column"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row mt-3",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Column",
+                    "props": {
+                        "Class": "",
+                        "Columns": "8",
+                        "DB-table": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Repeat": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Column"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Label",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "DisplayLabel": "",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "color: #c70039",
+                                        "TableColumnWidth": "",
+                                        "Value": "<b>Instructions to configure template</b>"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Label",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "DisplayLabel": "",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Use below built-in words directly to embed entities into your SMS body."
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "ListItem",
+                                            "props": {
+                                                "Class": "",
+                                                "Data-source": "",
+                                                "Decoration": "No",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Style": "",
+                                                "Value": "<b>Logo</b> - To include logo into SMS body. Height of logo will be 50px"
+                                            },
+                                            "tabpos": "5",
+                                            "type": "ListItem"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "ListItem",
+                                            "props": {
+                                                "Class": "",
+                                                "Data-source": "",
+                                                "Decoration": "No",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Style": "",
+                                                "Value": "<b>OU</b> - This will add registered company name as it is."
+                                            },
+                                            "tabpos": "5",
+                                            "type": "ListItem"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "ListItem",
+                                            "props": {
+                                                "Class": "",
+                                                "Data-source": "",
+                                                "Decoration": "No",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Style": "",
+                                                "Value": "<b>OU_Email</b> - This will add company email id"
+                                            },
+                                            "tabpos": "5",
+                                            "type": "ListItem"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "ListItem",
+                                            "props": {
+                                                "Class": "",
+                                                "Data-source": "",
+                                                "Decoration": "No",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Style": "",
+                                                "Value": "<b>OU_Phone</b> - This will add company primary number"
+                                            },
+                                            "tabpos": "5",
+                                            "type": "ListItem"
+                                        }
+                                    ],
+                                    "name": "ListElement",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "Decoration": "No",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "List-type": "Unordered",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "ListElement"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Label",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "DisplayLabel": "",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Below are the dynamic value fields whose value will be retrieved from database."
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "fields",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-control",
+                                        "Columns": "12",
+                                        "DB-table": "admin_email_sms_fields",
+                                        "Data-source": "sysid.alias_name.admin_email_sms_fields",
+                                        "DisplayLabel": "Field name",
+                                        "FormType": "Standard",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "field_name",
+                                        "Init": "Yes",
+                                        "Label-class": "",
+                                        "Label-style": "",
+                                        "Model": "field_name",
+                                        "Multiple": "No",
+                                        "Name": "fields",
+                                        "NeedKeyValue": "No",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Static-values": "",
+                                        "Style": "",
+                                        "TableColumnWidth": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "ComboBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Label",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "DisplayLabel": "",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "color: #c70039",
+                                        "TableColumnWidth": "",
+                                        "Value": "<b>Example</b>"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Label",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "DisplayLabel": "",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Hi <b>[buyer_name]</b>,"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Label",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "DisplayLabel": "",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Use square bracket to use built in words or dyanimc value word selected from above dropdown list."
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Column",
+                    "props": {
+                        "Class": "",
+                        "Columns": "4",
+                        "DB-table": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Repeat": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Column"
+                }
+            ],
+            "name": "Row",
+            "props": {
+                "Class": "row mt-3",
+                "DB-table": "",
+                "Hidden": "",
+                "ID": "",
+                "Name": "",
+                "Parent-class": "",
+                "Parent-style": "",
+                "Property-binding": "",
+                "Repeat": "",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Row"
+        }
+    ],
+    "name": "Container",
+    "props": {
+        "Class": "container-fluid p-5",
+        "Hidden": "",
+        "ID": "",
+        "Name": "",
+        "Property-binding": "",
+        "Style": ""
+    },
+    "tabpos": "0",
+    "type": "Container"
+}

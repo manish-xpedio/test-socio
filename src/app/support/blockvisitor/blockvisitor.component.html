@@ -1,0 +1,49 @@
+<form #f='ngForm'>
+	<div class='container-fluid p-5 '>
+		<div class='row '>
+			<div class='' class='col-sm-2'>
+				<div class='row '>
+					<div class='col-sm-12'>
+						<app-visitormenu></app-visitormenu>
+					</div>
+				</div>
+			</div>
+			<div class='' class='col-sm-10'>
+				<div class='row '>
+					<label class='page-header col-sm-12 '> Block visitors
+					</label>
+					<div class='col-sm-12'>
+						<hr class='mb-3 '>
+					</div>
+				</div>
+				<div class='row ' *ngFor = 'let x of supp_visitor_master_listList'>
+					<label class='col-sm-12 ' id='person_name' name='person_name'> <b>Person name:</b> <h6>{{ x.person_name }}</h6>
+					</label>
+					<label class='col-sm-2 ' id='sysid' name='sysid'> <b>Registration no:</b> {{ x.sysid }}
+					</label>
+					<label class='col-sm-2 ' id='phone1' name='phone1'> <b>Phone1:</b> {{ x.phone1 }}
+					</label>
+					<label class='col-sm-2 ' id='phone2' name='phone2'> <b>Phone2:</b> {{ x.phone2 }}
+					</label>
+					<label class='col-sm-4 ' id='email' name='email'> <b>Email:</b> {{ x.email }}
+					</label>
+					<label class='col-sm-2 ' id='status' name='status'> <b>Status:</b> {{ x.status }}
+					</label>
+					<div class='col-sm-2'>
+						<button class='{{ btn_type }} ' id='blockbtn' name='block_btn' (click)='save_supp_visitor_master_list(f, x)'>
+							{{ btn_text }}
+						</button>
+					</div>
+					<div class='col-sm-2'>
+						<button class='btn btn-primary btn-sm btn-block ' id='incidentbtn' name='incident_btn'>
+							Report incident
+						</button>
+					</div>
+					<div class='col-sm-12'>
+						<hr class='my-3 '>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

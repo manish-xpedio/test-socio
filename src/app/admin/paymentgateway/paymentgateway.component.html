@@ -1,0 +1,58 @@
+<form #f='ngForm'>
+<div class='container-fluid p-5 '>
+	<div class='row '>
+		<label class='page-header col-sm-2 '> Payment gateway</label>
+		<label class='col-sm-8 '> {{ admin_payment_gateway_status }}</label>
+		<div class=' col-sm-2' style='text-align: right'>
+			<div class='btn-group '>
+				<a class='btn btn-primary btn-sm ' name='add_btn' data-toggle='modal' routerLink='/paymentgatewayform'>
+					<i class='fa fa-plus'></i> Add
+				</a>
+				<a class='btn btn-primary btn-sm ' id='back_btn' name='back_btn' data-toggle='modal' routerLink='/settings'>
+					<i class='fa fa-arrow-left'></i> Back
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class='row '>
+		<div class='col-sm-12'>
+			<table class='table table-bordered table-sm '>
+				<thead>
+					<tr>
+						<th>Short code</th>
+						<th>Service provider</th>
+						<th>Is SSL</th>
+						<th>Protocol</th>
+						<th>Is synchronous</th>
+						<th>Response time (Sec)</th>
+						<th>Status</th>
+						<th>System ID</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor='let x of admin_payment_gatewayList'>
+						<td>
+							<a class='' id='short_code' name='short_code' data-toggle='modal' routerLink='/paymentgatewayform' [queryParams]='{ id: x.sysid }'>
+								{{ x.short_code }}
+							</a>
+						</td>
+						<td> {{ x.service_provider }} </td>
+						<td> {{ x.is_ssl }} </td>
+						<td> {{ x.protocol }} </td>
+						<td> {{ x.is_sync }} </td>
+						<td> {{ x.response_time }} </td>
+						<td> {{ x.status }} </td>
+						<td> {{ x.sysid }} </td>
+						<td>
+							<a class='' style='color: red' data-toggle='modal' (click)='delete_admin_payment_gateway(x.sysid)' href='#'>
+								<i class='fa fa-trash'></i> Delete
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+</form>

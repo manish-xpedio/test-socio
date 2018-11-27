@@ -1,0 +1,284 @@
+<form #f='ngForm'>
+	<div class='container-fluid p-5 '>
+		<div class='row '>
+			<div class='' class='col-sm-2'>
+				<div class='row '>
+					<div class='col-sm-12'>
+						<app-watermenu></app-watermenu>
+					</div>
+				</div>
+			</div>
+			<div class='' class='col-sm-10'>
+				<div class='row '>
+					<label class='page-header col-sm-2 '> Water sources
+					</label>
+					<label class='col-sm-6 '> 
+					</label>
+					<div class=' col-sm-4' style='text-align: right'>
+						<div class='btn-group '>
+							<button class='btn btn-primary btn-sm '>
+								Add other sources
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class='row '>
+					<div class='' class='col-sm-3'>
+						<div class='row ' style='text-align: center'>
+							<div class='card m-1 shadow ' style='width: 100%'>
+								<div class='card-header ' style='background-color: #fff'>
+									<p class=''>Corporation pipe connections</p>
+									<div class='row '>
+										<div class='col-sm-12'>
+											<img class='img-fluid ' src='./assets/water-corp.jpg' height='auto'>
+										</div>
+									</div>
+								</div>
+								<div class='card '>
+									<div class='row p-3 '>
+										<div class='col-sm-12'>
+											<div class='form-group'>
+												<label for='no_of_conns'>No of connections</label>
+												<input class='form-control ' id='no_of_conns' name='no_of_conns' type='text' autocomplete='off' [(ngModel)]='admin_water_sources.no_of_conns' #no_of_conns="ngModel">
+											</div>
+										</div>
+										<div class='col-sm-12'>
+											<div class='form-group'>
+												<label for='source_capacity'>Source capacity</label>
+												<input class='form-control ' id='source_capacity' name='source_capacity' type='text' autocomplete='off' [(ngModel)]='admin_water_sources.source_capacity' #source_capacity="ngModel">
+											</div>
+										</div>
+										<div class='col-sm-12'>
+											<div class='form-group'>
+												<label for='water_type'>Water type</label>
+												<select class='form-control ' id='water_type' name='water_type' [(ngModel)]='admin_water_sources.water_type' #water_type="ngModel">
+													<option value=''></option>
+													<option value=''></option>
+												</select>
+											</div>
+										</div>
+										<div class='col-sm-12'>
+											<div class='form-group'>
+												<label for='remarks'>Remarks</label>
+												<textarea class='form-control ' id='remarks' name='remarks' rows='5' autocomplete='off' [(ngModel)]='admin_water_sources.remarks' #remarks="ngModel"></textarea>
+											</div>
+										</div>
+										<div class='col-sm-12'>
+											<div class='form-group'>
+												<label for='status'>Status</label>
+												<select class='form-control ' id='status' name='status' [(ngModel)]='admin_water_sources.status' #status="ngModel">
+													<option value=''></option>
+													<option value=''></option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class='card-footer '>
+									<div class='row '>
+										<div class=' col-sm-12'>
+											<div class='btn-group '>
+												<button class='btn btn-primary btn-sm '>
+													Save changes
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='' class='col-sm-3'>
+						<div class='row ' style='text-align: center'>
+							<div class='card m-1 shadow ' style='width: 100%'>
+								<div class='card-header ' style='background-color: #fff'>
+									<p class=''>Water wells</p>
+									<div class='row '>
+							<div class='col-sm-12'>
+								<img class='img-fluid ' src='./assets/water-well.png' height='auto'>
+							</div>
+									</div>
+								</div>
+								<div class='card '>
+									<div class='row p-3 '>
+										<div class='col-sm-6'>
+											<div class='form-group'>
+												<label for='no_of_conns'>Count</label>
+												<input class='form-control ' id='no_of_conns' name='no_of_conns' type='text' autocomplete='off' [(ngModel)]='admin_water_sources.no_of_conns' #no_of_conns="ngModel">
+											</div>
+										</div>
+										<div class='col-sm-6'>
+											<div class='form-group'>
+												<label for='source_capacity'>Capacity</label>
+												<input class='form-control ' id='source_capacity' name='source_capacity' type='text' autocomplete='off' [(ngModel)]='admin_water_sources.source_capacity' #source_capacity="ngModel">
+											</div>
+										</div>
+										<div class='col-sm-12'>
+											<div class='form-group'>
+												<label for='water_type'>Water type</label>
+												<select class='form-control ' id='water_type' name='water_type' [(ngModel)]='admin_water_sources.water_type' #water_type="ngModel">
+													<option value=''></option>
+													<option value=''></option>
+												</select>
+											</div>
+										</div>
+										<div class='col-sm-12'>
+											<div class='form-group'>
+												<label for='status'>Status</label>
+												<select class='form-control ' id='status' name='status' [(ngModel)]='admin_water_sources.status' #status="ngModel">
+													<option value=''></option>
+													<option value=''></option>
+												</select>
+											</div>
+										</div>
+										<div class='col-sm-12'>
+											<div class='form-group'>
+												<label for='remarks'>Remarks</label>
+												<textarea class='form-control ' id='remarks' name='remarks' rows='5' autocomplete='off' [(ngModel)]='admin_water_sources.remarks' #remarks="ngModel"></textarea>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class='card-footer '>
+									<div class='row '>
+										<div class=' col-sm-12'>
+											<div class='btn-group '>
+												<button class='btn btn-primary btn-sm '>
+													Save changes
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='' class='col-sm-3'>
+						<div class='row ' style='text-align: center'>
+							<div class='card m-1 shadow ' style='width: 100%'>
+								<div class='card-header ' style='background-color: #fff'>
+									<p class=''>Boring ground water</p>
+									<div class='row '>
+							<div class='col-sm-12'>
+								<img class='img-fluid ' src='./assets/handpump.jpg' height='auto'>
+							</div>
+									</div>
+								</div>
+								<div class='card '>
+									<div class='row p-3 '>
+										<div class='col-sm-12'>
+											<div class='form-group'>
+												<label for='no_of_conns'>Count</label>
+												<input class='form-control ' id='no_of_conns' name='no_of_conns' type='text' autocomplete='off' [(ngModel)]='admin_water_sources.no_of_conns' #no_of_conns="ngModel">
+											</div>
+										</div>
+										<div class='col-sm-12'>
+											<div class='form-group'>
+												<label for='water_type'>Usage purpose</label>
+												<select class='form-control ' id='water_type' name='water_type' [(ngModel)]='admin_water_sources.water_type' #water_type="ngModel">
+													<option value=''></option>
+													<option value=''></option>
+												</select>
+											</div>
+										</div>
+										<div class='col-sm-12'>
+											<div class='form-group'>
+												<label for='status'>Status</label>
+												<select class='form-control ' id='status' name='status' [(ngModel)]='admin_water_sources.status' #status="ngModel">
+													<option value=''></option>
+													<option value=''></option>
+												</select>
+											</div>
+										</div>
+										<div class='col-sm-12'>
+											<div class='form-group'>
+												<label for='remarks'>Remarks</label>
+												<textarea class='form-control ' id='remarks' name='remarks' rows='5' autocomplete='off' [(ngModel)]='admin_water_sources.remarks' #remarks="ngModel"></textarea>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class='card-footer '>
+									<div class='row '>
+										<div class=' col-sm-12'>
+											<div class='btn-group '>
+												<button class='btn btn-primary btn-sm '>
+													Save changes
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='' class='col-sm-3'>
+						<div class='row ' style='text-align: center'>
+							<div class='card m-1 shadow ' style='width: 100%'>
+								<div class='card-header ' style='background-color: #fff'>
+									<p class=''>Water tankers</p>
+									<div class='row '>
+							<div class='col-sm-12'>
+								<img class='img-fluid ' src='./assets/water-tanker.png' height='auto'>
+							</div>
+									</div>
+								</div>
+								<div class='card '>
+									<div class='row p-3 '>
+										<div class='col-sm-12'>
+											<div class='form-group'>
+												<label for='no_of_conns'>Approx. tankers required</label>
+												<input class='form-control ' id='no_of_conns' name='no_of_conns' type='text' autocomplete='off' [(ngModel)]='admin_water_sources.no_of_conns' #no_of_conns="ngModel">
+											</div>
+										</div>
+										<div class='col-sm-12'>
+											<div class='form-group'>
+												<label for='source_capacity'>Approx quantity required</label>
+												<input class='form-control ' id='source_capacity' name='source_capacity' type='text' autocomplete='off' [(ngModel)]='admin_water_sources.source_capacity' #source_capacity="ngModel">
+											</div>
+										</div>
+										<div class='col-sm-12'>
+											<div class='form-group'>
+												<label for='water_type'>Usage purpose</label>
+												<select class='form-control ' id='water_type' name='water_type' [(ngModel)]='admin_water_sources.water_type' #water_type="ngModel">
+													<option value=''></option>
+													<option value=''></option>
+												</select>
+											</div>
+										</div>
+										<div class='col-sm-12'>
+											<div class='form-group'>
+												<label for='remarks'>Remarks</label>
+												<textarea class='form-control ' id='remarks' name='remarks' rows='5' autocomplete='off' [(ngModel)]='admin_water_sources.remarks' #remarks="ngModel"></textarea>
+											</div>
+										</div>
+										<div class='col-sm-12'>
+											<div class='form-group'>
+												<label for='status'>Status</label>
+												<select class='form-control ' id='status' name='status' [(ngModel)]='admin_water_sources.status' #status="ngModel">
+													<option value=''></option>
+													<option value=''></option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class='card-footer '>
+									<div class='row '>
+										<div class=' col-sm-12'>
+											<div class='btn-group '>
+												<button class='btn btn-primary btn-sm '>
+													Save changes
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

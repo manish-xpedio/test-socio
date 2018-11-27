@@ -1,0 +1,80 @@
+<form #f='ngForm'>
+	<div class='container-fluid '>
+		<div class='row px-5 '>
+			<div class='' class='col-sm-2'>
+				<div class='row pt-5 sr-side '>
+					<div class='col-sm-12'>
+						<app-myaccmenu></app-myaccmenu>
+					</div>
+				</div>
+			</div>
+			<div class='' class='col-sm-10'>
+				<div class='row p-5 '>
+					<div class='' style='border: 1px solid lightgray' class='col-sm-3'>
+						<div class='row pt-2 '>
+							<label class='col-sm-12 '> Last 5 invoices
+							</label>
+							<div class='col-sm-12'>
+								<hr class='mb-1 '>
+							</div>
+						</div>
+						<div class='row ' *ngFor = 'let x of fin_member_paymentsList'>
+							<div class='col-sm-12'>
+								<a class='' id='sysid' name='sysid' data-toggle='modal' (click)='get_trans_details(x.sysid)' href='#'>
+									INV- 000 {{ x.sysid }}
+								</a>
+							</div>
+						</div>
+						<div class='row mt-5 mb-3 '>
+							<div class='col-sm-12'>
+								<button class='btn btn-primary btn-sm btn-block '>
+									<i class='fa fa-search'></i> Show all invoices
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class='' class='col-sm-9'>
+						<div class='row '>
+							<div class=' col-sm-12' style='text-align: right'>
+								<div class='btn-group mb-3 '>
+								<button class='btn btn-primary btn-sm mr-1 ' id='printbtn' name='print_btn'>
+									Print invoice
+								</button>
+								<button class='btn btn-primary btn-sm mr-1 ' id='downloadbtn' name='download_btn'>
+									Download
+								</button>
+								<button class='btn btn-primary btn-sm ' id='emailbtn' name='email_btn'>
+									Send email
+								</button>
+								</div>
+							</div>
+						</div>
+						<div class='row mx-2 ' style='border: 1px solid gray;'>
+							<label class='page-header col-sm-12 ' style='text-align: center'> Invoice
+							</label>
+						</div>
+						<div class='row mx-2 py-2 ' style='border: 1px solid gray; border-top-color: transparent;'>
+							<div class='' class='col-sm-12'>
+						<div class='row mx-2 '>
+							<div  class='col-sm-4'>
+								<ngx-barcode class='' [bc-height]='50' [bc-value]='2' [bc-display-value]='false'></ngx-barcode>
+							</div>
+							<label class='col-sm-4 '> 
+							</label>
+							<div class='' class='col-sm-4'>
+								<div class='row '>
+									<label class='col-sm-12 '> Invoice no: INV - 002
+									</label>
+									<label class='col-sm-12 '> Invoice date: 2018-11-25
+									</label>
+								</div>
+							</div>
+						</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

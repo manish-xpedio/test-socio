@@ -1,0 +1,67 @@
+<form #f='ngForm'>
+						<div class='container-fluid px-5 py-3 '>
+							<div class='row mt-4 '>
+								<div class='' class='col-sm-2'>
+				<div class='row '>
+					<div class='col-sm-12'>
+						<app-accmenu></app-accmenu>
+					</div>
+				</div>
+								</div>
+								<div class='' class='col-sm-10'>
+									<div class='row '>
+										<label class='page-header col-sm-3 '> Maintainance charges
+										</label>
+										<label class='col-sm-6 '> {{ fin_maintainance_charges_master_status }}
+										</label>
+										<div class=' col-sm-3' style='text-align: right'>
+											<div class='btn-group '>
+												<a class='btn btn-primary btn-sm ' data-toggle='modal' routerLink='/maintcharge'>
+													<i class='fa fa-plus'></i> Add
+												</a>
+											</div>
+										</div>
+										<div class='col-sm-12'>
+											<hr class='mb-3 '>
+										</div>
+									</div>
+									<div class='row '>
+										<div class='col-sm-12'>
+											<table class='table table-bordered table-sm '>
+												<thead>
+													<tr>
+														<th>Financial year</th>
+														<th>Meeting ID</th>
+														<th>Total owner charges</th>
+														<th>Total tenant charges</th>
+														<th>Penalty percent</th>
+														<th>System ID</th>
+														<th></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr *ngFor='let x of fin_maintainance_charges_masterList'>
+														<td>
+															<a class='' id='fin_year' name='fin_year' data-toggle='modal' routerLink='/maintcharge' [queryParams]='{ sysid: x.sysid }'>
+																{{ x.fin_year }}
+															</a>
+														</td>
+														<td> {{ x.meeting_id }} </td>
+														<td> {{ x.total_owner_charges }} </td>
+														<td> {{ x.total_tenant_charges }} </td>
+														<td> {{ x.penalty_percent }} </td>
+														<td> {{ x.sysid }} </td>
+														<td>
+															<a class='' id='delete_btn' style='color: red;' name='delete_btn' data-toggle='modal' (click)='delete_fin_maintainance_charges_master(x.sysid)' href='#'>
+																<i class='fa fa-trash'></i> Delete
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+</form>

@@ -1,0 +1,257 @@
+<form #f='ngForm'>
+	<div class='container-fluid '>
+		<div class='row p-4 '>
+			<div class='col-sm-2'>
+				<img class='img-fluid ' src='./assets/user.png' height='100'>
+			</div>
+		</div>
+		<div class='row px-4 '>
+			<div class='col-sm-1'>
+				<button class='btn btn-danger btn-sm '>
+					<i class='fa fa-upload'></i> Upload
+				</button>
+			</div>
+			<label class='col-sm-10 '> 
+			</label>
+			<div class='col-sm-1'>
+				<button class='btn btn-primary btn-sm mr-auto '>
+					<i class='fa fa-save'></i> Save
+				</button>
+			</div>
+		</div>
+		<div class='row '>
+			<div class='' class='col-sm-4'>
+				<div class='row p-4 '>
+					<label class='page-header col-sm-12 '> Personal details
+					</label>
+					<label class='descr col-sm-12 '> Enter personal details. Make sure your name matches as per agreement
+					</label>
+					<div class='col-sm-12'>
+						<hr class='mb-3 '>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='sysid'>System ID</label>
+							<div class='col-sm-8'>
+								<input class='form-control ' id='sysid' name='sysid' type='text' autocomplete='off' readonly [(ngModel)]='crm_members.sysid' #sysid="ngModel">
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='salulation'>Salulation</label>
+							<div class='col-sm-8'>
+								<select class='form-control ' id='salulation' name='salulation' [(ngModel)]='crm_members.salulation' #salulation="ngModel">
+									<option value=''></option>
+									<option value=''></option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='first_name'>First name</label>
+							<div class='col-sm-8'>
+								<input class='form-control ' id='first_name' name='first_name' type='text' autocomplete='off' [(ngModel)]='crm_members.first_name' #first_name="ngModel">
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='middle_name'>Middle name</label>
+							<div class='col-sm-8'>
+								<input class='form-control ' id='middle_name' name='middle_name' type='text' autocomplete='off' [(ngModel)]='crm_members.middle_name' #middle_name="ngModel">
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='last_name'>Last name</label>
+							<div class='col-sm-8'>
+								<input class='form-control ' id='last_name' name='last_name' type='text' autocomplete='off' [(ngModel)]='crm_members.last_name' #last_name="ngModel">
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='complete_name'>Complete name</label>
+							<div class='col-sm-8'>
+								<input class='form-control ' id='complete_name' name='complete_name' type='text' autocomplete='off' readonly [(ngModel)]='crm_members.complete_name' #complete_name="ngModel">
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='member_type'>Member type</label>
+							<div class='col-sm-8'>
+								<select class='form-control ' id='member_type' name='member_type' [(ngModel)]='crm_members.member_type' #member_type="ngModel">
+									<option value=''></option>
+									<option value=''></option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='is_first_owner'>Is first owner</label>
+							<div class='col-sm-8'>
+								<select class='form-control ' id='is_first_owner' name='is_first_owner' [(ngModel)]='crm_members.is_first_owner' #is_first_owner="ngModel">
+									<option value=''></option>
+									<option value=''></option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='status'>Status</label>
+							<div class='col-sm-8'>
+								<select class='form-control ' id='status' name='status' [(ngModel)]='crm_members.status' #status="ngModel">
+									<option value=''></option>
+									<option value=''></option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='' class='col-sm-4'>
+				<div class='row p-4 '>
+					<label class='page-header col-sm-12 '> Contact details
+					</label>
+					<label class='descr col-sm-12 '> Enter contact details. Add primary no in phone 1 where all communication will happen.
+					</label>
+					<div class='col-sm-12'>
+						<hr class='mb-3 '>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='phone1'>Phone1</label>
+							<div class='col-sm-8'>
+								<input class='form-control ' id='phone1' name='phone1' type='text' autocomplete='off' [(ngModel)]='crm_members.phone1' #phone1="ngModel">
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='phone2'>Phone2</label>
+							<div class='col-sm-8'>
+								<input class='form-control ' id='phone2' name='phone2' type='text' autocomplete='off' [(ngModel)]='crm_members.phone2' #phone2="ngModel">
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='phone3'>Phone3</label>
+							<div class='col-sm-8'>
+								<input class='form-control ' id='phone3' name='phone3' type='text' autocomplete='off' [(ngModel)]='crm_members.phone3' #phone3="ngModel">
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='email'>Email</label>
+							<div class='col-sm-8'>
+								<input class='form-control ' id='email' name='email' type='text' autocomplete='off' [(ngModel)]='crm_members.email' #email="ngModel">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='' class='col-sm-4'>
+				<div class='row p-4 '>
+					<label class='page-header col-sm-12 '> Flat details
+					</label>
+					<label class='descr col-sm-12 '> Enter all asset details as per agreement. Purchase date is agreement date.
+					</label>
+					<div class='col-sm-12'>
+						<hr class='mb-3 '>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='wing_id'>Wing</label>
+							<div class='col-sm-8'>
+								<select class='form-control ' id='wing_id' name='wing_id' [(ngModel)]='crm_members.wing_id' #wing_id="ngModel">
+									<option value=''></option>
+									<option value=''></option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='flat_no'>Flat no</label>
+							<div class='col-sm-8'>
+								<input class='form-control ' id='flat_no' name='flat_no' type='text' autocomplete='off' [(ngModel)]='crm_members.flat_no' #flat_no="ngModel">
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='purchase_date'>Purchase date</label>
+							<div class='col-sm-8'>
+								<div class='input-group'>
+									<input class='form-control ' id='purchase_date' name='purchase_date' type='text' [(ngModel)]='crm_members.purchase_date' #purchase_date="ngModel" ngbDatepicker #purchase_date_='ngbDatepicker'>
+									<div class='input-group-append'>
+										<button class='btn btn-default btn-sm' (click)='purchase_date_.toggle()'><i class='fa fa-calendar-alt'></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='flat_type'>Flat type</label>
+							<div class='col-sm-8'>
+								<select class='form-control ' id='flat_type' name='flat_type' [(ngModel)]='crm_members.flat_type' #flat_type="ngModel">
+									<option value=''></option>
+									<option value=''></option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='total_area'>Total area</label>
+							<div class='col-sm-8'>
+								<input class='form-control ' id='total_area' name='total_area' type='text' autocomplete='off' [(ngModel)]='crm_members.total_area' #total_area="ngModel">
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='parking_no1'>Parking no1</label>
+							<div class='col-sm-8'>
+								<input class='form-control ' id='parking_no1' name='parking_no1' type='text' autocomplete='off' [(ngModel)]='crm_members.parking_no1' #parking_no1="ngModel">
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='parking_no2'>Parking no2</label>
+							<div class='col-sm-8'>
+								<input class='form-control ' id='parking_no2' name='parking_no2' type='text' autocomplete='off' [(ngModel)]='crm_members.parking_no2' #parking_no2="ngModel">
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='parking_no3'>Parking no3</label>
+							<div class='col-sm-8'>
+								<input class='form-control ' id='parking_no3' name='parking_no3' type='text' autocomplete='off' [(ngModel)]='crm_members.parking_no3' #parking_no3="ngModel">
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='share_no'>Share no</label>
+							<div class='col-sm-8'>
+								<input class='form-control ' id='share_no' name='share_no' type='text' autocomplete='off' [(ngModel)]='crm_members.share_no' #share_no="ngModel">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

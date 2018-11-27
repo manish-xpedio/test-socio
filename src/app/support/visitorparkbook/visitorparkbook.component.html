@@ -1,0 +1,310 @@
+<form #f='ngForm'>
+	<div class='container-fluid p-5 '>
+		<div class='row '>
+			<div class='' class='col-sm-2'>
+				<div class='row '>
+					<div class='col-sm-12'>
+						<app-visitormenu></app-visitormenu>
+					</div>
+				</div>
+			</div>
+			<div class='' class='col-sm-10'>
+				<div class='row '>
+					<div class='' class='col-sm-6'>
+						<div class='row mb-3 '>
+							<label class='page-header col-sm-12 '> Visitor parking bookings
+							</label>
+							<label class='col-sm-12 ' style='color: darkblue'> Last 5 bookings will be shown here. 
+							</label>
+							<div class='col-sm-12'>
+								<hr class='mb-3 '>
+							</div>
+							<div class='col-sm-12'>
+								<button class='btn btn-primary btn-sm ' data-target='#d1' data-toggle='modal'>
+									Raise new request
+								</button>
+							</div>
+						</div>
+						<div class='row ' *ngFor = 'let x of supp_parking_bookingsList'>
+							<label class='col-sm-12 ' id='sysid' name='sysid'> <b>Booking ID:</b> {{ x.sysid }}
+							</label>
+							<label class='col-sm-6 ' id='parking_id' name='parking_id'> <b>Parking ID:</b> {{ x.parking_id }}
+							</label>
+							<label class='col-sm-6 ' id='from_date' name='from_date'> <b>From date:</b> {{ x.from_date }}
+							</label>
+							<label class='col-sm-6 ' id='to_date' name='to_date'> <b>To date:</b> {{ x.to_date }}
+							</label>
+							<label class='col-sm-6 ' id='status' name='status'> <b>Status:</b> {{ x.status }}
+							</label>
+							<div class='col-sm-12'>
+								<hr class='my-3 '>
+							</div>
+							<div class='col-sm-3'>
+								<a class='' id='cancel_link' style='color: #c70039' name='cancel_book' data-toggle='modal' (click)='update_status_booking(x, "Cancel", f)' href='#'>
+									Cancel booking
+								</a>
+							</div>
+							<div class='col-sm-3'>
+								<a class='' id='suspendlink' style='color: #c70039' name='suspend_book' data-toggle='modal' (click)='update_status_booking(x, "Suspend", f)' href='#'>
+									Suspend booking
+								</a>
+							</div>
+							<div class='col-sm-3'>
+								<a class='' id='waitlist_link' style='color: #c70039' name='waitlist' data-toggle='modal' (click)='update_status_booking(x, "Waitlist", f)' href='#'>
+									Add to waitlist
+								</a>
+							</div>
+							<div class='col-sm-3'>
+								<a class='' id='edit_link' style='color: #c70039' name='edit_booking' data-toggle='modal' href='#'>
+									Edit booking
+								</a>
+							</div>
+							<div class='col-sm-12'>
+								<hr class='my-3 '>
+							</div>
+						</div>
+					</div>
+					<div class='' class='col-sm-6'>
+						<div class='row '>
+							<label class='page-header col-sm-12 '> Rate card
+							</label>
+							<label class='col-sm-12 ' style='color: darkblue'>  Below rates are applicable w.e.f. 01-Apr-2018 as per notification issued #[notification_no]. For details see
+											<a class='' style='color: #c70039' data-toggle='modal' href='#'>
+												Notifications & circlulars
+											</a>
+							</label>
+							<div class='col-sm-12'>
+								<hr class='mb-3 '>
+							</div>
+							<div class='col-sm-4'>
+								<button class='btn btn-primary btn-sm mb-2 btn-block ' id='two_wheel_btn' name='two_wheel'>
+									For 2 wheelers
+								</button>
+							</div>
+							<div class='col-sm-4'>
+								<button class='btn btn-primary btn-sm mb-2 btn-block ' id='four_wheel_btn' name='four_wheel'>
+									For 4 wheelers
+								</button>
+							</div>
+						</div>
+						<div class='row mt-2 '>
+							<label class='page-header col-sm-12 '> Check availability
+							</label>
+							<label class='col-sm-12 ' style='color: darkblue'> Check availability of parking for the defined period
+							</label>
+							<div class='col-sm-12'>
+								<hr class='mb-3 '>
+							</div>
+						</div>
+						<div class='row '>
+							<div class='col-sm-6'>
+								<div class='form-group'>
+									<label for=''>Select your preferred parking slot</label>
+									<select class='form-control '>
+										<option value=''></option>
+										<option value=''></option>
+									</select>
+								</div>
+							</div>
+							<div class='col-sm-2'>
+								<button class='btn btn-primary btn-sm ' style='margin-top: 30px;'>
+									Show status
+								</button>
+							</div>
+							<label class='col-sm-12 '> 
+							</label>
+							<div class='col-sm-12'>
+								<hr class='mb-3 '>
+							</div>
+						</div>
+						<div class='row '>
+							<label class='page-header col-sm-12 '> Parking status
+							</label>
+							<label class='col-sm-4 '> 
+							</label>
+							<label class='col-sm-4 ' style='font-size: 14pt;'> 2 wheeler
+							</label>
+							<label class='col-sm-4 ' style='font-size: 14pt;'> 4 wheeler
+							</label>
+							<div class='col-sm-12'>
+								<hr class=''>
+							</div>
+						</div>
+						<div class='row py-2 '>
+							<label class='col-sm-4 '> Total no. of parking
+							</label>
+							<label class='col-sm-4 '> 68
+							</label>
+							<label class='col-sm-4 '> 16
+							</label>
+							<div class='col-sm-12'>
+								<hr class=''>
+							</div>
+						</div>
+						<div class='row py-2 '>
+							<label class='col-sm-4 '> Current booked slots
+							</label>
+							<label class='col-sm-4 '> 22
+							</label>
+							<label class='col-sm-4 '> 6
+							</label>
+							<div class='col-sm-12'>
+								<hr class=''>
+							</div>
+						</div>
+						<div class='row py-2 '>
+							<label class='col-sm-4 '> Current available slots
+							</label>
+							<label class='col-sm-4 '> 46
+							</label>
+							<label class='col-sm-4 '> 10
+							</label>
+							<div class='col-sm-12'>
+								<hr class=''>
+							</div>
+						</div>
+						<div class='row py-2 '>
+							<label class='col-sm-4 '> Booking for next 7 days
+							</label>
+							<label class='col-sm-4 '> 27
+							</label>
+							<label class='col-sm-4 '> 13
+							</label>
+							<div class='col-sm-12'>
+								<hr class=''>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div tabindex='-1' role='dialog' class='modal fade ' id='d1'>
+		<div class='modal-dialog modal-lg' role='document'>
+			<div class='modal-content'>
+				<div class='modal-header '>
+					<div class='modal-title'><h5>Book parking</h5></div>
+					<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+						<span aria-hidden='true'>&times;</span>
+					</button>
+				</div>
+				<div class='modal-body '>
+			<div class='row '>
+				<div class='' class='col-sm-6'>
+					<div class='row '>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='sysid'>Booking ID</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='sysid' name='sysid' type='text' autocomplete='off' readonly [(ngModel)]='supp_parking_bookings.sysid' #sysid="ngModel">
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='member_id'>Member name</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='member_id' name='member_id' type='text' autocomplete='off' readonly [(ngModel)]='supp_parking_bookings.member_id' #member_id="ngModel">
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='parking_charges'>Parking charges</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='parking_charges' name='parking_charges' type='text' autocomplete='off' readonly [(ngModel)]='supp_parking_bookings.parking_charges' #parking_charges="ngModel">
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='payment_status'>Payment status</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='payment_status' name='payment_status' type='text' autocomplete='off' readonly [(ngModel)]='supp_parking_bookings.payment_status' #payment_status="ngModel">
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='status'>Status</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='status' name='status' type='text' autocomplete='off' readonly [(ngModel)]='supp_parking_bookings.status' #status="ngModel">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='' class='col-sm-6'>
+					<div class='row '>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='req_id'>Request ID</label>
+								<div class='col-sm-8'>
+									<select class='form-control ' id='req_id' name='req_id' [(ngModel)]='supp_parking_bookings.req_id' #req_id="ngModel">
+										<option value=''></option>
+										<option *ngFor='let x of supp_visitor_invitationList' value='{{ x.sysid }}'>{{ x.event_name }}</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='parking_id'>Parking ID</label>
+								<div class='col-sm-8'>
+									<select class='form-control ' id='parking_id' name='parking_id' [(ngModel)]='supp_parking_bookings.parking_id' #parking_id="ngModel">
+										<option value=''></option>
+										<option *ngFor='let x of admin_parkingsList' value='{{ x.sysid }}'>{{ x.parking_id }}</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='from_date'>From date</label>
+								<div class='col-sm-8'>
+									<div class='input-group'>
+										<input class='form-control ' id='from_date' name='from_date' type='text' [(ngModel)]='supp_parking_bookings.from_date' #from_date="ngModel" ngbDatepicker #from_date_='ngbDatepicker'>
+										<div class='input-group-append'>
+											<button class='btn btn-default btn-sm' (click)='from_date_.toggle()'><i class='fa fa-calendar-alt'></i></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='to_date'>To date</label>
+								<div class='col-sm-8'>
+									<div class='input-group'>
+										<input class='form-control ' id='to_date' name='to_date' type='text' [(ngModel)]='supp_parking_bookings.to_date' #to_date="ngModel" ngbDatepicker #to_date_='ngbDatepicker'>
+										<div class='input-group-append'>
+											<button class='btn btn-default btn-sm' (click)='to_date_.toggle()'><i class='fa fa-calendar-alt'></i></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+				</div>
+				<div class='modal-footer '>
+			<div class='row '>
+				<label class='col-sm-12 '> {{ supp_parking_bookings_status }}
+				</label>
+				<div class=' col-sm-12'>
+					<div class='btn-group '>
+						<button class='btn btn-primary btn-sm ' id='savebtn' name='save_btn' (click)='save_supp_parking_bookings(f)'>
+							<i class='fa fa-save'></i> Save
+						</button>
+						<button class='btn btn-primary btn-sm ' id='cancelbtn' name='cancel_btn' data-dismiss='modal'>
+							<i class='fa fa-times'></i> Cancel
+						</button>
+					</div>
+				</div>
+			</div>
+				</div>
+	</div>
+		</div>
+			</div>
+</form>

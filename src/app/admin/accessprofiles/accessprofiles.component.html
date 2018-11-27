@@ -1,0 +1,104 @@
+<form #f='ngForm'>
+<div class='container-fluid p-5 '>
+	<div class='row px-5 '>
+		<label class='page-header col-sm-2 '> Access profile</label>
+		<label class='col-sm-8 '> {{ admin_access_profile_status }}</label>
+		<div class=' col-sm-2' style='text-align: right'>
+			<div class='btn-group '>
+				<button class='btn btn-primary btn-sm ' name='add_btn' data-target='#dlg' data-toggle='modal' (click)='clear_admin_access_profile()'>
+					<i class='fa fa-plus'></i> Add
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class='row px-5 '>
+		<div class='col-sm-12'>
+			<table class='table table-bordered table-sm '>
+				<thead>
+					<tr>
+						<th>Profile name</th>
+						<th>Status</th>
+						<th>Sysid</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor='let x of admin_access_profileList'>
+						<td>
+							<a class='' id='profile_name' name='profile_name' data-target='#dlg' data-toggle='modal' (click)='current_record_admin_access_profile(x)' href='#'>
+								{{ x.profile_name }}
+							</a>
+						</td>
+						<td> {{ x.status }} </td>
+						<td> {{ x.sysid }} </td>
+						<td>
+							<a class='' style='color: red' name='delete_btn' data-toggle='modal' (click)='delete_admin_access_profile(x.sysid)' href='#'>
+								<i class='fa fa-trash'></i> Delete
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div tabindex='-1' role='dialog' class='modal fade ' id='dlg'>
+		<div class='modal-dialog' role='document'>
+			<div class='modal-content'>
+				<div class='modal-header '>
+					<div class='modal-title'><h5>Access profile</h5></div>
+					<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+						<span aria-hidden='true'>&times;</span>
+					</button>
+				</div>
+				<div class='modal-body '>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='sysid'>Sysid</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='sysid' name='sysid' type='text' autocomplete='off' readonly [(ngModel)]='admin_access_profile.sysid' #sysid="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='profile_name'>Profile name</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='profile_name' name='profile_name' type='text' autocomplete='off' [(ngModel)]='admin_access_profile.profile_name' #profile_name="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='status'>Status</label>
+						<div class='col-sm-8'>
+							<select class='form-control ' id='status' name='status' [(ngModel)]='admin_access_profile.status' #status="ngModel">
+								<option value=''></option>
+								<option value='Active'>Active</option>
+								<option value='Inactive'>Inactive</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+				</div>
+				<div class='modal-footer '>
+				<label class='pluu-left col-sm-8 '> {{ admin_access_profile_status }}</label>
+			<div class='row '>
+				<div class=' col-sm-4'>
+					<div class='btn-group pull-right '>
+						<button class='btn btn-primary btn-sm ' name='save_btn' (click)='save_admin_access_profile(f)'>
+							<i class='fa fa-save'></i> Save
+						</button>
+						<button class='btn btn-primary btn-sm ' name='close_btn' data-dismiss='modal'>
+							<i class='fa fa-close'></i> Close
+						</button>
+					</div>
+				</div>
+			</div>
+				</div>
+	</div>
+		</div>
+			</div>
+</div>
+</form>

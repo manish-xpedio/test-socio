@@ -1,0 +1,188 @@
+<form #f='ngForm'>
+<div class='container-fluid p-5 '>
+	<div class='row px-5 '>
+		<label class='page-header col-sm-12 '> Access control</label>
+		<div class='col-sm-12'>
+			<hr class=''>
+		</div>
+	</div>
+	<div class='row px-5 ' style='margin-top: 20px'>
+		<div class='' class='col-sm-4'>
+			<div class='row '>
+		<div class='col-sm-12'>
+			<div class='form-group'>
+				<label for='profile_id'>Select profile</label>
+				<select class='form-control ' id='profile_id' name='profile_id' (change)='getProfileDetails($event.target.value)' [(ngModel)]='access.profile_id' #profile_id="ngModel">
+					<option value=''></option>
+					<option *ngFor='let x of admin_access_profileList' value='{{ x.sysid }}'>{{ x.profile_name }}</option>
+				</select>
+			</div>
+		</div>
+			</div>
+		</div>
+		<div class='' class='col-sm-8'>
+		</div>
+	</div>
+	<div class='row px-5 '>
+		<div class='' class='col-sm-6'>
+			<div class='row '>
+				<label class='page-header col-sm-6 '> Main menu</label>
+				<div class=' col-sm-6' style='text-align: right'>
+					<div class='btn-group '>
+					<button class='btn btn-danger btn-sm ' [hidden]='hideMainButton' data-target='#menuDlg' data-toggle='modal' (click)='addMainMenu()'>
+						<i class='fa fa-plus'></i> Add new
+					</button>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<hr class=''>
+				</div>
+				<div class='col-sm-12'>
+					<ul class='list-unstyled mt-3 '>
+						<li class='' *ngFor='let x of let x of profile_main_menuList'>
+						<div class='row '>
+							<div class='' class='col-sm-6'>
+								<div class='row '>
+									<div class='col-sm-12'>
+										<a class='' data-toggle='modal' (click)='selectMainMenu(x)' href='#'>
+											{{ x.menu_name }}
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class='' class='col-sm-3'>
+								<div class='row '>
+									<label class='col-sm-12 '> {{ x.access_type }}</label>
+								</div>
+							</div>
+							<div class='' class='col-sm-3'>
+								<div class='row '>
+									<div class='col-sm-12'>
+										<a class='' style='color: red' data-toggle='modal' (click)='delete_admin_access_control(x.sysid)' href='#'>
+											<i class='fa fa-trash'></i> Delete
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class='' class='col-sm-6'>
+			<div class='row '>
+				<label class='page-header col-sm-6 '> Sub-menu</label>
+				<div class=' col-sm-6' style='text-align: right'>
+					<div class='btn-group '>
+					<button class='btn btn-danger btn-sm ' [hidden]='hideSubButton' data-target='#menuDlg' data-toggle='modal' (click)='addSubMenu()'>
+						<i class='fa fa-plus'></i> Add new
+					</button>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<hr class=''>
+				</div>
+			</div>
+			<div class='row mt-3 '>
+				<label class='col-sm-12 '> [ Main menu ID: {{ main_menu_id }}  - Main menu name: {{ main_menu_name }} ]</label>
+				<div class='col-sm-12'>
+					<ul class='list-unstyled '>
+						<li class='' *ngFor='let x of let x of profile_sub_menuList'>
+						<div class='row '>
+							<div class='' class='col-sm-6'>
+								<div class='row '>
+									<label class='col-sm-12 ' id='menu_id' name='menu_id'> {{ x.menu_name }}</label>
+								</div>
+							</div>
+							<div class='' class='col-sm-3'>
+								<div class='row '>
+									<label class='col-sm-12 '> {{ x.access_type }}</label>
+								</div>
+							</div>
+							<div class='' class='col-sm-3'>
+								<div class='row '>
+									<div class='col-sm-12'>
+										<a class='' style='color: red' data-toggle='modal' (click)='delete_admin_access_control(x.sysid)' href='#'>
+											<i class='fa fa-trash'></i> Delete
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div tabindex='-1' role='dialog' class='modal fade ' id='menuDlg'>
+		<div class='modal-dialog' role='document'>
+			<div class='modal-content'>
+				<div class='modal-header '>
+					<div class='modal-title'><h5>Configure menu</h5></div>
+					<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+						<span aria-hidden='true'>&times;</span>
+					</button>
+				</div>
+				<div class='modal-body '>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='sysid'>System ID</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='sysid' name='sysid' type='text' autocomplete='off' readonly [(ngModel)]='admin_access_control.sysid' #sysid="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='profile_id'>Profile name</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='profile_id' name='profile_id' type='text' autocomplete='off' readonly [(ngModel)]='admin_access_control.profile_id' #profile_id="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='menu_id'>Menu name</label>
+						<div class='col-sm-8'>
+							<select class='form-control ' id='menu_id' name='menu_id' [(ngModel)]='admin_access_control.menu_id' #menu_id="ngModel">
+								<option value=''></option>
+								<option *ngFor='let x of sys_menusList' value='{{ x.sysid }}'>{{ x.menu_name }}</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='access_type'>Access type</label>
+						<div class='col-sm-8'>
+							<select class='form-control ' id='access_type' name='access_type' [(ngModel)]='admin_access_control.access_type' #access_type="ngModel">
+								<option value=''></option>
+								<option value='Read-write'>Read-write</option>
+								<option value='None'>None</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+				</div>
+				<div class='modal-footer '>
+			<label class='pull-left col-sm-8 '> {{ access_control_status }}</label>
+			<div class=' col-sm-4' style='text-align: right'>
+				<div class='btn-group pull-right '>
+					<button class='btn btn-primary btn-sm ' id='save_btn' name='save_btn' (click)='save_admin_access_control()'>
+						<i class='fa fa-save'></i> Save
+					</button>
+					<button class='btn btn-primary btn-sm ' id='close_btn' name='close_btn' data-dismiss='modal'>
+						<i class='fa fa-close'></i> Close
+					</button>
+				</div>
+			</div>
+				</div>
+	</div>
+		</div>
+			</div>
+</div>
+</form>

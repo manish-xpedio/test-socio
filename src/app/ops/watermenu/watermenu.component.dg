@@ -1,0 +1,136 @@
+{
+    "child": [
+        {
+            "child": [
+                {
+                    "child": [
+                        {
+                            "child": [
+                            ],
+                            "name": "Link",
+                            "props": {
+                                "Class": "btn btn-primary btn-sm btn-block",
+                                "ClickEvent": "",
+                                "Columns": "12",
+                                "DB-table": "",
+                                "Data-dismiss": "",
+                                "Data-target": "",
+                                "Data-toggle": "modal",
+                                "DisplayLabel": "",
+                                "Fa-icon": "",
+                                "Group-class": "",
+                                "Group-style": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Icon": "",
+                                "Model": "",
+                                "Name": "",
+                                "Property-binding": "",
+                                "RouterLink": "{{ x.menu_route }}",
+                                "RouterParam": "",
+                                "Style": "margin-bottom: 10px;",
+                                "TableColumnWidth": "",
+                                "Value": "{{ x.menu_name }}"
+                            },
+                            "tabpos": "1",
+                            "type": "Link"
+                        }
+                    ],
+                    "name": "Row",
+                    "props": {
+                        "Class": "row",
+                        "DB-table": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Repeat": "side_menu_list",
+                        "Style": ""
+                    },
+                    "tabpos": "1",
+                    "type": "Row"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                            ],
+                            "name": "Label",
+                            "props": {
+                                "Class": "",
+                                "Columns": "12",
+                                "DisplayLabel": "",
+                                "For": "",
+                                "FormType": "Standard",
+                                "GroupWidth": "",
+                                "HelpText": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Label class": "",
+                                "Label-type": "span",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Required": "",
+                                "Style": "",
+                                "TableColumnWidth": "",
+                                "Value": "Manage all water tasks and automate all the related activities. This module will have integration with various devices "
+                            },
+                            "tabpos": "3",
+                            "type": "Label"
+                        }
+                    ],
+                    "name": "Row",
+                    "props": {
+                        "Class": "row p-3",
+                        "DB-table": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Repeat": "",
+                        "Style": "background-color: gray; color: #fff"
+                    },
+                    "tabpos": "2",
+                    "type": "Row"
+                }
+            ],
+            "name": "Column",
+            "props": {
+                "Class": "",
+                "Columns": "12",
+                "DB-table": "",
+                "Hidden": "",
+                "ID": "",
+                "Name": "",
+                "Parent-class": "",
+                "Parent-style": "",
+                "Property-binding": "",
+                "Repeat": "",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Column"
+        }
+    ],
+    "name": "Row",
+    "props": {
+        "Class": "row sr-side px-4",
+        "DB-table": "",
+        "Hidden": "",
+        "ID": "",
+        "Name": "",
+        "Parent-class": "",
+        "Parent-style": "",
+        "Property-binding": "",
+        "Repeat": "",
+        "Style": ""
+    },
+    "tabpos": "0",
+    "type": "Row"
+}

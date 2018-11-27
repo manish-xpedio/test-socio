@@ -1,0 +1,237 @@
+<form #f='ngForm'>
+<div class='container-fluid p-5 '>
+	<div class='row px-5 '>
+		<label class='page-header col-sm-3 '> Type of services</label>
+		<label class='col-sm-7 '> {{ sales_serv_type_status }}</label>
+		<div class=' col-sm-2' style='text-align: right'>
+			<div class='btn-group '>
+				<a class='btn btn-primary btn-sm ' data-toggle='modal' routerLink='/settings'>
+					<i class='fa fa-arrow-left'></i> Back to settings
+				</a>
+			</div>
+		</div>
+		<div class='col-sm-12'>
+			<hr class=''>
+		</div>
+	</div>
+	<div class='row mt-3 px-5 '>
+		<div class='' class='col-sm-6'>
+			<div class='row '>
+				<label class='sub-header col-sm-10 '> Type details</label>
+				<div class='col-sm-2'>
+					<button class='btn btn-primary btn-sm ' name='add_serv_btn' data-target='#dlg1' data-toggle='modal' (click)='clear_sales_serv_type()'>
+						<i class='fa fa-plus'></i> Add
+					</button>
+				</div>
+				<div class='col-sm-12'>
+					<table class='table table-bordered table-sm '>
+						<thead>
+							<tr>
+								<th>Type name</th>
+								<th>System ID</th>
+								<th>Status</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr *ngFor='let x of sales_serv_typeList'>
+								<td>
+									<a class='' id='serv_type_name' name='serv_type_name' data-toggle='modal' (click)='current_record_sales_serv_type(x)' href='#'>
+										{{ x.serv_type_name }}
+									</a>
+								</td>
+								<td> {{ x.sysid }} </td>
+								<td> {{ x.status }} </td>
+								<td>
+									<a class='' style='color: red' data-toggle='modal' (click)='delete_sales_serv_type(x.sysid)' href='#'>
+										<i class='fa fa-trash'></i> 
+									</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class='' class='col-sm-6'>
+			<div class='row '>
+				<label class='sub-header col-sm-3 '> Service attributes</label>
+				<label class='col-sm-7 ' style='color: red'> [Selected service: {{ selected_service_id }} => {{ selected_service_name }} ]</label>
+				<div class='col-sm-2'>
+					<button class='btn btn-primary btn-sm ' name='add_serv_det_btn' data-target='#dlg2' data-toggle='modal' (click)='clear_sales_serv_type_details()'>
+						<i class='fa fa-plus'></i> Add
+					</button>
+				</div>
+				<div class='col-sm-12'>
+					<table class='table table-bordered table-sm '>
+						<thead>
+							<tr>
+								<th>Service name</th>
+								<th>Service value</th>
+								<th>Status</th>
+								<th>System ID</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr *ngFor='let x of sales_serv_type_detailsList'>
+								<td>
+									<a class='' id='serv_id' name='serv_id' data-toggle='modal' href='#'>
+										{{ x.serv_id }}
+									</a>
+								</td>
+								<td> {{ x.serv_value }} </td>
+								<td> {{ x.status }} </td>
+								<td> {{ x.sysid }} </td>
+								<td>
+									<a class='' style='color: red' data-toggle='modal' (click)='delete_sales_serv_type_details(x.sysid)' href='#'>
+										<i class='fa fa-trash'></i> 
+									</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div tabindex='-1' role='dialog' class='modal fade ' id='dlg1'>
+		<div class='modal-dialog' role='document'>
+			<div class='modal-content'>
+				<div class='modal-header '>
+					<div class='modal-title'><h5>Service Defination</h5></div>
+					<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+						<span aria-hidden='true'>&times;</span>
+					</button>
+				</div>
+				<div class='modal-body '>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='sysid'>System ID</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='sysid' name='sysid' type='text' autocomplete='off' readonly [(ngModel)]='sales_serv_type.sysid' #sysid="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='serv_type_name'>Type name</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='serv_type_name' name='serv_type_name' type='text' autocomplete='off' [(ngModel)]='sales_serv_type.serv_type_name' #serv_type_name="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='descr'>Description</label>
+						<div class='col-sm-8'>
+							<textarea class='form-control ' id='descr' name='descr' rows='5' autocomplete='off' [(ngModel)]='sales_serv_type.descr' #descr="ngModel"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='status'>Status</label>
+						<div class='col-sm-8'>
+							<select class='form-control ' id='status' name='status' [(ngModel)]='sales_serv_type.status' #status="ngModel">
+								<option value=''></option>
+								<option value='Active'>Active</option>
+								<option value='Inactive'>Inactive</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+				</div>
+				<div class='modal-footer '>
+			<label class='pull-left col-sm-8 '> {{ sales_serv_type_status }}</label>
+			<div class=' col-sm-4'>
+				<div class='btn-group pull-right '>
+					<button class='btn btn-primary btn-sm ' name='save_btn' (click)='save_sales_serv_type(f)'>
+						<i class='fa fa-save'></i> Save
+					</button>
+					<button class='btn btn-primary btn-sm ' name='close_btn' data-dismiss='modal'>
+						<i class='fa fa-remove'></i> Close
+					</button>
+				</div>
+			</div>
+				</div>
+	</div>
+		</div>
+			</div>
+	<div tabindex='-1' role='dialog' class='modal fade ' id='dlg2'>
+		<div class='modal-dialog' role='document'>
+			<div class='modal-content'>
+				<div class='modal-header '>
+					<div class='modal-title'><h5>Service details</h5></div>
+					<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+						<span aria-hidden='true'>&times;</span>
+					</button>
+				</div>
+				<div class='modal-body '>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='sysid_1'>System ID</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='sysid_1' name='sysid_1' type='text' autocomplete='off' readonly [(ngModel)]='sales_serv_type_details.sysid' #sysid_1="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='serv_id'>Service ID</label>
+						<div class='col-sm-4'>
+							<input class='form-control ' id='serv_id' name='serv_id' type='text' autocomplete='off' readonly [(ngModel)]='sales_serv_type_details.serv_id' #serv_id="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-1 col-form-label' for='selected_service_name'></label>
+						<div class='col-sm-3'>
+							<input class='form-control ' id='selected_service_name' name='selected_service_name' type='text' autocomplete='off' readonly>
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='serv_value_1'>Service value</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='serv_value_1' name='serv_value_1' type='text' autocomplete='off' [(ngModel)]='sales_serv_type_details.serv_value' #serv_value_1="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='status_1'>Status</label>
+						<div class='col-sm-8'>
+							<select class='form-control ' id='status_1' name='status_1' [(ngModel)]='sales_serv_type_details.status' #status_1="ngModel">
+								<option value=''></option>
+								<option value='Active'>Active</option>
+								<option value='Inactive'>Inactive</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+				</div>
+				<div class='modal-footer '>
+			<label class='pull-left col-sm-8 '> {{ sales_serv_type_details_status }}</label>
+			<div class=' col-sm-4'>
+				<div class='btn-group pull-right '>
+					<button class='btn btn-primary btn-sm ' name='det_save_btn' (click)='save_sales_serv_type_details(f)'>
+						<i class='fa fa-save'></i> Save
+					</button>
+					<button class='btn btn-primary btn-sm ' name='det_close_btn' data-dismiss='modal'>
+						<i class='fa fa-remove'></i> Close
+					</button>
+				</div>
+			</div>
+				</div>
+	</div>
+		</div>
+			</div>
+</div>
+</form>

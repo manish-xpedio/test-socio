@@ -1,0 +1,272 @@
+<form #f='ngForm'>
+	<div class='container-fluid p-5 '>
+		<div class='row '>
+			<div class='' class='col-sm-2'>
+				<div class='row '>
+					<div class='col-sm-12'>
+						<app-myaccmenu></app-myaccmenu>
+					</div>
+				</div>
+			</div>
+			<div class='' class='col-sm-10'>
+				<div class='row '>
+					<div class='col-sm-12'>
+						<ul class='nav nav-tabs ' id='tb' name='tb' role='tablist'>
+							<li class='nav-item'>
+								<a class='nav-link active' id='upi-tab' data-toggle='tab' href='#upi' role='tab' aria-controls='upi' aria-selected='false'>UPI</a>
+							</li>
+							<li class='nav-item'>
+								<a class='nav-link' id='crdr-tab' data-toggle='tab' href='#crdr' role='tab' aria-controls='crdr' aria-selected='false'>Credit / Debit card</a>
+							</li>
+							<li class='nav-item'>
+								<a class='nav-link' id='netbank-tab' data-toggle='tab' href='#netbank' role='tab' aria-controls='netbank' aria-selected='false'>Net banking</a>
+							</li>
+							<li class='nav-item'>
+								<a class='nav-link' id='wallet-tab' data-toggle='tab' href='#wallet' role='tab' aria-controls='wallet' aria-selected='false'>Mobile wallet</a>
+							</li>
+							<li class='nav-item'>
+								<a class='nav-link' id='chq-tab' data-toggle='tab' href='#chq' role='tab' aria-controls='chq' aria-selected='false'>Cheque payment</a>
+							</li>
+						</ul>
+						<div class='tab-content'>
+							<div class='tab-pane fade show active active ' id='upi' name='upi' data-target='p1'>
+							<div class='row '>
+								<div class='' class='col-sm-2'>
+									<div class='row '>
+									</div>
+								</div>
+								<div class='' class='col-sm-8'>
+							<div class='row my-3 '>
+								<div class=' col-sm-12' style='text-align: center'>
+									<div class='btn-group '>
+										<button class='btn btn-primary btn-sm '>
+											Proceed with payment
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class='row '>
+								<div class='col-sm-12'>
+									<img class='img-fluid float-center ' style='height: 500px;' src='./assets/upi.PNG' height='50%' min-height='400'>
+								</div>
+							</div>
+								</div>
+							</div>
+							</div>
+							<div class='tab-pane fade ' id='crdr' name='crdr' data-target='p2'>
+							<div class='row '>
+								<div class='' class='col-sm-3'>
+									<div class='row '>
+									</div>
+								</div>
+								<div class='' class='col-sm-6'>
+									<div class='row mt-3 '>
+										<div class='col-sm-12'>
+											<img class='img-fluid ' src='./assets/pay_cards.PNG' height='auto'>
+										</div>
+										<div class='col-sm-12'>
+											<div class='form-group'>
+												<label for='cardno'>Card No</label>
+												<input class='form-control ' id='cardno' name='cardno' placeholder='16 digit card no' type='text' autocomplete='off'>
+											</div>
+										</div>
+										<div class='col-sm-12'>
+											<div class='form-group'>
+												<label for='card_name'>Name on the card</label>
+												<input class='form-control ' id='card_name' name='card_name' placeholder='Name as per card' type='text' autocomplete='off'>
+											</div>
+										</div>
+										<div class='col-sm-3'>
+											<div class='form-group'>
+												<label for='expmonth'>Expiry month</label>
+												<input class='form-control ' id='expmonth' name='expmonth' placeholder='MM' type='text' autocomplete='off'>
+											</div>
+										</div>
+										<div class='col-sm-3'>
+											<div class='form-group'>
+												<label for='expyear'>Expiry year</label>
+												<input class='form-control ' id='expyear' name='expyear' placeholder='YYYY' type='text' autocomplete='off'>
+											</div>
+										</div>
+										<div class='col-sm-3'>
+											<div class='form-group'>
+												<label for='cvv'>CVV</label>
+												<input class='form-control ' id='cvv' name='cvv' type='text' autocomplete='off'>
+											</div>
+										</div>
+										<div class='col-sm-3'>
+											<img class='img-fluid ' style='margin-top: 30px;' src='./assets/cvv.PNG' height='150%'>
+										</div>
+									</div>
+									<div class='row '>
+										<div class=' col-sm-12' style='text-align: center'>
+											<div class='btn-group '>
+												<button class='btn btn-primary btn-sm '>
+													Make payment
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class='' class='col-sm-3'>
+									<div class='row '>
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class='tab-pane fade ' id='netbank' name='netbank' data-target='p3'>
+							<div class='row mt-3 '>
+								<div class='' class='col-sm-3'>
+									<div class='row '>
+									</div>
+								</div>
+								<div class='' class='col-sm-6'>
+									<div class='row '>
+										<div class='col-sm-12'>
+											<img class='img-fluid mb-3 ' src='./assets/netbank.PNG' height='auto '>
+										</div>
+										<div class='col-sm-12'>
+											<div class='form-group'>
+												<label for=''>Select bank from list</label>
+												<select class='form-control '>
+													<option value=''></option>
+													<option value='ICICI Bank'>ICICI Bank</option>
+													<option value='IDBI Bank'>IDBI Bank</option>
+													<option value='Axis Bank'>Axis Bank</option>
+													<option value='SBI'>SBI</option>
+													<option value='HDFC Bank'>HDFC Bank</option>
+													<option value='Citi Bank'>Citi Bank</option>
+												</select>
+											</div>
+										</div>
+										<label class='col-sm-12 ' style='color: darkblue'> You will be redirected to bank portal
+										</label>
+										<div class=' col-sm-12' style='text-align: center'>
+											<div class='btn-group '>
+												<button class='btn btn-primary btn-sm '>
+													Make payment
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class='' class='col-sm-3'>
+									<div class='row '>
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class='tab-pane fade ' id='wallet' name='wallet' data-target='p4'>
+							<div class='row py-5 '>
+								<div class='' class='col-sm-3'>
+									<div class='row '>
+									</div>
+								</div>
+								<div class='' class='col-sm-6'>
+									<div class='row '>
+										<div class='col-sm-6'>
+											<button class='btn btn-outline-secondary btn-sm btn-block p-5 mb-3 ' id='paytm' name='paytm'>
+												<img src='./assets/paytm.png'>
+											</button>
+										</div>
+										<div class='col-sm-6'>
+											<button class='btn btn-outline-secondary btn-sm btn-block  p-5 mb-3 ' id='amazon' name='amazon'>
+												<img src='./assets/amazon_pay.png'>
+											</button>
+										</div>
+										<div class='col-sm-6'>
+											<button class='btn btn-outline-secondary btn-sm btn-block  p-5 mb-3 ' id='gpay' name='gpay'>
+												<img src='./assets/gpay.png'>
+											</button>
+										</div>
+										<div class='col-sm-6'>
+											<button class='btn btn-outline-secondary btn-sm btn-block p-5 mb-3 ' id='mobikwik' name='mobikwik'>
+												<img src='./assets/mobikwik.png'>
+											</button>
+										</div>
+										<label class='col-sm-12 ' style='color: darkblue'> You will be redirected to respective merchant site
+										</label>
+									</div>
+								</div>
+								<div class='' class='col-sm-3'>
+									<div class='row '>
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class='tab-pane fade ' id='chq' name='chq' data-target='p5'>
+							<div class='row mt-3 '>
+								<div class='' class='col-sm-3'>
+									<div class='row '>
+									</div>
+								</div>
+								<div class='' class='col-sm-6'>
+									<div class='row '>
+										<div class='col-sm-12'>
+											<div class='form-group'>
+												<label for=''>Bank name</label>
+												<input class='form-control ' name='bank_name' type='text' autocomplete='off'>
+											</div>
+										</div>
+										<div class='col-sm-12'>
+											<div class='form-group'>
+												<label for=''>Branch name</label>
+												<input class='form-control ' name='branch_name' type='text' autocomplete='off'>
+											</div>
+										</div>
+										<div class='col-sm-4'>
+											<div class='form-group'>
+												<label for=''>Cheque no</label>
+												<input class='form-control ' name='chq_no' type='text' autocomplete='off'>
+											</div>
+										</div>
+										<div class='col-sm-12'>
+											<div class='form-group'>
+												<label for=''>Cheque date</label>
+												<div class='input-group'>
+													<input class='form-control ' name='chq_date' type='text' ngbDatepicker #_='ngbDatepicker'>
+													<div class='input-group-append'>
+														<button class='btn btn-default btn-sm' (click)='_.toggle()'><i class='fa fa-calendar-alt'></i></button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='col-sm-4'>
+											<div class='form-group'>
+												<label for=''>Cheque amount</label>
+												<input class='form-control ' name='chq_amt' type='text' autocomplete='off'>
+											</div>
+										</div>
+										<div class='col-sm-6'>
+											<div class='form-group'>
+												<label for=''>Demand no</label>
+												<select class='form-control ' name='demand_no'>
+													<option value=''></option>
+													<option value=''></option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class='row '>
+										<div class=' col-sm-12' style='text-align: center'>
+											<div class='btn-group '>
+												<button class='btn btn-primary btn-sm '>
+													Submit
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class='' class='col-sm-3'>
+									<div class='row '>
+									</div>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

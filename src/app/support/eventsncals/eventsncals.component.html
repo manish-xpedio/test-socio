@@ -1,0 +1,51 @@
+<form #f='ngForm'>
+	<div class='container-fluid px-5 py-4 '>
+		<div class='row '>
+			<div class='' class='col-sm-3'>
+				<div class='row '>
+					<label class='page-header col-sm-12 '> Annual events
+					</label>
+				</div>
+				<div class='row mb-2 pt-2 mr-2 ' style='border: 1px solid lightgray;' *ngFor = 'let x of supp_cultural_eventsList; let i = index'>
+					<div class='col-sm-9'>
+						<a class='' id='event_name' style='color: #000' name='event_name' data-toggle='modal' href='#'>
+							<h6>{{ i + 1 }}.  {{ x.event_name }}</h6>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class='' class='col-sm-9'>
+				<div class='row '>
+					<div id='caro' data-ride='carousel' class='carousel slide '>
+						<ul class='carousel-indicators'>
+							<li data-target='caro' data-slide-to='0' class='active'></li>
+							<li data-target='caro' data-slide-to='1'></li>
+							<li data-target='caro' data-slide-to='2'></li>
+							<li data-target='caro' data-slide-to='3'></li>
+						</ul>
+						<div class='carousel-inner'>
+							<div class='carousel-item active'>
+								<img src='./assets/cul1.jpg' alt='Caro1' width='100%' >
+							</div>
+							<div class='carousel-item'>
+								<img src='./assets/cul2.jpg' alt='Caro2' width='100%' >
+							</div>
+							<div class='carousel-item'>
+								<img src='./assets/cul3.jpg' alt='Caro3' width='100%' >
+							</div>
+							<div class='carousel-item'>
+								<img src='./assets/cul4.jpg' alt='Caro4' width='100%' >
+							</div>
+						</div>
+						<a class='carousel-control-prev' href='#caro' data-slide='prev'>
+							<span class='carousel-control-prev-icon'></span>
+						</a>
+						<a class='carousel-control-next' href='#caro' data-slide='next'>
+							<span class='carousel-control-next-icon'></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

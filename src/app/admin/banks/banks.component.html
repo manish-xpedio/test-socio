@@ -1,0 +1,160 @@
+<form #f='ngForm'>
+<div class='container-fluid '>
+	<div class='row mt-4 '>
+		<div class='' class='col-sm-1'>
+		</div>
+		<div class='' class='col-sm-10'>
+			<div class='row '>
+				<label class='page-header col-sm-2 '> Banks</label>
+				<label class='col-sm-7 '> {{ admin_banks_status }}</label>
+				<div class=' col-sm-3' style='text-align: right'>
+					<div class='btn-group '>
+						<button class='btn btn-primary btn-sm ' data-target='#dlg' data-toggle='modal' (click)='clear_admin_banks()'>
+							<i class='fa fa-plus'></i> Add
+						</button>
+						<a class='btn btn-primary btn-sm ' data-toggle='modal' routerLink='/settings'>
+							<i class='fa fa-arrow-left'></i> Back
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<table class='table table-bordered table-sm '>
+						<thead>
+							<tr>
+								<th>System ID</th>
+								<th>Bank name</th>
+								<th>Bank branch</th>
+								<th>Bank address</th>
+								<th>IFSC code</th>
+								<th>Account type</th>
+								<th>Status</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr *ngFor='let x of admin_banksList'>
+								<td> {{ x.sysid }} </td>
+								<td>
+									<a class='' id='bank_name' name='bank_name' data-target='#dlg' data-toggle='modal' (click)='current_record_admin_banks(x)' href='#'>
+										{{ x.bank_name }}
+									</a>
+								</td>
+								<td> {{ x.bank_branch }} </td>
+								<td> {{ x.bank_address }} </td>
+								<td> {{ x.ifsc_code }} </td>
+								<td> {{ x.acc_type }} </td>
+								<td> {{ x.status }} </td>
+								<td>
+									<a class='' id='delete_btn' style='color: red;' name='delete_btn' data-toggle='modal' (click)='delete_admin_banks(x.sysid)' href='#'>
+										<i class='fa fa-trash'></i> Delete
+									</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div tabindex='-1' role='dialog' class='modal fade ' id='dlg'>
+				<div class='modal-dialog' role='document'>
+					<div class='modal-content'>
+						<div class='modal-header '>
+							<div class='modal-title'><h5>Banks</h5></div>
+							<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+								<span aria-hidden='true'>&times;</span>
+							</button>
+						</div>
+						<div class='modal-body '>
+					<div class='row '>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='sysid'>System ID</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='sysid' name='sysid' type='text' autocomplete='off' readonly [(ngModel)]='admin_banks.sysid' #sysid="ngModel">
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='bank_name'>Bank name</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='bank_name' name='bank_name' type='text' autocomplete='off' [(ngModel)]='admin_banks.bank_name' #bank_name="ngModel">
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='bank_branch'>Bank branch</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='bank_branch' name='bank_branch' type='text' autocomplete='off' [(ngModel)]='admin_banks.bank_branch' #bank_branch="ngModel">
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='bank_address'>Bank address</label>
+								<div class='col-sm-8'>
+									<textarea class='form-control ' id='bank_address' name='bank_address' rows='5' autocomplete='off' [(ngModel)]='admin_banks.bank_address' #bank_address="ngModel"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='ifsc_code'>IFSC code</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='ifsc_code' name='ifsc_code' type='text' autocomplete='off' [(ngModel)]='admin_banks.ifsc_code' #ifsc_code="ngModel">
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='acc_type'>Account type</label>
+								<div class='col-sm-8'>
+									<select class='form-control ' id='acc_type' name='acc_type' [(ngModel)]='admin_banks.acc_type' #acc_type="ngModel">
+										<option value=''></option>
+										<option value='Savings'>Savings</option>
+										<option value='Current'>Current</option>
+										<option value='Fixed deposit'>Fixed deposit</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='status'>Status</label>
+								<div class='col-sm-8'>
+									<select class='form-control ' id='status' name='status' [(ngModel)]='admin_banks.status' #status="ngModel">
+										<option value=''></option>
+										<option value='Active'>Active</option>
+										<option value='Inactive'>Inactive</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+						</div>
+						<div class='modal-footer '>
+					<label class='pull-left col-sm-8 '> {{ admin_banks_status }}</label>
+					<div class='row '>
+						<div class=' col-sm-4'>
+							<div class='btn-group pull-right '>
+								<button class='btn btn-primary btn-sm ' name='save_btn' (click)='save_admin_banks(f)'>
+									<i class='fa fa-save'></i> Save
+								</button>
+								<button class='btn btn-primary btn-sm ' name='close_btn' data-dismiss='modal'>
+									<i class='fa fa-times'></i> Close
+								</button>
+							</div>
+						</div>
+					</div>
+						</div>
+			</div>
+				</div>
+					</div>
+		</div>
+		<div class='' class='col-sm-1'>
+		</div>
+	</div>
+</div>
+</form>

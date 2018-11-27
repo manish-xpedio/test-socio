@@ -1,0 +1,129 @@
+<form #f='ngForm'>
+<div class='container-fluid p-5 '>
+	<div class='row '>
+		<label class='page-header col-sm-3 '> SMS template</label>
+		<label class='col-sm-6 '> {{ admin_sms_template_status }}</label>
+		<div class=' col-sm-3' style='text-align: right'>
+			<div class='btn-group '>
+				<button class='btn btn-primary btn-sm ' name='save_btn' (click)='save_admin_sms_template(f)'>
+					<i class='fa fa-save'></i> Save
+				</button>
+				<button class='btn btn-primary btn-sm ' id='clear' name='clear_btn' (click)='clear_admin_sms_template()'>
+					<i class='fa fa-redo-alt'></i> Clear
+				</button>
+				<a class='btn btn-primary btn-sm ' name='back_btn' data-toggle='modal' routerLink='/settings'>
+					<i class='fa fa-arrow-left'></i> Back
+				</a>
+			</div>
+		</div>
+		<div class='col-sm-12'>
+			<hr class=''>
+		</div>
+	</div>
+	<div class='row mt-3 '>
+		<div class='' class='col-sm-8'>
+	<div class='row '>
+		<div class='col-sm-6'>
+			<div class='form-group'>
+				<label for='sysid'>Configured templates</label>
+				<select class='form-control ' id='sysid' name='temp_name' (change)='current_record_admin_sms_template(admin_sms_template.sysid)' [(ngModel)]='admin_sms_template.sysid' #sysid="ngModel">
+					<option value=''></option>
+					<option *ngFor='let x of admin_sms_templateList' value='{{ x.sysid }}'>{{ x.sms_temp_name }}</option>
+				</select>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<button class='btn btn-primary btn-sm ' style='margin-top: 30px' name='del_btn' (click)='delete_admin_sms_template(admin_sms_template.sysid)'>
+				<i class='fa fa-trash'></i> 
+			</button>
+		</div>
+				<div class='col-sm-12'>
+					<hr class=''>
+				</div>
+	</div>
+			<div class='row mt-3 '>
+		<div class='' class='col-sm-4'>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<div class='form-group'>
+						<label for='sysid'>System ID</label>
+						<input class='form-control ' id='sysid' name='sysid' type='text' autocomplete='off' readonly [(ngModel)]='admin_sms_template.sysid' #sysid="ngModel">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='' class='col-sm-4'>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<div class='form-group'>
+						<label for='sms_temp_name'>Template name</label>
+						<input class='form-control ' id='sms_temp_name' name='sms_temp_name' type='text' autocomplete='off' [(ngModel)]='admin_sms_template.sms_temp_name' #sms_temp_name="ngModel">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='' class='col-sm-4'>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<div class='form-group'>
+						<label for='status'>Status</label>
+						<select class='form-control ' id='status' name='status' [(ngModel)]='admin_sms_template.status' #status="ngModel">
+							<option value=''></option>
+							<option value='Active'>Active</option>
+							<option value='Inactive'>Inactive</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='' class='col-sm-12'>
+			<div class='row '>
+		<div class='col-sm-12'>
+			<div class='form-group'>
+				<label for='sms_verb'>SMS verbiage</label>
+				<textarea class='form-control ' id='sms_verb' name='sms_verb' rows='5' autocomplete='off' [(ngModel)]='admin_sms_template.sms_verb' #sms_verb="ngModel"></textarea>
+			</div>
+		</div>
+				<label class='col-sm-12 ' style='color: #ff0000'> <i>Maximum 160 characters allowed. No linebreaks to be entered.</i></label>
+			</div>
+		</div>
+			</div>
+		</div>
+		<div class='' class='col-sm-4'>
+			<div class='row '>
+				<label class='col-sm-12 ' style='color: #c70039'> <b>Instructions to configure template</b></label>
+				<label class='col-sm-12 '> Use below built-in words directly to embed entities into your SMS body.</label>
+				<div class='col-sm-12'>
+					<ul class=''>
+						<li class=''>
+							<b>Logo</b> - To include logo into SMS body. Height of logo will be 50px
+						</li>
+						<li class=''>
+							<b>OU</b> - This will add registered company name as it is.
+						</li>
+						<li class=''>
+							<b>OU_Email</b> - This will add company email id
+						</li>
+						<li class=''>
+							<b>OU_Phone</b> - This will add company primary number
+						</li>
+					</ul>
+				</div>
+				<label class='col-sm-12 '> Below are the dynamic value fields whose value will be retrieved from database.</label>
+				<div class='col-sm-12'>
+					<div class='form-group'>
+						<label for='field_name'>Field name</label>
+						<select class='form-control ' id='field_name' name='fields' [(ngModel)]='admin_email_sms_fields.field_name' #field_name="ngModel">
+							<option value=''></option>
+							<option *ngFor='let x of admin_email_sms_fieldsList' value='{{ x.sysid }}'>{{ x.alias_name }}</option>
+						</select>
+					</div>
+				</div>
+				<label class='col-sm-12 ' style='color: #c70039'> <b>Example</b></label>
+				<label class='col-sm-12 '> Hi <b>[buyer_name]</b>,</label>
+				<label class='col-sm-12 '> Use square bracket to use built in words or dyanimc value word selected from above dropdown list.</label>
+			</div>
+		</div>
+	</div>
+</div>
+</form>

@@ -1,0 +1,132 @@
+<form #f='ngForm'>
+<div class='container-fluid p-5 '>
+	<div class='row '>
+		<label class='page-header col-sm-2 '> Payment methods</label>
+		<label class='col-sm-8 '> {{ admin_payment_methods_status }}</label>
+		<div class=' col-sm-2' style='text-align: right'>
+			<div class='btn-group '>
+				<button class='btn btn-primary btn-sm ' id='add_btn' name='add_btn' data-target='#dlg' data-toggle='modal' (click)='clear_admin_payment_methods()'>
+					<i class='fa fa-plus'></i> Add
+				</button>
+				<a class='btn btn-primary btn-sm ' id='back_btn' name='back_btn' data-toggle='modal' routerLink='/settings'>
+					<i class='fa fa-arrow-left'></i> Back
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class='row '>
+		<div class='col-sm-12'>
+			<table class='table table-bordered table-sm '>
+				<thead>
+					<tr>
+						<th>Short code</th>
+						<th>Method name</th>
+						<th>Method direction</th>
+						<th>Status</th>
+						<th>System ID</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor='let x of admin_payment_methodsList'>
+						<td>
+							<a class='' id='short_code' name='short_code' data-target='#dlg' data-toggle='modal' (click)='current_record_admin_payment_methods(x)' href='#'>
+								{{ x.short_code }}
+							</a>
+						</td>
+						<td> {{ x.method_name }} </td>
+						<td> {{ x.method_direction }} </td>
+						<td> {{ x.status }} </td>
+						<td> {{ x.sysid }} </td>
+						<td>
+							<a class='' style='color: red' data-toggle='modal' (click)='delete_admin_payment_methods(x.sysid)' href='#'>
+								<i class='fa fa-trash'></i> Delete
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div tabindex='-1' role='dialog' class='modal fade ' id='dlg'>
+		<div class='modal-dialog' role='document'>
+			<div class='modal-content'>
+				<div class='modal-header '>
+					<div class='modal-title'><h5>Payment methods</h5></div>
+					<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+						<span aria-hidden='true'>&times;</span>
+					</button>
+				</div>
+				<div class='modal-body '>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='sysid'>System ID</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='sysid' name='sysid' type='text' autocomplete='off' readonly [(ngModel)]='admin_payment_methods.sysid' #sysid="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='short_code'>Short code</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='short_code' name='short_code' type='text' autocomplete='off' [(ngModel)]='admin_payment_methods.short_code' #short_code="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='method_name'>Method name</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='method_name' name='method_name' type='text' autocomplete='off' [(ngModel)]='admin_payment_methods.method_name' #method_name="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='method_direction'>Method direction</label>
+						<div class='col-sm-8'>
+							<select class='form-control ' id='method_direction' name='method_direction' [(ngModel)]='admin_payment_methods.method_direction' #method_direction="ngModel">
+								<option value=''></option>
+								<option value='Both'>Both</option>
+								<option value='Receipt'>Receipt</option>
+								<option value='Payment'>Payment</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='status'>Status</label>
+						<div class='col-sm-8'>
+							<select class='form-control ' id='status' name='status' [(ngModel)]='admin_payment_methods.status' #status="ngModel">
+								<option value=''></option>
+								<option value='Active'>Active</option>
+								<option value='Inactive'>Inactive</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+				</div>
+				<div class='modal-footer '>
+			<div class='row '>
+				<label class='pull-left '> {{ admin_payment_methods_status }}</label>
+				<div class=' col-sm-5'>
+					<div class='btn-group pull-right '>
+						<button class='btn btn-primary btn-sm ' name='save_btn' (click)='save_admin_payment_methods(f)'>
+							<i class='fa fa-save'></i> Save
+						</button>
+						<button class='btn btn-primary btn-sm ' name='close_btn' data-dismiss='modal'>
+							<i class='fa fa-remove'></i> Close
+						</button>
+					</div>
+				</div>
+			</div>
+				</div>
+	</div>
+		</div>
+			</div>
+</div>
+</form>

@@ -1,0 +1,91 @@
+<form #f='ngForm'>
+	<div class='container-fluid '>
+		<div class='row px-5 '>
+			<div class='' class='col-sm-2'>
+				<div class='row pt-5 sr-side '>
+					<div class='col-sm-12'>
+						<app-myaccmenu></app-myaccmenu>
+					</div>
+				</div>
+			</div>
+			<div class='' class='col-sm-10'>
+				<div class='row p-5 '>
+					<div class='' class='col-sm-6'>
+						<div class='row '>
+							<label class='page-header col-sm-12 '> Maitenance charges
+							</label>
+							<label class='descr col-sm-12 '> Maintenance charges for the year 2018-19 has been finalized as below as per resolution adopted in Annual General Meeting under section 63 (A). Click here for details of resolution
+											<a class='' data-toggle='modal' routerLink='/agmresolutions' [queryParams]='{ agm_year: 2018 }'>
+												AGM resolutions - 2018-19
+											</a>
+							</label>
+							<label class='col-sm-12 '> 
+							</label>
+							<div class='col-sm-12'>
+								<hr class='mb-3 '>
+							</div>
+						</div>
+						<div class='row '>
+							<label class='col-sm-4 '> 
+							</label>
+							<label class='chrgs col-sm-4 '> For owners
+							</label>
+							<label class='chrgs col-sm-4 '> For tenants
+							</label>
+						</div>
+						<div class='row ' *ngFor = 'let x of fin_maintainance_charges_detailsList'>
+							<label class='chrgs col-sm-4 '> {{ x.charge_head }}
+							</label>
+							<label class='chrgs col-sm-4 '> {{ x.charge_value_owner }}
+							</label>
+							<label class='chrgs col-sm-4 '> {{ x.charge_value_tenant }}
+							</label>
+						</div>
+						<div class='row ' style='background-color: lightgray'>
+							<label class='chrgs col-sm-4 '> Total payable
+							</label>
+							<label class='chrgs col-sm-4 '> {{ total_charges['charge_value_owner'] }}
+							</label>
+							<label class='chrgs col-sm-4 '> {{ total_charges['charge_value_tenant'] }}
+							</label>
+						</div>
+						<div class='row p-3 mt-3 ' style='border: 1px solid lightgray;'>
+							<label class='col-sm-12 '> <h5>Payment methods</h5>
+							</label>
+							<div class='col-sm-12'>
+								<ul class=''>
+									<li class=''>
+									<label class='col-sm-12 '> Online transfer <br>Bank name: IDBI Bank<br>Account no: 0007553899273<br>IFSC Code: IBKL000067 
+									</label>
+									</li>
+									<li class=''>
+									<label class='col-sm-12 '> Pay by cheque in favor of [Society name]
+									</label>
+									</li>
+									<li class=''>
+									<label class='col-sm-12 '> Pay by wallets [Paytm, BHIM, Amazon pay]
+									</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class='' class='col-sm-4'>
+						<div class='row p-3 ml-2 ' style='border: 1px solid lightgray;'>
+							<label class='col-sm-12 '> <h5>My outstanding</h5>
+							</label>
+							<label class='col-sm-12 ' style='color: #c70039'> <h3> 6525.00 </h3>
+							</label>
+							<label class='col-sm-12 '> Pay oustanding on or before 15-Dec-2018
+							</label>
+						</div>
+					</div>
+					<div class='' class='col-sm-2'>
+						<div class='row '>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

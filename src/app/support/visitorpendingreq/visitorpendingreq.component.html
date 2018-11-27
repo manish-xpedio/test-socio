@@ -1,0 +1,69 @@
+<form #f='ngForm'>
+	<div class='container-fluid p-5 '>
+		<div class='row '>
+			<div class='' class='col-sm-2'>
+				<div class='row '>
+					<div class='col-sm-12'>
+						<app-secmenu></app-secmenu>
+					</div>
+				</div>
+			</div>
+			<div class='' class='col-sm-10'>
+		<div class='row '>
+			<label class='page-header col-sm-2 '> Pending requests
+			</label>
+			<label class='col-sm-7 '> 
+			</label>
+			<div class='col-sm-3'>
+				<div class='input-group'>
+					<input class='form-control ' id='search_box' name='search' placeholder='Enter search text' [(ngModel)]='search' #search_box="ngModel">
+					<div class='input-group-append search'>
+						<i class='fa fa-search'></i>
+					</div>
+				</div>
+			</div>
+			<label class='descr col-sm-12 '> Requests raised by security and visitor who do not have member\'s invite will be listed here. Once member approves the request, entry will disappear from here 
+			</label>
+		</div>
+		<div class='row '>
+			<div class='col-sm-12'>
+				<table class='table table-bordered table-sm '>
+					<thead>
+						<tr>
+							<th>Visitor name</th>
+							<th>Visitor phone</th>
+							<th>Vehicle type</th>
+							<th>Vehicle no</th>
+							<th>Host flat no</th>
+							<th>In date</th>
+							<th>In time</th>
+							<th>Status</th>
+							<th>Associate count</th>
+							<th>System ID</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr *ngFor='let x of supp_gatepassList'>
+							<td>
+								<a class='' id='visitor_name' name='visitor_name' data-toggle='modal' href='#'>
+									{{ x.visitor_name }}
+								</a>
+							</td>
+							<td> {{ x.visitor_phone }} </td>
+							<td> {{ x.vehicle_type }} </td>
+							<td> {{ x.vehicle_no }} </td>
+							<td> {{ x.host_flat_no }} </td>
+							<td> {{ x.in_date }} </td>
+							<td> {{ x.in_time }} </td>
+							<td> {{ x.status }} </td>
+							<td> {{ x.ass_count }} </td>
+							<td> {{ x.sysid }} </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+			</div>
+		</div>
+	</div>
+</form>

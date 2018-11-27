@@ -1,0 +1,1052 @@
+{
+    "child": [
+        {
+            "child": [
+                {
+                    "child": [
+                        {
+                            "child": [
+                            ],
+                            "name": "Label",
+                            "props": {
+                                "Class": "page-header",
+                                "Columns": "3",
+                                "DisplayLabel": "",
+                                "For": "",
+                                "FormType": "Standard",
+                                "GroupWidth": "",
+                                "HelpText": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Label class": "",
+                                "Label-type": "span",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Required": "",
+                                "Style": "",
+                                "TableColumnWidth": "",
+                                "Value": "Vehicle registration"
+                            },
+                            "tabpos": "3",
+                            "type": "Label"
+                        },
+                        {
+                            "child": [
+                            ],
+                            "name": "Label",
+                            "props": {
+                                "Class": "",
+                                "Columns": "6",
+                                "DisplayLabel": "",
+                                "For": "",
+                                "FormType": "Standard",
+                                "GroupWidth": "",
+                                "HelpText": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Label class": "",
+                                "Label-type": "span",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Required": "",
+                                "Style": "",
+                                "TableColumnWidth": "",
+                                "Value": "{{ crm_vehicles_status }}"
+                            },
+                            "tabpos": "3",
+                            "type": "Label"
+                        },
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "req_btn",
+                                    "props": {
+                                        "Class": "btn btn-secondary btn-sm mr-1",
+                                        "ClickEvent": "sticker_request()",
+                                        "Columns": "12",
+                                        "Data-dismiss": "",
+                                        "Data-target": "#d1",
+                                        "Data-toggle": "modal",
+                                        "Fa-icon": "far fa-address-card",
+                                        "Hidden": "",
+                                        "ID": "reqbtn",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "req_btn",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Ref": "",
+                                        "RouterLinkActive": "",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Request for sticker"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Button"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "save_btn",
+                                    "props": {
+                                        "Class": "btn btn-primary btn-sm",
+                                        "ClickEvent": "save_crm_vehicles(f)",
+                                        "Columns": "12",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "",
+                                        "Fa-icon": "fa fa-save",
+                                        "Hidden": "",
+                                        "ID": "savebtn",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "save_btn",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Ref": "",
+                                        "RouterLinkActive": "",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Save changes"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Button"
+                                }
+                            ],
+                            "name": "ButtonGroup",
+                            "props": {
+                                "Class": "btn-group",
+                                "Columns": "3",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "text-align: right",
+                                "Property-binding": "",
+                                "Style": "",
+                                "TableColumnWidth": ""
+                            },
+                            "tabpos": "3",
+                            "type": "ButtonGroup"
+                        },
+                        {
+                            "child": [
+                            ],
+                            "name": "HLine",
+                            "props": {
+                                "Class": "mb-3",
+                                "Columns": "12",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "HLine"
+                        }
+                    ],
+                    "name": "Row",
+                    "props": {
+                        "Class": "row",
+                        "DB-table": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Repeat": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Row"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "Barcode",
+                                            "props": {
+                                                "BC-data": "crm_vehicles.sysid",
+                                                "BC-display": "false",
+                                                "Class": "",
+                                                "Columns": "12",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "text-align: center"
+                                            },
+                                            "tabpos": "5",
+                                            "type": "Barcode"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "Button",
+                                            "props": {
+                                                "Class": "btn btn-primary btn-sm btn-block",
+                                                "ClickEvent": "",
+                                                "Columns": "12",
+                                                "Data-dismiss": "",
+                                                "Data-target": "",
+                                                "Data-toggle": "",
+                                                "Fa-icon": "fa fa-print",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Icon": "",
+                                                "Model": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Readonly": "",
+                                                "Ref": "",
+                                                "RouterLinkActive": "",
+                                                "RouterParam": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Value": "Print sticker"
+                                            },
+                                            "tabpos": "5",
+                                            "type": "Button"
+                                        }
+                                    ],
+                                    "name": "Row",
+                                    "props": {
+                                        "Class": "row",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "*ngIf='bc_id'",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Row"
+                                },
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "Label",
+                                            "props": {
+                                                "Class": "",
+                                                "Columns": "12",
+                                                "DisplayLabel": "",
+                                                "For": "",
+                                                "FormType": "Standard",
+                                                "GroupWidth": "",
+                                                "HelpText": "",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Label class": "",
+                                                "Label-type": "span",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Required": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Value": "Please select your registered vehicle to see your barcode sticker.<br><br>You can print that code from here."
+                                            },
+                                            "tabpos": "5",
+                                            "type": "Label"
+                                        }
+                                    ],
+                                    "name": "Row",
+                                    "props": {
+                                        "Class": "row px-3 py-5",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "*ngIf='!bc_id'",
+                                        "Repeat": "",
+                                        "Style": "border: 1px solid lightgray"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Row"
+                                }
+                            ],
+                            "name": "Column",
+                            "props": {
+                                "Class": "",
+                                "Columns": "2",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Column"
+                        },
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "member_id",
+                                            "props": {
+                                                "Auto-complete": "off",
+                                                "ChangeEvent": "",
+                                                "Class": "form-control",
+                                                "Columns": "4",
+                                                "Control-type": "text",
+                                                "DB-table": "crm_vehicles",
+                                                "DisplayLabel": "Member name",
+                                                "FormType": "Standard",
+                                                "Group-class": "",
+                                                "Group-property-binding": "",
+                                                "Group-style": "",
+                                                "Hidden": "",
+                                                "ID": "member_id",
+                                                "Label-class": "",
+                                                "Label-property-binding": "",
+                                                "Label-style": "",
+                                                "Model": "member_id",
+                                                "Name": "member_id",
+                                                "Placeholder": "",
+                                                "Property-binding": "",
+                                                "Readonly": "true",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Validations": "",
+                                                "Validator-class": "",
+                                                "Validator-style": "",
+                                                "Value": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "TextBox"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "vehicle_no",
+                                            "props": {
+                                                "Auto-complete": "off",
+                                                "ChangeEvent": "",
+                                                "Class": "form-control",
+                                                "Columns": "4",
+                                                "Control-type": "text",
+                                                "DB-table": "crm_vehicles",
+                                                "DisplayLabel": "Vehicle no",
+                                                "FormType": "Standard",
+                                                "Group-class": "",
+                                                "Group-property-binding": "",
+                                                "Group-style": "",
+                                                "Hidden": "",
+                                                "ID": "vehicle_no",
+                                                "Label-class": "",
+                                                "Label-property-binding": "",
+                                                "Label-style": "",
+                                                "Model": "vehicle_no",
+                                                "Name": "vehicle_no",
+                                                "Placeholder": "",
+                                                "Property-binding": "",
+                                                "Readonly": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Validations": "",
+                                                "Validator-class": "",
+                                                "Validator-style": "",
+                                                "Value": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "TextBox"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "vehicle_type",
+                                            "props": {
+                                                "ChangeEvent": "",
+                                                "Class": "form-control",
+                                                "Columns": "4",
+                                                "DB-table": "crm_vehicles",
+                                                "Data-source": "",
+                                                "DisplayLabel": "Vehicle type",
+                                                "FormType": "Standard",
+                                                "Group-class": "",
+                                                "Group-style": "",
+                                                "GroupWidth": "",
+                                                "Hidden": "",
+                                                "ID": "vehicle_type",
+                                                "Init": "Yes",
+                                                "Label-class": "",
+                                                "Label-style": "",
+                                                "Model": "vehicle_type",
+                                                "Multiple": "No",
+                                                "Name": "vehicle_type",
+                                                "NeedKeyValue": "No",
+                                                "Property-binding": "",
+                                                "Required": "",
+                                                "Static-values": "2 Wheeler,4 Wheeler,Others",
+                                                "Style": "",
+                                                "TableColumnWidth": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "ComboBox"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "vehicle_brand",
+                                            "props": {
+                                                "Auto-complete": "off",
+                                                "ChangeEvent": "",
+                                                "Class": "form-control",
+                                                "Columns": "4",
+                                                "Control-type": "text",
+                                                "DB-table": "crm_vehicles",
+                                                "DisplayLabel": "Vehicle brand",
+                                                "FormType": "Standard",
+                                                "Group-class": "",
+                                                "Group-property-binding": "",
+                                                "Group-style": "",
+                                                "Hidden": "",
+                                                "ID": "vehicle_brand",
+                                                "Label-class": "",
+                                                "Label-property-binding": "",
+                                                "Label-style": "",
+                                                "Model": "vehicle_brand",
+                                                "Name": "vehicle_brand",
+                                                "Placeholder": "",
+                                                "Property-binding": "",
+                                                "Readonly": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Validations": "",
+                                                "Validator-class": "",
+                                                "Validator-style": "",
+                                                "Value": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "TextBox"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "sticker_no",
+                                            "props": {
+                                                "Auto-complete": "off",
+                                                "ChangeEvent": "",
+                                                "Class": "form-control",
+                                                "Columns": "4",
+                                                "Control-type": "text",
+                                                "DB-table": "crm_vehicles",
+                                                "DisplayLabel": "Sticker no",
+                                                "FormType": "Standard",
+                                                "Group-class": "",
+                                                "Group-property-binding": "",
+                                                "Group-style": "",
+                                                "Hidden": "",
+                                                "ID": "sticker_no",
+                                                "Label-class": "",
+                                                "Label-property-binding": "",
+                                                "Label-style": "",
+                                                "Model": "sticker_no",
+                                                "Name": "sticker_no",
+                                                "Placeholder": "",
+                                                "Property-binding": "",
+                                                "Readonly": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Validations": "",
+                                                "Validator-class": "",
+                                                "Validator-style": "",
+                                                "Value": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "TextBox"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "status",
+                                            "props": {
+                                                "ChangeEvent": "",
+                                                "Class": "form-control",
+                                                "Columns": "4",
+                                                "DB-table": "crm_vehicles",
+                                                "Data-source": "",
+                                                "DisplayLabel": "Status",
+                                                "FormType": "Standard",
+                                                "Group-class": "",
+                                                "Group-style": "",
+                                                "GroupWidth": "",
+                                                "Hidden": "",
+                                                "ID": "status",
+                                                "Init": "Yes",
+                                                "Label-class": "",
+                                                "Label-style": "",
+                                                "Model": "status",
+                                                "Multiple": "No",
+                                                "Name": "status",
+                                                "NeedKeyValue": "No",
+                                                "Property-binding": "",
+                                                "Required": "",
+                                                "Static-values": "Active,Inactive",
+                                                "Style": "",
+                                                "TableColumnWidth": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "ComboBox"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "Label",
+                                            "props": {
+                                                "Class": "page-header",
+                                                "Columns": "12",
+                                                "DisplayLabel": "",
+                                                "For": "",
+                                                "FormType": "Standard",
+                                                "GroupWidth": "",
+                                                "HelpText": "",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Label class": "",
+                                                "Label-type": "span",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Required": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Value": "My registrations"
+                                            },
+                                            "tabpos": "5",
+                                            "type": "Label"
+                                        }
+                                    ],
+                                    "name": "Row",
+                                    "props": {
+                                        "Class": "row",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Row"
+                                },
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                                {
+                                                    "child": [
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "vehicle_no",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "ClickEvent": "current_record_crm_vehicles(x)",
+                                                                "Columns": "12",
+                                                                "DB-table": "",
+                                                                "Data-dismiss": "",
+                                                                "Data-target": "",
+                                                                "Data-toggle": "modal",
+                                                                "DisplayLabel": "Vehicle no",
+                                                                "Fa-icon": "",
+                                                                "Group-class": "",
+                                                                "Group-style": "",
+                                                                "Hidden": "",
+                                                                "ID": "vehicle_no",
+                                                                "Icon": "",
+                                                                "Model": "",
+                                                                "Name": "vehicle_no",
+                                                                "Property-binding": "",
+                                                                "RouterLink": "#",
+                                                                "RouterParam": "",
+                                                                "Style": "",
+                                                                "TableColumnWidth": "",
+                                                                "Value": "{{ x.vehicle_no }}"
+                                                            },
+                                                            "tabpos": "6",
+                                                            "type": "Link"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "member_id",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "Columns": "12",
+                                                                "DisplayLabel": "Member name",
+                                                                "For": "",
+                                                                "FormType": "Standard",
+                                                                "GroupWidth": "",
+                                                                "HelpText": "",
+                                                                "Hidden": "",
+                                                                "ID": "member_id",
+                                                                "Label class": "",
+                                                                "Label-type": "span",
+                                                                "Name": "member_id",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Required": "",
+                                                                "Style": "",
+                                                                "TableColumnWidth": "",
+                                                                "Value": "{{ x.member_id }}"
+                                                            },
+                                                            "tabpos": "6",
+                                                            "type": "Label"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "vehicle_type",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "Columns": "12",
+                                                                "DisplayLabel": "Vehicle type",
+                                                                "For": "",
+                                                                "FormType": "Standard",
+                                                                "GroupWidth": "",
+                                                                "HelpText": "",
+                                                                "Hidden": "",
+                                                                "ID": "vehicle_type",
+                                                                "Label class": "",
+                                                                "Label-type": "span",
+                                                                "Name": "vehicle_type",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Required": "",
+                                                                "Style": "",
+                                                                "TableColumnWidth": "",
+                                                                "Value": "{{ x.vehicle_type }}"
+                                                            },
+                                                            "tabpos": "6",
+                                                            "type": "Label"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "vehicle_brand",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "Columns": "12",
+                                                                "DisplayLabel": "Vehicle brand",
+                                                                "For": "",
+                                                                "FormType": "Standard",
+                                                                "GroupWidth": "",
+                                                                "HelpText": "",
+                                                                "Hidden": "",
+                                                                "ID": "vehicle_brand",
+                                                                "Label class": "",
+                                                                "Label-type": "span",
+                                                                "Name": "vehicle_brand",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Required": "",
+                                                                "Style": "",
+                                                                "TableColumnWidth": "",
+                                                                "Value": "{{ x.vehicle_brand }}"
+                                                            },
+                                                            "tabpos": "6",
+                                                            "type": "Label"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "sticker_no",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "Columns": "12",
+                                                                "DisplayLabel": "Sticker no",
+                                                                "For": "",
+                                                                "FormType": "Standard",
+                                                                "GroupWidth": "",
+                                                                "HelpText": "",
+                                                                "Hidden": "",
+                                                                "ID": "sticker_no",
+                                                                "Label class": "",
+                                                                "Label-type": "span",
+                                                                "Name": "sticker_no",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Required": "",
+                                                                "Style": "",
+                                                                "TableColumnWidth": "",
+                                                                "Value": "{{ x.sticker_no }}"
+                                                            },
+                                                            "tabpos": "6",
+                                                            "type": "Label"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "status",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "Columns": "12",
+                                                                "DisplayLabel": "Status",
+                                                                "For": "",
+                                                                "FormType": "Standard",
+                                                                "GroupWidth": "",
+                                                                "HelpText": "",
+                                                                "Hidden": "",
+                                                                "ID": "status",
+                                                                "Label class": "",
+                                                                "Label-type": "span",
+                                                                "Name": "status",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Required": "",
+                                                                "Style": "",
+                                                                "TableColumnWidth": "",
+                                                                "Value": "{{ x.status }}"
+                                                            },
+                                                            "tabpos": "6",
+                                                            "type": "Label"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "sysid",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "Columns": "12",
+                                                                "DisplayLabel": "System ID",
+                                                                "For": "",
+                                                                "FormType": "Standard",
+                                                                "GroupWidth": "",
+                                                                "HelpText": "",
+                                                                "Hidden": "",
+                                                                "ID": "sysid",
+                                                                "Label class": "",
+                                                                "Label-type": "span",
+                                                                "Name": "sysid",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Required": "",
+                                                                "Style": "",
+                                                                "TableColumnWidth": "",
+                                                                "Value": "{{ x.sysid }}"
+                                                            },
+                                                            "tabpos": "6",
+                                                            "type": "Label"
+                                                        }
+                                                    ],
+                                                    "name": "TableRow",
+                                                    "props": {
+                                                        "Class": "",
+                                                        "Data-source": "crm_vehiclesList",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Name": "",
+                                                        "Property-binding": "",
+                                                        "Style": ""
+                                                    },
+                                                    "tabpos": "5",
+                                                    "type": "TableRow"
+                                                }
+                                            ],
+                                            "name": "Table",
+                                            "props": {
+                                                "Border": "Yes",
+                                                "Caption": "",
+                                                "Class": "table table-bordered table-sm",
+                                                "Columns": "12",
+                                                "DataSource": "",
+                                                "Filter": "",
+                                                "HeaderClass": "",
+                                                "Hidden": "",
+                                                "Hover": "No",
+                                                "ID": "",
+                                                "ItemsPerPage": "12",
+                                                "Name": "",
+                                                "NoOfPagesDisplay": "10",
+                                                "Pagination": "Yes",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Responsive": "",
+                                                "Size": "Small",
+                                                "StripedRows": "No",
+                                                "Style": ""
+                                            },
+                                            "tabpos": "4",
+                                            "type": "Table"
+                                        }
+                                    ],
+                                    "name": "Row",
+                                    "props": {
+                                        "Class": "row",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Row"
+                                }
+                            ],
+                            "name": "Column",
+                            "props": {
+                                "Class": "",
+                                "Columns": "10",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Column"
+                        }
+                    ],
+                    "name": "Row",
+                    "props": {
+                        "Class": "row",
+                        "DB-table": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Repeat": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Row"
+                }
+            ],
+            "name": "Container",
+            "props": {
+                "Class": "container-fluid p-5",
+                "Hidden": "",
+                "ID": "",
+                "Name": "",
+                "Property-binding": "",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Container"
+        },
+        {
+            "child": [
+                {
+                    "child": [
+                    ],
+                    "name": "Dialog-header",
+                    "props": {
+                        "Class": "modal-header",
+                        "Close-button": "Yes",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": "",
+                        "Title": "Sticker request"
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-header"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Div",
+                                    "props": {
+                                        "Background-image": "",
+                                        "Class": "px-5 py-3",
+                                        "Columns": "12",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "[innerHTML]='req_text'",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Div"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-body",
+                    "props": {
+                        "Class": "modal-body",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-body"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Button",
+                                    "props": {
+                                        "Class": "btn btn-primary btn-sm",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "Data-dismiss": "modal",
+                                        "Data-target": "",
+                                        "Data-toggle": "",
+                                        "Fa-icon": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Ref": "",
+                                        "RouterLinkActive": "",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Close"
+                                    },
+                                    "tabpos": "3",
+                                    "type": "Button"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-footer",
+                    "props": {
+                        "Class": "modal-footer",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-footer"
+                }
+            ],
+            "name": "Dialog",
+            "props": {
+                "Class": "modal fade",
+                "Hidden": "",
+                "ID": "d1",
+                "Name": "",
+                "Property-binding": "",
+                "Size": "Default",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Dialog"
+        }
+    ],
+    "name": "Form",
+    "props": {
+        "Class": "",
+        "Columns": "12",
+        "Hidden": "",
+        "ID": "",
+        "Name": "",
+        "Parent-class": "",
+        "Parent-style": "",
+        "Property-binding": "",
+        "Style": ""
+    },
+    "tabpos": "0",
+    "type": "Form"
+}

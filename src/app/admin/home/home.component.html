@@ -1,0 +1,93 @@
+<form class='' #f='ngForm' enctype='multipart/form-data'>
+	<div class=' container-fluid p-0'>
+			<div data-ride='carousel' class=' carousel slide p-0'>
+				<ul class='carousel-indicators'>
+					<li data-target='caro' data-slide-to='0' class='active'></li>
+					<li data-target='caro' data-slide-to='1'></li>
+					<li data-target='caro' data-slide-to='2'></li>
+					<li data-target='caro' data-slide-to='3'></li>
+				</ul>
+				<div class='carousel-inner'>
+					<div class='carousel-item active'>
+						<img src='./assets/caro1.png' alt='Caro1' width='100%' style='min-height:400px; max-height:400px'>
+					</div>
+					<div class='carousel-item'>
+						<img src='./assets/caro2.png' alt='Caro2' width='100%' style='min-height:400px; max-height:400px'>
+					</div>
+					<div class='carousel-item'>
+						<img src='./assets/caro3.png' alt='Caro3' width='100%' style='min-height:400px; max-height:400px'>
+					</div>
+					<div class='carousel-item'>
+						<img src='./assets/caro4.png' alt='Caro4' width='100%' style='min-height:400px; max-height:400px'>
+					</div>
+				</div>
+				<a class='carousel-control-prev' href='#caro' data-slide='prev'>
+					<span class='carousel-control-prev-icon'></span>
+				</a>
+				<a class='carousel-control-next' href='#caro' data-slide='next'>
+					<span class='carousel-control-next-icon'></span>
+				</a>
+			</div>
+		<div class=' row'>
+		</div>
+	</div>
+	<div tabindex='-1' role='dialog' id='login_dlg' class=' modal fade'>
+		<div class='modal-dialog modal-lg' role='document'>
+			<div class='modal-content'>
+				<div class=' modal-body pr-0 py-0'>
+			<div class=' row'>
+				<div style='border-right: 1px solid lightgray; ' class=' col-sm-6'>
+					<div class=' row p-4'>
+						<label style='color: #c70039' class=' col-sm-10'><h5><b>Connect to your account</b></h5></label>
+						<button id='closeBtn' name='closeBtn' data-dismiss='modal' [hidden]='true' class=' col-sm-2 btn btn-secondary btn-sm close' #closeBtn>
+						<i class='fa fa-close'></i> Close
+					</button>
+						<hr class=' col-sm-10 px-3 mr-3'>
+						<label class=' col-sm-12'>Connect to most powerful tool and experience the world class digital experience. </label>
+						<label class=' col-sm-12'>This platform is to make your life more enjoyable at the same time making you more accountable to your social circle.</label>
+						<label style='color: darkblue' class=' col-sm-12'>This platform contains</label>
+						<ul class=''>
+							<li class=''>Mobile app for Android and IOS
+							</li>
+							<li class=''>Secured cloud platform
+							</li>
+							<li class=''>Connects to all IOT devices
+							</li>
+							<li class=''>User friendly and simple platform for enhanced user experience.
+							</li>
+							<li class=''>This platform is <strong>absolutely free</strong>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class=' col-sm-6'>
+					<div class=' row p-4'>
+						<label class=' col-sm-12 px-0'><h5>Sign-in</h5></label>
+						<div class='col-sm-12 form-group row'>
+							<label class='col-sm-12 px-0' for='txUname'>Username</label>
+							<input id='txUname' name='uname' type='text' [(ngModel)]='login.username' #username='ngModel' class=' col-sm-12 form-control px-0'>
+						</div>
+						<div class='col-sm-12 form-group row'>
+							<label class='col-sm-12 px-0' for='txPasswd'>Password</label>
+							<input id='txPasswd' name='passwd' type='password' [(ngModel)]='login.password' #password='ngModel' class=' col-sm-12 form-control px-0'>
+						</div>
+						<label style='color: red' class=' col-sm-12'>{{ login_status }}</label>
+						<div class=' col-sm-12 btn-group pl-0 mb-3'>
+							<button id='loginBtn' name='login_btn' (click)='validate_user(f)' class=' col-sm-12 btn btn-primary btn-sm shadow' #loginBtn>
+							Login
+						</button>
+						</div>
+						<div class=' col-sm-12 btn-group pl-0'>
+							<button id='forgot' name='forgot_btn' class=' col-sm-12 btn btn-primary btn-sm shadow' #forgot>
+							Forgot password?
+						</button>
+						</div>
+				<label style='color: #c70039; font-size: 10pt' class=' col-sm-12 mt-5 pl-0 pt-5'>Powered by xpediolive.com</label>
+					</div>
+				</div>
+			</div>
+				</div>
+	</div>
+		</div>
+			</div>
+</form>

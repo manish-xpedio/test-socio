@@ -1,0 +1,275 @@
+<form #f='ngForm'>
+	<div class='container-fluid p-5 '>
+		<div class='row '>
+			<div class='' class='col-sm-2'>
+				<div class='row '>
+					<div class='col-sm-12'>
+						<app-visitormenu></app-visitormenu>
+					</div>
+				</div>
+			</div>
+			<div class='' class='col-sm-10'>
+		<div class='row '>
+			<label class='page-header col-sm-2 '> My invitation
+			</label>
+			<label class='col-sm-7 '> {{ supp_visitor_invitation_status }}
+			</label>
+			<div class=' col-sm-3' style='text-align: right'>
+				<div class='btn-group '>
+					<button class='btn btn-primary btn-sm ' id='saveBtn' name='save_btn' (click)='save_supp_visitor_invitation(f)'>
+						<i class='fa fa-save'></i> Save
+					</button>
+					<a class='btn btn-primary btn-sm ' id='backBtn' name='back_btn' data-toggle='modal' routerLink='/invites'>
+						<i class='fa fa-arrow-left'></i> Back
+					</a>
+				</div>
+			</div>
+			<div class='col-sm-12'>
+				<hr class='mt-3 '>
+			</div>
+		</div>
+		<div class='row pt-3 '>
+			<div class='' class='col-sm-4'>
+				<div class='row '>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='sysid'>System ID</label>
+							<div class='col-sm-8'>
+								<input class='form-control ' id='sysid' name='sysid' type='text' autocomplete='off' readonly [(ngModel)]='supp_visitor_invitation.sysid' #sysid="ngModel">
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='location_id'>Location</label>
+							<div class='col-sm-8'>
+								<select class='form-control ' id='location_id' name='location_id' [(ngModel)]='supp_visitor_invitation.location_id' #location_id="ngModel">
+									<option value=''></option>
+									<option value='My flat'>My flat</option>
+									<option value='Club house'>Club house</option>
+									<option value='Premise'>Premise</option>
+									<option value='Others'>Others</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='visit_purpose'>Visit purpose</label>
+							<div class='col-sm-8'>
+								<input class='form-control ' id='visit_purpose' name='visit_purpose' type='text' autocomplete='off' [(ngModel)]='supp_visitor_invitation.visit_purpose' #visit_purpose="ngModel">
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='request_type'>Request type</label>
+							<div class='col-sm-8'>
+								<select class='form-control ' id='request_type' name='request_type' [(ngModel)]='supp_visitor_invitation.request_type' #request_type="ngModel">
+									<option value=''></option>
+									<option value='One time'>One time</option>
+									<option value='Recurring'>Recurring</option>
+									<option value='Not sure'>Not sure</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='' class='col-sm-4'>
+				<div class='row '>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='request_date'>Request date</label>
+							<div class='col-sm-8'>
+								<input class='form-control ' id='request_date' name='request_date' type='text' autocomplete='off' readonly [(ngModel)]='supp_visitor_invitation.request_date' #request_date="ngModel">
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='request_for'>Request for</label>
+							<div class='col-sm-8'>
+								<select class='form-control ' id='request_for' name='request_for' [(ngModel)]='supp_visitor_invitation.request_for' #request_for="ngModel">
+									<option value=''></option>
+									<option value='Single'>Single</option>
+									<option value='Bulk'>Bulk</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='approx_count'>Approx count</label>
+							<div class='col-sm-8'>
+								<input class='form-control ' id='approx_count' name='approx_count' type='text' autocomplete='off' [(ngModel)]='supp_visitor_invitation.approx_count' #approx_count="ngModel">
+							</div>
+						</div>
+					</div>
+					<label class='col-sm-4 '> 
+					</label>
+					<div class='col-sm-8'>
+						<div class='form-check'>
+							<input class='form-check-input ' id='parking_req' name='parking_req' type='checkbox' [(ngModel)]='supp_visitor_invitation.parking_req' #parking_req="ngModel">
+							<label class='form-check-label'>Parking required</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='' class='col-sm-4'>
+				<div class='row '>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='from_date'>From date</label>
+							<div class='col-sm-8'>
+								<div class='input-group'>
+									<input class='form-control ' id='from_date' name='from_date' type='text' [(ngModel)]='supp_visitor_invitation.from_date' #from_date="ngModel" ngbDatepicker #from_date_='ngbDatepicker'>
+									<div class='input-group-append'>
+										<button class='btn btn-default btn-sm' (click)='from_date_.toggle()'><i class='fa fa-calendar-alt'></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='from_time'>From time</label>
+							<div class='col-sm-8'>
+								<input class='form-control ' id='from_time' name='from_time' type='text' autocomplete='off' [(ngModel)]='supp_visitor_invitation.from_time' #from_time="ngModel">
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='to_date'>To date</label>
+							<div class='col-sm-8'>
+								<div class='input-group'>
+									<input class='form-control ' id='to_date' name='to_date' type='text' [(ngModel)]='supp_visitor_invitation.to_date' #to_date="ngModel" ngbDatepicker #to_date_='ngbDatepicker'>
+									<div class='input-group-append'>
+										<button class='btn btn-default btn-sm' (click)='to_date_.toggle()'><i class='fa fa-calendar-alt'></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group row'>
+							<label class='col-sm-4 col-form-label' for='to_time'>To time</label>
+							<div class='col-sm-8'>
+								<input class='form-control ' id='to_time' name='to_time' type='text' autocomplete='off' [(ngModel)]='supp_visitor_invitation.to_time' #to_time="ngModel">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				<div class='row mb-2 '>
+					<div class=' col-sm-12' style='text-align: right'>
+						<div class='btn-group '>
+							<button class='btn btn-danger btn-sm ' data-target='#d1' data-toggle='modal' (click)='select_supp_invited_visitors(supp_visitor_invitation.sysid)'>
+								<i class='fa fa-plus'></i> Add visitors
+							</button>
+						</div>
+					</div>
+				</div>
+		<div class='row p-4 shadow ' style='border: 1px solid lightgray'>
+			<div class='col-sm-12'>
+				<div class='form-group'>
+					<label for='event_name'>Event name</label>
+					<input class='form-control ' id='event_name' name='event_name' type='text' autocomplete='off' [(ngModel)]='supp_visitor_invitation.event_name' #event_name="ngModel">
+				</div>
+			</div>
+			<div class='col-sm-12'>
+				<div class='form-group'>
+					<label for='invite_text'>Invite text</label>
+					<textarea class='form-control ' id='invite_text' name='invite_text' rows='5' autocomplete='off' [(ngModel)]='supp_visitor_invitation.invite_text' #invite_text="ngModel"></textarea>
+				</div>
+			</div>
+		</div>
+			</div>
+		</div>
+	</div>
+	<div tabindex='-1' role='dialog' class='modal fade ' id='d1'>
+		<div class='modal-dialog modal-xl' role='document'>
+			<div class='modal-content'>
+				<div class='modal-header '>
+					<div class='modal-title'><h5>Visitors</h5></div>
+					<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+						<span aria-hidden='true'>&times;</span>
+					</button>
+				</div>
+				<div class='modal-body '>
+			<div class='row '>
+				<div class='' class='col-sm-4'>
+					<div class='row '>
+						<label class='col-sm-12 '> Select visitors from master entry
+						</label>
+						<div class='col-sm-12'>
+							<table class='table table-bordered table-sm '>
+								<thead>
+									<tr>
+										<th>Person name</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr *ngFor='let x of supp_visitor_master_listList'>
+										<td>
+											<a class='' id='person_name' name='person_name' data-toggle='modal' (click)='add_to_vlist(x)' href='#'>
+												{{ x.person_name }}
+											</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class='' class='col-sm-8'>
+					<div class='row '>
+						<label class='col-sm-12 ' style='color: darkblue'> Enter visitors details if not not available in master list else select entry from master list.
+						</label>
+						<div class='col-sm-7'>
+							<div class='form-group'>
+								<label for='person_name'>Person name</label>
+								<input class='form-control ' id='person_name' name='person_name' type='text' autocomplete='off' [(ngModel)]='supp_invited_visitors.person_name' #person_name="ngModel">
+							</div>
+						</div>
+						<div class='col-sm-3'>
+							<div class='form-group'>
+								<label for='phone1'>Phone1</label>
+								<input class='form-control ' id='phone1' name='phone1' type='text' autocomplete='off' [(ngModel)]='supp_invited_visitors.phone1' #phone1="ngModel">
+							</div>
+						</div>
+						<div class='col-sm-1'>
+							<button class='btn btn-primary btn-sm ' style='margin-top: 30px;' (click)='save_supp_invited_visitors()'>
+								<i class='fa fa-plus'></i> Add
+							</button>
+						</div>
+						<div class='col-sm-12'>
+							<hr class='mb-3 '>
+						</div>
+					</div>
+					<div class='row ' *ngFor = 'let x of supp_invited_visitorsList'>
+						<label class='col-sm-7 ' id='person_name' name='person_name'> {{ x.person_name }}
+						</label>
+						<label class='col-sm-3 ' id='phone1' name='phone1'> {{ x.phone1 }}
+						</label>
+						<div class='col-sm-1'>
+							<a class='' style='color: red' data-toggle='modal' (click)='delete_supp_invited_visitors(x.sysid)' href='#'>
+								Remove
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+				</div>
+				<div class='modal-footer '>
+			<div class='row '>
+				<label class='col-sm-12 '> {{supp_invited_visitors_status }}
+				</label>
+			</div>
+				</div>
+	</div>
+		</div>
+			</div>
+</form>

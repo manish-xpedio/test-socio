@@ -1,0 +1,44 @@
+<form #f='ngForm'>
+	<div class='container-fluid '>
+		<div class='row pt-4 '>
+			<div class='' class='col-sm-1'>
+				<div class='row '>
+				</div>
+			</div>
+			<div class='' class='col-sm-2'>
+				<div class='row '>
+					<div class='col-sm-12'>
+						<app-srmenu></app-srmenu>
+					</div>
+				</div>
+			</div>
+			<div class='' class='col-sm-9'>
+				<div class='row pl-3 '>
+					<label class='page-header col-sm-10 '> Public service request
+					</label>
+					<label class='descr col-sm-12 '> View all the requests which are allowed to be viewed publicly. These requests do not share any personal data.
+					</label>
+					<div class='col-sm-12'>
+						<hr class='mb-5 '>
+					</div>
+				</div>
+				<div class='row pl-3 ' *ngFor = 'let x of public_srList'>
+					<label class='col-sm-12 '> <h5> {{ x.sr_title }} </h5>
+					</label>
+					<label class='col-sm-12 ' style='color: #c70039'> Posted on {{ x.sr_create_date }}
+					</label>
+					<label class='col-sm-12 '> {{ x.sr_text }}
+					</label>
+					<div class='col-sm-12'>
+						<a class='' data-toggle='modal' href='#'>
+							Show details
+						</a>
+					</div>
+					<div class='col-sm-12'>
+						<hr class='mb-3 '>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

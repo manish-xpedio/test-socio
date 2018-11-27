@@ -1,0 +1,54 @@
+<form #f='ngForm'>
+<div class='container-fluid p-5 '>
+	<div class='row '>
+		<label class='page-header col-sm-2 '> Email server</label>
+		<label class='col-sm-8 '> {{ admin_email_conf_status }}</label>
+		<div class=' col-sm-2' style='text-align: right'>
+			<div class='btn-group '>
+				<a class='btn btn-primary btn-sm shadow ' name='add_btn' data-toggle='modal' routerLink='/emailserverform'>
+					<i class='fa fa-plus'></i> Add
+				</a>
+				<a class='btn btn-primary btn-sm shadow ' name='back' data-toggle='modal' routerLink='/settings'>
+					<i class='fa fa-arrow-left'></i> Back
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class='row '>
+		<div class='col-sm-12'>
+			<table class='table table-bordered table-sm '>
+				<thead>
+					<tr>
+						<th>Configuration name</th>
+						<th>Display name</th>
+						<th>Email ID</th>
+						<th>Type of server</th>
+						<th>Status</th>
+						<th>System ID</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor='let x of admin_email_confList'>
+						<td>
+							<a class='' id='conf_name' name='conf_name' data-toggle='modal' routerLink='/emailserverform' [queryParams]='{id: x.sysid}'>
+								{{ x.conf_name }}
+							</a>
+						</td>
+						<td> {{ x.display_name }} </td>
+						<td> {{ x.email_id }} </td>
+						<td> {{ x.type_of_server }} </td>
+						<td> {{ x.status }} </td>
+						<td> {{ x.sysid }} </td>
+						<td>
+							<a class='' style='color: red' data-toggle='modal' (click)='delete_admin_email_conf(x.sysid)' href='#'>
+								<i class='fa fa-trash'></i> Delete
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+</form>

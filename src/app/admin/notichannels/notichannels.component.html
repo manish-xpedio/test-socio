@@ -1,0 +1,196 @@
+<form #f='ngForm'>
+<div class='container-fluid p-5 '>
+	<div class='row '>
+		<label class='page-header col-sm-3 '> Notification channels</label>
+		<label class='col-sm-7 '> {{ admin_noti_channels_status }}</label>
+		<div class=' col-sm-2' style='text-align: right'>
+			<div class='btn-group '>
+				<button class='btn btn-primary btn-sm ' id='add_btn' name='add_btn' data-target='#dlg' data-toggle='modal' (click)='clear_admin_noti_channels()'>
+					<i class='fa fa-plus'></i> Add
+				</button>
+				<a class='btn btn-primary btn-sm ' id='back_btn' name='back_btn' data-toggle='modal' routerLink='/settings'>
+					<i class='fa fa-arrow-left'></i> Back
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class='row '>
+		<div class='col-sm-12'>
+			<table class='table table-bordered table-sm '>
+				<thead>
+					<tr>
+						<th>Channel name</th>
+						<th>Is Email</th>
+						<th>Is SMS</th>
+						<th>Is Whatsapp</th>
+						<th>Email template</th>
+						<th>Sms template</th>
+						<th>Whatsapp template</th>
+						<th>Status</th>
+						<th>System ID</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor='let x of admin_noti_channelsList'>
+						<td>
+							<a class='' id='channel_name' name='channel_name' data-target='#dlg' data-toggle='modal' (click)='current_record_admin_noti_channels(x)' href='#'>
+								{{ x.channel_name }}
+							</a>
+						</td>
+						<td> {{ x.is_email }} </td>
+						<td> {{ x.is_sms }} </td>
+						<td> {{ x.is_whatsapp }} </td>
+						<td> {{ x.temp_name }} </td>
+						<td> {{ x.sms_temp_name }} </td>
+						<td> {{ x.whatsapp_template_id }} </td>
+						<td> {{ x.status }} </td>
+						<td> {{ x.sysid }} </td>
+						<td>
+							<a class='' style='color: red' data-toggle='modal' (click)='delete_admin_noti_channels(x.sysid)' href='#'>
+								<i class='fa fa-trash'></i> Delete
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div tabindex='-1' role='dialog' class='modal fade ' id='dlg'>
+		<div class='modal-dialog modal-lg' role='document'>
+			<div class='modal-content'>
+				<div class='modal-header '>
+					<div class='modal-title'><h5>Notification channels</h5></div>
+					<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+						<span aria-hidden='true'>&times;</span>
+					</button>
+				</div>
+				<div class='modal-body '>
+			<div class='row '>
+				<div class='' class='col-sm-6'>
+					<div class='row '>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='sysid'>System ID</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='sysid' name='sysid' type='text' autocomplete='off' readonly [(ngModel)]='admin_noti_channels.sysid' #sysid="ngModel">
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='channel_name'>Channel name</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='channel_name' name='channel_name' type='text' autocomplete='off' [(ngModel)]='admin_noti_channels.channel_name' #channel_name="ngModel">
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='is_email'>Is Email</label>
+								<div class='col-sm-8'>
+									<select class='form-control ' id='is_email' name='is_email' [(ngModel)]='admin_noti_channels.is_email' #is_email="ngModel">
+										<option value=''></option>
+										<option value='Yes'>Yes</option>
+										<option value='No'>No</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='is_sms'>Is SMS</label>
+								<div class='col-sm-8'>
+									<select class='form-control ' id='is_sms' name='is_sms' [(ngModel)]='admin_noti_channels.is_sms' #is_sms="ngModel">
+										<option value=''></option>
+										<option value='Yes'>Yes</option>
+										<option value='No'>No</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='is_whatsapp'>Is Whatsapp</label>
+								<div class='col-sm-8'>
+									<select class='form-control ' id='is_whatsapp' name='is_whatsapp' [(ngModel)]='admin_noti_channels.is_whatsapp' #is_whatsapp="ngModel">
+										<option value=''></option>
+										<option value='Yes'>Yes</option>
+										<option value='No'>No</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='' class='col-sm-6'>
+					<div class='row '>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='email_template_id'>Email template</label>
+								<div class='col-sm-8'>
+									<select class='form-control ' id='email_template_id' name='email_template_id' [(ngModel)]='admin_noti_channels.email_template_id' #email_template_id="ngModel">
+										<option value=''></option>
+										<option *ngFor='let x of admin_email_templateList' value='{{ x.sysid }}'>{{ x.temp_name }}</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='sms_template_id'>Sms template</label>
+								<div class='col-sm-8'>
+									<select class='form-control ' id='sms_template_id' name='sms_template_id' [(ngModel)]='admin_noti_channels.sms_template_id' #sms_template_id="ngModel">
+										<option value=''></option>
+										<option *ngFor='let x of admin_sms_templateList' value='{{ x.sysid }}'>{{ x.sms_temp_name }}</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='whatsapp_template_id'>Whatsapp template</label>
+								<div class='col-sm-8'>
+									<select class='form-control ' id='whatsapp_template_id' name='whatsapp_template_id' [(ngModel)]='admin_noti_channels.whatsapp_template_id' #whatsapp_template_id="ngModel">
+										<option value=''></option>
+										<option value='-1'>-1</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='status'>Status</label>
+								<div class='col-sm-8'>
+									<select class='form-control ' id='status' name='status' [(ngModel)]='admin_noti_channels.status' #status="ngModel">
+										<option value=''></option>
+										<option value='Active'>Active</option>
+										<option value='Inactive'>Inactive</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+				</div>
+				<div class='modal-footer '>
+			<div class='row '>
+				<label class='pull-left '> {{ admin_noti_channels_status }}</label>
+				<div class=' col-sm-5'>
+					<div class='btn-group pull-right '>
+						<button class='btn btn-primary btn-sm ' name='save_btn' (click)='save_admin_noti_channels(f)'>
+							<i class='fa fa-save'></i> Save
+						</button>
+						<button class='btn btn-primary btn-sm ' name='close_btn' data-dismiss='modal'>
+							<i class='fa fa-remove'></i> Close
+						</button>
+					</div>
+				</div>
+			</div>
+				</div>
+	</div>
+		</div>
+			</div>
+</div>
+</form>

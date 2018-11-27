@@ -1,0 +1,151 @@
+<form #f='ngForm'>
+	<div class='container-fluid p-5 '>
+		<div class='row '>
+			<label class='page-header col-sm-3 '> Vehicle registration
+			</label>
+			<label class='col-sm-6 '> {{ crm_vehicles_status }}
+			</label>
+			<div class=' col-sm-3' style='text-align: right'>
+				<div class='btn-group '>
+					<button class='btn btn-secondary btn-sm mr-1 ' id='reqbtn' name='req_btn' data-target='#d1' data-toggle='modal' (click)='sticker_request()'>
+						<i class='far fa-address-card'></i> Request for sticker
+					</button>
+					<button class='btn btn-primary btn-sm ' id='savebtn' name='save_btn' (click)='save_crm_vehicles(f)'>
+						<i class='fa fa-save'></i> Save changes
+					</button>
+				</div>
+			</div>
+			<div class='col-sm-12'>
+				<hr class='mb-3 '>
+			</div>
+		</div>
+		<div class='row '>
+			<div class='' class='col-sm-2'>
+				<div class='row ' *ngIf='bc_id'>
+					<div style='text-align: center' class='col-sm-12'>
+						<ngx-barcode class='' [bc-value]='crm_vehicles.sysid' [bc-display-value]='false'></ngx-barcode>
+					</div>
+					<div class='col-sm-12'>
+						<button class='btn btn-primary btn-sm btn-block '>
+							<i class='fa fa-print'></i> Print sticker
+						</button>
+					</div>
+				</div>
+				<div class='row px-3 py-5 ' style='border: 1px solid lightgray' *ngIf='!bc_id'>
+					<label class='col-sm-12 '> Please select your registered vehicle to see your barcode sticker.<br><br>You can print that code from here.
+					</label>
+				</div>
+			</div>
+			<div class='' class='col-sm-10'>
+				<div class='row '>
+					<div class='col-sm-4'>
+						<div class='form-group'>
+							<label for='member_id'>Member name</label>
+							<input class='form-control ' id='member_id' name='member_id' type='text' autocomplete='off' readonly [(ngModel)]='crm_vehicles.member_id' #member_id="ngModel">
+						</div>
+					</div>
+					<div class='col-sm-4'>
+						<div class='form-group'>
+							<label for='vehicle_no'>Vehicle no</label>
+							<input class='form-control ' id='vehicle_no' name='vehicle_no' type='text' autocomplete='off' [(ngModel)]='crm_vehicles.vehicle_no' #vehicle_no="ngModel">
+						</div>
+					</div>
+					<div class='col-sm-4'>
+						<div class='form-group'>
+							<label for='vehicle_type'>Vehicle type</label>
+							<select class='form-control ' id='vehicle_type' name='vehicle_type' [(ngModel)]='crm_vehicles.vehicle_type' #vehicle_type="ngModel">
+								<option value=''></option>
+								<option value='2 Wheeler'>2 Wheeler</option>
+								<option value='4 Wheeler'>4 Wheeler</option>
+								<option value='Others'>Others</option>
+							</select>
+						</div>
+					</div>
+					<div class='col-sm-4'>
+						<div class='form-group'>
+							<label for='vehicle_brand'>Vehicle brand</label>
+							<input class='form-control ' id='vehicle_brand' name='vehicle_brand' type='text' autocomplete='off' [(ngModel)]='crm_vehicles.vehicle_brand' #vehicle_brand="ngModel">
+						</div>
+					</div>
+					<div class='col-sm-4'>
+						<div class='form-group'>
+							<label for='sticker_no'>Sticker no</label>
+							<input class='form-control ' id='sticker_no' name='sticker_no' type='text' autocomplete='off' [(ngModel)]='crm_vehicles.sticker_no' #sticker_no="ngModel">
+						</div>
+					</div>
+					<div class='col-sm-4'>
+						<div class='form-group'>
+							<label for='status'>Status</label>
+							<select class='form-control ' id='status' name='status' [(ngModel)]='crm_vehicles.status' #status="ngModel">
+								<option value=''></option>
+								<option value='Active'>Active</option>
+								<option value='Inactive'>Inactive</option>
+							</select>
+						</div>
+					</div>
+					<label class='page-header col-sm-12 '> My registrations
+					</label>
+				</div>
+				<div class='row '>
+				<div class='col-sm-12'>
+					<table class='table table-bordered table-sm '>
+						<thead>
+							<tr>
+								<th>Vehicle no</th>
+								<th>Member name</th>
+								<th>Vehicle type</th>
+								<th>Vehicle brand</th>
+								<th>Sticker no</th>
+								<th>Status</th>
+								<th>System ID</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr *ngFor='let x of crm_vehiclesList'>
+								<td>
+									<a class='' id='vehicle_no' name='vehicle_no' data-toggle='modal' (click)='current_record_crm_vehicles(x)' href='#'>
+										{{ x.vehicle_no }}
+									</a>
+								</td>
+								<td> {{ x.member_id }} </td>
+								<td> {{ x.vehicle_type }} </td>
+								<td> {{ x.vehicle_brand }} </td>
+								<td> {{ x.sticker_no }} </td>
+								<td> {{ x.status }} </td>
+								<td> {{ x.sysid }} </td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div tabindex='-1' role='dialog' class='modal fade ' id='d1'>
+		<div class='modal-dialog' role='document'>
+			<div class='modal-content'>
+				<div class='modal-header '>
+					<div class='modal-title'><h5>Sticker request</h5></div>
+					<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+						<span aria-hidden='true'>&times;</span>
+					</button>
+				</div>
+				<div class='modal-body '>
+			<div class='row '>
+				<div class='px-5 py-3 ' [innerHTML]='req_text'>
+				</div>
+			</div>
+				</div>
+				<div class='modal-footer '>
+			<div class='row '>
+			<div class='col-sm-12'>
+				<button class='btn btn-primary btn-sm ' data-dismiss='modal'>
+					Close
+				</button>
+			</div>
+			</div>
+				</div>
+	</div>
+		</div>
+			</div>
+</form>

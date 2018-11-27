@@ -1,0 +1,958 @@
+{
+    "child": [
+        {
+            "child": [
+                {
+                    "child": [
+                    ],
+                    "name": "Label",
+                    "props": {
+                        "Class": "page-header",
+                        "Columns": "2",
+                        "DisplayLabel": "",
+                        "For": "",
+                        "FormType": "Standard",
+                        "GroupWidth": "",
+                        "HelpText": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Label class": "",
+                        "Label-type": "span",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Required": "",
+                        "Style": "",
+                        "TableColumnWidth": "",
+                        "Value": "Error dictionary"
+                    },
+                    "tabpos": "2",
+                    "type": "Label"
+                },
+                {
+                    "child": [
+                    ],
+                    "name": "Label",
+                    "props": {
+                        "Class": "",
+                        "Columns": "7",
+                        "DisplayLabel": "",
+                        "For": "",
+                        "FormType": "Standard",
+                        "GroupWidth": "",
+                        "HelpText": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Label class": "",
+                        "Label-type": "span",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Required": "",
+                        "Style": "",
+                        "TableColumnWidth": "",
+                        "Value": "{{ admin_err_dict_status }}"
+                    },
+                    "tabpos": "2",
+                    "type": "Label"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                            ],
+                            "name": "Button",
+                            "props": {
+                                "Class": "btn btn-primary btn-sm",
+                                "ClickEvent": "clear_admin_err_dict()",
+                                "Columns": "12",
+                                "Data-dismiss": "",
+                                "Data-target": "#dlg",
+                                "Data-toggle": "modal",
+                                "Fa-icon": "fa fa-plus",
+                                "Hidden": "",
+                                "ID": "",
+                                "Icon": "",
+                                "Model": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Readonly": "",
+                                "Ref": "",
+                                "RouterLinkActive": "",
+                                "RouterParam": "",
+                                "Style": "",
+                                "TableColumnWidth": "",
+                                "Value": "Add"
+                            },
+                            "tabpos": "3",
+                            "type": "Button"
+                        },
+                        {
+                            "child": [
+                            ],
+                            "name": "Link",
+                            "props": {
+                                "Class": "btn btn-primary btn-sm",
+                                "ClickEvent": "",
+                                "Columns": "12",
+                                "DB-table": "",
+                                "Data-dismiss": "",
+                                "Data-target": "",
+                                "Data-toggle": "modal",
+                                "DisplayLabel": "",
+                                "Fa-icon": "fa fa-arrow-left",
+                                "Group-class": "",
+                                "Group-style": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Icon": "",
+                                "Model": "",
+                                "Name": "",
+                                "Property-binding": "",
+                                "RouterLink": "/settings",
+                                "RouterParam": "",
+                                "Style": "",
+                                "TableColumnWidth": "",
+                                "Value": "Back"
+                            },
+                            "tabpos": "3",
+                            "type": "Link"
+                        }
+                    ],
+                    "name": "ButtonGroup",
+                    "props": {
+                        "Class": "btn-group",
+                        "Columns": "3",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "text-align: right",
+                        "Property-binding": "",
+                        "Style": "",
+                        "TableColumnWidth": ""
+                    },
+                    "tabpos": "2",
+                    "type": "ButtonGroup"
+                }
+            ],
+            "name": "Row",
+            "props": {
+                "Class": "row",
+                "DB-table": "",
+                "Hidden": "",
+                "ID": "",
+                "Name": "",
+                "Parent-class": "",
+                "Parent-style": "",
+                "Property-binding": "",
+                "Repeat": "",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Row"
+        },
+        {
+            "child": [
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "err_code",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "current_record_admin_err_dict(x)",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "#dlg",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "Error code",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "err_code",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "err_code",
+                                        "Property-binding": "",
+                                        "RouterLink": "#",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "{{ x.err_code }}"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "err_name",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "DisplayLabel": "Error name",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "err_name",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "err_name",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "{{ x.err_name }}"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "err_decsr",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "DisplayLabel": "Error description",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "err_decsr",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "err_decsr",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "{{ x.err_decsr }}"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "err_resolution",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "DisplayLabel": "Error resolution",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "err_resolution",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "err_resolution",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "{{ x.err_resolution }}"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "err_type",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "DisplayLabel": "Error type",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "err_type",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "err_type",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "{{ x.err_type }}"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "status",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "DisplayLabel": "Status",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "status",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "status",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "{{ x.status }}"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "delete_btn",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "clear_admin_err_dict(x.sysid)",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "fa fa-trash",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "delete_btn",
+                                        "Property-binding": "",
+                                        "RouterLink": "#",
+                                        "RouterParam": "",
+                                        "Style": "color: red",
+                                        "TableColumnWidth": "",
+                                        "Value": "Delete"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                }
+                            ],
+                            "name": "TableRow",
+                            "props": {
+                                "Class": "",
+                                "Data-source": "admin_err_dictList",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Property-binding": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "TableRow"
+                        }
+                    ],
+                    "name": "Table",
+                    "props": {
+                        "Border": "Yes",
+                        "Caption": "",
+                        "Class": "table table-bordered table-sm",
+                        "Columns": "12",
+                        "DataSource": "",
+                        "Filter": "",
+                        "HeaderClass": "",
+                        "Hidden": "",
+                        "Hover": "No",
+                        "ID": "",
+                        "ItemsPerPage": "12",
+                        "Name": "",
+                        "NoOfPagesDisplay": "10",
+                        "Pagination": "Yes",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Responsive": "",
+                        "Size": "Small",
+                        "StripedRows": "No",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Table"
+                }
+            ],
+            "name": "Row",
+            "props": {
+                "Class": "row",
+                "DB-table": "",
+                "Hidden": "",
+                "ID": "",
+                "Name": "",
+                "Parent-class": "",
+                "Parent-style": "",
+                "Property-binding": "",
+                "Repeat": "",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Row"
+        },
+        {
+            "child": [
+                {
+                    "child": [
+                    ],
+                    "name": "Dialog-header",
+                    "props": {
+                        "Class": "modal-header",
+                        "Close-button": "Yes",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": "",
+                        "Title": "Error dictionary"
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-header"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "sysid",
+                                                    "props": {
+                                                        "Auto-complete": "off",
+                                                        "ChangeEvent": "",
+                                                        "Class": "form-control",
+                                                        "Columns": "4,8",
+                                                        "Control-type": "text",
+                                                        "DB-table": "admin_err_dict",
+                                                        "DisplayLabel": "System ID",
+                                                        "FormType": "Row",
+                                                        "Group-class": "",
+                                                        "Group-property-binding": "",
+                                                        "Group-style": "",
+                                                        "Hidden": "",
+                                                        "ID": "sysid",
+                                                        "Label-class": "",
+                                                        "Label-property-binding": "",
+                                                        "Label-style": "",
+                                                        "Model": "sysid",
+                                                        "Name": "sysid",
+                                                        "Placeholder": "",
+                                                        "Property-binding": "",
+                                                        "Readonly": "true",
+                                                        "Style": "",
+                                                        "TableColumnWidth": "",
+                                                        "Validations": "",
+                                                        "Validator-class": "",
+                                                        "Validator-style": "",
+                                                        "Value": ""
+                                                    },
+                                                    "tabpos": "4",
+                                                    "type": "TextBox"
+                                                },
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "err_code",
+                                                    "props": {
+                                                        "Auto-complete": "off",
+                                                        "ChangeEvent": "",
+                                                        "Class": "form-control",
+                                                        "Columns": "4,8",
+                                                        "Control-type": "text",
+                                                        "DB-table": "admin_err_dict",
+                                                        "DisplayLabel": "Error code",
+                                                        "FormType": "Row",
+                                                        "Group-class": "",
+                                                        "Group-property-binding": "",
+                                                        "Group-style": "",
+                                                        "Hidden": "",
+                                                        "ID": "err_code",
+                                                        "Label-class": "",
+                                                        "Label-property-binding": "",
+                                                        "Label-style": "",
+                                                        "Model": "err_code",
+                                                        "Name": "err_code",
+                                                        "Placeholder": "",
+                                                        "Property-binding": "",
+                                                        "Readonly": "",
+                                                        "Style": "",
+                                                        "TableColumnWidth": "",
+                                                        "Validations": "",
+                                                        "Validator-class": "",
+                                                        "Validator-style": "",
+                                                        "Value": ""
+                                                    },
+                                                    "tabpos": "4",
+                                                    "type": "TextBox"
+                                                },
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "err_name",
+                                                    "props": {
+                                                        "Auto-complete": "off",
+                                                        "ChangeEvent": "",
+                                                        "Class": "form-control",
+                                                        "Columns": "4,8",
+                                                        "Control-type": "text",
+                                                        "DB-table": "admin_err_dict",
+                                                        "DisplayLabel": "Error name",
+                                                        "FormType": "Row",
+                                                        "Group-class": "",
+                                                        "Group-property-binding": "",
+                                                        "Group-style": "",
+                                                        "Hidden": "",
+                                                        "ID": "err_name",
+                                                        "Label-class": "",
+                                                        "Label-property-binding": "",
+                                                        "Label-style": "",
+                                                        "Model": "err_name",
+                                                        "Name": "err_name",
+                                                        "Placeholder": "",
+                                                        "Property-binding": "",
+                                                        "Readonly": "",
+                                                        "Style": "",
+                                                        "TableColumnWidth": "",
+                                                        "Validations": "",
+                                                        "Validator-class": "",
+                                                        "Validator-style": "",
+                                                        "Value": ""
+                                                    },
+                                                    "tabpos": "4",
+                                                    "type": "TextBox"
+                                                },
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "err_decsr",
+                                                    "props": {
+                                                        "Auto-complete": "off",
+                                                        "ChangeEvent": "",
+                                                        "Class": "form-control",
+                                                        "Columns": "4,8",
+                                                        "DB-table": "admin_err_dict",
+                                                        "DisplayLabel": "Error description",
+                                                        "FormType": "Row",
+                                                        "Group-class": "",
+                                                        "Group-style": "",
+                                                        "GroupWidth": "",
+                                                        "HelpText": "",
+                                                        "Hidden": "",
+                                                        "ID": "err_decsr",
+                                                        "Label class": "",
+                                                        "Label-class": "",
+                                                        "Label-style": "",
+                                                        "Label-type": "label",
+                                                        "Model": "err_decsr",
+                                                        "Name": "err_decsr",
+                                                        "Placeholder": "",
+                                                        "Property-binding": "",
+                                                        "Readonly": "",
+                                                        "Required": "",
+                                                        "Rows": "5",
+                                                        "Style": "",
+                                                        "TableColumnWidth": "",
+                                                        "Validations": "",
+                                                        "Value": ""
+                                                    },
+                                                    "tabpos": "4",
+                                                    "type": "TextArea"
+                                                }
+                                            ],
+                                            "name": "Row",
+                                            "props": {
+                                                "Class": "row",
+                                                "DB-table": "",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Repeat": "",
+                                                "Style": ""
+                                            },
+                                            "tabpos": "3",
+                                            "type": "Row"
+                                        }
+                                    ],
+                                    "name": "Column",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "6",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "3",
+                                    "type": "Column"
+                                },
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "err_resolution",
+                                                    "props": {
+                                                        "Auto-complete": "off",
+                                                        "ChangeEvent": "",
+                                                        "Class": "form-control",
+                                                        "Columns": "4,8",
+                                                        "DB-table": "admin_err_dict",
+                                                        "DisplayLabel": "Error resolution",
+                                                        "FormType": "Row",
+                                                        "Group-class": "",
+                                                        "Group-style": "",
+                                                        "GroupWidth": "",
+                                                        "HelpText": "",
+                                                        "Hidden": "",
+                                                        "ID": "err_resolution",
+                                                        "Label class": "",
+                                                        "Label-class": "",
+                                                        "Label-style": "",
+                                                        "Label-type": "label",
+                                                        "Model": "err_resolution",
+                                                        "Name": "err_resolution",
+                                                        "Placeholder": "",
+                                                        "Property-binding": "",
+                                                        "Readonly": "",
+                                                        "Required": "",
+                                                        "Rows": "5",
+                                                        "Style": "",
+                                                        "TableColumnWidth": "",
+                                                        "Validations": "",
+                                                        "Value": ""
+                                                    },
+                                                    "tabpos": "4",
+                                                    "type": "TextArea"
+                                                },
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "err_type",
+                                                    "props": {
+                                                        "Auto-complete": "off",
+                                                        "ChangeEvent": "",
+                                                        "Class": "form-control",
+                                                        "Columns": "4,8",
+                                                        "Control-type": "text",
+                                                        "DB-table": "admin_err_dict",
+                                                        "DisplayLabel": "Error type",
+                                                        "FormType": "Row",
+                                                        "Group-class": "",
+                                                        "Group-property-binding": "",
+                                                        "Group-style": "",
+                                                        "Hidden": "",
+                                                        "ID": "err_type",
+                                                        "Label-class": "",
+                                                        "Label-property-binding": "",
+                                                        "Label-style": "",
+                                                        "Model": "err_type",
+                                                        "Name": "err_type",
+                                                        "Placeholder": "",
+                                                        "Property-binding": "",
+                                                        "Readonly": "true",
+                                                        "Style": "",
+                                                        "TableColumnWidth": "",
+                                                        "Validations": "",
+                                                        "Validator-class": "",
+                                                        "Validator-style": "",
+                                                        "Value": "Custom"
+                                                    },
+                                                    "tabpos": "4",
+                                                    "type": "TextBox"
+                                                },
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "status",
+                                                    "props": {
+                                                        "ChangeEvent": "",
+                                                        "Class": "form-control",
+                                                        "Columns": "4,8",
+                                                        "DB-table": "admin_err_dict",
+                                                        "Data-source": "statusList",
+                                                        "DisplayLabel": "Status",
+                                                        "FormType": "Row",
+                                                        "Group-class": "",
+                                                        "Group-style": "",
+                                                        "GroupWidth": "",
+                                                        "Hidden": "",
+                                                        "ID": "status",
+                                                        "Init": "Yes",
+                                                        "Label-class": "",
+                                                        "Label-style": "",
+                                                        "Model": "status",
+                                                        "Multiple": "No",
+                                                        "Name": "status",
+                                                        "NeedKeyValue": "No",
+                                                        "Property-binding": "",
+                                                        "Required": "",
+                                                        "Static-values": "Active,Inactive",
+                                                        "Style": "",
+                                                        "TableColumnWidth": ""
+                                                    },
+                                                    "tabpos": "4",
+                                                    "type": "ComboBox"
+                                                }
+                                            ],
+                                            "name": "Row",
+                                            "props": {
+                                                "Class": "row",
+                                                "DB-table": "",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Repeat": "",
+                                                "Style": ""
+                                            },
+                                            "tabpos": "3",
+                                            "type": "Row"
+                                        }
+                                    ],
+                                    "name": "Column",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "6",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "3",
+                                    "type": "Column"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-body",
+                    "props": {
+                        "Class": "modal-body",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-body"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                            ],
+                            "name": "Label",
+                            "props": {
+                                "Class": "",
+                                "Columns": "8",
+                                "DisplayLabel": "",
+                                "For": "",
+                                "FormType": "Standard",
+                                "GroupWidth": "",
+                                "HelpText": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Label class": "",
+                                "Label-type": "span",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Required": "",
+                                "Style": "",
+                                "TableColumnWidth": "",
+                                "Value": "{{ admin_err_dict_status }}"
+                            },
+                            "tabpos": "3",
+                            "type": "Label"
+                        },
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "save_btn",
+                                    "props": {
+                                        "Class": "btn btn-primary btn-sm",
+                                        "ClickEvent": "save_admin_err_dict(f)",
+                                        "Columns": "12",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "",
+                                        "Fa-icon": "fa fa-save",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "save_btn",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Ref": "",
+                                        "RouterLinkActive": "",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Save"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Button"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "close_btn",
+                                    "props": {
+                                        "Class": "btn btn-primary btn-sm",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "Data-dismiss": "modal",
+                                        "Data-target": "",
+                                        "Data-toggle": "",
+                                        "Fa-icon": "fa fa-times",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "close_btn",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Ref": "",
+                                        "RouterLinkActive": "",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Close"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Button"
+                                }
+                            ],
+                            "name": "ButtonGroup",
+                            "props": {
+                                "Class": "btn-group",
+                                "Columns": "4",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "text-align: right",
+                                "Property-binding": "",
+                                "Style": "",
+                                "TableColumnWidth": ""
+                            },
+                            "tabpos": "3",
+                            "type": "ButtonGroup"
+                        }
+                    ],
+                    "name": "Dialog-footer",
+                    "props": {
+                        "Class": "modal-footer",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-footer"
+                }
+            ],
+            "name": "Dialog",
+            "props": {
+                "Class": "modal fade",
+                "Hidden": "",
+                "ID": "dlg",
+                "Name": "",
+                "Property-binding": "",
+                "Size": "Extra-large",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Dialog"
+        }
+    ],
+    "name": "Container",
+    "props": {
+        "Class": "container-fluid p-5",
+        "Hidden": "",
+        "ID": "",
+        "Name": "",
+        "Property-binding": "",
+        "Style": ""
+    },
+    "tabpos": "0",
+    "type": "Container"
+}

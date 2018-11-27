@@ -1,0 +1,66 @@
+<form #f='ngForm'>
+	<div class='container-fluid '>
+		<div class='row px-5 '>
+			<div class='' class='col-sm-2'>
+				<div class='row pt-5 sr-side '>
+					<div class='col-sm-12'>
+						<app-myaccmenu></app-myaccmenu>
+					</div>
+				</div>
+			</div>
+			<div class='' class='col-sm-10'>
+				<div class='row p-5 '>
+					<div class='' class='col-sm-6'>
+						<div class='row '>
+							<label class='page-header col-sm-12 '> Payment history
+							</label>
+							<div class='col-sm-12'>
+								<hr class='mb-3 '>
+							</div>
+							<label class='col-sm-4 '> Transaction ID
+							</label>
+							<label class='col-sm-4 '> Payment date
+							</label>
+							<label class='col-sm-4 '> Amount
+							</label>
+							<div class='col-sm-12'>
+								<hr class='mb-3 '>
+							</div>
+						</div>
+						<div class='row ' *ngFor = 'let x of fin_member_paymentsList'>
+							<div class='col-sm-4'>
+								<a class='' id='sysid' name='sysid' data-toggle='modal' (click)='get_trans_details(x.sysid)' href='#'>
+									{{ x.sysid }}
+								</a>
+							</div>
+							<label class='col-sm-4 ' id='payment_date' name='payment_date'> {{ x.payment_date }}
+							</label>
+							<label class='col-sm-4 ' id='actual_paid' name='actual_paid'> {{ x.actual_paid }}
+							</label>
+							<div class='col-sm-12'>
+								<hr class='mb-2 '>
+							</div>
+						</div>
+					</div>
+					<div class='' class='col-sm-6'>
+						<div class='row ml-2 '>
+							<label class='page-header col-sm-12 '> Transaction details
+							</label>
+							<div class='col-sm-12'>
+								<hr class=''>
+							</div>
+							<label class='col-sm-12 '> 
+							</label>
+						</div>
+						<div class='row px-5 ' *ngFor = 'let x of attrib_list'>
+							<label class='col-sm-6 ' id='attrib_name' name='attrib_name'> {{ x.attrib_name }}
+							</label>
+							<label class='col-sm-6 ' id='attrib_value' name='attrib_value'> {{ x.attrib_value }}
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

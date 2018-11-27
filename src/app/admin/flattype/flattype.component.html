@@ -1,0 +1,129 @@
+<form #f='ngForm'>
+<div class='container-fluid '>
+	<div class='row mt-4 '>
+		<div class='' class='col-sm-1'>
+		</div>
+		<div class='' class='col-sm-10'>
+			<div class='row '>
+				<label class='page-header col-sm-2 '> Flat type</label>
+				<label class='col-sm-3 '> {{ admin_flat_type_status }}</label>
+				<div class=' col-sm-3' style='text-align: right'>
+					<div class='btn-group ml-auto '>
+						<button class='btn btn-primary btn-sm ' data-target='#dlg' data-toggle='modal' (click)='clear_admin_flat_type()'>
+							<i class='fa fa-plus'></i> Add
+						</button>
+						<a class='btn btn-primary btn-sm ' data-toggle='modal' routerLink='/settings'>
+							<i class='fa fa-arrow-left'></i> Back
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class='row '>
+				<div class='col-sm-8'>
+					<table class='table table-bordered table-sm '>
+						<thead>
+							<tr>
+								<th>System ID</th>
+								<th>Type name</th>
+								<th>Is duplex</th>
+								<th>Status</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr *ngFor='let x of admin_flat_typeList'>
+								<td> {{ x.sysid }} </td>
+								<td>
+									<a class='' id='type_name' name='type_name' data-target='#dlg' data-toggle='modal' (click)='current_record_admin_flat_type(x)' href='#'>
+										{{ x.type_name }}
+									</a>
+								</td>
+								<td> {{ x.is_duplex }} </td>
+								<td> {{ x.status }} </td>
+								<td>
+									<a class='' id='delete_btn' style='color: red;' name='delete_btn' data-toggle='modal' (click)='delete_admin_flat_type(x.sysid)' href='#'>
+										<i class='fa fa-trash'></i> Delete
+									</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div tabindex='-1' role='dialog' class='modal fade ' id='dlg'>
+				<div class='modal-dialog' role='document'>
+					<div class='modal-content'>
+						<div class='modal-header '>
+							<div class='modal-title'><h5>Flat type</h5></div>
+							<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+								<span aria-hidden='true'>&times;</span>
+							</button>
+						</div>
+						<div class='modal-body '>
+					<div class='row '>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='sysid'>Sysid</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='sysid' name='sysid' type='text' autocomplete='off' readonly [(ngModel)]='admin_flat_type.sysid' #sysid="ngModel">
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='type_name'>Type name</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='type_name' name='type_name' type='text' autocomplete='off' [(ngModel)]='admin_flat_type.type_name' #type_name="ngModel">
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='is_duplex'>Is duplex</label>
+								<div class='col-sm-8'>
+									<select class='form-control ' id='is_duplex' name='is_duplex' [(ngModel)]='admin_flat_type.is_duplex' #is_duplex="ngModel">
+										<option value=''></option>
+										<option value='No'>No</option>
+										<option value='Yes'>Yes</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='status'>Status</label>
+								<div class='col-sm-8'>
+									<select class='form-control ' id='status' name='status' [(ngModel)]='admin_flat_type.status' #status="ngModel">
+										<option value=''></option>
+										<option value='Active'>Active</option>
+										<option value='Inactive'>Inactive</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+						</div>
+						<div class='modal-footer '>
+					<label class='pull-left col-sm-8 '> {{ admin_flat_type_status }}</label>
+					<div class='row '>
+						<div class=' col-sm-4'>
+							<div class='btn-group pull-right '>
+								<button class='btn btn-primary btn-sm ' name='save_btn' (click)='save_admin_flat_type(f)'>
+									<i class='fa fa-save'></i> Save
+								</button>
+								<button class='btn btn-primary btn-sm ' name='close_btn' data-dismiss='modal'>
+									<i class='fa fa-times'></i> Close
+								</button>
+							</div>
+						</div>
+					</div>
+						</div>
+			</div>
+				</div>
+					</div>
+		</div>
+		<div class='' class='col-sm-1'>
+		</div>
+	</div>
+</div>
+</form>

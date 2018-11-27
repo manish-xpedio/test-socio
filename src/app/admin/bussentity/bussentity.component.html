@@ -1,0 +1,206 @@
+<form #f='ngForm'>
+<div class='container-fluid p-5 '>
+	<div class='row px-5 '>
+		<label class='page-header col-sm-2 '> Business entity</label>
+		<label class='col-sm-4 '> {{ admin_business_entity_master_status }}</label>
+		<div class=' col-sm-2' style='text-align: right'>
+			<div class='btn-group '>
+				<button class='btn btn-primary btn-sm ' id='add_btn' name='add_btn' data-target='#dlg' data-toggle='modal' (click)='clear_admin_business_entity_master()'>
+					<i class='fa fa-plus'></i> Add header
+				</button>
+				<a class='btn btn-primary btn-sm ' id='back_btn' name='back_btn' data-toggle='modal' routerLink='/settings'>
+					<i class='fa fa-arrow-left'></i> Back
+				</a>
+			</div>
+		</div>
+		<div class=' col-sm-4' style='text-align: right'>
+			<div class='btn-group '>
+				<button class='btn btn-primary btn-sm ' data-target='#dlg1' data-toggle='modal' (click)='clear_admin_business_entity_details()'>
+					Add group items
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class='row px-5 '>
+		<div class='' class='col-sm-8'>
+			<div class='row '>
+		<div class='col-sm-12'>
+			<table class='table table-bordered table-sm '>
+				<thead>
+					<tr>
+						<th>Entity name</th>
+						<th>System ID</th>
+						<th>Status</th>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor='let x of admin_business_entity_masterList'>
+						<td>
+							<a class='' id='entity_name' name='entity_name' data-target='#dlg' data-toggle='modal' (click)='current_record_admin_business_entity_master(x)' href='#'>
+								{{ x.entity_name }}
+							</a>
+						</td>
+						<td> {{ x.sysid }} </td>
+						<td> {{ x.status }} </td>
+						<td>
+							<a class='' style='color: red' name='delete_btn' data-toggle='modal' (click)='delete_admin_business_entity_master(x.sysid)' href='#'>
+								<i class='fa fa-trash'></i> 
+							</a>
+						</td>
+						<td>
+							<a class='' name='edit_btn' data-toggle='modal' (click)='select_child_recs(x)' href='#'>
+								<i class='fa fa-edit'></i> 
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+			</div>
+		</div>
+		<div class='' class='col-sm-4'>
+			<div class='row '>
+				<label class='col-sm-12 '> Details of <b>{{ selected_entity }}</b></label>
+			</div>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<ul class=''>
+						<li class='' *ngFor='let x of admin_business_entity_detailsList'>
+						<div class='row '>
+						<label class='col-sm-8 '> {{ x.role_name }}</label>
+							<div class='col-sm-4'>
+								<a class='' style='color: red' data-toggle='modal' (click)='delete_admin_business_entity_details(x.sysid)' href='#'>
+									<i class='fa fa-trash'></i> 
+								</a>
+							</div>
+						</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div tabindex='-1' role='dialog' class='modal fade ' id='dlg'>
+		<div class='modal-dialog' role='document'>
+			<div class='modal-content'>
+				<div class='modal-header '>
+					<div class='modal-title'><h5>Business entity</h5></div>
+					<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+						<span aria-hidden='true'>&times;</span>
+					</button>
+				</div>
+				<div class='modal-body '>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='sysid'>System ID</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='sysid' name='sysid' type='text' autocomplete='off' readonly [(ngModel)]='admin_business_entity_master.sysid' #sysid="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='entity_name'>Entity name</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='entity_name' name='entity_name' type='text' autocomplete='off' [(ngModel)]='admin_business_entity_master.entity_name' #entity_name="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='status'>Status</label>
+						<div class='col-sm-8'>
+							<select class='form-control ' id='status' name='status' [(ngModel)]='admin_business_entity_master.status' #status="ngModel">
+								<option value=''></option>
+								<option value='Active'>Active</option>
+								<option value='Inactive'>Inactive</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+				</div>
+				<div class='modal-footer '>
+			<div class='row '>
+				<label class='pull-left '> {{ admin_business_entity_master_status }}</label>
+				<div class=' col-sm-5'>
+					<div class='btn-group pull-right '>
+						<button class='btn btn-primary btn-sm ' name='save_btn' (click)='save_admin_business_entity_master(f)'>
+							<i class='fa fa-save'></i> Save
+						</button>
+						<button class='btn btn-primary btn-sm ' name='close_btn' data-dismiss='modal'>
+							<i class='fa fa-remove'></i> Close
+						</button>
+					</div>
+				</div>
+			</div>
+				</div>
+	</div>
+		</div>
+			</div>
+	<div tabindex='-1' role='dialog' class='modal fade ' id='dlg1'>
+		<div class='modal-dialog' role='document'>
+			<div class='modal-content'>
+				<div class='modal-header '>
+					<div class='modal-title'><h5>Entity details</h5></div>
+					<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+						<span aria-hidden='true'>&times;</span>
+					</button>
+				</div>
+				<div class='modal-body '>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='sysid'>System ID</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='sysid' name='sysid' type='text' autocomplete='off' readonly [(ngModel)]='admin_business_entity_details.sysid' #sysid="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='entity_id'>Entity name</label>
+						<div class='col-sm-8'>
+							<select class='form-control ' id='entity_id' name='entity_id' [(ngModel)]='admin_business_entity_details.entity_id' #entity_id="ngModel">
+								<option value=''></option>
+								<option *ngFor='let x of admin_business_entity_masterList' value='{{ x.sysid }}'>{{ x.entity_name }}</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='role_id'>Role name</label>
+						<div class='col-sm-8'>
+							<select class='form-control ' id='role_id' name='role_id' [(ngModel)]='admin_business_entity_details.role_id' #role_id="ngModel">
+								<option value=''></option>
+								<option *ngFor='let x of admin_rolesList' value='{{ x.sysid }}'>{{ x.role_code }}</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+				</div>
+				<div class='modal-footer '>
+			<div class='row '>
+				<label class='pull-left '> {{ admin_business_entity_details_status }}</label>
+				<div class=' col-sm-5'>
+					<div class='btn-group pull-right '>
+						<button class='btn btn-primary btn-sm ' name='save_btn' (click)='save_admin_business_entity_details(f)'>
+							<i class='fa fa-save'></i> Save
+						</button>
+						<button class='btn btn-primary btn-sm ' name='close_btn' data-dismiss='modal'>
+							<i class='fa fa-remove'></i> Close
+						</button>
+					</div>
+				</div>
+			</div>
+				</div>
+	</div>
+		</div>
+			</div>
+</div>
+</form>

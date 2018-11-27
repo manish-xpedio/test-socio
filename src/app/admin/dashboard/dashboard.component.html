@@ -1,0 +1,173 @@
+<form #f='ngForm'>
+	<div class='container-fluid '>
+		<div class='row mt-3 px-4 '>
+			<label class='col-sm-12 '> <h5>Details for the month of Nov 2018</h5>
+			</label>
+		</div>
+		<div class='row px-4 '>
+			<div class='' class='col-sm-2'>
+				<div class='row p-2 shadow ' style='background-color: #EC7063; color: #fff'>
+					<label class='col-sm-12 '> Total requests raised
+					</label>
+					<label class='col-sm-12 '> <h3>16</h3>
+					</label>
+				</div>
+			</div>
+			<div class='' class='col-sm-2'>
+				<div class='row p-2 shadow ' style='background-color: #A93226; color: #fff'>
+					<label class='col-sm-12 '> Total enquries 
+					</label>
+					<label class='col-sm-12 '> <h3>08</h3>
+					</label>
+				</div>
+			</div>
+			<div class='' class='col-sm-2'>
+				<div class='row p-2 shadow ' style='background-color: #E67E22; color: #fff'>
+					<label class='col-sm-12 '> Total complaints raised
+					</label>
+					<label class='col-sm-12 '> <h3> 23</h3>
+					</label>
+				</div>
+			</div>
+			<div class='' class='col-sm-2'>
+				<div class='row p-2 shadow ' style='background-color: #27AE60; color: #fff'>
+					<label class='col-sm-12 '> Total resolutions
+					</label>
+					<label class='col-sm-12 '> <h3>12 / 3 / 11 </h3>
+					</label>
+				</div>
+			</div>
+			<div class='' class='col-sm-2'>
+				<div class='row p-2 shadow ' style='background-color: #2E86C1; color: #fff'>
+					<label class='col-sm-12 '> Pending resolutions
+					</label>
+					<label class='col-sm-12 '> <h3>4 / 5 / 12</h3>
+					</label>
+				</div>
+			</div>
+			<div class='' class='col-sm-2'>
+				<div class='row p-2 shadow ' style='background-color: #8E44AD; color: #fff'>
+					<label class='col-sm-12 '> Percentage accomplish
+					</label>
+					<label class='col-sm-12 '> <h3>53.32%</h3>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class='row mt-4 px-4 '>
+			<div class='' class='col-sm-6'>
+				<div class='row '>
+					<label class='col-sm-8 '> <h5>Last 5 service requests (SR)</h5>
+					</label>
+					<div class=' col-sm-4' style='text-align: right'>
+						<div class='btn-group '>
+						<a class='' style='text-align: right' data-toggle='modal' href='#'>
+							<i class='fa fa-search'></i> Show all
+						</a>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<table class='table table-bordered table-sm px-0 '>
+							<thead>
+								<tr>
+									<th>SR No</th>
+									<th>Description</th>
+									<th>Request type</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr *ngFor='let x of sr_list'>
+									<td>
+										<a class='' data-toggle='modal' href='#'>
+											{{ x.sr_no }}
+										</a>
+									</td>
+									<td> {{ x.sr_descr }} </td>
+									<td> {{ x.sr_type }} </td>
+									<td>
+										<a class='' style='color: red' data-toggle='modal' href='#'>
+											<i class='fa fa-check'></i> Resolve
+										</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class='row '>
+					<div class='' class='col-sm-4'>
+						<div class='row pt-2 ' style='color: #c70039'>
+							<label class='col-sm-12 ' style='font-size: 13pt'> Maintenance collection
+							</label>
+							<div class='col-sm-12'>
+								<hr class=''>
+							</div>
+						</div>
+						<div class='row '>
+							<label class='col-sm-12 ' style='font-size: 13pt'> 84,000
+							</label>
+						</div>
+						<div class='row pt-2 ' style='color: #c70039'>
+							<label class='col-sm-12 ' style='font-size: 13pt'> Expenditure
+							</label>
+							<div class='col-sm-12'>
+								<hr class=''>
+							</div>
+						</div>
+						<div class='row '>
+							<label class='col-sm-12 ' style='font-size: 13pt'> 4,89,743
+							</label>
+						</div>
+					</div>
+					<div class='' class='col-sm-8'>
+						<div class='row '>
+							<label class='page-header col-sm-12 '> Electricity expenditure
+							</label>
+							<canvas class='' id='elChart'>
+							</canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='' class='col-sm-4'>
+				<div class='row pr-3 '>
+					<label class='page-header col-sm-12 '> Tickets summary
+					</label>
+					<canvas class='shadow ' id='myChart'>
+					</canvas>
+					<marquee style='margin-top: 20px; font-size: 12pt;'> No water supply this Friday. Please user water carefully.   Please drive safely inside premise as pets and children are on the road.</marquee >
+				</div>
+			</div>
+			<div class='' class='col-sm-2'>
+				<div class='row '>
+					<label class='page-header col-sm-12 '> Upcoming events
+					</label>
+				</div>
+				<div class='row pt-4 shadow ' style='background-color: lightgray'>
+					<label class='col-sm-12 '> <b>07-Nov-2018</b><br>Diwali celebrations at club house
+					</label>
+					<div class='col-sm-12'>
+						<a class='' style='color:  #c70039' data-toggle='modal' href='#'>
+							Show details
+						</a>
+					</div>
+					<div class='col-sm-12'>
+						<hr class='mb-3 '>
+					</div>
+					<label class='col-sm-12 '> <b>14-Nov-2018</b><br>Managing committee monthly meeting.
+					</label>
+					<div class='col-sm-12'>
+						<a class='' style='color:  #c70039' data-toggle='modal' href='#'>
+							Show details
+						</a>
+					</div>
+					<div class='col-sm-12'>
+						<hr class='mb-3 '>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</form>

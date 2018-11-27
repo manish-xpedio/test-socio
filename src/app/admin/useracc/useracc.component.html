@@ -1,0 +1,53 @@
+<form #f='ngForm'>
+<div class='container-fluid p-5 '>
+	<div class='row px-5 '>
+		<label class='page-header col-sm-2 '> User accounts</label>
+		<label class='col-sm-8 '> {{ admin_access_login_status }}</label>
+		<div class=' col-sm-2' style='text-align: right'>
+			<div class='btn-group '>
+				<button class='btn btn-primary btn-sm ' id='add_btn' name='add_btn' data-toggle='modal'>
+					<i class='fa fa-plus'></i> Add
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class='row px-5 '>
+		<div class='col-sm-12'>
+			<table class='table table-bordered table-sm '>
+				<thead>
+					<tr>
+						<th>Username</th>
+						<th>Complete name</th>
+						<th>Email</th>
+						<th>Password modified date</th>
+						<th>Password reset date</th>
+						<th>Change on logon</th>
+						<th>Status</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor='let x of admin_access_loginList'>
+						<td>
+							<a class='' id='username' name='username' data-toggle='modal' href='#'>
+								{{ x.username }}
+							</a>
+						</td>
+						<td> {{ x.complete_name }} </td>
+						<td> {{ x.email }} </td>
+						<td> {{ x.password_modified_date }} </td>
+						<td> {{ x.password_reset_date }} </td>
+						<td> {{ x.change_on_logon }} </td>
+						<td> {{ x.status }} </td>
+						<td>
+							<a class='' style='color: red' data-toggle='modal' (click)='delete_admin_access_login(x.sysid)' href='#'>
+								<i class='fa fa-trash'></i> Delete
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+</form>

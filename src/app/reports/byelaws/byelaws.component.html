@@ -1,0 +1,60 @@
+<form #f='ngForm'>
+	<div class='container-fluid p-5 '>
+		<div class='row '>
+			<div class='' class='col-sm-2'>
+				<div class='row '>
+			<label class='page-header col-sm-12 '> Bye-laws
+			</label>
+					<div class='col-sm-12'>
+						<div class='input-group'>
+							<input class='form-control ' id='search_box' name='search' placeholder='Enter search text' [(ngModel)]='search' #search_box="ngModel">
+							<div class='input-group-append search'>
+								<i class='fa fa-search'></i>
+							</div>
+						</div>
+					</div>
+					<label class='col-sm-12 '> <b>Section ID</b>
+					</label>
+					<div class='col-sm-12'>
+						<hr class='mb-3 '>
+					</div>
+				</div>
+				<div class='row ' *ngFor = 'let x of report_byelawsList'>
+					<div class='col-sm-12'>
+						<a class='' name='section_id' data-toggle='modal' (click)='current_record_report_byelaws(x)' href='#'>
+							{{ x.section_id }}
+						</a>
+					</div>
+					<div class='col-sm-12'>
+						<hr class=''>
+					</div>
+				</div>
+			</div>
+			<div class='' class='col-sm-8'>
+				<div class='row '>
+					<label class='page-header col-sm-12 ' id='section_id' name='section_id'> <b>Section ID:</b> {{ report_byelaws.section_id }}
+					</label>
+					<label class='col-sm-12 ' id='law_title' name='law_title'> <h6>{{ report_byelaws.law_title }}</h6>
+					</label>
+					<label class='col-sm-12 ' id='amendment_date' name='amendment_date'> <b>Amendment date:</b> {{ report_byelaws.amendment_date }}
+					</label>
+					<label class='col-sm-12 '> <b>Details </b>
+					</label>
+					<label class='col-sm-12 ' id='law_details' name='law_details'> {{ report_byelaws.law_details }}
+					</label>
+					<label class='col-sm-12 ' id='remarks' name='remarks'> <b>Remarks:</b> {{ report_byelaws.remarks }}
+					</label>
+				</div>
+			</div>
+			<div class='' class='col-sm-2'>
+				<div class='row '>
+					<label class='col-sm-12 '> <h6>Cases related to bye-law</h6>
+					</label>
+					<div class='col-sm-12'>
+						<hr class=''>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

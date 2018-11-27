@@ -1,0 +1,17 @@
+<form #f='ngForm'>
+<div class='row sr-side px-4 '>
+	<div class='' class='col-sm-12'>
+	<div class='row ' *ngFor = 'let x of side_menu_list'>
+	<div class='col-sm-12'>
+		<a class='btn btn-primary btn-sm btn-block ' style='margin-bottom: 10px;' data-toggle='modal' routerLink='/{{ x.menu_route }}'>
+			{{ x.menu_name }}
+		</a>
+	</div>
+	</div>
+		<div class='row p-3 ' style='background-color: gray; color: #fff'>
+			<label class='col-sm-12 '> Manage all water tasks and automate all the related activities. This module will have integration with various devices 
+			</label>
+		</div>
+	</div>
+</div>
+</form>

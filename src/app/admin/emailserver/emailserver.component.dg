@@ -1,0 +1,438 @@
+{
+    "child": [
+        {
+            "child": [
+                {
+                    "child": [
+                    ],
+                    "name": "Label",
+                    "props": {
+                        "Class": "page-header",
+                        "Columns": "2",
+                        "DisplayLabel": "",
+                        "For": "",
+                        "FormType": "Standard",
+                        "GroupWidth": "",
+                        "HelpText": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Label class": "",
+                        "Label-type": "span",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Required": "",
+                        "Style": "",
+                        "TableColumnWidth": "",
+                        "Value": "Email server"
+                    },
+                    "tabpos": "2",
+                    "type": "Label"
+                },
+                {
+                    "child": [
+                    ],
+                    "name": "Label",
+                    "props": {
+                        "Class": "",
+                        "Columns": "8",
+                        "DisplayLabel": "",
+                        "For": "",
+                        "FormType": "Standard",
+                        "GroupWidth": "",
+                        "HelpText": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Label class": "",
+                        "Label-type": "span",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Required": "",
+                        "Style": "",
+                        "TableColumnWidth": "",
+                        "Value": "{{ admin_email_conf_status }}"
+                    },
+                    "tabpos": "2",
+                    "type": "Label"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                            ],
+                            "name": "add_btn",
+                            "props": {
+                                "Class": "btn btn-primary btn-sm shadow",
+                                "ClickEvent": "",
+                                "Columns": "12",
+                                "DB-table": "",
+                                "Data-dismiss": "",
+                                "Data-target": "",
+                                "Data-toggle": "modal",
+                                "DisplayLabel": "",
+                                "Fa-icon": "fa fa-plus",
+                                "Group-class": "",
+                                "Group-style": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Icon": "",
+                                "Model": "",
+                                "Name": "add_btn",
+                                "Property-binding": "",
+                                "RouterLink": "/emailserverform",
+                                "RouterParam": "",
+                                "Style": "",
+                                "TableColumnWidth": "",
+                                "Value": "Add"
+                            },
+                            "tabpos": "3",
+                            "type": "Link"
+                        },
+                        {
+                            "child": [
+                            ],
+                            "name": "back",
+                            "props": {
+                                "Class": "btn btn-primary btn-sm shadow",
+                                "ClickEvent": "",
+                                "Columns": "12",
+                                "DB-table": "",
+                                "Data-dismiss": "",
+                                "Data-target": "",
+                                "Data-toggle": "modal",
+                                "DisplayLabel": "",
+                                "Fa-icon": "fa fa-arrow-left",
+                                "Group-class": "",
+                                "Group-style": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Icon": "",
+                                "Model": "",
+                                "Name": "back",
+                                "Property-binding": "",
+                                "RouterLink": "/settings",
+                                "RouterParam": "",
+                                "Style": "",
+                                "TableColumnWidth": "",
+                                "Value": "Back"
+                            },
+                            "tabpos": "3",
+                            "type": "Link"
+                        }
+                    ],
+                    "name": "ButtonGroup",
+                    "props": {
+                        "Class": "btn-group",
+                        "Columns": "2",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "text-align: right",
+                        "Property-binding": "",
+                        "Style": "",
+                        "TableColumnWidth": ""
+                    },
+                    "tabpos": "2",
+                    "type": "ButtonGroup"
+                }
+            ],
+            "name": "Row",
+            "props": {
+                "Class": "row",
+                "DB-table": "",
+                "Hidden": "",
+                "ID": "",
+                "Name": "",
+                "Parent-class": "",
+                "Parent-style": "",
+                "Property-binding": "",
+                "Repeat": "",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Row"
+        },
+        {
+            "child": [
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "conf_name",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "Configuration name",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "conf_name",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "conf_name",
+                                        "Property-binding": "",
+                                        "RouterLink": "/emailserverform",
+                                        "RouterParam": "{id: x.sysid}",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "{{ x.conf_name }}"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "display_name",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "DisplayLabel": "Display name",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "display_name",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "display_name",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "{{ x.display_name }}"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "email_id",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "DisplayLabel": "Email ID",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "email_id",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "email_id",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "{{ x.email_id }}"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "type_of_server",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "DisplayLabel": "Type of server",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "type_of_server",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "type_of_server",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "{{ x.type_of_server }}"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "status",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "DisplayLabel": "Status",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "status",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "status",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "{{ x.status }}"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "sysid",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "DisplayLabel": "System ID",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "sysid",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "sysid",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "{{ x.sysid }}"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Link",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "delete_admin_email_conf(x.sysid)",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "fa fa-trash",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Property-binding": "",
+                                        "RouterLink": "#",
+                                        "RouterParam": "",
+                                        "Style": "color: red",
+                                        "TableColumnWidth": "",
+                                        "Value": "Delete"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                }
+                            ],
+                            "name": "TableRow",
+                            "props": {
+                                "Class": "",
+                                "Data-source": "admin_email_confList",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Property-binding": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "TableRow"
+                        }
+                    ],
+                    "name": "Table",
+                    "props": {
+                        "Border": "Yes",
+                        "Caption": "",
+                        "Class": "table table-bordered table-sm",
+                        "Columns": "12",
+                        "DataSource": "",
+                        "Filter": "",
+                        "HeaderClass": "",
+                        "Hidden": "",
+                        "Hover": "No",
+                        "ID": "",
+                        "ItemsPerPage": "12",
+                        "Name": "",
+                        "NoOfPagesDisplay": "10",
+                        "Pagination": "Yes",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Responsive": "",
+                        "Size": "Small",
+                        "StripedRows": "No",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Table"
+                }
+            ],
+            "name": "Row",
+            "props": {
+                "Class": "row",
+                "DB-table": "",
+                "Hidden": "",
+                "ID": "",
+                "Name": "",
+                "Parent-class": "",
+                "Parent-style": "",
+                "Property-binding": "",
+                "Repeat": "",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Row"
+        }
+    ],
+    "name": "Container",
+    "props": {
+        "Class": "container-fluid p-5",
+        "Hidden": "",
+        "ID": "",
+        "Name": "",
+        "Property-binding": "",
+        "Style": ""
+    },
+    "tabpos": "0",
+    "type": "Container"
+}

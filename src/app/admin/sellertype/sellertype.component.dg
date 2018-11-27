@@ -1,0 +1,734 @@
+{
+    "child": [
+        {
+            "child": [
+                {
+                    "child": [
+                    ],
+                    "name": "Label",
+                    "props": {
+                        "Class": "page-header",
+                        "Columns": "2",
+                        "DisplayLabel": "",
+                        "For": "",
+                        "FormType": "Standard",
+                        "GroupWidth": "",
+                        "HelpText": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Label class": "",
+                        "Label-type": "span",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Required": "",
+                        "Style": "",
+                        "TableColumnWidth": "",
+                        "Value": "Seller types"
+                    },
+                    "tabpos": "2",
+                    "type": "Label"
+                },
+                {
+                    "child": [
+                    ],
+                    "name": "Label",
+                    "props": {
+                        "Class": "",
+                        "Columns": "8",
+                        "DisplayLabel": "",
+                        "For": "",
+                        "FormType": "Standard",
+                        "GroupWidth": "",
+                        "HelpText": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Label class": "",
+                        "Label-type": "span",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Required": "",
+                        "Style": "",
+                        "TableColumnWidth": "",
+                        "Value": "{{ sales_supp_type_status }}"
+                    },
+                    "tabpos": "2",
+                    "type": "Label"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                            ],
+                            "name": "add_btn",
+                            "props": {
+                                "Class": "btn btn-primary btn-sm",
+                                "ClickEvent": "clear_sales_supp_type()",
+                                "Columns": "12",
+                                "Data-dismiss": "",
+                                "Data-target": "#dlg",
+                                "Data-toggle": "modal",
+                                "Fa-icon": "fa fa-plus",
+                                "Hidden": "",
+                                "ID": "add_btn",
+                                "Icon": "",
+                                "Model": "",
+                                "Name": "add_btn",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Readonly": "",
+                                "Ref": "",
+                                "RouterLinkActive": "",
+                                "RouterParam": "",
+                                "Style": "",
+                                "TableColumnWidth": "",
+                                "Value": "Add"
+                            },
+                            "tabpos": "3",
+                            "type": "Button"
+                        },
+                        {
+                            "child": [
+                            ],
+                            "name": "Link",
+                            "props": {
+                                "Class": "btn btn-primary btn-sm",
+                                "ClickEvent": "",
+                                "Columns": "12",
+                                "DB-table": "",
+                                "Data-dismiss": "",
+                                "Data-target": "",
+                                "Data-toggle": "modal",
+                                "DisplayLabel": "",
+                                "Fa-icon": "fa fa-arrow-left",
+                                "Group-class": "",
+                                "Group-style": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Icon": "",
+                                "Model": "",
+                                "Name": "",
+                                "Property-binding": "",
+                                "RouterLink": "/settings",
+                                "RouterParam": "",
+                                "Style": "",
+                                "TableColumnWidth": "",
+                                "Value": "Back"
+                            },
+                            "tabpos": "3",
+                            "type": "Link"
+                        }
+                    ],
+                    "name": "ButtonGroup",
+                    "props": {
+                        "Class": "btn-group",
+                        "Columns": "2",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "text-align: right",
+                        "Property-binding": "",
+                        "Style": "",
+                        "TableColumnWidth": ""
+                    },
+                    "tabpos": "2",
+                    "type": "ButtonGroup"
+                }
+            ],
+            "name": "Row",
+            "props": {
+                "Class": "row px-5",
+                "DB-table": "",
+                "Hidden": "",
+                "ID": "",
+                "Name": "",
+                "Parent-class": "",
+                "Parent-style": "",
+                "Property-binding": "",
+                "Repeat": "",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Row"
+        },
+        {
+            "child": [
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "supp_type",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "current_record_sales_supp_type(x)",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "#dlg",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "Type name",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "supp_type",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "supp_type",
+                                        "Property-binding": "",
+                                        "RouterLink": "#",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "{{ x.supp_type }}"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "descr",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "DisplayLabel": "Description",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "descr",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "descr",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "{{ x.descr }}"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "status",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "DisplayLabel": "Status",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "status",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "status",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "{{ x.status }}"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "sysid",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "DisplayLabel": "System ID",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "sysid",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "sysid",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "{{ x.sysid }}"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Link",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "delete_sales_supp_type(x.sysid)",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "fa fa-trash",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Property-binding": "",
+                                        "RouterLink": "#",
+                                        "RouterParam": "",
+                                        "Style": "color: red",
+                                        "TableColumnWidth": "",
+                                        "Value": "Delete"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                }
+                            ],
+                            "name": "TableRow",
+                            "props": {
+                                "Class": "",
+                                "Data-source": "sales_supp_typeList",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Property-binding": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "TableRow"
+                        }
+                    ],
+                    "name": "Table",
+                    "props": {
+                        "Border": "Yes",
+                        "Caption": "",
+                        "Class": "table table-bordered table-sm",
+                        "Columns": "12",
+                        "DataSource": "",
+                        "Filter": "",
+                        "HeaderClass": "",
+                        "Hidden": "",
+                        "Hover": "No",
+                        "ID": "",
+                        "ItemsPerPage": "12",
+                        "Name": "",
+                        "NoOfPagesDisplay": "10",
+                        "Pagination": "Yes",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Responsive": "",
+                        "Size": "Small",
+                        "StripedRows": "No",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Table"
+                }
+            ],
+            "name": "Row",
+            "props": {
+                "Class": "row px-5",
+                "DB-table": "",
+                "Hidden": "",
+                "ID": "",
+                "Name": "",
+                "Parent-class": "",
+                "Parent-style": "",
+                "Property-binding": "",
+                "Repeat": "",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Row"
+        },
+        {
+            "child": [
+                {
+                    "child": [
+                    ],
+                    "name": "Dialog-header",
+                    "props": {
+                        "Class": "modal-header",
+                        "Close-button": "Yes",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": "",
+                        "Title": "Seller types"
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-header"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "sysid",
+                                    "props": {
+                                        "Auto-complete": "off",
+                                        "ChangeEvent": "",
+                                        "Class": "form-control",
+                                        "Columns": "4,8",
+                                        "Control-type": "text",
+                                        "DB-table": "sales_supp_type",
+                                        "DisplayLabel": "System ID",
+                                        "FormType": "Row",
+                                        "Group-class": "",
+                                        "Group-property-binding": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "sysid",
+                                        "Label-class": "",
+                                        "Label-property-binding": "",
+                                        "Label-style": "",
+                                        "Model": "sysid",
+                                        "Name": "sysid",
+                                        "Placeholder": "",
+                                        "Property-binding": "",
+                                        "Readonly": "true",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Validations": "",
+                                        "Validator-class": "",
+                                        "Validator-style": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "TextBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "supp_type",
+                                    "props": {
+                                        "Auto-complete": "off",
+                                        "ChangeEvent": "",
+                                        "Class": "form-control",
+                                        "Columns": "4,8",
+                                        "Control-type": "text",
+                                        "DB-table": "sales_supp_type",
+                                        "DisplayLabel": "Type name",
+                                        "FormType": "Row",
+                                        "Group-class": "",
+                                        "Group-property-binding": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "supp_type",
+                                        "Label-class": "",
+                                        "Label-property-binding": "",
+                                        "Label-style": "",
+                                        "Model": "supp_type",
+                                        "Name": "supp_type",
+                                        "Placeholder": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Validations": "",
+                                        "Validator-class": "",
+                                        "Validator-style": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "TextBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "descr",
+                                    "props": {
+                                        "Auto-complete": "off",
+                                        "ChangeEvent": "",
+                                        "Class": "form-control",
+                                        "Columns": "4,8",
+                                        "DB-table": "sales_supp_type",
+                                        "DisplayLabel": "Description",
+                                        "FormType": "Row",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "descr",
+                                        "Label class": "",
+                                        "Label-class": "",
+                                        "Label-style": "",
+                                        "Label-type": "label",
+                                        "Model": "descr",
+                                        "Name": "descr",
+                                        "Placeholder": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Required": "",
+                                        "Rows": "5",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Validations": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "TextArea"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "status",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-control",
+                                        "Columns": "4,8",
+                                        "DB-table": "sales_supp_type",
+                                        "Data-source": "statusList",
+                                        "DisplayLabel": "Status",
+                                        "FormType": "Row",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "status",
+                                        "Init": "Yes",
+                                        "Label-class": "",
+                                        "Label-style": "",
+                                        "Model": "status",
+                                        "Multiple": "No",
+                                        "Name": "status",
+                                        "NeedKeyValue": "No",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Static-values": "Active,Inactive",
+                                        "Style": "",
+                                        "TableColumnWidth": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "ComboBox"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-body",
+                    "props": {
+                        "Class": "modal-body",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-body"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Label",
+                                    "props": {
+                                        "Class": "pull-left",
+                                        "Columns": "",
+                                        "DisplayLabel": "",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "{{ sales_supp_type_status }}"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "save_btn",
+                                            "props": {
+                                                "Class": "btn btn-primary btn-sm",
+                                                "ClickEvent": "save_sales_supp_type()",
+                                                "Columns": "12",
+                                                "Data-dismiss": "",
+                                                "Data-target": "",
+                                                "Data-toggle": "",
+                                                "Fa-icon": "fa fa-save",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Icon": "",
+                                                "Model": "",
+                                                "Name": "save_btn",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Readonly": "",
+                                                "Ref": "",
+                                                "RouterLinkActive": "",
+                                                "RouterParam": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Value": "Save"
+                                            },
+                                            "tabpos": "5",
+                                            "type": "Button"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "close_btn",
+                                            "props": {
+                                                "Class": "btn btn-primary btn-sm",
+                                                "ClickEvent": "",
+                                                "Columns": "12",
+                                                "Data-dismiss": "modal",
+                                                "Data-target": "",
+                                                "Data-toggle": "",
+                                                "Fa-icon": "fa fa-remove",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Icon": "",
+                                                "Model": "",
+                                                "Name": "close_btn",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Readonly": "",
+                                                "Ref": "",
+                                                "RouterLinkActive": "",
+                                                "RouterParam": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Value": "Close"
+                                            },
+                                            "tabpos": "5",
+                                            "type": "Button"
+                                        }
+                                    ],
+                                    "name": "ButtonGroup",
+                                    "props": {
+                                        "Class": "btn-group pull-right",
+                                        "Columns": "5",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Style": "",
+                                        "TableColumnWidth": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "ButtonGroup"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-footer",
+                    "props": {
+                        "Class": "modal-footer",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-footer"
+                }
+            ],
+            "name": "Dialog",
+            "props": {
+                "Class": "modal fade",
+                "Hidden": "",
+                "ID": "dlg",
+                "Name": "",
+                "Property-binding": "",
+                "Size": "Default",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Dialog"
+        }
+    ],
+    "name": "Container",
+    "props": {
+        "Class": "container-fluid p-5",
+        "Hidden": "",
+        "ID": "",
+        "Name": "",
+        "Property-binding": "",
+        "Style": ""
+    },
+    "tabpos": "0",
+    "type": "Container"
+}

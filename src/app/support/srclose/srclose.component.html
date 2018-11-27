@@ -1,0 +1,63 @@
+<form #f='ngForm'>
+	<div class='container-fluid '>
+		<div class='row pt-4 '>
+			<div class='' class='col-sm-1'>
+				<div class='row '>
+				</div>
+			</div>
+			<div class='' class='col-sm-2'>
+				<div class='row '>
+				<div class='col-sm-12'>
+					<app-srmenu></app-srmenu>
+				</div>
+				</div>
+			</div>
+			<div class='' class='col-sm-9'>
+				<div class='row pl-3 '>
+					<label class='page-header col-sm-10 '> Closed service request
+					</label>
+					<label class='descr col-sm-12 '> Below are list of tickets you have raised. Please note that last 6 months tickets will be visible. You may download upto last 3 years ticket history from reporting option. You can also re-open any of the closed ticket.
+					</label>
+				</div>
+				<div class='row pl-3 '>
+					<div class='col-sm-12'>
+						<table class='table table-bordered table-sm '>
+							<thead>
+								<tr>
+									<th>Title</th>
+									<th>Create date</th>
+									<th>Request type</th>
+									<th>Proirity</th>
+									<th>TAT</th>
+									<th>Resolution date</th>
+									<th>Status</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr *ngFor='let x of supp_sr'>
+									<td>
+										<a class='' id='sr_title' name='sr_title' data-toggle='modal' href='#'>
+											{{ x.sr_title }}
+										</a>
+									</td>
+									<td> {{ x.sr_date }} </td>
+									<td> {{ x.sr_type }} </td>
+									<td> {{ x.proirity }} </td>
+									<td> {{ x.tat }} </td>
+									<td> {{ x.resolution_date }} </td>
+									<td> {{ x.status }} </td>
+									<td>
+										<a class='' style='color: red' data-toggle='modal' href='#'>
+											Send reminder
+										</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

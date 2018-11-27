@@ -1,0 +1,1604 @@
+{
+    "child": [
+        {
+            "child": [
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "HtmlPage",
+                                            "props": {
+                                                "Columns": "12",
+                                                "Page-Name": "visitormenu"
+                                            },
+                                            "tabpos": "5",
+                                            "type": "HtmlPage"
+                                        }
+                                    ],
+                                    "name": "Row",
+                                    "props": {
+                                        "Class": "row",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Row"
+                                }
+                            ],
+                            "name": "Column",
+                            "props": {
+                                "Class": "",
+                                "Columns": "2",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Column"
+                        },
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "Label",
+                                            "props": {
+                                                "Class": "page-header",
+                                                "Columns": "2",
+                                                "DisplayLabel": "",
+                                                "For": "",
+                                                "FormType": "Standard",
+                                                "GroupWidth": "",
+                                                "HelpText": "",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Label class": "",
+                                                "Label-type": "span",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Required": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Value": "My invitation"
+                                            },
+                                            "tabpos": "3",
+                                            "type": "Label"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "Label",
+                                            "props": {
+                                                "Class": "",
+                                                "Columns": "7",
+                                                "DisplayLabel": "",
+                                                "For": "",
+                                                "FormType": "Standard",
+                                                "GroupWidth": "",
+                                                "HelpText": "",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Label class": "",
+                                                "Label-type": "span",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Required": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Value": "{{ supp_visitor_invitation_status }}"
+                                            },
+                                            "tabpos": "3",
+                                            "type": "Label"
+                                        },
+                                        {
+                                            "child": [
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "save_btn",
+                                                    "props": {
+                                                        "Class": "btn btn-primary btn-sm",
+                                                        "ClickEvent": "save_supp_visitor_invitation(f)",
+                                                        "Columns": "12",
+                                                        "Data-dismiss": "",
+                                                        "Data-target": "",
+                                                        "Data-toggle": "",
+                                                        "Fa-icon": "fa fa-save",
+                                                        "Hidden": "",
+                                                        "ID": "saveBtn",
+                                                        "Icon": "",
+                                                        "Model": "",
+                                                        "Name": "save_btn",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Readonly": "",
+                                                        "Ref": "",
+                                                        "RouterLinkActive": "",
+                                                        "RouterParam": "",
+                                                        "Style": "",
+                                                        "TableColumnWidth": "",
+                                                        "Value": "Save"
+                                                    },
+                                                    "tabpos": "4",
+                                                    "type": "Button"
+                                                },
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "back_btn",
+                                                    "props": {
+                                                        "Class": "btn btn-primary btn-sm",
+                                                        "ClickEvent": "",
+                                                        "Columns": "12",
+                                                        "DB-table": "",
+                                                        "Data-dismiss": "",
+                                                        "Data-target": "",
+                                                        "Data-toggle": "modal",
+                                                        "DisplayLabel": "",
+                                                        "Fa-icon": "fa fa-arrow-left",
+                                                        "Group-class": "",
+                                                        "Group-style": "",
+                                                        "Hidden": "",
+                                                        "ID": "backBtn",
+                                                        "Icon": "",
+                                                        "Model": "",
+                                                        "Name": "back_btn",
+                                                        "Property-binding": "",
+                                                        "RouterLink": "/invites",
+                                                        "RouterParam": "",
+                                                        "Style": "",
+                                                        "TableColumnWidth": "",
+                                                        "Value": "Back"
+                                                    },
+                                                    "tabpos": "4",
+                                                    "type": "Link"
+                                                }
+                                            ],
+                                            "name": "ButtonGroup",
+                                            "props": {
+                                                "Class": "btn-group",
+                                                "Columns": "3",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "text-align: right",
+                                                "Property-binding": "",
+                                                "Style": "",
+                                                "TableColumnWidth": ""
+                                            },
+                                            "tabpos": "3",
+                                            "type": "ButtonGroup"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "HLine",
+                                            "props": {
+                                                "Class": "mt-3",
+                                                "Columns": "12",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Style": ""
+                                            },
+                                            "tabpos": "3",
+                                            "type": "HLine"
+                                        }
+                                    ],
+                                    "name": "Row",
+                                    "props": {
+                                        "Class": "row",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "2",
+                                    "type": "Row"
+                                },
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                                {
+                                                    "child": [
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "sysid",
+                                                            "props": {
+                                                                "Auto-complete": "off",
+                                                                "ChangeEvent": "",
+                                                                "Class": "form-control",
+                                                                "Columns": "4,8",
+                                                                "Control-type": "text",
+                                                                "DB-table": "supp_visitor_invitation",
+                                                                "DisplayLabel": "System ID",
+                                                                "FormType": "Row",
+                                                                "Group-class": "",
+                                                                "Group-property-binding": "",
+                                                                "Group-style": "",
+                                                                "Hidden": "",
+                                                                "ID": "sysid",
+                                                                "Label-class": "",
+                                                                "Label-property-binding": "",
+                                                                "Label-style": "",
+                                                                "Model": "sysid",
+                                                                "Name": "sysid",
+                                                                "Placeholder": "",
+                                                                "Property-binding": "",
+                                                                "Readonly": "true",
+                                                                "Style": "",
+                                                                "TableColumnWidth": "",
+                                                                "Validations": "",
+                                                                "Validator-class": "",
+                                                                "Validator-style": "",
+                                                                "Value": ""
+                                                            },
+                                                            "tabpos": "5",
+                                                            "type": "TextBox"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "location_id",
+                                                            "props": {
+                                                                "ChangeEvent": "",
+                                                                "Class": "form-control",
+                                                                "Columns": "4,8",
+                                                                "DB-table": "supp_visitor_invitation",
+                                                                "Data-source": "",
+                                                                "DisplayLabel": "Location",
+                                                                "FormType": "Row",
+                                                                "Group-class": "",
+                                                                "Group-style": "",
+                                                                "GroupWidth": "",
+                                                                "Hidden": "",
+                                                                "ID": "location_id",
+                                                                "Init": "Yes",
+                                                                "Label-class": "",
+                                                                "Label-style": "",
+                                                                "Model": "location_id",
+                                                                "Multiple": "No",
+                                                                "Name": "location_id",
+                                                                "NeedKeyValue": "No",
+                                                                "Property-binding": "",
+                                                                "Required": "",
+                                                                "Static-values": "My flat,Club house,Premise,Others",
+                                                                "Style": "",
+                                                                "TableColumnWidth": ""
+                                                            },
+                                                            "tabpos": "5",
+                                                            "type": "ComboBox"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "visit_purpose",
+                                                            "props": {
+                                                                "Auto-complete": "off",
+                                                                "ChangeEvent": "",
+                                                                "Class": "form-control",
+                                                                "Columns": "4,8",
+                                                                "Control-type": "text",
+                                                                "DB-table": "supp_visitor_invitation",
+                                                                "DisplayLabel": "Visit purpose",
+                                                                "FormType": "Row",
+                                                                "Group-class": "",
+                                                                "Group-property-binding": "",
+                                                                "Group-style": "",
+                                                                "Hidden": "",
+                                                                "ID": "visit_purpose",
+                                                                "Label-class": "",
+                                                                "Label-property-binding": "",
+                                                                "Label-style": "",
+                                                                "Model": "visit_purpose",
+                                                                "Name": "visit_purpose",
+                                                                "Placeholder": "",
+                                                                "Property-binding": "",
+                                                                "Readonly": "",
+                                                                "Style": "",
+                                                                "TableColumnWidth": "",
+                                                                "Validations": "",
+                                                                "Validator-class": "",
+                                                                "Validator-style": "",
+                                                                "Value": ""
+                                                            },
+                                                            "tabpos": "5",
+                                                            "type": "TextBox"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "request_type",
+                                                            "props": {
+                                                                "ChangeEvent": "",
+                                                                "Class": "form-control",
+                                                                "Columns": "4,8",
+                                                                "DB-table": "supp_visitor_invitation",
+                                                                "Data-source": "",
+                                                                "DisplayLabel": "Request type",
+                                                                "FormType": "Row",
+                                                                "Group-class": "",
+                                                                "Group-style": "",
+                                                                "GroupWidth": "",
+                                                                "Hidden": "",
+                                                                "ID": "request_type",
+                                                                "Init": "Yes",
+                                                                "Label-class": "",
+                                                                "Label-style": "",
+                                                                "Model": "request_type",
+                                                                "Multiple": "No",
+                                                                "Name": "request_type",
+                                                                "NeedKeyValue": "No",
+                                                                "Property-binding": "",
+                                                                "Required": "",
+                                                                "Static-values": "One time,Recurring,Not sure",
+                                                                "Style": "",
+                                                                "TableColumnWidth": ""
+                                                            },
+                                                            "tabpos": "5",
+                                                            "type": "ComboBox"
+                                                        }
+                                                    ],
+                                                    "name": "Row",
+                                                    "props": {
+                                                        "Class": "row",
+                                                        "DB-table": "",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Name": "",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Repeat": "",
+                                                        "Style": ""
+                                                    },
+                                                    "tabpos": "4",
+                                                    "type": "Row"
+                                                }
+                                            ],
+                                            "name": "Column",
+                                            "props": {
+                                                "Class": "",
+                                                "Columns": "4",
+                                                "DB-table": "",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Repeat": "",
+                                                "Style": ""
+                                            },
+                                            "tabpos": "3",
+                                            "type": "Column"
+                                        },
+                                        {
+                                            "child": [
+                                                {
+                                                    "child": [
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "request_date",
+                                                            "props": {
+                                                                "Auto-complete": "off",
+                                                                "ChangeEvent": "",
+                                                                "Class": "form-control",
+                                                                "Columns": "4,8",
+                                                                "Control-type": "text",
+                                                                "DB-table": "supp_visitor_invitation",
+                                                                "DisplayLabel": "Request date",
+                                                                "FormType": "Row",
+                                                                "Group-class": "",
+                                                                "Group-property-binding": "",
+                                                                "Group-style": "",
+                                                                "Hidden": "",
+                                                                "ID": "request_date",
+                                                                "Label-class": "",
+                                                                "Label-property-binding": "",
+                                                                "Label-style": "",
+                                                                "Model": "request_date",
+                                                                "Name": "request_date",
+                                                                "Placeholder": "",
+                                                                "Property-binding": "",
+                                                                "Readonly": "true",
+                                                                "Style": "",
+                                                                "TableColumnWidth": "",
+                                                                "Validations": "",
+                                                                "Validator-class": "",
+                                                                "Validator-style": "",
+                                                                "Value": ""
+                                                            },
+                                                            "tabpos": "5",
+                                                            "type": "TextBox"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "request_for",
+                                                            "props": {
+                                                                "ChangeEvent": "",
+                                                                "Class": "form-control",
+                                                                "Columns": "4,8",
+                                                                "DB-table": "supp_visitor_invitation",
+                                                                "Data-source": "",
+                                                                "DisplayLabel": "Request for",
+                                                                "FormType": "Row",
+                                                                "Group-class": "",
+                                                                "Group-style": "",
+                                                                "GroupWidth": "",
+                                                                "Hidden": "",
+                                                                "ID": "request_for",
+                                                                "Init": "Yes",
+                                                                "Label-class": "",
+                                                                "Label-style": "",
+                                                                "Model": "request_for",
+                                                                "Multiple": "No",
+                                                                "Name": "request_for",
+                                                                "NeedKeyValue": "No",
+                                                                "Property-binding": "",
+                                                                "Required": "",
+                                                                "Static-values": "Single,Bulk",
+                                                                "Style": "",
+                                                                "TableColumnWidth": ""
+                                                            },
+                                                            "tabpos": "5",
+                                                            "type": "ComboBox"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "approx_count",
+                                                            "props": {
+                                                                "Auto-complete": "off",
+                                                                "ChangeEvent": "",
+                                                                "Class": "form-control",
+                                                                "Columns": "4,8",
+                                                                "Control-type": "text",
+                                                                "DB-table": "supp_visitor_invitation",
+                                                                "DisplayLabel": "Approx count",
+                                                                "FormType": "Row",
+                                                                "Group-class": "",
+                                                                "Group-property-binding": "",
+                                                                "Group-style": "",
+                                                                "Hidden": "",
+                                                                "ID": "approx_count",
+                                                                "Label-class": "",
+                                                                "Label-property-binding": "",
+                                                                "Label-style": "",
+                                                                "Model": "approx_count",
+                                                                "Name": "approx_count",
+                                                                "Placeholder": "",
+                                                                "Property-binding": "",
+                                                                "Readonly": "",
+                                                                "Style": "",
+                                                                "TableColumnWidth": "",
+                                                                "Validations": "",
+                                                                "Validator-class": "",
+                                                                "Validator-style": "",
+                                                                "Value": ""
+                                                            },
+                                                            "tabpos": "5",
+                                                            "type": "TextBox"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "Label",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "Columns": "4",
+                                                                "DisplayLabel": "",
+                                                                "For": "",
+                                                                "FormType": "Standard",
+                                                                "GroupWidth": "",
+                                                                "HelpText": "",
+                                                                "Hidden": "",
+                                                                "ID": "",
+                                                                "Label class": "",
+                                                                "Label-type": "span",
+                                                                "Name": "",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Required": "",
+                                                                "Style": "",
+                                                                "TableColumnWidth": "",
+                                                                "Value": ""
+                                                            },
+                                                            "tabpos": "5",
+                                                            "type": "Label"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "parking_req",
+                                                            "props": {
+                                                                "ChangeEvent": "",
+                                                                "Class": "form-check-input",
+                                                                "Columns": "8",
+                                                                "Control-type": "checkbox",
+                                                                "DB-table": "supp_visitor_invitation",
+                                                                "DisplayLabel": "Parking required",
+                                                                "False-value": "0",
+                                                                "Group-class": "",
+                                                                "Group-style": "",
+                                                                "GroupWidth": "",
+                                                                "Hidden": "",
+                                                                "ID": "parking_req",
+                                                                "Label class": "custom-control-label",
+                                                                "Model": "parking_req",
+                                                                "Name": "parking_req",
+                                                                "Orientation": "Horizontal",
+                                                                "Property-binding": "",
+                                                                "Readonly": "",
+                                                                "Required": "",
+                                                                "Style": "",
+                                                                "TableColumnWidth": "",
+                                                                "True-value": "1",
+                                                                "Validations": "",
+                                                                "Value": ""
+                                                            },
+                                                            "tabpos": "5",
+                                                            "type": "CheckBox"
+                                                        }
+                                                    ],
+                                                    "name": "Row",
+                                                    "props": {
+                                                        "Class": "row",
+                                                        "DB-table": "",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Name": "",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Repeat": "",
+                                                        "Style": ""
+                                                    },
+                                                    "tabpos": "4",
+                                                    "type": "Row"
+                                                }
+                                            ],
+                                            "name": "Column",
+                                            "props": {
+                                                "Class": "",
+                                                "Columns": "4",
+                                                "DB-table": "",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Repeat": "",
+                                                "Style": ""
+                                            },
+                                            "tabpos": "3",
+                                            "type": "Column"
+                                        },
+                                        {
+                                            "child": [
+                                                {
+                                                    "child": [
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "from_date",
+                                                            "props": {
+                                                                "ChangeEvent": "",
+                                                                "Class": "form-control",
+                                                                "Columns": "4,8",
+                                                                "Control-type": "text",
+                                                                "DB-table": "supp_visitor_invitation",
+                                                                "Date-type": "",
+                                                                "DateFormat": "YYYY-MM-DD",
+                                                                "DisplayLabel": "From date",
+                                                                "FormType": "Row",
+                                                                "GroupWidth": "",
+                                                                "HelpText": "",
+                                                                "Hidden": "",
+                                                                "ID": "from_date",
+                                                                "Label class": "",
+                                                                "Label-type": "label",
+                                                                "Model": "from_date",
+                                                                "Name": "from_date",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Readonly": "",
+                                                                "Required": "",
+                                                                "Style": "",
+                                                                "TableColumnWidth": "",
+                                                                "Validations": ""
+                                                            },
+                                                            "tabpos": "5",
+                                                            "type": "Date"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "from_time",
+                                                            "props": {
+                                                                "Auto-complete": "off",
+                                                                "ChangeEvent": "",
+                                                                "Class": "form-control",
+                                                                "Columns": "4,8",
+                                                                "Control-type": "text",
+                                                                "DB-table": "supp_visitor_invitation",
+                                                                "DisplayLabel": "From time",
+                                                                "FormType": "Row",
+                                                                "Group-class": "",
+                                                                "Group-property-binding": "",
+                                                                "Group-style": "",
+                                                                "Hidden": "",
+                                                                "ID": "from_time",
+                                                                "Label-class": "",
+                                                                "Label-property-binding": "",
+                                                                "Label-style": "",
+                                                                "Model": "from_time",
+                                                                "Name": "from_time",
+                                                                "Placeholder": "",
+                                                                "Property-binding": "",
+                                                                "Readonly": "",
+                                                                "Style": "",
+                                                                "TableColumnWidth": "",
+                                                                "Validations": "",
+                                                                "Validator-class": "",
+                                                                "Validator-style": "",
+                                                                "Value": ""
+                                                            },
+                                                            "tabpos": "5",
+                                                            "type": "TextBox"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "to_date",
+                                                            "props": {
+                                                                "ChangeEvent": "",
+                                                                "Class": "form-control",
+                                                                "Columns": "4,8",
+                                                                "Control-type": "text",
+                                                                "DB-table": "supp_visitor_invitation",
+                                                                "Date-type": "",
+                                                                "DateFormat": "YYYY-MM-DD",
+                                                                "DisplayLabel": "To date",
+                                                                "FormType": "Row",
+                                                                "GroupWidth": "",
+                                                                "HelpText": "",
+                                                                "Hidden": "",
+                                                                "ID": "to_date",
+                                                                "Label class": "",
+                                                                "Label-type": "label",
+                                                                "Model": "to_date",
+                                                                "Name": "to_date",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Readonly": "",
+                                                                "Required": "",
+                                                                "Style": "",
+                                                                "TableColumnWidth": "",
+                                                                "Validations": ""
+                                                            },
+                                                            "tabpos": "5",
+                                                            "type": "Date"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "to_time",
+                                                            "props": {
+                                                                "Auto-complete": "off",
+                                                                "ChangeEvent": "",
+                                                                "Class": "form-control",
+                                                                "Columns": "4,8",
+                                                                "Control-type": "text",
+                                                                "DB-table": "supp_visitor_invitation",
+                                                                "DisplayLabel": "To time",
+                                                                "FormType": "Row",
+                                                                "Group-class": "",
+                                                                "Group-property-binding": "",
+                                                                "Group-style": "",
+                                                                "Hidden": "",
+                                                                "ID": "to_time",
+                                                                "Label-class": "",
+                                                                "Label-property-binding": "",
+                                                                "Label-style": "",
+                                                                "Model": "to_time",
+                                                                "Name": "to_time",
+                                                                "Placeholder": "",
+                                                                "Property-binding": "",
+                                                                "Readonly": "",
+                                                                "Style": "",
+                                                                "TableColumnWidth": "",
+                                                                "Validations": "",
+                                                                "Validator-class": "",
+                                                                "Validator-style": "",
+                                                                "Value": ""
+                                                            },
+                                                            "tabpos": "5",
+                                                            "type": "TextBox"
+                                                        }
+                                                    ],
+                                                    "name": "Row",
+                                                    "props": {
+                                                        "Class": "row",
+                                                        "DB-table": "",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Name": "",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Repeat": "",
+                                                        "Style": ""
+                                                    },
+                                                    "tabpos": "4",
+                                                    "type": "Row"
+                                                }
+                                            ],
+                                            "name": "Column",
+                                            "props": {
+                                                "Class": "",
+                                                "Columns": "4",
+                                                "DB-table": "",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Repeat": "",
+                                                "Style": ""
+                                            },
+                                            "tabpos": "3",
+                                            "type": "Column"
+                                        }
+                                    ],
+                                    "name": "Row",
+                                    "props": {
+                                        "Class": "row pt-3",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "2",
+                                    "type": "Row"
+                                },
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "Button",
+                                                    "props": {
+                                                        "Class": "btn btn-danger btn-sm",
+                                                        "ClickEvent": "select_supp_invited_visitors(supp_visitor_invitation.sysid)",
+                                                        "Columns": "12",
+                                                        "Data-dismiss": "",
+                                                        "Data-target": "#d1",
+                                                        "Data-toggle": "modal",
+                                                        "Fa-icon": "fa fa-plus",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Icon": "",
+                                                        "Model": "",
+                                                        "Name": "",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Readonly": "",
+                                                        "Ref": "",
+                                                        "RouterLinkActive": "",
+                                                        "RouterParam": "",
+                                                        "Style": "",
+                                                        "TableColumnWidth": "",
+                                                        "Value": "Add visitors"
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "Button"
+                                                }
+                                            ],
+                                            "name": "ButtonGroup",
+                                            "props": {
+                                                "Class": "btn-group",
+                                                "Columns": "12",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "text-align: right",
+                                                "Property-binding": "",
+                                                "Style": "",
+                                                "TableColumnWidth": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "ButtonGroup"
+                                        }
+                                    ],
+                                    "name": "Row",
+                                    "props": {
+                                        "Class": "row mb-2",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Row"
+                                },
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "event_name",
+                                            "props": {
+                                                "Auto-complete": "off",
+                                                "ChangeEvent": "",
+                                                "Class": "form-control",
+                                                "Columns": "12",
+                                                "Control-type": "text",
+                                                "DB-table": "supp_visitor_invitation",
+                                                "DisplayLabel": "Event name",
+                                                "FormType": "Standard",
+                                                "Group-class": "",
+                                                "Group-property-binding": "",
+                                                "Group-style": "",
+                                                "Hidden": "",
+                                                "ID": "event_name",
+                                                "Label-class": "",
+                                                "Label-property-binding": "",
+                                                "Label-style": "",
+                                                "Model": "event_name",
+                                                "Name": "event_name",
+                                                "Placeholder": "",
+                                                "Property-binding": "",
+                                                "Readonly": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Validations": "",
+                                                "Validator-class": "",
+                                                "Validator-style": "",
+                                                "Value": ""
+                                            },
+                                            "tabpos": "3",
+                                            "type": "TextBox"
+                                        },
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "invite_text",
+                                            "props": {
+                                                "Auto-complete": "off",
+                                                "ChangeEvent": "",
+                                                "Class": "form-control",
+                                                "Columns": "4,8",
+                                                "DB-table": "supp_visitor_invitation",
+                                                "DisplayLabel": "Invite text",
+                                                "FormType": "Standard",
+                                                "Group-class": "",
+                                                "Group-style": "",
+                                                "GroupWidth": "",
+                                                "HelpText": "",
+                                                "Hidden": "",
+                                                "ID": "invite_text",
+                                                "Label class": "",
+                                                "Label-class": "",
+                                                "Label-style": "",
+                                                "Label-type": "label",
+                                                "Model": "invite_text",
+                                                "Name": "invite_text",
+                                                "Placeholder": "",
+                                                "Property-binding": "",
+                                                "Readonly": "",
+                                                "Required": "",
+                                                "Rows": "5",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Validations": "",
+                                                "Value": ""
+                                            },
+                                            "tabpos": "3",
+                                            "type": "TextArea"
+                                        }
+                                    ],
+                                    "name": "Row",
+                                    "props": {
+                                        "Class": "row p-4 shadow",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": "border: 1px solid lightgray"
+                                    },
+                                    "tabpos": "2",
+                                    "type": "Row"
+                                }
+                            ],
+                            "name": "Column",
+                            "props": {
+                                "Class": "",
+                                "Columns": "10",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Column"
+                        }
+                    ],
+                    "name": "Row",
+                    "props": {
+                        "Class": "row",
+                        "DB-table": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Repeat": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Row"
+                }
+            ],
+            "name": "Container",
+            "props": {
+                "Class": "container-fluid p-5",
+                "Hidden": "",
+                "ID": "",
+                "Name": "",
+                "Property-binding": "",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Container"
+        },
+        {
+            "child": [
+                {
+                    "child": [
+                    ],
+                    "name": "Dialog-header",
+                    "props": {
+                        "Class": "modal-header",
+                        "Close-button": "Yes",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": "",
+                        "Title": "Visitors"
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-header"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "Label",
+                                                    "props": {
+                                                        "Class": "",
+                                                        "Columns": "12",
+                                                        "DisplayLabel": "",
+                                                        "For": "",
+                                                        "FormType": "Standard",
+                                                        "GroupWidth": "",
+                                                        "HelpText": "",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Label class": "",
+                                                        "Label-type": "span",
+                                                        "Name": "",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Required": "",
+                                                        "Style": "",
+                                                        "TableColumnWidth": "",
+                                                        "Value": "Select visitors from master entry"
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "Label"
+                                                },
+                                                {
+                                                    "child": [
+                                                        {
+                                                            "child": [
+                                                                {
+                                                                    "child": [
+                                                                    ],
+                                                                    "name": "person_name",
+                                                                    "props": {
+                                                                        "Class": "",
+                                                                        "ClickEvent": "add_to_vlist(x)",
+                                                                        "Columns": "12",
+                                                                        "DB-table": "",
+                                                                        "Data-dismiss": "",
+                                                                        "Data-target": "",
+                                                                        "Data-toggle": "modal",
+                                                                        "DisplayLabel": "Person name",
+                                                                        "Fa-icon": "",
+                                                                        "Group-class": "",
+                                                                        "Group-style": "",
+                                                                        "Hidden": "",
+                                                                        "ID": "person_name",
+                                                                        "Icon": "",
+                                                                        "Model": "",
+                                                                        "Name": "person_name",
+                                                                        "Property-binding": "",
+                                                                        "RouterLink": "#",
+                                                                        "RouterParam": "",
+                                                                        "Style": "",
+                                                                        "TableColumnWidth": "",
+                                                                        "Value": "{{ x.person_name }}"
+                                                                    },
+                                                                    "tabpos": "8",
+                                                                    "type": "Link"
+                                                                }
+                                                            ],
+                                                            "name": "TableRow",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "Data-source": "supp_visitor_master_listList",
+                                                                "Hidden": "",
+                                                                "ID": "",
+                                                                "Name": "",
+                                                                "Property-binding": "",
+                                                                "Style": ""
+                                                            },
+                                                            "tabpos": "7",
+                                                            "type": "TableRow"
+                                                        }
+                                                    ],
+                                                    "name": "Table",
+                                                    "props": {
+                                                        "Border": "Yes",
+                                                        "Caption": "",
+                                                        "Class": "table table-bordered table-sm",
+                                                        "Columns": "12",
+                                                        "DataSource": "",
+                                                        "Filter": "",
+                                                        "HeaderClass": "",
+                                                        "Hidden": "",
+                                                        "Hover": "No",
+                                                        "ID": "",
+                                                        "ItemsPerPage": "12",
+                                                        "Name": "",
+                                                        "NoOfPagesDisplay": "10",
+                                                        "Pagination": "Yes",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Responsive": "",
+                                                        "Size": "Small",
+                                                        "StripedRows": "No",
+                                                        "Style": ""
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "Table"
+                                                }
+                                            ],
+                                            "name": "Row",
+                                            "props": {
+                                                "Class": "row",
+                                                "DB-table": "",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Repeat": "",
+                                                "Style": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "Row"
+                                        }
+                                    ],
+                                    "name": "Column",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "4",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Column"
+                                },
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "Label",
+                                                    "props": {
+                                                        "Class": "",
+                                                        "Columns": "12",
+                                                        "DisplayLabel": "",
+                                                        "For": "",
+                                                        "FormType": "Standard",
+                                                        "GroupWidth": "",
+                                                        "HelpText": "",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Label class": "",
+                                                        "Label-type": "span",
+                                                        "Name": "",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Required": "",
+                                                        "Style": "color: darkblue",
+                                                        "TableColumnWidth": "",
+                                                        "Value": "Enter visitors details if not not available in master list else select entry from master list."
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "Label"
+                                                },
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "person_name",
+                                                    "props": {
+                                                        "Auto-complete": "off",
+                                                        "ChangeEvent": "",
+                                                        "Class": "form-control",
+                                                        "Columns": "7",
+                                                        "Control-type": "text",
+                                                        "DB-table": "supp_invited_visitors",
+                                                        "DisplayLabel": "Person name",
+                                                        "FormType": "Standard",
+                                                        "Group-class": "",
+                                                        "Group-property-binding": "",
+                                                        "Group-style": "",
+                                                        "Hidden": "",
+                                                        "ID": "person_name",
+                                                        "Label-class": "",
+                                                        "Label-property-binding": "",
+                                                        "Label-style": "",
+                                                        "Model": "person_name",
+                                                        "Name": "person_name",
+                                                        "Placeholder": "",
+                                                        "Property-binding": "",
+                                                        "Readonly": "",
+                                                        "Style": "",
+                                                        "TableColumnWidth": "",
+                                                        "Validations": "",
+                                                        "Validator-class": "",
+                                                        "Validator-style": "",
+                                                        "Value": ""
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "TextBox"
+                                                },
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "phone1",
+                                                    "props": {
+                                                        "Auto-complete": "off",
+                                                        "ChangeEvent": "",
+                                                        "Class": "form-control",
+                                                        "Columns": "3",
+                                                        "Control-type": "text",
+                                                        "DB-table": "supp_invited_visitors",
+                                                        "DisplayLabel": "Phone1",
+                                                        "FormType": "Standard",
+                                                        "Group-class": "",
+                                                        "Group-property-binding": "",
+                                                        "Group-style": "",
+                                                        "Hidden": "",
+                                                        "ID": "phone1",
+                                                        "Label-class": "",
+                                                        "Label-property-binding": "",
+                                                        "Label-style": "",
+                                                        "Model": "phone1",
+                                                        "Name": "phone1",
+                                                        "Placeholder": "",
+                                                        "Property-binding": "",
+                                                        "Readonly": "",
+                                                        "Style": "",
+                                                        "TableColumnWidth": "",
+                                                        "Validations": "",
+                                                        "Validator-class": "",
+                                                        "Validator-style": "",
+                                                        "Value": ""
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "TextBox"
+                                                },
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "Button",
+                                                    "props": {
+                                                        "Class": "btn btn-primary btn-sm",
+                                                        "ClickEvent": "save_supp_invited_visitors()",
+                                                        "Columns": "1",
+                                                        "Data-dismiss": "",
+                                                        "Data-target": "",
+                                                        "Data-toggle": "",
+                                                        "Fa-icon": "fa fa-plus",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Icon": "",
+                                                        "Model": "",
+                                                        "Name": "",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Readonly": "",
+                                                        "Ref": "",
+                                                        "RouterLinkActive": "",
+                                                        "RouterParam": "",
+                                                        "Style": "margin-top: 30px;",
+                                                        "TableColumnWidth": "",
+                                                        "Value": "Add"
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "Button"
+                                                },
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "HLine",
+                                                    "props": {
+                                                        "Class": "mb-3",
+                                                        "Columns": "12",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Name": "",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Style": ""
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "HLine"
+                                                }
+                                            ],
+                                            "name": "Row",
+                                            "props": {
+                                                "Class": "row",
+                                                "DB-table": "",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Repeat": "",
+                                                "Style": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "Row"
+                                        },
+                                        {
+                                            "child": [
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "person_name",
+                                                    "props": {
+                                                        "Class": "",
+                                                        "Columns": "7",
+                                                        "DisplayLabel": "Person name",
+                                                        "For": "",
+                                                        "FormType": "Standard",
+                                                        "GroupWidth": "",
+                                                        "HelpText": "",
+                                                        "Hidden": "",
+                                                        "ID": "person_name",
+                                                        "Label class": "",
+                                                        "Label-type": "span",
+                                                        "Name": "person_name",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Required": "",
+                                                        "Style": "",
+                                                        "TableColumnWidth": "",
+                                                        "Value": "{{ x.person_name }}"
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "Label"
+                                                },
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "phone1",
+                                                    "props": {
+                                                        "Class": "",
+                                                        "Columns": "3",
+                                                        "DisplayLabel": "Phone1",
+                                                        "For": "",
+                                                        "FormType": "Standard",
+                                                        "GroupWidth": "",
+                                                        "HelpText": "",
+                                                        "Hidden": "",
+                                                        "ID": "phone1",
+                                                        "Label class": "",
+                                                        "Label-type": "span",
+                                                        "Name": "phone1",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Required": "",
+                                                        "Style": "",
+                                                        "TableColumnWidth": "",
+                                                        "Value": "{{ x.phone1 }}"
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "Label"
+                                                },
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "Link",
+                                                    "props": {
+                                                        "Class": "",
+                                                        "ClickEvent": "delete_supp_invited_visitors(x.sysid)",
+                                                        "Columns": "1",
+                                                        "DB-table": "",
+                                                        "Data-dismiss": "",
+                                                        "Data-target": "",
+                                                        "Data-toggle": "modal",
+                                                        "DisplayLabel": "",
+                                                        "Fa-icon": "",
+                                                        "Group-class": "",
+                                                        "Group-style": "",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Icon": "",
+                                                        "Model": "",
+                                                        "Name": "",
+                                                        "Property-binding": "",
+                                                        "RouterLink": "#",
+                                                        "RouterParam": "",
+                                                        "Style": "color: red",
+                                                        "TableColumnWidth": "",
+                                                        "Value": "Remove"
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "Link"
+                                                }
+                                            ],
+                                            "name": "Row",
+                                            "props": {
+                                                "Class": "row",
+                                                "DB-table": "",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Repeat": "supp_invited_visitorsList",
+                                                "Style": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "Row"
+                                        }
+                                    ],
+                                    "name": "Column",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "8",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Column"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-body",
+                    "props": {
+                        "Class": "modal-body",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-body"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Label",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "DisplayLabel": "",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "{{supp_invited_visitors_status }}"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-footer",
+                    "props": {
+                        "Class": "modal-footer",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-footer"
+                }
+            ],
+            "name": "Dialog",
+            "props": {
+                "Class": "modal fade",
+                "Hidden": "",
+                "ID": "d1",
+                "Name": "",
+                "Property-binding": "",
+                "Size": "Extra-large",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Dialog"
+        }
+    ],
+    "name": "Form",
+    "props": {
+        "Class": "",
+        "Columns": "12",
+        "Hidden": "",
+        "ID": "",
+        "Name": "",
+        "Parent-class": "",
+        "Parent-style": "",
+        "Property-binding": "",
+        "Style": ""
+    },
+    "tabpos": "0",
+    "type": "Form"
+}

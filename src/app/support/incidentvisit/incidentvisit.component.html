@@ -1,0 +1,141 @@
+<form #f='ngForm'>
+	<div class='container-fluid p-5 '>
+		<div class='row '>
+		<div class='' class='col-sm-2'>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<app-visitormenu></app-visitormenu>
+				</div>
+			</div>
+		</div>
+		<div class='' class='col-sm-10'>
+	<div class='row '>
+		<div class='' class='col-sm-12'>
+			<div class='row '>
+				<label class='page-header col-sm-3 '> Report visitor incident
+				</label>
+				<label class='col-sm-6 '> {{ supp_visitor_incident_status }}
+				</label>
+				<div class=' col-sm-3' style='text-align: right'>
+					<div class='btn-group '>
+						<button class='btn btn-primary btn-sm ' data-target='#dlg' data-toggle='modal' (click)='clear_supp_visitor_incident()'>
+							<i class='fa fa-plus'></i> Add
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<table class='table table-bordered table-sm '>
+						<thead>
+							<tr>
+								<th>System ID</th>
+								<th>Title</th>
+								<th>Incident details</th>
+								<th>Incident date</th>
+								<th>Incident time</th>
+								<th>Member name</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr *ngFor='let x of supp_visitor_incidentList'>
+								<td> {{ x.sysid }} </td>
+								<td>
+									<a class='' id='inc_title' name='inc_title' data-target='#dlg' data-toggle='modal' (click)='current_record_supp_visitor_incident(x)' href='#'>
+										{{ x.inc_title }}
+									</a>
+								</td>
+								<td> {{ x.inc_details }} </td>
+								<td> {{ x.inc_date }} </td>
+								<td> {{ x.inc_time }} </td>
+								<td> {{ x.member_id }} </td>
+								<td>
+									<a class='' id='delete_btn' style='color: red;' name='delete_btn' data-toggle='modal' (click)='delete_supp_visitor_incident(x.sysid)' href='#'>
+										<i class='fa fa-trash'></i> Delete
+									</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div tabindex='-1' role='dialog' class='modal fade ' id='dlg'>
+				<div class='modal-dialog modal-lg' role='document'>
+					<div class='modal-content'>
+						<div class='modal-header '>
+							<div class='modal-title'><h5>Visitor incident</h5></div>
+							<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+								<span aria-hidden='true'>&times;</span>
+							</button>
+						</div>
+						<div class='modal-body '>
+					<div class='row '>
+						<div class='col-sm-4'>
+							<div class='form-group'>
+								<label for='sysid'>System ID</label>
+								<input class='form-control ' id='sysid' name='sysid' type='text' autocomplete='off' readonly [(ngModel)]='supp_visitor_incident.sysid' #sysid="ngModel">
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group'>
+								<label for='inc_title'>Title</label>
+								<input class='form-control ' id='inc_title' name='inc_title' type='text' autocomplete='off' [(ngModel)]='supp_visitor_incident.inc_title' #inc_title="ngModel">
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group'>
+								<label for='inc_details'>Incident details</label>
+								<textarea class='form-control ' id='inc_details' name='inc_details' rows='5' autocomplete='off' [(ngModel)]='supp_visitor_incident.inc_details' #inc_details="ngModel"></textarea>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group'>
+								<label for='inc_date'>Incident date</label>
+								<div class='input-group'>
+									<input class='form-control ' id='inc_date' name='inc_date' type='text' [(ngModel)]='supp_visitor_incident.inc_date' #inc_date="ngModel" ngbDatepicker #inc_date_='ngbDatepicker'>
+									<div class='input-group-append'>
+										<button class='btn btn-default btn-sm' (click)='inc_date_.toggle()'><i class='fa fa-calendar-alt'></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-6'>
+							<div class='form-group'>
+								<label for='inc_time'>Incident time</label>
+								<input class='form-control ' id='inc_time' name='inc_time' type='text' autocomplete='off' [(ngModel)]='supp_visitor_incident.inc_time' #inc_time="ngModel">
+							</div>
+						</div>
+						<div class='col-sm-4'>
+							<div class='form-group'>
+								<label for='member_id'>Member name</label>
+								<input class='form-control ' id='member_id' name='member_id' type='text' autocomplete='off' readonly [(ngModel)]='supp_visitor_incident.member_id' #member_id="ngModel">
+							</div>
+						</div>
+					</div>
+						</div>
+						<div class='modal-footer '>
+					<label class='pull-left col-sm-8 '> {{ supp_visitor_incident_status }}
+					</label>
+					<div class='row '>
+						<div class=' col-sm-4'>
+							<div class='btn-group pull-right '>
+								<button class='btn btn-primary btn-sm ' name='save_btn' (click)='save_supp_visitor_incident(f)'>
+									<i class='fa fa-save'></i> Save
+								</button>
+								<button class='btn btn-primary btn-sm ' name='close_btn' data-dismiss='modal'>
+									<i class='fa fa-times'></i> Close
+								</button>
+							</div>
+						</div>
+					</div>
+						</div>
+			</div>
+				</div>
+					</div>
+		</div>
+	</div>
+		</div>
+		</div>
+	</div>
+</form>

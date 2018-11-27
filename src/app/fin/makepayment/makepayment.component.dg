@@ -1,0 +1,1885 @@
+{
+    "child": [
+        {
+            "child": [
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "HtmlPage",
+                                            "props": {
+                                                "Columns": "12",
+                                                "Page-Name": "myaccmenu"
+                                            },
+                                            "tabpos": "5",
+                                            "type": "HtmlPage"
+                                        }
+                                    ],
+                                    "name": "Row",
+                                    "props": {
+                                        "Class": "row",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Row"
+                                }
+                            ],
+                            "name": "Column",
+                            "props": {
+                                "Class": "",
+                                "Columns": "2",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Column"
+                        },
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                                {
+                                                    "child": [
+                                                        {
+                                                            "child": [
+                                                                {
+                                                                    "child": [
+                                                                        {
+                                                                            "child": [
+                                                                            ],
+                                                                            "name": "Row",
+                                                                            "props": {
+                                                                                "Class": "row",
+                                                                                "DB-table": "",
+                                                                                "Hidden": "",
+                                                                                "ID": "",
+                                                                                "Name": "",
+                                                                                "Parent-class": "",
+                                                                                "Parent-style": "",
+                                                                                "Property-binding": "",
+                                                                                "Repeat": "",
+                                                                                "Style": ""
+                                                                            },
+                                                                            "tabpos": "9",
+                                                                            "type": "Row"
+                                                                        }
+                                                                    ],
+                                                                    "name": "Column",
+                                                                    "props": {
+                                                                        "Class": "",
+                                                                        "Columns": "2",
+                                                                        "DB-table": "",
+                                                                        "Hidden": "",
+                                                                        "ID": "",
+                                                                        "Name": "",
+                                                                        "Parent-class": "",
+                                                                        "Parent-style": "",
+                                                                        "Property-binding": "",
+                                                                        "Repeat": "",
+                                                                        "Style": ""
+                                                                    },
+                                                                    "tabpos": "8",
+                                                                    "type": "Column"
+                                                                },
+                                                                {
+                                                                    "child": [
+                                                                        {
+                                                                            "child": [
+                                                                                {
+                                                                                    "child": [
+                                                                                        {
+                                                                                            "child": [
+                                                                                            ],
+                                                                                            "name": "Button",
+                                                                                            "props": {
+                                                                                                "Class": "btn btn-primary btn-sm",
+                                                                                                "ClickEvent": "",
+                                                                                                "Columns": "12",
+                                                                                                "Data-dismiss": "",
+                                                                                                "Data-target": "",
+                                                                                                "Data-toggle": "",
+                                                                                                "Fa-icon": "",
+                                                                                                "Hidden": "",
+                                                                                                "ID": "",
+                                                                                                "Icon": "",
+                                                                                                "Model": "",
+                                                                                                "Name": "",
+                                                                                                "Parent-class": "",
+                                                                                                "Parent-style": "",
+                                                                                                "Property-binding": "",
+                                                                                                "Readonly": "",
+                                                                                                "Ref": "",
+                                                                                                "RouterLinkActive": "",
+                                                                                                "RouterParam": "",
+                                                                                                "Style": "",
+                                                                                                "TableColumnWidth": "",
+                                                                                                "Value": "Proceed with payment"
+                                                                                            },
+                                                                                            "tabpos": "9",
+                                                                                            "type": "Button"
+                                                                                        }
+                                                                                    ],
+                                                                                    "name": "ButtonGroup",
+                                                                                    "props": {
+                                                                                        "Class": "btn-group",
+                                                                                        "Columns": "12",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "",
+                                                                                        "Name": "",
+                                                                                        "Parent-class": "",
+                                                                                        "Parent-style": "text-align: center",
+                                                                                        "Property-binding": "",
+                                                                                        "Style": "",
+                                                                                        "TableColumnWidth": ""
+                                                                                    },
+                                                                                    "tabpos": "8",
+                                                                                    "type": "ButtonGroup"
+                                                                                }
+                                                                            ],
+                                                                            "name": "Row",
+                                                                            "props": {
+                                                                                "Class": "row my-3",
+                                                                                "DB-table": "",
+                                                                                "Hidden": "",
+                                                                                "ID": "",
+                                                                                "Name": "",
+                                                                                "Parent-class": "",
+                                                                                "Parent-style": "",
+                                                                                "Property-binding": "",
+                                                                                "Repeat": "",
+                                                                                "Style": ""
+                                                                            },
+                                                                            "tabpos": "7",
+                                                                            "type": "Row"
+                                                                        },
+                                                                        {
+                                                                            "child": [
+                                                                                {
+                                                                                    "child": [
+                                                                                    ],
+                                                                                    "name": "Image",
+                                                                                    "props": {
+                                                                                        "Alignment": "Default",
+                                                                                        "Class": "img-fluid float-center",
+                                                                                        "Columns": "12",
+                                                                                        "GroupWidth": "",
+                                                                                        "Height": "50%",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "",
+                                                                                        "Image-source": "./assets/upi.PNG",
+                                                                                        "Max-height": "",
+                                                                                        "Max-width": "",
+                                                                                        "Min-height": "400",
+                                                                                        "Min-width": "",
+                                                                                        "Name": "",
+                                                                                        "Parent-class": "",
+                                                                                        "Parent-style": "text-align: center",
+                                                                                        "Property-binding": "",
+                                                                                        "Responsive": "No",
+                                                                                        "Rounded": "No",
+                                                                                        "Style": "height: 500px;",
+                                                                                        "TableColumnWidth": "",
+                                                                                        "Thumbnail": "No",
+                                                                                        "Validations": "",
+                                                                                        "Width": ""
+                                                                                    },
+                                                                                    "tabpos": "8",
+                                                                                    "type": "Image"
+                                                                                }
+                                                                            ],
+                                                                            "name": "Row",
+                                                                            "props": {
+                                                                                "Class": "row",
+                                                                                "DB-table": "",
+                                                                                "Hidden": "",
+                                                                                "ID": "",
+                                                                                "Name": "",
+                                                                                "Parent-class": "",
+                                                                                "Parent-style": "",
+                                                                                "Property-binding": "",
+                                                                                "Repeat": "",
+                                                                                "Style": ""
+                                                                            },
+                                                                            "tabpos": "7",
+                                                                            "type": "Row"
+                                                                        }
+                                                                    ],
+                                                                    "name": "Column",
+                                                                    "props": {
+                                                                        "Class": "",
+                                                                        "Columns": "8",
+                                                                        "DB-table": "",
+                                                                        "Hidden": "",
+                                                                        "ID": "",
+                                                                        "Name": "",
+                                                                        "Parent-class": "",
+                                                                        "Parent-style": "",
+                                                                        "Property-binding": "",
+                                                                        "Repeat": "",
+                                                                        "Style": ""
+                                                                    },
+                                                                    "tabpos": "8",
+                                                                    "type": "Column"
+                                                                }
+                                                            ],
+                                                            "name": "Row",
+                                                            "props": {
+                                                                "Class": "row",
+                                                                "DB-table": "",
+                                                                "Hidden": "",
+                                                                "ID": "",
+                                                                "Name": "",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Repeat": "",
+                                                                "Style": ""
+                                                            },
+                                                            "tabpos": "7",
+                                                            "type": "Row"
+                                                        }
+                                                    ],
+                                                    "name": "upi",
+                                                    "props": {
+                                                        "Active": "Yes",
+                                                        "Class": "tab-pane fade",
+                                                        "Columns": "12",
+                                                        "Data-target": "p1",
+                                                        "Hidden": "",
+                                                        "ID": "upi",
+                                                        "Name": "upi",
+                                                        "Property-binding": "",
+                                                        "Style": "",
+                                                        "Title": "UPI"
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "TabPage"
+                                                },
+                                                {
+                                                    "child": [
+                                                        {
+                                                            "child": [
+                                                                {
+                                                                    "child": [
+                                                                        {
+                                                                            "child": [
+                                                                            ],
+                                                                            "name": "Row",
+                                                                            "props": {
+                                                                                "Class": "row",
+                                                                                "DB-table": "",
+                                                                                "Hidden": "",
+                                                                                "ID": "",
+                                                                                "Name": "",
+                                                                                "Parent-class": "",
+                                                                                "Parent-style": "",
+                                                                                "Property-binding": "",
+                                                                                "Repeat": "",
+                                                                                "Style": ""
+                                                                            },
+                                                                            "tabpos": "9",
+                                                                            "type": "Row"
+                                                                        }
+                                                                    ],
+                                                                    "name": "Column",
+                                                                    "props": {
+                                                                        "Class": "",
+                                                                        "Columns": "3",
+                                                                        "DB-table": "",
+                                                                        "Hidden": "",
+                                                                        "ID": "",
+                                                                        "Name": "",
+                                                                        "Parent-class": "",
+                                                                        "Parent-style": "",
+                                                                        "Property-binding": "",
+                                                                        "Repeat": "",
+                                                                        "Style": ""
+                                                                    },
+                                                                    "tabpos": "8",
+                                                                    "type": "Column"
+                                                                },
+                                                                {
+                                                                    "child": [
+                                                                        {
+                                                                            "child": [
+                                                                                {
+                                                                                    "child": [
+                                                                                    ],
+                                                                                    "name": "Image",
+                                                                                    "props": {
+                                                                                        "Alignment": "Default",
+                                                                                        "Class": "img-fluid",
+                                                                                        "Columns": "12",
+                                                                                        "GroupWidth": "",
+                                                                                        "Height": "auto",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "",
+                                                                                        "Image-source": "./assets/pay_cards.PNG",
+                                                                                        "Max-height": "",
+                                                                                        "Max-width": "",
+                                                                                        "Min-height": "",
+                                                                                        "Min-width": "",
+                                                                                        "Name": "",
+                                                                                        "Parent-class": "",
+                                                                                        "Parent-style": "",
+                                                                                        "Property-binding": "",
+                                                                                        "Responsive": "No",
+                                                                                        "Rounded": "No",
+                                                                                        "Style": "",
+                                                                                        "TableColumnWidth": "",
+                                                                                        "Thumbnail": "No",
+                                                                                        "Validations": "",
+                                                                                        "Width": ""
+                                                                                    },
+                                                                                    "tabpos": "10",
+                                                                                    "type": "Image"
+                                                                                },
+                                                                                {
+                                                                                    "child": [
+                                                                                    ],
+                                                                                    "name": "cardno",
+                                                                                    "props": {
+                                                                                        "Auto-complete": "off",
+                                                                                        "ChangeEvent": "",
+                                                                                        "Class": "form-control",
+                                                                                        "Columns": "12",
+                                                                                        "Control-type": "text",
+                                                                                        "DB-table": "",
+                                                                                        "DisplayLabel": "Card No",
+                                                                                        "FormType": "Standard",
+                                                                                        "Group-class": "",
+                                                                                        "Group-property-binding": "",
+                                                                                        "Group-style": "",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "cardno",
+                                                                                        "Label-class": "",
+                                                                                        "Label-property-binding": "",
+                                                                                        "Label-style": "",
+                                                                                        "Model": "",
+                                                                                        "Name": "cardno",
+                                                                                        "Placeholder": "16 digit card no",
+                                                                                        "Property-binding": "",
+                                                                                        "Readonly": "",
+                                                                                        "Style": "",
+                                                                                        "TableColumnWidth": "",
+                                                                                        "Validations": "",
+                                                                                        "Validator-class": "",
+                                                                                        "Validator-style": "",
+                                                                                        "Value": ""
+                                                                                    },
+                                                                                    "tabpos": "10",
+                                                                                    "type": "TextBox"
+                                                                                },
+                                                                                {
+                                                                                    "child": [
+                                                                                    ],
+                                                                                    "name": "card_name",
+                                                                                    "props": {
+                                                                                        "Auto-complete": "off",
+                                                                                        "ChangeEvent": "",
+                                                                                        "Class": "form-control",
+                                                                                        "Columns": "12",
+                                                                                        "Control-type": "text",
+                                                                                        "DB-table": "",
+                                                                                        "DisplayLabel": "Name on the card",
+                                                                                        "FormType": "Standard",
+                                                                                        "Group-class": "",
+                                                                                        "Group-property-binding": "",
+                                                                                        "Group-style": "",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "card_name",
+                                                                                        "Label-class": "",
+                                                                                        "Label-property-binding": "",
+                                                                                        "Label-style": "",
+                                                                                        "Model": "",
+                                                                                        "Name": "card_name",
+                                                                                        "Placeholder": "Name as per card",
+                                                                                        "Property-binding": "",
+                                                                                        "Readonly": "",
+                                                                                        "Style": "",
+                                                                                        "TableColumnWidth": "",
+                                                                                        "Validations": "",
+                                                                                        "Validator-class": "",
+                                                                                        "Validator-style": "",
+                                                                                        "Value": ""
+                                                                                    },
+                                                                                    "tabpos": "10",
+                                                                                    "type": "TextBox"
+                                                                                },
+                                                                                {
+                                                                                    "child": [
+                                                                                    ],
+                                                                                    "name": "expmonth",
+                                                                                    "props": {
+                                                                                        "Auto-complete": "off",
+                                                                                        "ChangeEvent": "",
+                                                                                        "Class": "form-control",
+                                                                                        "Columns": "3",
+                                                                                        "Control-type": "text",
+                                                                                        "DB-table": "",
+                                                                                        "DisplayLabel": "Expiry month",
+                                                                                        "FormType": "Standard",
+                                                                                        "Group-class": "",
+                                                                                        "Group-property-binding": "",
+                                                                                        "Group-style": "",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "expmonth",
+                                                                                        "Label-class": "",
+                                                                                        "Label-property-binding": "",
+                                                                                        "Label-style": "",
+                                                                                        "Model": "",
+                                                                                        "Name": "expmonth",
+                                                                                        "Placeholder": "MM",
+                                                                                        "Property-binding": "",
+                                                                                        "Readonly": "",
+                                                                                        "Style": "",
+                                                                                        "TableColumnWidth": "",
+                                                                                        "Validations": "",
+                                                                                        "Validator-class": "",
+                                                                                        "Validator-style": "",
+                                                                                        "Value": ""
+                                                                                    },
+                                                                                    "tabpos": "10",
+                                                                                    "type": "TextBox"
+                                                                                },
+                                                                                {
+                                                                                    "child": [
+                                                                                    ],
+                                                                                    "name": "expyear",
+                                                                                    "props": {
+                                                                                        "Auto-complete": "off",
+                                                                                        "ChangeEvent": "",
+                                                                                        "Class": "form-control",
+                                                                                        "Columns": "3",
+                                                                                        "Control-type": "text",
+                                                                                        "DB-table": "",
+                                                                                        "DisplayLabel": "Expiry year",
+                                                                                        "FormType": "Standard",
+                                                                                        "Group-class": "",
+                                                                                        "Group-property-binding": "",
+                                                                                        "Group-style": "",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "expyear",
+                                                                                        "Label-class": "",
+                                                                                        "Label-property-binding": "",
+                                                                                        "Label-style": "",
+                                                                                        "Model": "",
+                                                                                        "Name": "expyear",
+                                                                                        "Placeholder": "YYYY",
+                                                                                        "Property-binding": "",
+                                                                                        "Readonly": "",
+                                                                                        "Style": "",
+                                                                                        "TableColumnWidth": "",
+                                                                                        "Validations": "",
+                                                                                        "Validator-class": "",
+                                                                                        "Validator-style": "",
+                                                                                        "Value": ""
+                                                                                    },
+                                                                                    "tabpos": "10",
+                                                                                    "type": "TextBox"
+                                                                                },
+                                                                                {
+                                                                                    "child": [
+                                                                                    ],
+                                                                                    "name": "cvv",
+                                                                                    "props": {
+                                                                                        "Auto-complete": "off",
+                                                                                        "ChangeEvent": "",
+                                                                                        "Class": "form-control",
+                                                                                        "Columns": "3",
+                                                                                        "Control-type": "text",
+                                                                                        "DB-table": "",
+                                                                                        "DisplayLabel": "CVV",
+                                                                                        "FormType": "Standard",
+                                                                                        "Group-class": "",
+                                                                                        "Group-property-binding": "",
+                                                                                        "Group-style": "",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "cvv",
+                                                                                        "Label-class": "",
+                                                                                        "Label-property-binding": "",
+                                                                                        "Label-style": "",
+                                                                                        "Model": "",
+                                                                                        "Name": "cvv",
+                                                                                        "Placeholder": "",
+                                                                                        "Property-binding": "",
+                                                                                        "Readonly": "",
+                                                                                        "Style": "",
+                                                                                        "TableColumnWidth": "",
+                                                                                        "Validations": "",
+                                                                                        "Validator-class": "",
+                                                                                        "Validator-style": "",
+                                                                                        "Value": "CVV"
+                                                                                    },
+                                                                                    "tabpos": "10",
+                                                                                    "type": "TextBox"
+                                                                                },
+                                                                                {
+                                                                                    "child": [
+                                                                                    ],
+                                                                                    "name": "Image",
+                                                                                    "props": {
+                                                                                        "Alignment": "Default",
+                                                                                        "Class": "img-fluid",
+                                                                                        "Columns": "3",
+                                                                                        "GroupWidth": "",
+                                                                                        "Height": "150%",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "",
+                                                                                        "Image-source": "./assets/cvv.PNG",
+                                                                                        "Max-height": "",
+                                                                                        "Max-width": "",
+                                                                                        "Min-height": "",
+                                                                                        "Min-width": "",
+                                                                                        "Name": "",
+                                                                                        "Parent-class": "",
+                                                                                        "Parent-style": "",
+                                                                                        "Property-binding": "",
+                                                                                        "Responsive": "No",
+                                                                                        "Rounded": "No",
+                                                                                        "Style": "margin-top: 30px;",
+                                                                                        "TableColumnWidth": "",
+                                                                                        "Thumbnail": "No",
+                                                                                        "Validations": "",
+                                                                                        "Width": ""
+                                                                                    },
+                                                                                    "tabpos": "10",
+                                                                                    "type": "Image"
+                                                                                }
+                                                                            ],
+                                                                            "name": "Row",
+                                                                            "props": {
+                                                                                "Class": "row mt-3",
+                                                                                "DB-table": "",
+                                                                                "Hidden": "",
+                                                                                "ID": "",
+                                                                                "Name": "",
+                                                                                "Parent-class": "",
+                                                                                "Parent-style": "",
+                                                                                "Property-binding": "",
+                                                                                "Repeat": "",
+                                                                                "Style": ""
+                                                                            },
+                                                                            "tabpos": "9",
+                                                                            "type": "Row"
+                                                                        },
+                                                                        {
+                                                                            "child": [
+                                                                                {
+                                                                                    "child": [
+                                                                                        {
+                                                                                            "child": [
+                                                                                            ],
+                                                                                            "name": "Button",
+                                                                                            "props": {
+                                                                                                "Class": "btn btn-primary btn-sm",
+                                                                                                "ClickEvent": "",
+                                                                                                "Columns": "12",
+                                                                                                "Data-dismiss": "",
+                                                                                                "Data-target": "",
+                                                                                                "Data-toggle": "",
+                                                                                                "Fa-icon": "",
+                                                                                                "Hidden": "",
+                                                                                                "ID": "",
+                                                                                                "Icon": "",
+                                                                                                "Model": "",
+                                                                                                "Name": "",
+                                                                                                "Parent-class": "",
+                                                                                                "Parent-style": "",
+                                                                                                "Property-binding": "",
+                                                                                                "Readonly": "",
+                                                                                                "Ref": "",
+                                                                                                "RouterLinkActive": "",
+                                                                                                "RouterParam": "",
+                                                                                                "Style": "",
+                                                                                                "TableColumnWidth": "",
+                                                                                                "Value": "Make payment"
+                                                                                            },
+                                                                                            "tabpos": "11",
+                                                                                            "type": "Button"
+                                                                                        }
+                                                                                    ],
+                                                                                    "name": "ButtonGroup",
+                                                                                    "props": {
+                                                                                        "Class": "btn-group",
+                                                                                        "Columns": "12",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "",
+                                                                                        "Name": "",
+                                                                                        "Parent-class": "",
+                                                                                        "Parent-style": "text-align: center",
+                                                                                        "Property-binding": "",
+                                                                                        "Style": "",
+                                                                                        "TableColumnWidth": ""
+                                                                                    },
+                                                                                    "tabpos": "10",
+                                                                                    "type": "ButtonGroup"
+                                                                                }
+                                                                            ],
+                                                                            "name": "Row",
+                                                                            "props": {
+                                                                                "Class": "row",
+                                                                                "DB-table": "",
+                                                                                "Hidden": "",
+                                                                                "ID": "",
+                                                                                "Name": "",
+                                                                                "Parent-class": "",
+                                                                                "Parent-style": "",
+                                                                                "Property-binding": "",
+                                                                                "Repeat": "",
+                                                                                "Style": ""
+                                                                            },
+                                                                            "tabpos": "9",
+                                                                            "type": "Row"
+                                                                        }
+                                                                    ],
+                                                                    "name": "Column",
+                                                                    "props": {
+                                                                        "Class": "",
+                                                                        "Columns": "6",
+                                                                        "DB-table": "",
+                                                                        "Hidden": "",
+                                                                        "ID": "",
+                                                                        "Name": "",
+                                                                        "Parent-class": "",
+                                                                        "Parent-style": "",
+                                                                        "Property-binding": "",
+                                                                        "Repeat": "",
+                                                                        "Style": ""
+                                                                    },
+                                                                    "tabpos": "8",
+                                                                    "type": "Column"
+                                                                },
+                                                                {
+                                                                    "child": [
+                                                                        {
+                                                                            "child": [
+                                                                            ],
+                                                                            "name": "Row",
+                                                                            "props": {
+                                                                                "Class": "row",
+                                                                                "DB-table": "",
+                                                                                "Hidden": "",
+                                                                                "ID": "",
+                                                                                "Name": "",
+                                                                                "Parent-class": "",
+                                                                                "Parent-style": "",
+                                                                                "Property-binding": "",
+                                                                                "Repeat": "",
+                                                                                "Style": ""
+                                                                            },
+                                                                            "tabpos": "9",
+                                                                            "type": "Row"
+                                                                        }
+                                                                    ],
+                                                                    "name": "Column",
+                                                                    "props": {
+                                                                        "Class": "",
+                                                                        "Columns": "3",
+                                                                        "DB-table": "",
+                                                                        "Hidden": "",
+                                                                        "ID": "",
+                                                                        "Name": "",
+                                                                        "Parent-class": "",
+                                                                        "Parent-style": "",
+                                                                        "Property-binding": "",
+                                                                        "Repeat": "",
+                                                                        "Style": ""
+                                                                    },
+                                                                    "tabpos": "8",
+                                                                    "type": "Column"
+                                                                }
+                                                            ],
+                                                            "name": "Row",
+                                                            "props": {
+                                                                "Class": "row",
+                                                                "DB-table": "",
+                                                                "Hidden": "",
+                                                                "ID": "",
+                                                                "Name": "",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Repeat": "",
+                                                                "Style": ""
+                                                            },
+                                                            "tabpos": "7",
+                                                            "type": "Row"
+                                                        }
+                                                    ],
+                                                    "name": "crdr",
+                                                    "props": {
+                                                        "Active": "",
+                                                        "Class": "tab-pane fade",
+                                                        "Columns": "12",
+                                                        "Data-target": "p2",
+                                                        "Hidden": "",
+                                                        "ID": "crdr",
+                                                        "Name": "crdr",
+                                                        "Property-binding": "",
+                                                        "Style": "",
+                                                        "Title": "Credit / Debit card"
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "TabPage"
+                                                },
+                                                {
+                                                    "child": [
+                                                        {
+                                                            "child": [
+                                                                {
+                                                                    "child": [
+                                                                        {
+                                                                            "child": [
+                                                                            ],
+                                                                            "name": "Row",
+                                                                            "props": {
+                                                                                "Class": "row",
+                                                                                "DB-table": "",
+                                                                                "Hidden": "",
+                                                                                "ID": "",
+                                                                                "Name": "",
+                                                                                "Parent-class": "",
+                                                                                "Parent-style": "",
+                                                                                "Property-binding": "",
+                                                                                "Repeat": "",
+                                                                                "Style": ""
+                                                                            },
+                                                                            "tabpos": "9",
+                                                                            "type": "Row"
+                                                                        }
+                                                                    ],
+                                                                    "name": "Column",
+                                                                    "props": {
+                                                                        "Class": "",
+                                                                        "Columns": "3",
+                                                                        "DB-table": "",
+                                                                        "Hidden": "",
+                                                                        "ID": "",
+                                                                        "Name": "",
+                                                                        "Parent-class": "",
+                                                                        "Parent-style": "",
+                                                                        "Property-binding": "",
+                                                                        "Repeat": "",
+                                                                        "Style": ""
+                                                                    },
+                                                                    "tabpos": "8",
+                                                                    "type": "Column"
+                                                                },
+                                                                {
+                                                                    "child": [
+                                                                        {
+                                                                            "child": [
+                                                                                {
+                                                                                    "child": [
+                                                                                    ],
+                                                                                    "name": "Image",
+                                                                                    "props": {
+                                                                                        "Alignment": "Default",
+                                                                                        "Class": "img-fluid mb-3",
+                                                                                        "Columns": "12",
+                                                                                        "GroupWidth": "",
+                                                                                        "Height": "auto ",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "",
+                                                                                        "Image-source": "./assets/netbank.PNG",
+                                                                                        "Max-height": "",
+                                                                                        "Max-width": "",
+                                                                                        "Min-height": "",
+                                                                                        "Min-width": "",
+                                                                                        "Name": "",
+                                                                                        "Parent-class": "",
+                                                                                        "Parent-style": "",
+                                                                                        "Property-binding": "",
+                                                                                        "Responsive": "No",
+                                                                                        "Rounded": "No",
+                                                                                        "Style": "",
+                                                                                        "TableColumnWidth": "",
+                                                                                        "Thumbnail": "No",
+                                                                                        "Validations": "",
+                                                                                        "Width": ""
+                                                                                    },
+                                                                                    "tabpos": "10",
+                                                                                    "type": "Image"
+                                                                                },
+                                                                                {
+                                                                                    "child": [
+                                                                                    ],
+                                                                                    "name": "ComboBox",
+                                                                                    "props": {
+                                                                                        "ChangeEvent": "",
+                                                                                        "Class": "form-control",
+                                                                                        "Columns": "12",
+                                                                                        "DB-table": "",
+                                                                                        "Data-source": "",
+                                                                                        "DisplayLabel": "Select bank from list",
+                                                                                        "FormType": "Standard",
+                                                                                        "Group-class": "",
+                                                                                        "Group-style": "",
+                                                                                        "GroupWidth": "",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "",
+                                                                                        "Init": "Yes",
+                                                                                        "Label-class": "",
+                                                                                        "Label-style": "",
+                                                                                        "Model": "",
+                                                                                        "Multiple": "No",
+                                                                                        "Name": "",
+                                                                                        "NeedKeyValue": "No",
+                                                                                        "Property-binding": "",
+                                                                                        "Required": "",
+                                                                                        "Static-values": "ICICI Bank,IDBI Bank,Axis Bank,SBI,HDFC Bank,Citi Bank",
+                                                                                        "Style": "",
+                                                                                        "TableColumnWidth": ""
+                                                                                    },
+                                                                                    "tabpos": "10",
+                                                                                    "type": "ComboBox"
+                                                                                },
+                                                                                {
+                                                                                    "child": [
+                                                                                    ],
+                                                                                    "name": "Label",
+                                                                                    "props": {
+                                                                                        "Class": "",
+                                                                                        "Columns": "12",
+                                                                                        "DisplayLabel": "",
+                                                                                        "For": "",
+                                                                                        "FormType": "Standard",
+                                                                                        "GroupWidth": "",
+                                                                                        "HelpText": "",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "",
+                                                                                        "Label class": "",
+                                                                                        "Label-type": "span",
+                                                                                        "Name": "",
+                                                                                        "Parent-class": "",
+                                                                                        "Parent-style": "",
+                                                                                        "Property-binding": "",
+                                                                                        "Required": "",
+                                                                                        "Style": "color: darkblue",
+                                                                                        "TableColumnWidth": "",
+                                                                                        "Value": "You will be redirected to bank portal"
+                                                                                    },
+                                                                                    "tabpos": "10",
+                                                                                    "type": "Label"
+                                                                                },
+                                                                                {
+                                                                                    "child": [
+                                                                                        {
+                                                                                            "child": [
+                                                                                            ],
+                                                                                            "name": "Button",
+                                                                                            "props": {
+                                                                                                "Class": "btn btn-primary btn-sm",
+                                                                                                "ClickEvent": "",
+                                                                                                "Columns": "12",
+                                                                                                "Data-dismiss": "",
+                                                                                                "Data-target": "",
+                                                                                                "Data-toggle": "",
+                                                                                                "Fa-icon": "",
+                                                                                                "Hidden": "",
+                                                                                                "ID": "",
+                                                                                                "Icon": "",
+                                                                                                "Model": "",
+                                                                                                "Name": "",
+                                                                                                "Parent-class": "",
+                                                                                                "Parent-style": "",
+                                                                                                "Property-binding": "",
+                                                                                                "Readonly": "",
+                                                                                                "Ref": "",
+                                                                                                "RouterLinkActive": "",
+                                                                                                "RouterParam": "",
+                                                                                                "Style": "",
+                                                                                                "TableColumnWidth": "",
+                                                                                                "Value": "Make payment"
+                                                                                            },
+                                                                                            "tabpos": "11",
+                                                                                            "type": "Button"
+                                                                                        }
+                                                                                    ],
+                                                                                    "name": "ButtonGroup",
+                                                                                    "props": {
+                                                                                        "Class": "btn-group",
+                                                                                        "Columns": "12",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "",
+                                                                                        "Name": "",
+                                                                                        "Parent-class": "",
+                                                                                        "Parent-style": "text-align: center",
+                                                                                        "Property-binding": "",
+                                                                                        "Style": "",
+                                                                                        "TableColumnWidth": ""
+                                                                                    },
+                                                                                    "tabpos": "10",
+                                                                                    "type": "ButtonGroup"
+                                                                                }
+                                                                            ],
+                                                                            "name": "Row",
+                                                                            "props": {
+                                                                                "Class": "row",
+                                                                                "DB-table": "",
+                                                                                "Hidden": "",
+                                                                                "ID": "",
+                                                                                "Name": "",
+                                                                                "Parent-class": "",
+                                                                                "Parent-style": "",
+                                                                                "Property-binding": "",
+                                                                                "Repeat": "",
+                                                                                "Style": ""
+                                                                            },
+                                                                            "tabpos": "9",
+                                                                            "type": "Row"
+                                                                        }
+                                                                    ],
+                                                                    "name": "Column",
+                                                                    "props": {
+                                                                        "Class": "",
+                                                                        "Columns": "6",
+                                                                        "DB-table": "",
+                                                                        "Hidden": "",
+                                                                        "ID": "",
+                                                                        "Name": "",
+                                                                        "Parent-class": "",
+                                                                        "Parent-style": "",
+                                                                        "Property-binding": "",
+                                                                        "Repeat": "",
+                                                                        "Style": ""
+                                                                    },
+                                                                    "tabpos": "8",
+                                                                    "type": "Column"
+                                                                },
+                                                                {
+                                                                    "child": [
+                                                                        {
+                                                                            "child": [
+                                                                            ],
+                                                                            "name": "Row",
+                                                                            "props": {
+                                                                                "Class": "row",
+                                                                                "DB-table": "",
+                                                                                "Hidden": "",
+                                                                                "ID": "",
+                                                                                "Name": "",
+                                                                                "Parent-class": "",
+                                                                                "Parent-style": "",
+                                                                                "Property-binding": "",
+                                                                                "Repeat": "",
+                                                                                "Style": ""
+                                                                            },
+                                                                            "tabpos": "9",
+                                                                            "type": "Row"
+                                                                        }
+                                                                    ],
+                                                                    "name": "Column",
+                                                                    "props": {
+                                                                        "Class": "",
+                                                                        "Columns": "3",
+                                                                        "DB-table": "",
+                                                                        "Hidden": "",
+                                                                        "ID": "",
+                                                                        "Name": "",
+                                                                        "Parent-class": "",
+                                                                        "Parent-style": "",
+                                                                        "Property-binding": "",
+                                                                        "Repeat": "",
+                                                                        "Style": ""
+                                                                    },
+                                                                    "tabpos": "8",
+                                                                    "type": "Column"
+                                                                }
+                                                            ],
+                                                            "name": "Row",
+                                                            "props": {
+                                                                "Class": "row mt-3",
+                                                                "DB-table": "",
+                                                                "Hidden": "",
+                                                                "ID": "",
+                                                                "Name": "",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Repeat": "",
+                                                                "Style": ""
+                                                            },
+                                                            "tabpos": "7",
+                                                            "type": "Row"
+                                                        }
+                                                    ],
+                                                    "name": "netbank",
+                                                    "props": {
+                                                        "Active": "",
+                                                        "Class": "tab-pane fade",
+                                                        "Columns": "12",
+                                                        "Data-target": "p3",
+                                                        "Hidden": "",
+                                                        "ID": "netbank",
+                                                        "Name": "netbank",
+                                                        "Property-binding": "",
+                                                        "Style": "",
+                                                        "Title": "Net banking"
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "TabPage"
+                                                },
+                                                {
+                                                    "child": [
+                                                        {
+                                                            "child": [
+                                                                {
+                                                                    "child": [
+                                                                        {
+                                                                            "child": [
+                                                                            ],
+                                                                            "name": "Row",
+                                                                            "props": {
+                                                                                "Class": "row",
+                                                                                "DB-table": "",
+                                                                                "Hidden": "",
+                                                                                "ID": "",
+                                                                                "Name": "",
+                                                                                "Parent-class": "",
+                                                                                "Parent-style": "",
+                                                                                "Property-binding": "",
+                                                                                "Repeat": "",
+                                                                                "Style": ""
+                                                                            },
+                                                                            "tabpos": "9",
+                                                                            "type": "Row"
+                                                                        }
+                                                                    ],
+                                                                    "name": "Column",
+                                                                    "props": {
+                                                                        "Class": "",
+                                                                        "Columns": "3",
+                                                                        "DB-table": "",
+                                                                        "Hidden": "",
+                                                                        "ID": "",
+                                                                        "Name": "",
+                                                                        "Parent-class": "",
+                                                                        "Parent-style": "",
+                                                                        "Property-binding": "",
+                                                                        "Repeat": "",
+                                                                        "Style": ""
+                                                                    },
+                                                                    "tabpos": "8",
+                                                                    "type": "Column"
+                                                                },
+                                                                {
+                                                                    "child": [
+                                                                        {
+                                                                            "child": [
+                                                                                {
+                                                                                    "child": [
+                                                                                    ],
+                                                                                    "name": "paytm",
+                                                                                    "props": {
+                                                                                        "Class": "btn btn-outline-secondary btn-sm btn-block p-5 mb-3",
+                                                                                        "ClickEvent": "",
+                                                                                        "Columns": "6",
+                                                                                        "Data-dismiss": "",
+                                                                                        "Data-target": "",
+                                                                                        "Data-toggle": "",
+                                                                                        "Fa-icon": "",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "paytm",
+                                                                                        "Icon": "./assets/paytm.png",
+                                                                                        "Model": "",
+                                                                                        "Name": "paytm",
+                                                                                        "Parent-class": "",
+                                                                                        "Parent-style": "",
+                                                                                        "Property-binding": "",
+                                                                                        "Readonly": "",
+                                                                                        "Ref": "",
+                                                                                        "RouterLinkActive": "",
+                                                                                        "RouterParam": "",
+                                                                                        "Style": "",
+                                                                                        "TableColumnWidth": "",
+                                                                                        "Value": ""
+                                                                                    },
+                                                                                    "tabpos": "10",
+                                                                                    "type": "Button"
+                                                                                },
+                                                                                {
+                                                                                    "child": [
+                                                                                    ],
+                                                                                    "name": "amazon",
+                                                                                    "props": {
+                                                                                        "Class": "btn btn-outline-secondary btn-sm btn-block  p-5 mb-3",
+                                                                                        "ClickEvent": "",
+                                                                                        "Columns": "6",
+                                                                                        "Data-dismiss": "",
+                                                                                        "Data-target": "",
+                                                                                        "Data-toggle": "",
+                                                                                        "Fa-icon": "",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "amazon",
+                                                                                        "Icon": "./assets/amazon_pay.png",
+                                                                                        "Model": "",
+                                                                                        "Name": "amazon",
+                                                                                        "Parent-class": "",
+                                                                                        "Parent-style": "",
+                                                                                        "Property-binding": "",
+                                                                                        "Readonly": "",
+                                                                                        "Ref": "",
+                                                                                        "RouterLinkActive": "",
+                                                                                        "RouterParam": "",
+                                                                                        "Style": "",
+                                                                                        "TableColumnWidth": "",
+                                                                                        "Value": ""
+                                                                                    },
+                                                                                    "tabpos": "10",
+                                                                                    "type": "Button"
+                                                                                },
+                                                                                {
+                                                                                    "child": [
+                                                                                    ],
+                                                                                    "name": "gpay",
+                                                                                    "props": {
+                                                                                        "Class": "btn btn-outline-secondary btn-sm btn-block  p-5 mb-3",
+                                                                                        "ClickEvent": "",
+                                                                                        "Columns": "6",
+                                                                                        "Data-dismiss": "",
+                                                                                        "Data-target": "",
+                                                                                        "Data-toggle": "",
+                                                                                        "Fa-icon": "",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "gpay",
+                                                                                        "Icon": "./assets/gpay.png",
+                                                                                        "Model": "",
+                                                                                        "Name": "gpay",
+                                                                                        "Parent-class": "",
+                                                                                        "Parent-style": "",
+                                                                                        "Property-binding": "",
+                                                                                        "Readonly": "",
+                                                                                        "Ref": "",
+                                                                                        "RouterLinkActive": "",
+                                                                                        "RouterParam": "",
+                                                                                        "Style": "",
+                                                                                        "TableColumnWidth": "",
+                                                                                        "Value": ""
+                                                                                    },
+                                                                                    "tabpos": "10",
+                                                                                    "type": "Button"
+                                                                                },
+                                                                                {
+                                                                                    "child": [
+                                                                                    ],
+                                                                                    "name": "mobikwik",
+                                                                                    "props": {
+                                                                                        "Class": "btn btn-outline-secondary btn-sm btn-block p-5 mb-3",
+                                                                                        "ClickEvent": "",
+                                                                                        "Columns": "6",
+                                                                                        "Data-dismiss": "",
+                                                                                        "Data-target": "",
+                                                                                        "Data-toggle": "",
+                                                                                        "Fa-icon": "",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "mobikwik",
+                                                                                        "Icon": "./assets/mobikwik.png",
+                                                                                        "Model": "",
+                                                                                        "Name": "mobikwik",
+                                                                                        "Parent-class": "",
+                                                                                        "Parent-style": "",
+                                                                                        "Property-binding": "",
+                                                                                        "Readonly": "",
+                                                                                        "Ref": "",
+                                                                                        "RouterLinkActive": "",
+                                                                                        "RouterParam": "",
+                                                                                        "Style": "",
+                                                                                        "TableColumnWidth": "",
+                                                                                        "Value": ""
+                                                                                    },
+                                                                                    "tabpos": "10",
+                                                                                    "type": "Button"
+                                                                                },
+                                                                                {
+                                                                                    "child": [
+                                                                                    ],
+                                                                                    "name": "Label",
+                                                                                    "props": {
+                                                                                        "Class": "",
+                                                                                        "Columns": "12",
+                                                                                        "DisplayLabel": "",
+                                                                                        "For": "",
+                                                                                        "FormType": "Standard",
+                                                                                        "GroupWidth": "",
+                                                                                        "HelpText": "",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "",
+                                                                                        "Label class": "",
+                                                                                        "Label-type": "span",
+                                                                                        "Name": "",
+                                                                                        "Parent-class": "",
+                                                                                        "Parent-style": "",
+                                                                                        "Property-binding": "",
+                                                                                        "Required": "",
+                                                                                        "Style": "color: darkblue",
+                                                                                        "TableColumnWidth": "",
+                                                                                        "Value": "You will be redirected to respective merchant site"
+                                                                                    },
+                                                                                    "tabpos": "10",
+                                                                                    "type": "Label"
+                                                                                }
+                                                                            ],
+                                                                            "name": "Row",
+                                                                            "props": {
+                                                                                "Class": "row",
+                                                                                "DB-table": "",
+                                                                                "Hidden": "",
+                                                                                "ID": "",
+                                                                                "Name": "",
+                                                                                "Parent-class": "",
+                                                                                "Parent-style": "",
+                                                                                "Property-binding": "",
+                                                                                "Repeat": "",
+                                                                                "Style": ""
+                                                                            },
+                                                                            "tabpos": "9",
+                                                                            "type": "Row"
+                                                                        }
+                                                                    ],
+                                                                    "name": "Column",
+                                                                    "props": {
+                                                                        "Class": "",
+                                                                        "Columns": "6",
+                                                                        "DB-table": "",
+                                                                        "Hidden": "",
+                                                                        "ID": "",
+                                                                        "Name": "",
+                                                                        "Parent-class": "",
+                                                                        "Parent-style": "",
+                                                                        "Property-binding": "",
+                                                                        "Repeat": "",
+                                                                        "Style": ""
+                                                                    },
+                                                                    "tabpos": "8",
+                                                                    "type": "Column"
+                                                                },
+                                                                {
+                                                                    "child": [
+                                                                        {
+                                                                            "child": [
+                                                                            ],
+                                                                            "name": "Row",
+                                                                            "props": {
+                                                                                "Class": "row",
+                                                                                "DB-table": "",
+                                                                                "Hidden": "",
+                                                                                "ID": "",
+                                                                                "Name": "",
+                                                                                "Parent-class": "",
+                                                                                "Parent-style": "",
+                                                                                "Property-binding": "",
+                                                                                "Repeat": "",
+                                                                                "Style": ""
+                                                                            },
+                                                                            "tabpos": "9",
+                                                                            "type": "Row"
+                                                                        }
+                                                                    ],
+                                                                    "name": "Column",
+                                                                    "props": {
+                                                                        "Class": "",
+                                                                        "Columns": "3",
+                                                                        "DB-table": "",
+                                                                        "Hidden": "",
+                                                                        "ID": "",
+                                                                        "Name": "",
+                                                                        "Parent-class": "",
+                                                                        "Parent-style": "",
+                                                                        "Property-binding": "",
+                                                                        "Repeat": "",
+                                                                        "Style": ""
+                                                                    },
+                                                                    "tabpos": "8",
+                                                                    "type": "Column"
+                                                                }
+                                                            ],
+                                                            "name": "Row",
+                                                            "props": {
+                                                                "Class": "row py-5",
+                                                                "DB-table": "",
+                                                                "Hidden": "",
+                                                                "ID": "",
+                                                                "Name": "",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Repeat": "",
+                                                                "Style": ""
+                                                            },
+                                                            "tabpos": "7",
+                                                            "type": "Row"
+                                                        }
+                                                    ],
+                                                    "name": "wallet",
+                                                    "props": {
+                                                        "Active": "",
+                                                        "Class": "tab-pane fade",
+                                                        "Columns": "12",
+                                                        "Data-target": "p4",
+                                                        "Hidden": "",
+                                                        "ID": "wallet",
+                                                        "Name": "wallet",
+                                                        "Property-binding": "",
+                                                        "Style": "",
+                                                        "Title": "Mobile wallet"
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "TabPage"
+                                                },
+                                                {
+                                                    "child": [
+                                                        {
+                                                            "child": [
+                                                                {
+                                                                    "child": [
+                                                                        {
+                                                                            "child": [
+                                                                            ],
+                                                                            "name": "Row",
+                                                                            "props": {
+                                                                                "Class": "row",
+                                                                                "DB-table": "",
+                                                                                "Hidden": "",
+                                                                                "ID": "",
+                                                                                "Name": "",
+                                                                                "Parent-class": "",
+                                                                                "Parent-style": "",
+                                                                                "Property-binding": "",
+                                                                                "Repeat": "",
+                                                                                "Style": ""
+                                                                            },
+                                                                            "tabpos": "9",
+                                                                            "type": "Row"
+                                                                        }
+                                                                    ],
+                                                                    "name": "Column",
+                                                                    "props": {
+                                                                        "Class": "",
+                                                                        "Columns": "3",
+                                                                        "DB-table": "",
+                                                                        "Hidden": "",
+                                                                        "ID": "",
+                                                                        "Name": "",
+                                                                        "Parent-class": "",
+                                                                        "Parent-style": "",
+                                                                        "Property-binding": "",
+                                                                        "Repeat": "",
+                                                                        "Style": ""
+                                                                    },
+                                                                    "tabpos": "8",
+                                                                    "type": "Column"
+                                                                },
+                                                                {
+                                                                    "child": [
+                                                                        {
+                                                                            "child": [
+                                                                                {
+                                                                                    "child": [
+                                                                                    ],
+                                                                                    "name": "bank_name",
+                                                                                    "props": {
+                                                                                        "Auto-complete": "off",
+                                                                                        "ChangeEvent": "",
+                                                                                        "Class": "form-control",
+                                                                                        "Columns": "12",
+                                                                                        "Control-type": "text",
+                                                                                        "DB-table": "",
+                                                                                        "DisplayLabel": "Bank name",
+                                                                                        "FormType": "Standard",
+                                                                                        "Group-class": "",
+                                                                                        "Group-property-binding": "",
+                                                                                        "Group-style": "",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "",
+                                                                                        "Label-class": "",
+                                                                                        "Label-property-binding": "",
+                                                                                        "Label-style": "",
+                                                                                        "Model": "",
+                                                                                        "Name": "bank_name",
+                                                                                        "Placeholder": "",
+                                                                                        "Property-binding": "",
+                                                                                        "Readonly": "",
+                                                                                        "Style": "",
+                                                                                        "TableColumnWidth": "",
+                                                                                        "Validations": "",
+                                                                                        "Validator-class": "",
+                                                                                        "Validator-style": "",
+                                                                                        "Value": ""
+                                                                                    },
+                                                                                    "tabpos": "10",
+                                                                                    "type": "TextBox"
+                                                                                },
+                                                                                {
+                                                                                    "child": [
+                                                                                    ],
+                                                                                    "name": "branch_name",
+                                                                                    "props": {
+                                                                                        "Auto-complete": "off",
+                                                                                        "ChangeEvent": "",
+                                                                                        "Class": "form-control",
+                                                                                        "Columns": "12",
+                                                                                        "Control-type": "text",
+                                                                                        "DB-table": "",
+                                                                                        "DisplayLabel": "Branch name",
+                                                                                        "FormType": "Standard",
+                                                                                        "Group-class": "",
+                                                                                        "Group-property-binding": "",
+                                                                                        "Group-style": "",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "",
+                                                                                        "Label-class": "",
+                                                                                        "Label-property-binding": "",
+                                                                                        "Label-style": "",
+                                                                                        "Model": "",
+                                                                                        "Name": "branch_name",
+                                                                                        "Placeholder": "",
+                                                                                        "Property-binding": "",
+                                                                                        "Readonly": "",
+                                                                                        "Style": "",
+                                                                                        "TableColumnWidth": "",
+                                                                                        "Validations": "",
+                                                                                        "Validator-class": "",
+                                                                                        "Validator-style": "",
+                                                                                        "Value": ""
+                                                                                    },
+                                                                                    "tabpos": "10",
+                                                                                    "type": "TextBox"
+                                                                                },
+                                                                                {
+                                                                                    "child": [
+                                                                                    ],
+                                                                                    "name": "chq_no",
+                                                                                    "props": {
+                                                                                        "Auto-complete": "off",
+                                                                                        "ChangeEvent": "",
+                                                                                        "Class": "form-control",
+                                                                                        "Columns": "4",
+                                                                                        "Control-type": "text",
+                                                                                        "DB-table": "",
+                                                                                        "DisplayLabel": "Cheque no",
+                                                                                        "FormType": "Standard",
+                                                                                        "Group-class": "",
+                                                                                        "Group-property-binding": "",
+                                                                                        "Group-style": "",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "",
+                                                                                        "Label-class": "",
+                                                                                        "Label-property-binding": "",
+                                                                                        "Label-style": "",
+                                                                                        "Model": "",
+                                                                                        "Name": "chq_no",
+                                                                                        "Placeholder": "",
+                                                                                        "Property-binding": "",
+                                                                                        "Readonly": "",
+                                                                                        "Style": "",
+                                                                                        "TableColumnWidth": "",
+                                                                                        "Validations": "",
+                                                                                        "Validator-class": "",
+                                                                                        "Validator-style": "",
+                                                                                        "Value": ""
+                                                                                    },
+                                                                                    "tabpos": "10",
+                                                                                    "type": "TextBox"
+                                                                                },
+                                                                                {
+                                                                                    "child": [
+                                                                                    ],
+                                                                                    "name": "chq_date",
+                                                                                    "props": {
+                                                                                        "ChangeEvent": "",
+                                                                                        "Class": "form-control",
+                                                                                        "Columns": "4",
+                                                                                        "Control-type": "text",
+                                                                                        "DB-table": "",
+                                                                                        "Date-type": "",
+                                                                                        "DateFormat": "YYYY-MM-DD",
+                                                                                        "DisplayLabel": "Cheque date",
+                                                                                        "FormType": "Standard",
+                                                                                        "GroupWidth": "",
+                                                                                        "HelpText": "",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "",
+                                                                                        "Label class": "",
+                                                                                        "Label-type": "label",
+                                                                                        "Model": "",
+                                                                                        "Name": "chq_date",
+                                                                                        "Parent-class": "",
+                                                                                        "Parent-style": "",
+                                                                                        "Property-binding": "",
+                                                                                        "Readonly": "",
+                                                                                        "Required": "",
+                                                                                        "Style": "",
+                                                                                        "TableColumnWidth": "",
+                                                                                        "Validations": ""
+                                                                                    },
+                                                                                    "tabpos": "10",
+                                                                                    "type": "Date"
+                                                                                },
+                                                                                {
+                                                                                    "child": [
+                                                                                    ],
+                                                                                    "name": "chq_amt",
+                                                                                    "props": {
+                                                                                        "Auto-complete": "off",
+                                                                                        "ChangeEvent": "",
+                                                                                        "Class": "form-control",
+                                                                                        "Columns": "4",
+                                                                                        "Control-type": "text",
+                                                                                        "DB-table": "",
+                                                                                        "DisplayLabel": "Cheque amount",
+                                                                                        "FormType": "Standard",
+                                                                                        "Group-class": "",
+                                                                                        "Group-property-binding": "",
+                                                                                        "Group-style": "",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "",
+                                                                                        "Label-class": "",
+                                                                                        "Label-property-binding": "",
+                                                                                        "Label-style": "",
+                                                                                        "Model": "",
+                                                                                        "Name": "chq_amt",
+                                                                                        "Placeholder": "",
+                                                                                        "Property-binding": "",
+                                                                                        "Readonly": "",
+                                                                                        "Style": "",
+                                                                                        "TableColumnWidth": "",
+                                                                                        "Validations": "",
+                                                                                        "Validator-class": "",
+                                                                                        "Validator-style": "",
+                                                                                        "Value": ""
+                                                                                    },
+                                                                                    "tabpos": "10",
+                                                                                    "type": "TextBox"
+                                                                                },
+                                                                                {
+                                                                                    "child": [
+                                                                                    ],
+                                                                                    "name": "demand_no",
+                                                                                    "props": {
+                                                                                        "ChangeEvent": "",
+                                                                                        "Class": "form-control",
+                                                                                        "Columns": "6",
+                                                                                        "DB-table": "",
+                                                                                        "Data-source": "",
+                                                                                        "DisplayLabel": "Demand no",
+                                                                                        "FormType": "Standard",
+                                                                                        "Group-class": "",
+                                                                                        "Group-style": "",
+                                                                                        "GroupWidth": "",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "",
+                                                                                        "Init": "Yes",
+                                                                                        "Label-class": "",
+                                                                                        "Label-style": "",
+                                                                                        "Model": "",
+                                                                                        "Multiple": "No",
+                                                                                        "Name": "demand_no",
+                                                                                        "NeedKeyValue": "No",
+                                                                                        "Property-binding": "",
+                                                                                        "Required": "",
+                                                                                        "Static-values": "",
+                                                                                        "Style": "",
+                                                                                        "TableColumnWidth": ""
+                                                                                    },
+                                                                                    "tabpos": "10",
+                                                                                    "type": "ComboBox"
+                                                                                }
+                                                                            ],
+                                                                            "name": "Row",
+                                                                            "props": {
+                                                                                "Class": "row",
+                                                                                "DB-table": "",
+                                                                                "Hidden": "",
+                                                                                "ID": "",
+                                                                                "Name": "",
+                                                                                "Parent-class": "",
+                                                                                "Parent-style": "",
+                                                                                "Property-binding": "",
+                                                                                "Repeat": "",
+                                                                                "Style": ""
+                                                                            },
+                                                                            "tabpos": "9",
+                                                                            "type": "Row"
+                                                                        },
+                                                                        {
+                                                                            "child": [
+                                                                                {
+                                                                                    "child": [
+                                                                                        {
+                                                                                            "child": [
+                                                                                            ],
+                                                                                            "name": "Button",
+                                                                                            "props": {
+                                                                                                "Class": "btn btn-primary btn-sm",
+                                                                                                "ClickEvent": "",
+                                                                                                "Columns": "12",
+                                                                                                "Data-dismiss": "",
+                                                                                                "Data-target": "",
+                                                                                                "Data-toggle": "",
+                                                                                                "Fa-icon": "",
+                                                                                                "Hidden": "",
+                                                                                                "ID": "",
+                                                                                                "Icon": "",
+                                                                                                "Model": "",
+                                                                                                "Name": "",
+                                                                                                "Parent-class": "",
+                                                                                                "Parent-style": "",
+                                                                                                "Property-binding": "",
+                                                                                                "Readonly": "",
+                                                                                                "Ref": "",
+                                                                                                "RouterLinkActive": "",
+                                                                                                "RouterParam": "",
+                                                                                                "Style": "",
+                                                                                                "TableColumnWidth": "",
+                                                                                                "Value": "Submit"
+                                                                                            },
+                                                                                            "tabpos": "11",
+                                                                                            "type": "Button"
+                                                                                        }
+                                                                                    ],
+                                                                                    "name": "ButtonGroup",
+                                                                                    "props": {
+                                                                                        "Class": "btn-group",
+                                                                                        "Columns": "12",
+                                                                                        "Hidden": "",
+                                                                                        "ID": "",
+                                                                                        "Name": "",
+                                                                                        "Parent-class": "",
+                                                                                        "Parent-style": "text-align: center",
+                                                                                        "Property-binding": "",
+                                                                                        "Style": "",
+                                                                                        "TableColumnWidth": ""
+                                                                                    },
+                                                                                    "tabpos": "10",
+                                                                                    "type": "ButtonGroup"
+                                                                                }
+                                                                            ],
+                                                                            "name": "Row",
+                                                                            "props": {
+                                                                                "Class": "row",
+                                                                                "DB-table": "",
+                                                                                "Hidden": "",
+                                                                                "ID": "",
+                                                                                "Name": "",
+                                                                                "Parent-class": "",
+                                                                                "Parent-style": "",
+                                                                                "Property-binding": "",
+                                                                                "Repeat": "",
+                                                                                "Style": ""
+                                                                            },
+                                                                            "tabpos": "9",
+                                                                            "type": "Row"
+                                                                        }
+                                                                    ],
+                                                                    "name": "Column",
+                                                                    "props": {
+                                                                        "Class": "",
+                                                                        "Columns": "6",
+                                                                        "DB-table": "",
+                                                                        "Hidden": "",
+                                                                        "ID": "",
+                                                                        "Name": "",
+                                                                        "Parent-class": "",
+                                                                        "Parent-style": "",
+                                                                        "Property-binding": "",
+                                                                        "Repeat": "",
+                                                                        "Style": ""
+                                                                    },
+                                                                    "tabpos": "8",
+                                                                    "type": "Column"
+                                                                },
+                                                                {
+                                                                    "child": [
+                                                                        {
+                                                                            "child": [
+                                                                            ],
+                                                                            "name": "Row",
+                                                                            "props": {
+                                                                                "Class": "row",
+                                                                                "DB-table": "",
+                                                                                "Hidden": "",
+                                                                                "ID": "",
+                                                                                "Name": "",
+                                                                                "Parent-class": "",
+                                                                                "Parent-style": "",
+                                                                                "Property-binding": "",
+                                                                                "Repeat": "",
+                                                                                "Style": ""
+                                                                            },
+                                                                            "tabpos": "9",
+                                                                            "type": "Row"
+                                                                        }
+                                                                    ],
+                                                                    "name": "Column",
+                                                                    "props": {
+                                                                        "Class": "",
+                                                                        "Columns": "3",
+                                                                        "DB-table": "",
+                                                                        "Hidden": "",
+                                                                        "ID": "",
+                                                                        "Name": "",
+                                                                        "Parent-class": "",
+                                                                        "Parent-style": "",
+                                                                        "Property-binding": "",
+                                                                        "Repeat": "",
+                                                                        "Style": ""
+                                                                    },
+                                                                    "tabpos": "8",
+                                                                    "type": "Column"
+                                                                }
+                                                            ],
+                                                            "name": "Row",
+                                                            "props": {
+                                                                "Class": "row mt-3",
+                                                                "DB-table": "",
+                                                                "Hidden": "",
+                                                                "ID": "",
+                                                                "Name": "",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Repeat": "",
+                                                                "Style": ""
+                                                            },
+                                                            "tabpos": "7",
+                                                            "type": "Row"
+                                                        }
+                                                    ],
+                                                    "name": "chq",
+                                                    "props": {
+                                                        "Active": "",
+                                                        "Class": "tab-pane fade",
+                                                        "Columns": "12",
+                                                        "Data-target": "p5",
+                                                        "Hidden": "",
+                                                        "ID": "chq",
+                                                        "Name": "chq",
+                                                        "Property-binding": "",
+                                                        "Style": "",
+                                                        "Title": "Cheque payment"
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "TabPage"
+                                                }
+                                            ],
+                                            "name": "tb",
+                                            "props": {
+                                                "Class": "nav nav-tabs",
+                                                "Columns": "12",
+                                                "Hidden": "",
+                                                "ID": "tb",
+                                                "Name": "tb",
+                                                "Property-binding": "",
+                                                "Role": "tablist",
+                                                "Style": "",
+                                                "Tab-size": "Default",
+                                                "Tab-type": "Tab"
+                                            },
+                                            "tabpos": "5",
+                                            "type": "TabPanel"
+                                        }
+                                    ],
+                                    "name": "Row",
+                                    "props": {
+                                        "Class": "row",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Row"
+                                }
+                            ],
+                            "name": "Column",
+                            "props": {
+                                "Class": "",
+                                "Columns": "10",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Column"
+                        }
+                    ],
+                    "name": "Row",
+                    "props": {
+                        "Class": "row",
+                        "DB-table": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Repeat": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Row"
+                }
+            ],
+            "name": "Container",
+            "props": {
+                "Class": "container-fluid p-5",
+                "Hidden": "",
+                "ID": "",
+                "Name": "",
+                "Property-binding": "",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Container"
+        }
+    ],
+    "name": "Form",
+    "props": {
+        "Class": "",
+        "Columns": "12",
+        "Hidden": "",
+        "ID": "",
+        "Name": "",
+        "Parent-class": "",
+        "Parent-style": "",
+        "Property-binding": "",
+        "Style": ""
+    },
+    "tabpos": "0",
+    "type": "Form"
+}

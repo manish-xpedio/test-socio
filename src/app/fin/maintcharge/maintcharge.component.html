@@ -1,0 +1,212 @@
+<form #f='ngForm'>
+						<div class='container-fluid px-5 py-3 '>
+							<div class='row mt-4 '>
+								<div class='' class='col-sm-2'>
+				<div class='row '>
+					<div class='col-sm-12'>
+						<app-accmenu></app-accmenu>
+					</div>
+				</div>
+								</div>
+								<div class='' class='col-sm-10'>
+									<div class='row '>
+										<label class='page-header col-sm-3 '> Maintainance charges
+										</label>
+										<label class='col-sm-6 '> {{ fin_maintainance_charges_master_status }}
+										</label>
+										<div class=' col-sm-3' style='text-align: right'>
+											<div class='btn-group '>
+												<button class='btn btn-primary btn-sm ' data-toggle='modal' (click)='save_fin_maintainance_charges_master(f)'>
+													<i class='fa fa-save'></i> Save
+												</button>
+												<a class='btn btn-primary btn-sm ' data-toggle='modal' routerLink='/maintchargelist'>
+													<i class='fa fa-arrow-left'></i> Back
+												</a>
+											</div>
+										</div>
+										<div class='col-sm-12'>
+											<hr class='mb-3 '>
+										</div>
+									</div>
+									<div class='row '>
+										<div class='' class='col-sm-6'>
+											<div class='row '>
+												<div class='col-sm-12'>
+													<div class='form-group row'>
+														<label class='col-sm-4 col-form-label' for='sysid'>System ID</label>
+														<div class='col-sm-8'>
+															<input class='form-control ' id='sysid' name='sysid' type='text' autocomplete='off' readonly [(ngModel)]='fin_maintainance_charges_master.sysid' #sysid="ngModel">
+														</div>
+													</div>
+												</div>
+												<div class='col-sm-12'>
+													<div class='form-group row'>
+														<label class='col-sm-4 col-form-label' for='fin_year'>Financial year</label>
+														<div class='col-sm-8'>
+															<input class='form-control ' id='fin_year' name='fin_year' type='text' autocomplete='off' [(ngModel)]='fin_maintainance_charges_master.fin_year' #fin_year="ngModel">
+														</div>
+													</div>
+												</div>
+												<div class='col-sm-12'>
+													<div class='form-group row'>
+														<label class='col-sm-4 col-form-label' for='meeting_id'>Meeting ID</label>
+														<div class='col-sm-8'>
+															<select class='form-control ' id='meeting_id' name='meeting_id' [(ngModel)]='fin_maintainance_charges_master.meeting_id' #meeting_id="ngModel">
+																<option value=''></option>
+																<option value=''></option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='' class='col-sm-6'>
+											<div class='row '>
+												<div class='col-sm-12'>
+													<div class='form-group row'>
+														<label class='col-sm-4 col-form-label' for='total_owner_charges'>Total owner charges</label>
+														<div class='col-sm-8'>
+															<input class='form-control ' id='total_owner_charges' name='total_owner_charges' type='text' autocomplete='off' readonly [(ngModel)]='fin_maintainance_charges_master.total_owner_charges' #total_owner_charges="ngModel">
+														</div>
+													</div>
+												</div>
+												<div class='col-sm-12'>
+													<div class='form-group row'>
+														<label class='col-sm-4 col-form-label' for='total_tenant_charges'>Total tenant charges</label>
+														<div class='col-sm-8'>
+															<input class='form-control ' id='total_tenant_charges' name='total_tenant_charges' type='text' autocomplete='off' readonly [(ngModel)]='fin_maintainance_charges_master.total_tenant_charges' #total_tenant_charges="ngModel">
+														</div>
+													</div>
+												</div>
+												<div class='col-sm-12'>
+													<div class='form-group row'>
+														<label class='col-sm-4 col-form-label' for='penalty_percent'>Penalty percent</label>
+														<div class='col-sm-8'>
+															<input class='form-control ' id='penalty_percent' name='penalty_percent' type='text' autocomplete='off' [(ngModel)]='fin_maintainance_charges_master.penalty_percent' #penalty_percent="ngModel">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class='row mb-2 '>
+										<label class='col-sm-10 '> 
+										</label>
+										<div class=' col-sm-2' style='text-align: right'>
+											<div class='btn-group '>
+											<button class='btn btn-primary btn-sm ' data-target='#d1' data-toggle='modal' (click)='clear_fin_maintainance_charges_details()'>
+												<i class='fa fa-plus'></i> Add details
+											</button>
+											</div>
+										</div>
+									</div>
+									<div class='row '>
+										<div class='col-sm-12'>
+											<table class='table table-bordered table-sm '>
+												<thead>
+													<tr>
+														<th>Charge head</th>
+														<th>Maintainance year</th>
+														<th>Charge value owner</th>
+														<th>Charge value tenant</th>
+														<th>System ID</th>
+														<th></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr *ngFor='let x of fin_maintainance_charges_detailsList'>
+														<td>
+															<a class='' id='charge_head' name='charge_head' data-target='#d1' data-toggle='modal' href='#'>
+																{{ x.charge_head }}
+															</a>
+														</td>
+														<td> {{ x.fin_year }} </td>
+														<td> {{ x.charge_value_owner }} </td>
+														<td> {{ x.charge_value_tenant }} </td>
+														<td> {{ x.sysid }} </td>
+														<td>
+															<a class='' id='delete_btn' style='color: red;' name='delete_btn' data-toggle='modal' (click)='delete_fin_maintainance_charges_details(x.sysid)' href='#'>
+																<i class='fa fa-trash'></i> Delete
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+									<div tabindex='-1' role='dialog' class='modal fade ' id='d1'>
+										<div class='modal-dialog' role='document'>
+											<div class='modal-content'>
+												<div class='modal-header '>
+													<div class='modal-title'><h5>Maintainance details</h5></div>
+													<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+														<span aria-hidden='true'>&times;</span>
+													</button>
+												</div>
+												<div class='modal-body '>
+											<div class='row '>
+												<div class='col-sm-12'>
+													<div class='form-group row'>
+														<label class='col-sm-4 col-form-label' for='sysid_det'>System ID</label>
+														<div class='col-sm-8'>
+															<input class='form-control ' id='sysid_det' name='sysid_det' type='text' autocomplete='off' readonly [(ngModel)]='fin_maintainance_charges_details.sysid' #sysid_det="ngModel">
+														</div>
+													</div>
+												</div>
+												<div class='col-sm-12'>
+													<div class='form-group row'>
+														<label class='col-sm-4 col-form-label' for='main_id'>Maintainance ID</label>
+														<div class='col-sm-8'>
+															<input class='form-control ' id='main_id' name='main_id' type='text' autocomplete='off' readonly [(ngModel)]='fin_maintainance_charges_details.main_id' #main_id="ngModel">
+														</div>
+													</div>
+												</div>
+												<div class='col-sm-12'>
+													<div class='form-group row'>
+														<label class='col-sm-4 col-form-label' for='charge_head'>Charge head</label>
+														<div class='col-sm-8'>
+															<input class='form-control ' id='charge_head' name='charge_head' type='text' autocomplete='off' [(ngModel)]='fin_maintainance_charges_details.charge_head' #charge_head="ngModel">
+														</div>
+													</div>
+												</div>
+												<div class='col-sm-12'>
+													<div class='form-group row'>
+														<label class='col-sm-4 col-form-label' for='charge_value_owner'>Charge value owner</label>
+														<div class='col-sm-8'>
+															<input class='form-control ' id='charge_value_owner' name='charge_value_owner' type='text' autocomplete='off' [(ngModel)]='fin_maintainance_charges_details.charge_value_owner' #charge_value_owner="ngModel">
+														</div>
+													</div>
+												</div>
+												<div class='col-sm-12'>
+													<div class='form-group row'>
+														<label class='col-sm-4 col-form-label' for='charge_value_tenant'>Charge value tenant</label>
+														<div class='col-sm-8'>
+															<input class='form-control ' id='charge_value_tenant' name='charge_value_tenant' type='text' autocomplete='off' [(ngModel)]='fin_maintainance_charges_details.charge_value_tenant' #charge_value_tenant="ngModel">
+														</div>
+													</div>
+												</div>
+											</div>
+												</div>
+												<div class='modal-footer '>
+											<label class='pull-left col-sm-8 '> {{ fin_maintainance_charges_master_status }}
+											</label>
+											<div class='row '>
+												<div class=' col-sm-4'>
+													<div class='btn-group pull-right '>
+														<button class='btn btn-primary btn-sm ' name='save_btn' (click)='save_fin_maintainance_charges_details(f)'>
+															<i class='fa fa-save'></i> Save
+														</button>
+														<button class='btn btn-primary btn-sm ' name='close_btn' data-dismiss='modal'>
+															<i class='fa fa-times'></i> Close
+														</button>
+													</div>
+												</div>
+											</div>
+												</div>
+									</div>
+										</div>
+											</div>
+</form>

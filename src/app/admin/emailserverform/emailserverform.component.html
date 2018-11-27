@@ -1,0 +1,208 @@
+<form #f='ngForm'>
+<div class='container-fluid p-5 '>
+	<div class='row '>
+		<label class='page-header col-sm-2 '> Email server</label>
+		<label class='col-sm-7 '> {{ admin_email_conf_status }}</label>
+		<div class=' col-sm-3' style='text-align: right'>
+			<div class='btn-group '>
+				<button class='btn btn-primary btn-sm ' name='save_btn' (click)='save_admin_email_conf(f)'>
+					<i class='fa fa-save'></i> Save
+				</button>
+				<a class='btn btn-primary btn-sm ' name='back_btn' data-toggle='modal' routerLink='/emailserver'>
+					<i class='fa fa-arrow-left'></i> Back
+				</a>
+			</div>
+		</div>
+		<div class='col-sm-12'>
+			<hr class=''>
+		</div>
+	</div>
+	<div class='row mt-3 '>
+		<div class='' class='col-sm-6'>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='sysid'>System ID</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='sysid' name='sysid' type='text' autocomplete='off' readonly [(ngModel)]='admin_email_conf.sysid' #sysid="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='conf_name'>Configuration name</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='conf_name' name='conf_name' type='text' autocomplete='off' [(ngModel)]='admin_email_conf.conf_name' #conf_name="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='display_name'>Display name</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='display_name' name='display_name' type='text' autocomplete='off' [(ngModel)]='admin_email_conf.display_name' #display_name="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='email_id'>Email ID</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='email_id' name='email_id' type='text' autocomplete='off' [(ngModel)]='admin_email_conf.email_id' #email_id="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='password'>Password</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='password' name='password' type='password' autocomplete='off' [(ngModel)]='admin_email_conf.password' #password="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='type_of_server'>Type of server</label>
+						<div class='col-sm-8'>
+							<select class='form-control ' id='type_of_server' name='type_of_server' [(ngModel)]='admin_email_conf.type_of_server' #type_of_server="ngModel">
+								<option value=''></option>
+								<option value='POP3'>POP3</option>
+								<option value='IMAP'>IMAP</option>
+								<option value='Exchange'>Exchange</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='incoming_server'>Incoming server</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='incoming_server' name='incoming_server' type='text' autocomplete='off' [(ngModel)]='admin_email_conf.incoming_server' #incoming_server="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='outgoing_server'>Outgoing server</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='outgoing_server' name='outgoing_server' type='text' autocomplete='off' [(ngModel)]='admin_email_conf.outgoing_server' #outgoing_server="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='incoming_port'>Incoming port</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='incoming_port' name='incoming_port' type='text' autocomplete='off' [(ngModel)]='admin_email_conf.incoming_port' #incoming_port="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='outgoing_port'>Outgoing port</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='outgoing_port' name='outgoing_port' type='text' autocomplete='off' [(ngModel)]='admin_email_conf.outgoing_port' #outgoing_port="ngModel">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='' class='col-sm-6'>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='sec_pwd_auth'>Secured passward authentication</label>
+						<div class='col-sm-8'>
+							<select class='form-control ' id='sec_pwd_auth' name='sec_pwd_auth' [(ngModel)]='admin_email_conf.sec_pwd_auth' #sec_pwd_auth="ngModel">
+								<option value=''></option>
+								<option value='Yes'>Yes</option>
+								<option value='No'>No</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='smtp_auth'>SMTP authentication</label>
+						<div class='col-sm-8'>
+							<select class='form-control ' id='smtp_auth' name='smtp_auth' [(ngModel)]='admin_email_conf.smtp_auth' #smtp_auth="ngModel">
+								<option value=''></option>
+								<option value='Yes'>Yes</option>
+								<option value='No'>No</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='smtp_auth_username'>Smtp auth username</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='smtp_auth_username' name='smtp_auth_username' type='text' autocomplete='off' [(ngModel)]='admin_email_conf.smtp_auth_username' #smtp_auth_username="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='smtp_auth_password'>Smtp auth password</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='smtp_auth_password' name='smtp_auth_password' type='text' autocomplete='off' [(ngModel)]='admin_email_conf.smtp_auth_password' #smtp_auth_password="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='smtp_auth_same_as_parent'>Smtp auth same as parent</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='smtp_auth_same_as_parent' name='smtp_auth_same_as_parent' type='text' autocomplete='off' [(ngModel)]='admin_email_conf.smtp_auth_same_as_parent' #smtp_auth_same_as_parent="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='incoming_enc_type'>Incoming enc type</label>
+						<div class='col-sm-8'>
+							<select class='form-control ' id='incoming_enc_type' name='incoming_enc_type' [(ngModel)]='admin_email_conf.incoming_enc_type' #incoming_enc_type="ngModel">
+								<option value=''></option>
+								<option value='SSL'>SSL</option>
+								<option value='None'>None</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='outgoing_enc_type'>Outgoing enc type</label>
+						<div class='col-sm-8'>
+							<select class='form-control ' id='outgoing_enc_type' name='outgoing_enc_type' [(ngModel)]='admin_email_conf.outgoing_enc_type' #outgoing_enc_type="ngModel">
+								<option value=''></option>
+								<option value='SSL'>SSL</option>
+								<option value='None'>None</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='domain_name_exchange'>Domain name exchange</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='domain_name_exchange' name='domain_name_exchange' type='text' autocomplete='off' [(ngModel)]='admin_email_conf.domain_name_exchange' #domain_name_exchange="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='status'>Status</label>
+						<div class='col-sm-8'>
+							<select class='form-control ' id='status' name='status' [(ngModel)]='admin_email_conf.status' #status="ngModel">
+								<option value=''></option>
+								<option value='Active'>Active</option>
+								<option value='Inactive'>Inactive</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</form>

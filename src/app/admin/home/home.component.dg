@@ -1,0 +1,717 @@
+{
+    "child": [
+        {
+            "child": [
+                {
+                    "child": [
+                    ],
+                    "name": "Carousel",
+                    "props": {
+                        "Carousel-max-height": "400",
+                        "Carousel-min-height": "400",
+                        "Class": "carousel slide p-0",
+                        "ID": "",
+                        "Image-source1": "./assets/caro1.png",
+                        "Image-source2": "./assets/caro2.png",
+                        "Image-source3": "./assets/caro3.png",
+                        "Image-source4": "./assets/caro4.png",
+                        "Image-source5": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "3",
+                    "type": "Carousel"
+                },
+                {
+                    "child": [
+                    ],
+                    "name": "Row",
+                    "props": {
+                        "Class": "row",
+                        "DB-table": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Repeat": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Row"
+                }
+            ],
+            "name": "Container",
+            "props": {
+                "Class": "container-fluid p-0",
+                "Hidden": "",
+                "ID": "",
+                "Name": "",
+                "Property-binding": "",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Container"
+        },
+        {
+            "child": [
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "Label",
+                                                    "props": {
+                                                        "Class": "",
+                                                        "Columns": "10",
+                                                        "DisplayLabel": "",
+                                                        "For": "",
+                                                        "FormType": "Standard",
+                                                        "GroupWidth": "",
+                                                        "HelpText": "",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Label class": "",
+                                                        "Label-type": "span",
+                                                        "Name": "",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Required": "",
+                                                        "Style": "color: #c70039",
+                                                        "TableColumnWidth": "",
+                                                        "Value": "<h5><b>Connect to your account</b></h5>"
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "Label"
+                                                },
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "closeBtn",
+                                                    "props": {
+                                                        "Class": "btn btn-secondary btn-sm close",
+                                                        "ClickEvent": "",
+                                                        "Columns": "2",
+                                                        "Data-dismiss": "modal",
+                                                        "Data-target": "",
+                                                        "Data-toggle": "",
+                                                        "Fa-icon": "fa fa-close",
+                                                        "Hidden": "true",
+                                                        "ID": "closeBtn",
+                                                        "Icon": "",
+                                                        "Name": "closeBtn",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Readonly": "",
+                                                        "RouterLink": "",
+                                                        "RouterLinkActive": "",
+                                                        "RouterParam": "",
+                                                        "Style": "",
+                                                        "Value": "Close"
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "Button"
+                                                },
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "HLine",
+                                                    "props": {
+                                                        "Class": "px-3 mr-3",
+                                                        "Columns": "10",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Name": "",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Style": ""
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "HLine"
+                                                },
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "Label",
+                                                    "props": {
+                                                        "Class": "",
+                                                        "Columns": "12",
+                                                        "DisplayLabel": "",
+                                                        "For": "",
+                                                        "FormType": "Standard",
+                                                        "GroupWidth": "",
+                                                        "HelpText": "",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Label class": "",
+                                                        "Label-type": "span",
+                                                        "Name": "",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Required": "",
+                                                        "Style": "",
+                                                        "TableColumnWidth": "",
+                                                        "Value": "Connect to most powerful tool and experience the world class digital experience. "
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "Label"
+                                                },
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "Label",
+                                                    "props": {
+                                                        "Class": "",
+                                                        "Columns": "12",
+                                                        "DisplayLabel": "",
+                                                        "For": "",
+                                                        "FormType": "Standard",
+                                                        "GroupWidth": "",
+                                                        "HelpText": "",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Label class": "",
+                                                        "Label-type": "span",
+                                                        "Name": "",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Required": "",
+                                                        "Style": "",
+                                                        "TableColumnWidth": "",
+                                                        "Value": "This platform is to make your life more enjoyable at the same time making you more accountable to your social circle."
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "Label"
+                                                },
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "Label",
+                                                    "props": {
+                                                        "Class": "",
+                                                        "Columns": "12",
+                                                        "DisplayLabel": "",
+                                                        "For": "",
+                                                        "FormType": "Standard",
+                                                        "GroupWidth": "",
+                                                        "HelpText": "",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Label class": "",
+                                                        "Label-type": "span",
+                                                        "Name": "",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Required": "",
+                                                        "Style": "color: darkblue",
+                                                        "TableColumnWidth": "",
+                                                        "Value": "This platform contains"
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "Label"
+                                                },
+                                                {
+                                                    "child": [
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "ListItem",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "Data-source": "",
+                                                                "Decoration": "No",
+                                                                "Hidden": "",
+                                                                "ID": "",
+                                                                "Name": "",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Style": "",
+                                                                "Value": "Mobile app for Android and IOS"
+                                                            },
+                                                            "tabpos": "7",
+                                                            "type": "ListItem"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "ListItem",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "Data-source": "",
+                                                                "Decoration": "No",
+                                                                "Hidden": "",
+                                                                "ID": "",
+                                                                "Name": "",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Style": "",
+                                                                "Value": "Secured cloud platform"
+                                                            },
+                                                            "tabpos": "7",
+                                                            "type": "ListItem"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "ListItem",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "Data-source": "",
+                                                                "Decoration": "No",
+                                                                "Hidden": "",
+                                                                "ID": "",
+                                                                "Name": "",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Style": "",
+                                                                "Value": "Connects to all IOT devices"
+                                                            },
+                                                            "tabpos": "7",
+                                                            "type": "ListItem"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "ListItem",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "Data-source": "",
+                                                                "Decoration": "No",
+                                                                "Hidden": "",
+                                                                "ID": "",
+                                                                "Name": "",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Style": "",
+                                                                "Value": "User friendly and simple platform for enhanced user experience."
+                                                            },
+                                                            "tabpos": "7",
+                                                            "type": "ListItem"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "ListItem",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "Data-source": "",
+                                                                "Decoration": "No",
+                                                                "Hidden": "",
+                                                                "ID": "",
+                                                                "Name": "",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Style": "",
+                                                                "Value": "This platform is <strong>absolutely free</strong>"
+                                                            },
+                                                            "tabpos": "7",
+                                                            "type": "ListItem"
+                                                        }
+                                                    ],
+                                                    "name": "List",
+                                                    "props": {
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "List"
+                                                }
+                                            ],
+                                            "name": "Row",
+                                            "props": {
+                                                "Class": "row p-4",
+                                                "DB-table": "",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Repeat": "",
+                                                "Style": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "Row"
+                                        }
+                                    ],
+                                    "name": "Column",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "6",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": "border-right: 1px solid lightgray; "
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Column"
+                                },
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "Label",
+                                                    "props": {
+                                                        "Class": "px-0",
+                                                        "Columns": "12",
+                                                        "DisplayLabel": "",
+                                                        "For": "",
+                                                        "FormType": "Standard",
+                                                        "GroupWidth": "",
+                                                        "HelpText": "",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Label class": "",
+                                                        "Label-type": "span",
+                                                        "Name": "",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Required": "",
+                                                        "Style": "",
+                                                        "TableColumnWidth": "",
+                                                        "Value": "<h5>Sign-in</h5>"
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "Label"
+                                                },
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "uname",
+                                                    "props": {
+                                                        "Auto-complete": "off",
+                                                        "ChangeEvent": "",
+                                                        "Class": "form-control px-0",
+                                                        "Columns": "12,12,12",
+                                                        "Control-type": "text",
+                                                        "Data-field": "username",
+                                                        "Data-source": "login",
+                                                        "DisplayLabel": "Username",
+                                                        "Group-class": "form-group",
+                                                        "Group-property": "",
+                                                        "Group-style": "",
+                                                        "Hidden": "",
+                                                        "ID": "txUname",
+                                                        "Label-class": "px-0",
+                                                        "Label-position": "Left",
+                                                        "Label-property": "",
+                                                        "Label-style": "",
+                                                        "Name": "uname",
+                                                        "Placeholder": "",
+                                                        "Property-binding": "",
+                                                        "Readonly": "",
+                                                        "Style": "",
+                                                        "Validations": "",
+                                                        "Value": ""
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "TextBox"
+                                                },
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "passwd",
+                                                    "props": {
+                                                        "Auto-complete": "off",
+                                                        "ChangeEvent": "",
+                                                        "Class": "form-control px-0",
+                                                        "Columns": "12,12,12",
+                                                        "Control-type": "password",
+                                                        "Data-field": "password",
+                                                        "Data-source": "login",
+                                                        "DisplayLabel": "Password",
+                                                        "Group-class": "form-group",
+                                                        "Group-property": "",
+                                                        "Group-style": "",
+                                                        "Hidden": "",
+                                                        "ID": "txPasswd",
+                                                        "Label-class": "px-0",
+                                                        "Label-position": "Left",
+                                                        "Label-property": "",
+                                                        "Label-style": "",
+                                                        "Name": "passwd",
+                                                        "Placeholder": "",
+                                                        "Property-binding": "",
+                                                        "Readonly": "",
+                                                        "Style": "",
+                                                        "Validations": "",
+                                                        "Value": ""
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "TextBox"
+                                                },
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "Label",
+                                                    "props": {
+                                                        "Class": "",
+                                                        "Columns": "12",
+                                                        "DisplayLabel": "",
+                                                        "For": "",
+                                                        "FormType": "Standard",
+                                                        "GroupWidth": "",
+                                                        "HelpText": "",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Label class": "",
+                                                        "Label-type": "span",
+                                                        "Name": "",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Required": "",
+                                                        "Style": "color: red",
+                                                        "TableColumnWidth": "",
+                                                        "Value": "{{ login_status }}"
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "Label"
+                                                },
+                                                {
+                                                    "child": [
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "login_btn",
+                                                            "props": {
+                                                                "Class": "btn btn-primary btn-sm shadow",
+                                                                "ClickEvent": "validate_user(f)",
+                                                                "Columns": "12",
+                                                                "Data-dismiss": "",
+                                                                "Data-target": "",
+                                                                "Data-toggle": "",
+                                                                "Fa-icon": "",
+                                                                "Hidden": "",
+                                                                "ID": "loginBtn",
+                                                                "Icon": "",
+                                                                "Name": "login_btn",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Readonly": "",
+                                                                "RouterLink": "",
+                                                                "RouterLinkActive": "",
+                                                                "RouterParam": "",
+                                                                "Style": "",
+                                                                "Value": "Login"
+                                                            },
+                                                            "tabpos": "7",
+                                                            "type": "Button"
+                                                        }
+                                                    ],
+                                                    "name": "ButtonGroup",
+                                                    "props": {
+                                                        "Class": "btn-group pl-0 mb-3",
+                                                        "Columns": "12",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Name": "",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Style": "",
+                                                        "TableColumnWidth": ""
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "ButtonGroup"
+                                                },
+                                                {
+                                                    "child": [
+                                                        {
+                                                            "child": [
+                                                            ],
+                                                            "name": "forgot_btn",
+                                                            "props": {
+                                                                "Class": "btn btn-primary btn-sm shadow",
+                                                                "ClickEvent": "",
+                                                                "Columns": "12",
+                                                                "Data-dismiss": "",
+                                                                "Data-target": "",
+                                                                "Data-toggle": "",
+                                                                "Fa-icon": "",
+                                                                "Hidden": "",
+                                                                "ID": "forgot",
+                                                                "Icon": "",
+                                                                "Name": "forgot_btn",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Readonly": "",
+                                                                "RouterLink": "",
+                                                                "RouterLinkActive": "",
+                                                                "RouterParam": "",
+                                                                "Style": "",
+                                                                "Value": "Forgot password?"
+                                                            },
+                                                            "tabpos": "7",
+                                                            "type": "Button"
+                                                        }
+                                                    ],
+                                                    "name": "ButtonGroup",
+                                                    "props": {
+                                                        "Class": "btn-group pl-0",
+                                                        "Columns": "12",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Name": "",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Style": "",
+                                                        "TableColumnWidth": ""
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "ButtonGroup"
+                                                },
+                                                {
+                                                    "child": [
+                                                    ],
+                                                    "name": "Label",
+                                                    "props": {
+                                                        "Class": "mt-5 pl-0 pt-5",
+                                                        "Columns": "12",
+                                                        "DisplayLabel": "",
+                                                        "For": "",
+                                                        "FormType": "Standard",
+                                                        "GroupWidth": "",
+                                                        "HelpText": "",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Label class": "",
+                                                        "Label-type": "span",
+                                                        "Name": "",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "text-align: right",
+                                                        "Property-binding": "",
+                                                        "Required": "",
+                                                        "Style": "color: #c70039; font-size: 10pt",
+                                                        "TableColumnWidth": "",
+                                                        "Value": "Powered by xpediolive.com"
+                                                    },
+                                                    "tabpos": "4",
+                                                    "type": "Label"
+                                                }
+                                            ],
+                                            "name": "Row",
+                                            "props": {
+                                                "Class": "row p-4",
+                                                "DB-table": "",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Repeat": "",
+                                                "Style": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "Row"
+                                        }
+                                    ],
+                                    "name": "Column",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "6",
+                                        "DB-table": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Repeat": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Column"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-body",
+                    "props": {
+                        "Class": "modal-body pr-0 py-0",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-body"
+                }
+            ],
+            "name": "Dialog",
+            "props": {
+                "Class": "modal fade",
+                "Hidden": "",
+                "ID": "login_dlg",
+                "Name": "",
+                "Property-binding": "",
+                "Size": "Large",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Dialog"
+        }
+    ],
+    "name": "Form",
+    "props": {
+        "Class": "",
+        "Columns": "",
+        "Hidden": "",
+        "ID": "",
+        "Name": "",
+        "Parent-class": "",
+        "Parent-style": "",
+        "Property-binding": "#f='ngForm' enctype='multipart/form-data'",
+        "Style": ""
+    },
+    "tabpos": "0",
+    "type": "Form"
+}

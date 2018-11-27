@@ -1,0 +1,165 @@
+<form #f='ngForm'>
+<div class='container-fluid p-5 '>
+<div class='row '>
+<label class='page-header col-sm-10 ' style='color: #c70039'> Carousel</label>
+	<div class=' col-sm-2' style='text-align: right'>
+		<div class='btn-group '>
+			<a class='btn btn-primary btn-sm ' data-toggle='modal' routerLink='/settings'>
+				<i class='fa fa-arrow-left'></i> Back
+			</a>
+		</div>
+	</div>
+<div class='col-sm-12'>
+	<hr class=''>
+</div>
+</div>
+<div class='row mt-3 '>
+<div class='' class='col-sm-1'>
+<div class='row '>
+<label class='page-header col-sm-12 ' style='color: #c70039'> 1.</label>
+</div>
+</div>
+<div class='' class='col-sm-11'>
+<div class='row '>
+<div class='' class='col-sm-6'>
+<div class='row '>
+<div class='col-sm-12'>
+	<div class='form-group'>
+		<label for=''>Image name</label>
+		<input class='form-control ' type='file' (change)='selected_file_1($event.target.files)'>
+	</div>
+</div>
+<div class='col-sm-12'>
+	<button class='btn btn-danger btn-sm ' (click)='upload_file_1()'>
+		<i class='upload'></i> Upload
+	</button>
+</div>
+<label class='col-sm-12 '> {{ img1_status }}</label>
+</div>
+</div>
+<div class='' class='col-sm-6'>
+<div class='row '>
+<div class='col-sm-12'>
+	<img class='img-fluid ' style='height: 100px;' src='{{ img_name1 }}' height='auto'>
+</div>
+</div>
+</div>
+<div class='col-sm-12'>
+	<hr class=''>
+</div>
+</div>
+</div>
+</div>
+<div class='row mt-3 '>
+<div class='' class='col-sm-1'>
+<div class='row '>
+<label class='page-header col-sm-12 ' style='color: #c70039'> 2.</label>
+</div>
+</div>
+<div class='' class='col-sm-11'>
+<div class='row '>
+<div class='' class='col-sm-6'>
+<div class='row '>
+<div class='col-sm-12'>
+	<div class='form-group'>
+		<label for=''>Image name</label>
+		<input class='form-control ' type='file' (change)='selected_file_2($event.target.files)'>
+	</div>
+</div>
+<div class='col-sm-12'>
+	<button class='btn btn-danger btn-sm ' (click)='upload_file_2()'>
+		<i class='upload'></i> Upload
+	</button>
+</div>
+<label class='col-sm-12 '> {{ img2_status }}</label>
+</div>
+</div>
+<div class='' class='col-sm-6'>
+<div class='row '>
+<div class='col-sm-12'>
+	<img class='img-fluid ' style='height: 100px;' src='{{ img_name2 }}' height='auto'>
+</div>
+</div>
+</div>
+<div class='col-sm-12'>
+	<hr class=''>
+</div>
+</div>
+</div>
+</div>
+<div class='row mt-3 '>
+<div class='' class='col-sm-1'>
+<div class='row '>
+<label class='page-header col-sm-12 ' style='color: #c70039'> 3.</label>
+</div>
+</div>
+<div class='' class='col-sm-11'>
+<div class='row '>
+<div class='' class='col-sm-6'>
+<div class='row '>
+<div class='col-sm-12'>
+	<div class='form-group'>
+		<label for=''>Image name</label>
+		<input class='form-control ' type='file' (change)='selected_file_3($event.target.files)'>
+	</div>
+</div>
+<div class='col-sm-12'>
+	<button class='btn btn-danger btn-sm ' (click)='upload_file_3()'>
+		<i class='upload'></i> Upload
+	</button>
+</div>
+<label class='col-sm-12 '> {{ img3_status }}</label>
+</div>
+</div>
+<div class='' class='col-sm-6'>
+<div class='row '>
+<div class='col-sm-12'>
+	<img class='img-fluid ' style='height: 100px;' src='{{ img_name3 }}' height='auto'>
+</div>
+</div>
+</div>
+<div class='col-sm-12'>
+	<hr class=''>
+</div>
+</div>
+</div>
+</div>
+<div class='row mt-3 '>
+<div class='' class='col-sm-1'>
+<div class='row '>
+<label class='page-header col-sm-12 ' style='color: #c70039'> 4.</label>
+</div>
+</div>
+<div class='' class='col-sm-11'>
+<div class='row '>
+<div class='' class='col-sm-6'>
+<div class='row '>
+<div class='col-sm-12'>
+	<div class='form-group'>
+		<label for=''>Image name</label>
+		<input class='form-control ' type='file' (change)='selected_file_4($event.target.files)'>
+	</div>
+</div>
+<div class='col-sm-12'>
+	<button class='btn btn-danger btn-sm ' (click)='upload_file_4()'>
+		<i class='upload'></i> Upload
+	</button>
+</div>
+<label class='col-sm-12 '> {{ img4_status }}</label>
+</div>
+</div>
+<div class='' class='col-sm-6'>
+<div class='row '>
+<div class='col-sm-12'>
+	<img class='img-fluid ' style='height: 100px;' src='{{ img_name4 }}' height='auto'>
+</div>
+</div>
+</div>
+<div class='col-sm-12'>
+	<hr class=''>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>

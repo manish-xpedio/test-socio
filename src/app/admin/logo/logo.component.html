@@ -1,0 +1,43 @@
+<form #f='ngForm'>
+<div class='container-fluid p-5 '>
+	<div class='row '>
+		<label class='page-header col-sm-10 '> Corporate logo</label>
+		<div class=' col-sm-2' style='text-align: right'>
+			<div class='btn-group '>
+				<a class='btn btn-primary btn-sm ' data-toggle='modal' routerLink='/settings'>
+					<i class='fa fa-arrow-left'></i> Back
+				</a>
+			</div>
+		</div>
+		<div class='col-sm-12'>
+			<hr class=''>
+		</div>
+	</div>
+	<div class='row '>
+		<div class='' class='col-sm-4'>
+			<div class='row '>
+		<div class='col-sm-12'>
+			<div class='form-group'>
+				<label for='file_ctrl'>Image file</label>
+				<input class='form-control ' id='file_ctrl' name='file_ctrl' type='file' autocomplete='off' (change)='selected_file($event.target.files)'>
+			</div>
+		</div>
+				<label class='col-sm-12 '> Maximum allowed size is <strong>500KB</strong>. Upload <strong>.PNG</strong> file for best results.</label>
+				<div class='col-sm-12'>
+					<button class='btn btn-danger btn-sm ' [disabled]="is_disabled" (click)='upload_file()'>
+						<i class='fa fa-upload'></i> Upload
+					</button>
+				</div>
+				<label class='mt-3 col-sm-12 ' style='color: red'> {{ admin_logo_status }}</label>
+			</div>
+		</div>
+		<div class='' class='col-sm-8'>
+			<div class='row pt-5 '>
+				<div class='col-sm-12'>
+					<img class='img-fluid ' style='height: 50px;' src='{{ img_name }}' height='auto' max-height='50px;'>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</form>

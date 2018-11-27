@@ -1,0 +1,1385 @@
+{
+    "child": [
+        {
+            "child": [
+                {
+                    "child": [
+                    ],
+                    "name": "Label",
+                    "props": {
+                        "Class": "page-header",
+                        "Columns": "12",
+                        "DisplayLabel": "",
+                        "For": "",
+                        "FormType": "Standard",
+                        "GroupWidth": "",
+                        "HelpText": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Label class": "",
+                        "Label-type": "span",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Required": "",
+                        "Style": "",
+                        "TableColumnWidth": "",
+                        "Value": "Access control"
+                    },
+                    "tabpos": "2",
+                    "type": "Label"
+                },
+                {
+                    "child": [
+                    ],
+                    "name": "HLine",
+                    "props": {
+                        "Class": "",
+                        "Columns": "12",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "HLine"
+                }
+            ],
+            "name": "Row",
+            "props": {
+                "Class": "row px-5",
+                "DB-table": "",
+                "Hidden": "",
+                "ID": "",
+                "Name": "",
+                "Parent-class": "",
+                "Parent-style": "",
+                "Property-binding": "",
+                "Repeat": "",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Row"
+        },
+        {
+            "child": [
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "profile_id",
+                                    "props": {
+                                        "ChangeEvent": "getProfileDetails($event.target.value)",
+                                        "Class": "form-control",
+                                        "Columns": "12",
+                                        "DB-table": "access",
+                                        "Data-source": "sysid.profile_name.admin_access_profile",
+                                        "DisplayLabel": "Select profile",
+                                        "FormType": "Standard",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "profile_id",
+                                        "Init": "Yes",
+                                        "Label-class": "",
+                                        "Label-style": "",
+                                        "Model": "profile_id",
+                                        "Multiple": "No",
+                                        "Name": "profile_id",
+                                        "NeedKeyValue": "No",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Static-values": "",
+                                        "Style": "",
+                                        "TableColumnWidth": ""
+                                    },
+                                    "tabpos": "2",
+                                    "type": "ComboBox"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Column",
+                    "props": {
+                        "Class": "",
+                        "Columns": "4",
+                        "DB-table": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Repeat": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Column"
+                },
+                {
+                    "child": [
+                    ],
+                    "name": "Column",
+                    "props": {
+                        "Class": "",
+                        "Columns": "8",
+                        "DB-table": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Repeat": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Column"
+                }
+            ],
+            "name": "Row",
+            "props": {
+                "Class": "row px-5",
+                "DB-table": "",
+                "Hidden": "",
+                "ID": "",
+                "Name": "",
+                "Parent-class": "",
+                "Parent-style": "",
+                "Property-binding": "",
+                "Repeat": "",
+                "Style": "margin-top: 20px"
+            },
+            "tabpos": "1",
+            "type": "Row"
+        },
+        {
+            "child": [
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Label",
+                                    "props": {
+                                        "Class": "page-header",
+                                        "Columns": "6",
+                                        "DisplayLabel": "",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Main menu"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "Button",
+                                            "props": {
+                                                "Class": "btn btn-danger btn-sm",
+                                                "ClickEvent": "addMainMenu()",
+                                                "Columns": "6",
+                                                "Data-dismiss": "",
+                                                "Data-target": "#menuDlg",
+                                                "Data-toggle": "modal",
+                                                "Fa-icon": "fa fa-plus",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Icon": "",
+                                                "Model": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "text-align: right",
+                                                "Property-binding": "[hidden]='hideMainButton'",
+                                                "Readonly": "",
+                                                "Ref": "",
+                                                "RouterLinkActive": "",
+                                                "RouterParam": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Value": "Add new"
+                                            },
+                                            "tabpos": "4",
+                                            "type": "Button"
+                                        }
+                                    ],
+                                    "name": "ButtonGroup",
+                                    "props": {
+                                        "Class": "btn-group",
+                                        "Columns": "6",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "text-align: right",
+                                        "Property-binding": "",
+                                        "Style": "",
+                                        "TableColumnWidth": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "ButtonGroup"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "HLine",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "HLine"
+                                },
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                                {
+                                                    "child": [
+                                                        {
+                                                            "child": [
+                                                                {
+                                                                    "child": [
+                                                                        {
+                                                                            "child": [
+                                                                            ],
+                                                                            "name": "Link",
+                                                                            "props": {
+                                                                                "Class": "",
+                                                                                "ClickEvent": "selectMainMenu(x)",
+                                                                                "Columns": "12",
+                                                                                "DB-table": "",
+                                                                                "Data-dismiss": "",
+                                                                                "Data-target": "",
+                                                                                "Data-toggle": "modal",
+                                                                                "DisplayLabel": "",
+                                                                                "Fa-icon": "",
+                                                                                "Group-class": "",
+                                                                                "Group-style": "",
+                                                                                "Hidden": "",
+                                                                                "ID": "",
+                                                                                "Icon": "",
+                                                                                "Model": "",
+                                                                                "Name": "",
+                                                                                "Property-binding": "",
+                                                                                "RouterLink": "#",
+                                                                                "RouterParam": "",
+                                                                                "Style": "",
+                                                                                "TableColumnWidth": "",
+                                                                                "Value": "{{ x.menu_name }}"
+                                                                            },
+                                                                            "tabpos": "9",
+                                                                            "type": "Link"
+                                                                        }
+                                                                    ],
+                                                                    "name": "Row",
+                                                                    "props": {
+                                                                        "Class": "row",
+                                                                        "DB-table": "",
+                                                                        "Hidden": "",
+                                                                        "ID": "",
+                                                                        "Name": "",
+                                                                        "Parent-class": "",
+                                                                        "Parent-style": "",
+                                                                        "Property-binding": "",
+                                                                        "Repeat": "",
+                                                                        "Style": ""
+                                                                    },
+                                                                    "tabpos": "8",
+                                                                    "type": "Row"
+                                                                }
+                                                            ],
+                                                            "name": "Column",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "Columns": "6",
+                                                                "DB-table": "",
+                                                                "Hidden": "",
+                                                                "ID": "",
+                                                                "Name": "",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Repeat": "",
+                                                                "Style": ""
+                                                            },
+                                                            "tabpos": "7",
+                                                            "type": "Column"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                                {
+                                                                    "child": [
+                                                                        {
+                                                                            "child": [
+                                                                            ],
+                                                                            "name": "Label",
+                                                                            "props": {
+                                                                                "Class": "",
+                                                                                "Columns": "12",
+                                                                                "DisplayLabel": "",
+                                                                                "For": "",
+                                                                                "FormType": "Standard",
+                                                                                "GroupWidth": "",
+                                                                                "HelpText": "",
+                                                                                "Hidden": "",
+                                                                                "ID": "",
+                                                                                "Label class": "",
+                                                                                "Label-type": "span",
+                                                                                "Name": "",
+                                                                                "Parent-class": "",
+                                                                                "Parent-style": "",
+                                                                                "Property-binding": "",
+                                                                                "Required": "",
+                                                                                "Style": "",
+                                                                                "TableColumnWidth": "",
+                                                                                "Value": "{{ x.access_type }}"
+                                                                            },
+                                                                            "tabpos": "9",
+                                                                            "type": "Label"
+                                                                        }
+                                                                    ],
+                                                                    "name": "Row",
+                                                                    "props": {
+                                                                        "Class": "row",
+                                                                        "DB-table": "",
+                                                                        "Hidden": "",
+                                                                        "ID": "",
+                                                                        "Name": "",
+                                                                        "Parent-class": "",
+                                                                        "Parent-style": "",
+                                                                        "Property-binding": "",
+                                                                        "Repeat": "",
+                                                                        "Style": ""
+                                                                    },
+                                                                    "tabpos": "8",
+                                                                    "type": "Row"
+                                                                }
+                                                            ],
+                                                            "name": "Column",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "Columns": "3",
+                                                                "DB-table": "",
+                                                                "Hidden": "",
+                                                                "ID": "",
+                                                                "Name": "",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Repeat": "",
+                                                                "Style": ""
+                                                            },
+                                                            "tabpos": "7",
+                                                            "type": "Column"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                                {
+                                                                    "child": [
+                                                                        {
+                                                                            "child": [
+                                                                            ],
+                                                                            "name": "Link",
+                                                                            "props": {
+                                                                                "Class": "",
+                                                                                "ClickEvent": "delete_admin_access_control(x.sysid)",
+                                                                                "Columns": "12",
+                                                                                "DB-table": "",
+                                                                                "Data-dismiss": "",
+                                                                                "Data-target": "",
+                                                                                "Data-toggle": "modal",
+                                                                                "DisplayLabel": "",
+                                                                                "Fa-icon": "fa fa-trash",
+                                                                                "Group-class": "",
+                                                                                "Group-style": "",
+                                                                                "Hidden": "",
+                                                                                "ID": "",
+                                                                                "Icon": "",
+                                                                                "Model": "",
+                                                                                "Name": "",
+                                                                                "Property-binding": "",
+                                                                                "RouterLink": "#",
+                                                                                "RouterParam": "",
+                                                                                "Style": "color: red",
+                                                                                "TableColumnWidth": "",
+                                                                                "Value": "Delete"
+                                                                            },
+                                                                            "tabpos": "9",
+                                                                            "type": "Link"
+                                                                        }
+                                                                    ],
+                                                                    "name": "Row",
+                                                                    "props": {
+                                                                        "Class": "row",
+                                                                        "DB-table": "",
+                                                                        "Hidden": "",
+                                                                        "ID": "",
+                                                                        "Name": "",
+                                                                        "Parent-class": "",
+                                                                        "Parent-style": "",
+                                                                        "Property-binding": "",
+                                                                        "Repeat": "",
+                                                                        "Style": ""
+                                                                    },
+                                                                    "tabpos": "8",
+                                                                    "type": "Row"
+                                                                }
+                                                            ],
+                                                            "name": "Column",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "Columns": "3",
+                                                                "DB-table": "",
+                                                                "Hidden": "",
+                                                                "ID": "",
+                                                                "Name": "",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Repeat": "",
+                                                                "Style": ""
+                                                            },
+                                                            "tabpos": "7",
+                                                            "type": "Column"
+                                                        }
+                                                    ],
+                                                    "name": "Row",
+                                                    "props": {
+                                                        "Class": "row",
+                                                        "DB-table": "",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Name": "",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Repeat": "",
+                                                        "Style": ""
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "Row"
+                                                }
+                                            ],
+                                            "name": "ListItem",
+                                            "props": {
+                                                "Class": "",
+                                                "Data-source": "let x of profile_main_menuList",
+                                                "Decoration": "No",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Style": "",
+                                                "Value": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "ListItem"
+                                        }
+                                    ],
+                                    "name": "ListElement",
+                                    "props": {
+                                        "Class": "list-unstyled mt-3",
+                                        "Columns": "12",
+                                        "Decoration": "No",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "List-type": "Unordered",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "ListElement"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Column",
+                    "props": {
+                        "Class": "",
+                        "Columns": "6",
+                        "DB-table": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Repeat": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Column"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Label",
+                                    "props": {
+                                        "Class": "page-header",
+                                        "Columns": "6",
+                                        "DisplayLabel": "",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Sub-menu"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                            ],
+                                            "name": "Button",
+                                            "props": {
+                                                "Class": "btn btn-danger btn-sm",
+                                                "ClickEvent": "addSubMenu()",
+                                                "Columns": "6",
+                                                "Data-dismiss": "",
+                                                "Data-target": "#menuDlg",
+                                                "Data-toggle": "modal",
+                                                "Fa-icon": "fa fa-plus",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Icon": "",
+                                                "Model": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "text-align: right",
+                                                "Property-binding": "[hidden]='hideSubButton'",
+                                                "Readonly": "",
+                                                "Ref": "",
+                                                "RouterLinkActive": "",
+                                                "RouterParam": "",
+                                                "Style": "",
+                                                "TableColumnWidth": "",
+                                                "Value": "Add new"
+                                            },
+                                            "tabpos": "4",
+                                            "type": "Button"
+                                        }
+                                    ],
+                                    "name": "ButtonGroup",
+                                    "props": {
+                                        "Class": "btn-group",
+                                        "Columns": "6",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "text-align: right",
+                                        "Property-binding": "",
+                                        "Style": "",
+                                        "TableColumnWidth": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "ButtonGroup"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "HLine",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "HLine"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        },
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Label",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "DisplayLabel": "",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "[ Main menu ID: {{ main_menu_id }}  - Main menu name: {{ main_menu_name }} ]"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                        {
+                                            "child": [
+                                                {
+                                                    "child": [
+                                                        {
+                                                            "child": [
+                                                                {
+                                                                    "child": [
+                                                                        {
+                                                                            "child": [
+                                                                            ],
+                                                                            "name": "menu_id",
+                                                                            "props": {
+                                                                                "Class": "",
+                                                                                "Columns": "12",
+                                                                                "DisplayLabel": "",
+                                                                                "For": "",
+                                                                                "FormType": "Standard",
+                                                                                "GroupWidth": "",
+                                                                                "HelpText": "",
+                                                                                "Hidden": "",
+                                                                                "ID": "menu_id",
+                                                                                "Label class": "",
+                                                                                "Label-type": "span",
+                                                                                "Name": "menu_id",
+                                                                                "Parent-class": "",
+                                                                                "Parent-style": "",
+                                                                                "Property-binding": "",
+                                                                                "Required": "",
+                                                                                "Style": "",
+                                                                                "TableColumnWidth": "",
+                                                                                "Value": "{{ x.menu_name }}"
+                                                                            },
+                                                                            "tabpos": "9",
+                                                                            "type": "Label"
+                                                                        }
+                                                                    ],
+                                                                    "name": "Row",
+                                                                    "props": {
+                                                                        "Class": "row",
+                                                                        "DB-table": "",
+                                                                        "Hidden": "",
+                                                                        "ID": "",
+                                                                        "Name": "",
+                                                                        "Parent-class": "",
+                                                                        "Parent-style": "",
+                                                                        "Property-binding": "",
+                                                                        "Repeat": "",
+                                                                        "Style": ""
+                                                                    },
+                                                                    "tabpos": "8",
+                                                                    "type": "Row"
+                                                                }
+                                                            ],
+                                                            "name": "Column",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "Columns": "6",
+                                                                "DB-table": "",
+                                                                "Hidden": "",
+                                                                "ID": "",
+                                                                "Name": "",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Repeat": "",
+                                                                "Style": ""
+                                                            },
+                                                            "tabpos": "7",
+                                                            "type": "Column"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                                {
+                                                                    "child": [
+                                                                        {
+                                                                            "child": [
+                                                                            ],
+                                                                            "name": "Label",
+                                                                            "props": {
+                                                                                "Class": "",
+                                                                                "Columns": "12",
+                                                                                "DisplayLabel": "",
+                                                                                "For": "",
+                                                                                "FormType": "Standard",
+                                                                                "GroupWidth": "",
+                                                                                "HelpText": "",
+                                                                                "Hidden": "",
+                                                                                "ID": "",
+                                                                                "Label class": "",
+                                                                                "Label-type": "span",
+                                                                                "Name": "",
+                                                                                "Parent-class": "",
+                                                                                "Parent-style": "",
+                                                                                "Property-binding": "",
+                                                                                "Required": "",
+                                                                                "Style": "",
+                                                                                "TableColumnWidth": "",
+                                                                                "Value": "{{ x.access_type }}"
+                                                                            },
+                                                                            "tabpos": "9",
+                                                                            "type": "Label"
+                                                                        }
+                                                                    ],
+                                                                    "name": "Row",
+                                                                    "props": {
+                                                                        "Class": "row",
+                                                                        "DB-table": "",
+                                                                        "Hidden": "",
+                                                                        "ID": "",
+                                                                        "Name": "",
+                                                                        "Parent-class": "",
+                                                                        "Parent-style": "",
+                                                                        "Property-binding": "",
+                                                                        "Repeat": "",
+                                                                        "Style": ""
+                                                                    },
+                                                                    "tabpos": "8",
+                                                                    "type": "Row"
+                                                                }
+                                                            ],
+                                                            "name": "Column",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "Columns": "3",
+                                                                "DB-table": "",
+                                                                "Hidden": "",
+                                                                "ID": "",
+                                                                "Name": "",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Repeat": "",
+                                                                "Style": ""
+                                                            },
+                                                            "tabpos": "7",
+                                                            "type": "Column"
+                                                        },
+                                                        {
+                                                            "child": [
+                                                                {
+                                                                    "child": [
+                                                                        {
+                                                                            "child": [
+                                                                            ],
+                                                                            "name": "Link",
+                                                                            "props": {
+                                                                                "Class": "",
+                                                                                "ClickEvent": "delete_admin_access_control(x.sysid)",
+                                                                                "Columns": "12",
+                                                                                "DB-table": "",
+                                                                                "Data-dismiss": "",
+                                                                                "Data-target": "",
+                                                                                "Data-toggle": "modal",
+                                                                                "DisplayLabel": "",
+                                                                                "Fa-icon": "fa fa-trash",
+                                                                                "Group-class": "",
+                                                                                "Group-style": "",
+                                                                                "Hidden": "",
+                                                                                "ID": "",
+                                                                                "Icon": "",
+                                                                                "Model": "",
+                                                                                "Name": "",
+                                                                                "Property-binding": "",
+                                                                                "RouterLink": "#",
+                                                                                "RouterParam": "",
+                                                                                "Style": "color: red",
+                                                                                "TableColumnWidth": "",
+                                                                                "Value": "Delete"
+                                                                            },
+                                                                            "tabpos": "9",
+                                                                            "type": "Link"
+                                                                        }
+                                                                    ],
+                                                                    "name": "Row",
+                                                                    "props": {
+                                                                        "Class": "row",
+                                                                        "DB-table": "",
+                                                                        "Hidden": "",
+                                                                        "ID": "",
+                                                                        "Name": "",
+                                                                        "Parent-class": "",
+                                                                        "Parent-style": "",
+                                                                        "Property-binding": "",
+                                                                        "Repeat": "",
+                                                                        "Style": ""
+                                                                    },
+                                                                    "tabpos": "8",
+                                                                    "type": "Row"
+                                                                }
+                                                            ],
+                                                            "name": "Column",
+                                                            "props": {
+                                                                "Class": "",
+                                                                "Columns": "3",
+                                                                "DB-table": "",
+                                                                "Hidden": "",
+                                                                "ID": "",
+                                                                "Name": "",
+                                                                "Parent-class": "",
+                                                                "Parent-style": "",
+                                                                "Property-binding": "",
+                                                                "Repeat": "",
+                                                                "Style": ""
+                                                            },
+                                                            "tabpos": "7",
+                                                            "type": "Column"
+                                                        }
+                                                    ],
+                                                    "name": "Row",
+                                                    "props": {
+                                                        "Class": "row",
+                                                        "DB-table": "",
+                                                        "Hidden": "",
+                                                        "ID": "",
+                                                        "Name": "",
+                                                        "Parent-class": "",
+                                                        "Parent-style": "",
+                                                        "Property-binding": "",
+                                                        "Repeat": "",
+                                                        "Style": ""
+                                                    },
+                                                    "tabpos": "6",
+                                                    "type": "Row"
+                                                }
+                                            ],
+                                            "name": "ListItem",
+                                            "props": {
+                                                "Class": "",
+                                                "Data-source": "let x of profile_sub_menuList",
+                                                "Decoration": "No",
+                                                "Hidden": "",
+                                                "ID": "",
+                                                "Name": "",
+                                                "Parent-class": "",
+                                                "Parent-style": "",
+                                                "Property-binding": "",
+                                                "Style": "",
+                                                "Value": ""
+                                            },
+                                            "tabpos": "5",
+                                            "type": "ListItem"
+                                        }
+                                    ],
+                                    "name": "ListElement",
+                                    "props": {
+                                        "Class": "list-unstyled",
+                                        "Columns": "12",
+                                        "Decoration": "No",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "List-type": "Unordered",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Style": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "ListElement"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row mt-3",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Column",
+                    "props": {
+                        "Class": "",
+                        "Columns": "6",
+                        "DB-table": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Repeat": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Column"
+                }
+            ],
+            "name": "Row",
+            "props": {
+                "Class": "row px-5",
+                "DB-table": "",
+                "Hidden": "",
+                "ID": "",
+                "Name": "",
+                "Parent-class": "",
+                "Parent-style": "",
+                "Property-binding": "",
+                "Repeat": "",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Row"
+        },
+        {
+            "child": [
+                {
+                    "child": [
+                    ],
+                    "name": "Dialog-header",
+                    "props": {
+                        "Class": "modal-header",
+                        "Close-button": "Yes",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": "",
+                        "Title": "Configure menu"
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-header"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "sysid",
+                                    "props": {
+                                        "Auto-complete": "off",
+                                        "ChangeEvent": "",
+                                        "Class": "form-control",
+                                        "Columns": "4,8",
+                                        "Control-type": "text",
+                                        "DB-table": "admin_access_control",
+                                        "DisplayLabel": "System ID",
+                                        "FormType": "Row",
+                                        "Group-class": "",
+                                        "Group-property-binding": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "sysid",
+                                        "Label-class": "",
+                                        "Label-property-binding": "",
+                                        "Label-style": "",
+                                        "Model": "sysid",
+                                        "Name": "sysid",
+                                        "Placeholder": "",
+                                        "Property-binding": "",
+                                        "Readonly": "true",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Validations": "",
+                                        "Validator-class": "",
+                                        "Validator-style": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "TextBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "profile_id",
+                                    "props": {
+                                        "Auto-complete": "off",
+                                        "ChangeEvent": "",
+                                        "Class": "form-control",
+                                        "Columns": "4,8",
+                                        "Control-type": "text",
+                                        "DB-table": "admin_access_control",
+                                        "DisplayLabel": "Profile name",
+                                        "FormType": "Row",
+                                        "Group-class": "",
+                                        "Group-property-binding": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "profile_id",
+                                        "Label-class": "",
+                                        "Label-property-binding": "",
+                                        "Label-style": "",
+                                        "Model": "profile_id",
+                                        "Name": "profile_id",
+                                        "Placeholder": "",
+                                        "Property-binding": "",
+                                        "Readonly": "true",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Validations": "",
+                                        "Validator-class": "",
+                                        "Validator-style": "",
+                                        "Value": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "TextBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "menu_id",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-control",
+                                        "Columns": "4,8",
+                                        "DB-table": "admin_access_control",
+                                        "Data-source": "sysid.menu_name.sys_menus",
+                                        "DisplayLabel": "Menu name",
+                                        "FormType": "Row",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "menu_id",
+                                        "Init": "Yes",
+                                        "Label-class": "",
+                                        "Label-style": "",
+                                        "Model": "menu_id",
+                                        "Multiple": "No",
+                                        "Name": "menu_id",
+                                        "NeedKeyValue": "No",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Static-values": "",
+                                        "Style": "",
+                                        "TableColumnWidth": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "ComboBox"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "access_type",
+                                    "props": {
+                                        "ChangeEvent": "",
+                                        "Class": "form-control",
+                                        "Columns": "4,8",
+                                        "DB-table": "admin_access_control",
+                                        "Data-source": "accessList",
+                                        "DisplayLabel": "Access type",
+                                        "FormType": "Row",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "GroupWidth": "",
+                                        "Hidden": "",
+                                        "ID": "access_type",
+                                        "Init": "Yes",
+                                        "Label-class": "",
+                                        "Label-style": "",
+                                        "Model": "access_type",
+                                        "Multiple": "No",
+                                        "Name": "access_type",
+                                        "NeedKeyValue": "No",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Static-values": "Read-write,None",
+                                        "Style": "",
+                                        "TableColumnWidth": ""
+                                    },
+                                    "tabpos": "4",
+                                    "type": "ComboBox"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-body",
+                    "props": {
+                        "Class": "modal-body",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-body"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                            ],
+                            "name": "Label",
+                            "props": {
+                                "Class": "pull-left",
+                                "Columns": "8",
+                                "DisplayLabel": "",
+                                "For": "",
+                                "FormType": "Standard",
+                                "GroupWidth": "",
+                                "HelpText": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Label class": "",
+                                "Label-type": "span",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Required": "",
+                                "Style": "",
+                                "TableColumnWidth": "",
+                                "Value": "{{ access_control_status }}"
+                            },
+                            "tabpos": "3",
+                            "type": "Label"
+                        },
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "save_btn",
+                                    "props": {
+                                        "Class": "btn btn-primary btn-sm",
+                                        "ClickEvent": "save_admin_access_control()",
+                                        "Columns": "12",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "",
+                                        "Fa-icon": "fa fa-save",
+                                        "Hidden": "",
+                                        "ID": "save_btn",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "save_btn",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Ref": "",
+                                        "RouterLinkActive": "",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Save"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Button"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "close_btn",
+                                    "props": {
+                                        "Class": "btn btn-primary btn-sm",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "Data-dismiss": "modal",
+                                        "Data-target": "",
+                                        "Data-toggle": "",
+                                        "Fa-icon": "fa fa-close",
+                                        "Hidden": "",
+                                        "ID": "close_btn",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "close_btn",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Ref": "",
+                                        "RouterLinkActive": "",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Close"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Button"
+                                }
+                            ],
+                            "name": "ButtonGroup",
+                            "props": {
+                                "Class": "btn-group pull-right",
+                                "Columns": "4",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "text-align: right",
+                                "Property-binding": "",
+                                "Style": "",
+                                "TableColumnWidth": ""
+                            },
+                            "tabpos": "3",
+                            "type": "ButtonGroup"
+                        }
+                    ],
+                    "name": "Dialog-footer",
+                    "props": {
+                        "Class": "modal-footer",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-footer"
+                }
+            ],
+            "name": "Dialog",
+            "props": {
+                "Class": "modal fade",
+                "Hidden": "",
+                "ID": "menuDlg",
+                "Name": "",
+                "Property-binding": "",
+                "Size": "Default",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Dialog"
+        }
+    ],
+    "name": "Container",
+    "props": {
+        "Class": "container-fluid p-5",
+        "Hidden": "",
+        "ID": "",
+        "Name": "",
+        "Property-binding": "",
+        "Style": ""
+    },
+    "tabpos": "0",
+    "type": "Container"
+}

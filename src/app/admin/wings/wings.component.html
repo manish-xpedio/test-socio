@@ -1,0 +1,255 @@
+<form #f='ngForm'>
+<div class='container-fluid '>
+	<div class='row mt-4 '>
+		<div class='' class='col-sm-1'>
+		</div>
+		<div class='' class='col-sm-10'>
+			<div class='row '>
+				<label class='page-header col-sm-2 '> Wings & buildings</label>
+				<label class='col-sm-7 '> {{ admin_wings_status }}</label>
+				<div class=' col-sm-3' style='text-align: right'>
+					<div class='btn-group '>
+						<button class='btn btn-primary btn-sm ' data-target='#dlg' data-toggle='modal' (click)='clear_admin_wings()'>
+							<i class='fa fa-plus'></i> Add
+						</button>
+						<a class='btn btn-primary btn-sm ' data-toggle='modal' routerLink='/settings'>
+							<i class='fa fa-arrow-left'></i> Back
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<table class='table table-bordered table-sm '>
+						<thead>
+							<tr>
+								<th>System ID</th>
+								<th>Building name</th>
+								<th>Total floors</th>
+								<th>Min flats per floor</th>
+								<th>Max flats per floor</th>
+								<th>Total owner parkings</th>
+								<th>Closed parking no</th>
+								<th>Opened parking no</th>
+								<th>Status</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr *ngFor='let x of admin_wingsList'>
+								<td> {{ x.sysid }} </td>
+								<td>
+									<a class='' id='building_name' name='building_name' data-target='#dlg' data-toggle='modal' (click)='current_record_admin_wings(x)' href='#'>
+										{{ x.building_name }}
+									</a>
+								</td>
+								<td> {{ x.total_floors }} </td>
+								<td> {{ x.min_flats_per_floor }} </td>
+								<td> {{ x.max_flats_per_floor }} </td>
+								<td> {{ x.total_owner_parkings }} </td>
+								<td> {{ x.closed_parking_no }} </td>
+								<td> {{ x.opened_parking_no }} </td>
+								<td> {{ x.status }} </td>
+								<td>
+									<a class='' id='delete_btn' style='color: red;' name='delete_btn' data-toggle='modal' (click)='delete_admin_wings(x.sysid)' href='#'>
+										<i class='fa fa-trash'></i> Delete
+									</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div tabindex='-1' role='dialog' class='modal fade ' id='dlg'>
+				<div class='modal-dialog modal-lg' role='document'>
+					<div class='modal-content'>
+						<div class='modal-header '>
+							<div class='modal-title'><h5>Wings</h5></div>
+							<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+								<span aria-hidden='true'>&times;</span>
+							</button>
+						</div>
+						<div class='modal-body '>
+					<div class='row '>
+						<div class='' class='col-sm-6'>
+							<div class='row '>
+								<div class='col-sm-12'>
+									<div class='form-group row'>
+										<label class='col-sm-4 col-form-label' for='sysid'>System ID</label>
+										<div class='col-sm-8'>
+											<input class='form-control ' id='sysid' name='sysid' type='text' autocomplete='off' readonly [(ngModel)]='admin_wings.sysid' #sysid="ngModel">
+										</div>
+									</div>
+								</div>
+								<div class='col-sm-12'>
+									<div class='form-group row'>
+										<label class='col-sm-4 col-form-label' for='building_name'>Building name</label>
+										<div class='col-sm-8'>
+											<input class='form-control ' id='building_name' name='building_name' type='text' autocomplete='off' [(ngModel)]='admin_wings.building_name' #building_name="ngModel">
+										</div>
+									</div>
+								</div>
+								<div class='col-sm-12'>
+									<div class='form-group row'>
+										<label class='col-sm-4 col-form-label' for='total_floors'>Total floors</label>
+										<div class='col-sm-8'>
+											<input class='form-control ' id='total_floors' name='total_floors' type='text' autocomplete='off' [(ngModel)]='admin_wings.total_floors' #total_floors="ngModel">
+										</div>
+									</div>
+								</div>
+								<div class='col-sm-12'>
+									<div class='form-group row'>
+										<label class='col-sm-4 col-form-label' for='min_flats_per_floor'>Min flats per floor</label>
+										<div class='col-sm-8'>
+											<input class='form-control ' id='min_flats_per_floor' name='min_flats_per_floor' type='text' autocomplete='off' [(ngModel)]='admin_wings.min_flats_per_floor' #min_flats_per_floor="ngModel">
+										</div>
+									</div>
+								</div>
+								<div class='col-sm-12'>
+									<div class='form-group row'>
+										<label class='col-sm-4 col-form-label' for='max_flats_per_floor'>Max flats per floor</label>
+										<div class='col-sm-8'>
+											<input class='form-control ' id='max_flats_per_floor' name='max_flats_per_floor' type='text' autocomplete='off' [(ngModel)]='admin_wings.max_flats_per_floor' #max_flats_per_floor="ngModel">
+										</div>
+									</div>
+								</div>
+								<div class='col-sm-12'>
+									<div class='form-group row'>
+										<label class='col-sm-4 col-form-label' for='is_lift'>Is lift</label>
+										<div class='col-sm-8'>
+											<select class='form-control ' id='is_lift' name='is_lift' [(ngModel)]='admin_wings.is_lift' #is_lift="ngModel">
+												<option value=''></option>
+												<option value='Yes'>Yes</option>
+												<option value='No'>No</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class='col-sm-12'>
+									<div class='form-group row'>
+										<label class='col-sm-4 col-form-label' for='is_solar'>Is solar</label>
+										<div class='col-sm-8'>
+											<select class='form-control ' id='is_solar' name='is_solar' [(ngModel)]='admin_wings.is_solar' #is_solar="ngModel">
+												<option value=''></option>
+												<option value='Yes'>Yes</option>
+												<option value='No'>No</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class='col-sm-12'>
+									<div class='form-group row'>
+										<label class='col-sm-4 col-form-label' for='is_common_lights'>Is common lights</label>
+										<div class='col-sm-8'>
+											<select class='form-control ' id='is_common_lights' name='is_common_lights' [(ngModel)]='admin_wings.is_common_lights' #is_common_lights="ngModel">
+												<option value=''></option>
+												<option value='Yes'>Yes</option>
+												<option value='No'>No</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='' class='col-sm-6'>
+							<div class='row '>
+								<div class='col-sm-12'>
+									<div class='form-group row'>
+										<label class='col-sm-4 col-form-label' for='is_camera'>Is camera</label>
+										<div class='col-sm-8'>
+											<select class='form-control ' id='is_camera' name='is_camera' [(ngModel)]='admin_wings.is_camera' #is_camera="ngModel">
+												<option value=''></option>
+												<option value='Yes'>Yes</option>
+												<option value='No'>No</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class='col-sm-12'>
+									<div class='form-group row'>
+										<label class='col-sm-4 col-form-label' for='total_owner_parkings'>Total owner parkings</label>
+										<div class='col-sm-8'>
+											<input class='form-control ' id='total_owner_parkings' name='total_owner_parkings' type='text' autocomplete='off' [(ngModel)]='admin_wings.total_owner_parkings' #total_owner_parkings="ngModel">
+										</div>
+									</div>
+								</div>
+								<div class='col-sm-12'>
+									<div class='form-group row'>
+										<label class='col-sm-4 col-form-label' for='common_parkings_allotted'>Common parkings allotted</label>
+										<div class='col-sm-8'>
+											<input class='form-control ' id='common_parkings_allotted' name='common_parkings_allotted' type='text' autocomplete='off' [(ngModel)]='admin_wings.common_parkings_allotted' #common_parkings_allotted="ngModel">
+										</div>
+									</div>
+								</div>
+								<div class='col-sm-12'>
+									<div class='form-group row'>
+										<label class='col-sm-4 col-form-label' for='closed_parking_no'>Closed parking no</label>
+										<div class='col-sm-8'>
+											<input class='form-control ' id='closed_parking_no' name='closed_parking_no' type='text' autocomplete='off' [(ngModel)]='admin_wings.closed_parking_no' #closed_parking_no="ngModel">
+										</div>
+									</div>
+								</div>
+								<div class='col-sm-12'>
+									<div class='form-group row'>
+										<label class='col-sm-4 col-form-label' for='opened_parking_no'>Opened parking no</label>
+										<div class='col-sm-8'>
+											<input class='form-control ' id='opened_parking_no' name='opened_parking_no' type='text' autocomplete='off' [(ngModel)]='admin_wings.opened_parking_no' #opened_parking_no="ngModel">
+										</div>
+									</div>
+								</div>
+								<div class='col-sm-12'>
+									<div class='form-group row'>
+										<label class='col-sm-4 col-form-label' for='water_taks'>Water taks</label>
+										<div class='col-sm-8'>
+											<input class='form-control ' id='water_taks' name='water_taks' type='text' autocomplete='off' [(ngModel)]='admin_wings.water_taks' #water_taks="ngModel">
+										</div>
+									</div>
+								</div>
+								<div class='col-sm-12'>
+									<div class='form-group row'>
+										<label class='col-sm-4 col-form-label' for='common_toilets'>Common toilets</label>
+										<div class='col-sm-8'>
+											<input class='form-control ' id='common_toilets' name='common_toilets' type='text' autocomplete='off' [(ngModel)]='admin_wings.common_toilets' #common_toilets="ngModel">
+										</div>
+									</div>
+								</div>
+								<div class='col-sm-12'>
+									<div class='form-group row'>
+										<label class='col-sm-4 col-form-label' for='status'>Status</label>
+										<div class='col-sm-8'>
+											<select class='form-control ' id='status' name='status' [(ngModel)]='admin_wings.status' #status="ngModel">
+												<option value=''></option>
+												<option value='Active'>Active</option>
+												<option value='Inactive'>Inactive</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+						</div>
+						<div class='modal-footer '>
+					<label class='pull-left col-sm-8 '> {{ admin_wings_status }}</label>
+					<div class='row '>
+						<div class=' col-sm-4'>
+							<div class='btn-group pull-right '>
+								<button class='btn btn-primary btn-sm ' name='save_btn' (click)='save_admin_wings(f)'>
+									<i class='fa fa-save'></i> Save
+								</button>
+								<button class='btn btn-primary btn-sm ' name='close_btn' data-dismiss='modal'>
+									<i class='fa fa-times'></i> Close
+								</button>
+							</div>
+						</div>
+					</div>
+						</div>
+			</div>
+				</div>
+					</div>
+		</div>
+		<div class='' class='col-sm-1'>
+		</div>
+	</div>
+</div>
+</form>

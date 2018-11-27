@@ -1,0 +1,133 @@
+<form #f='ngForm'>
+	<div class='container-fluid '>
+		<div class='row pt-4 '>
+			<div class='' class='col-sm-1'>
+				<div class='row '>
+				</div>
+			</div>
+			<div class='' class='col-sm-2'>
+				<div class='row '>
+					<div class='col-sm-12'>
+						<app-srmenu></app-srmenu>
+					</div>
+				</div>
+			</div>
+			<div class='' class='col-sm-8'>
+				<div class='row pl-3 '>
+					<label class='page-header col-sm-10 '> Create service request
+					</label>
+					<div class='col-sm-1'>
+						<button class='btn btn-primary btn-sm '>
+							Submit request
+						</button>
+					</div>
+					<div class='col-sm-12'>
+						<hr class='mb-2 '>
+					</div>
+				</div>
+				<div class='row pl-3 '>
+					<div class='col-sm-4'>
+						<div class='form-group'>
+							<label for='sysid'>Ticket ID</label>
+							<input class='form-control ' id='sysid' name='sysid' type='text' autocomplete='off' readonly [(ngModel)]='supp_sr.sysid' #sysid="ngModel">
+						</div>
+					</div>
+					<div class='col-sm-8'>
+						<div class='form-group'>
+							<label for='member_id'>Member name</label>
+							<input class='form-control ' id='member_id' name='member_id' type='text' autocomplete='off' readonly [(ngModel)]='supp_sr.member_id' #member_id="ngModel">
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group'>
+							<label for='sr_title'>Title</label>
+							<input class='form-control ' id='sr_title' name='sr_title' type='text' autocomplete='off' [(ngModel)]='supp_sr.sr_title' #sr_title="ngModel">
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<div class='form-group'>
+							<label for='sr_text'>Description</label>
+							<textarea class='form-control ' id='sr_text' name='sr_text' rows='5' autocomplete='off' [(ngModel)]='supp_sr.sr_text' #sr_text="ngModel"></textarea>
+						</div>
+					</div>
+					<div class='col-sm-4'>
+						<div class='form-group'>
+							<label for='sr_date'>Create date</label>
+							<input class='form-control ' id='sr_date' name='sr_date' type='text' autocomplete='off' readonly [(ngModel)]='supp_sr.sr_date' #sr_date="ngModel">
+						</div>
+					</div>
+					<div class='col-sm-4'>
+						<div class='form-group'>
+							<label for='sr_type'>Request type</label>
+							<select class='form-control ' id='sr_type' name='sr_type' [(ngModel)]='supp_sr.sr_type' #sr_type="ngModel">
+								<option value=''></option>
+								<option value=''></option>
+							</select>
+						</div>
+					</div>
+					<div class='col-sm-4'>
+						<div class='form-group'>
+							<label for='sr_subtype'>Request subtype</label>
+							<select class='form-control ' id='sr_subtype' name='sr_subtype' [(ngModel)]='supp_sr.sr_subtype' #sr_subtype="ngModel">
+								<option value=''></option>
+								<option value=''></option>
+							</select>
+						</div>
+					</div>
+					<div class='col-sm-4'>
+						<div class='form-group'>
+							<label for='sr_category'>Request category</label>
+							<select class='form-control ' id='sr_category' name='sr_category' [(ngModel)]='supp_sr.sr_category' #sr_category="ngModel">
+								<option value=''></option>
+								<option value=''></option>
+							</select>
+						</div>
+					</div>
+					<div class='col-sm-4'>
+						<div class='form-group'>
+							<label for='proirity'>Proirity</label>
+							<select class='form-control ' id='proirity' name='proirity' [(ngModel)]='supp_sr.proirity' #proirity="ngModel">
+								<option value=''></option>
+								<option value=''></option>
+							</select>
+						</div>
+					</div>
+					<div class='col-sm-4'>
+						<div class='form-group'>
+							<label for='tat'>TAT</label>
+							<select class='form-control ' id='tat' name='tat' [(ngModel)]='supp_sr.tat' #tat="ngModel">
+								<option value=''></option>
+								<option value=''></option>
+							</select>
+						</div>
+					</div>
+					<div class='col-sm-4'>
+						<div class='form-group'>
+							<label for='resolution_date'>Resolution date</label>
+							<input class='form-control ' id='resolution_date' name='resolution_date' type='text' autocomplete='off' readonly [(ngModel)]='supp_sr.resolution_date' #resolution_date="ngModel">
+						</div>
+					</div>
+					<div class='col-sm-6'>
+						<div class='form-group'>
+							<label for='attachment'>Attachment</label>
+							<input class='form-control ' id='attachment' name='attachment' type='file' autocomplete='off' [(ngModel)]='supp_sr.attachment' #attachment="ngModel">
+						</div>
+					</div>
+					<div class='col-sm-4'>
+						<div class='form-group'>
+							<label for='status'>Status</label>
+							<select class='form-control ' id='status' name='status' [(ngModel)]='supp_sr.status' #status="ngModel">
+								<option value=''></option>
+								<option value=''></option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='' class='col-sm-1'>
+				<div class='row '>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

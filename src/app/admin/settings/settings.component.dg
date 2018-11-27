@@ -1,0 +1,1763 @@
+{
+    "child": [
+        {
+            "child": [
+                {
+                    "child": [
+                    ],
+                    "name": "Label",
+                    "props": {
+                        "Class": "page-header",
+                        "Columns": "12",
+                        "DisplayLabel": "",
+                        "For": "",
+                        "FormType": "Standard",
+                        "GroupWidth": "",
+                        "HelpText": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Label class": "",
+                        "Label-type": "span",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Required": "",
+                        "Style": "",
+                        "TableColumnWidth": "",
+                        "Value": "Application settings"
+                    },
+                    "tabpos": "2",
+                    "type": "Label"
+                },
+                {
+                    "child": [
+                    ],
+                    "name": "HLine",
+                    "props": {
+                        "Class": "",
+                        "Columns": "12",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "HLine"
+                }
+            ],
+            "name": "Row",
+            "props": {
+                "Class": "row",
+                "DB-table": "",
+                "Hidden": "",
+                "ID": "",
+                "Name": "",
+                "Parent-class": "",
+                "Parent-style": "",
+                "Property-binding": "",
+                "Repeat": "",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Row"
+        },
+        {
+            "child": [
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "sys_lb",
+                                    "props": {
+                                        "Class": "sub-header",
+                                        "Columns": "12",
+                                        "DisplayLabel": "",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "sys_lb",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "System parameters"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "logo",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "logo",
+                                        "Property-binding": "",
+                                        "RouterLink": "/logo",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Logo"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "syscolors",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "#dlg",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "syscolors",
+                                        "Property-binding": "",
+                                        "RouterLink": "/syscolors",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "System colors"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "carousel",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "carousel",
+                                        "Property-binding": "",
+                                        "RouterLink": "/carousel",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Carousel"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "errdict",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "errdict",
+                                        "Property-binding": "",
+                                        "RouterLink": "/errdict",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Error dictionary"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "syslogs",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "syslogs",
+                                        "Property-binding": "",
+                                        "RouterLink": "/syslogs",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "System logs"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "bussentity",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "bussentity",
+                                        "Property-binding": "",
+                                        "RouterLink": "/bussentity",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Business entities"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "dyna_flds",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "#dlg1",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "dyna_flds",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "dyna_flds",
+                                        "Property-binding": "",
+                                        "RouterLink": "/dyna_flds",
+                                        "RouterParam": "",
+                                        "Style": "color: #aa0000",
+                                        "TableColumnWidth": "",
+                                        "Value": "Dynamic fields (Only for ATPL)"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Label",
+                                    "props": {
+                                        "Class": "sub-header mt-4",
+                                        "Columns": "12",
+                                        "DisplayLabel": "",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Customer management"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "tickettypes",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "tickettypes",
+                                        "Property-binding": "",
+                                        "RouterLink": "/tickettypes",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Ticket types"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "ticketsubtype",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "ticketsubtype",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "ticketsubtype",
+                                        "Property-binding": "",
+                                        "RouterLink": "/ticketsubtype",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Ticket sub-types"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "ticketcat",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "ticketcat",
+                                        "Property-binding": "",
+                                        "RouterLink": "/ticketcat",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Ticket categories"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "escmatrix",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "escmatrix",
+                                        "Property-binding": "",
+                                        "RouterLink": "/escmatrix",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Escalation matrix"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "actioncodes",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "actioncodes",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "actioncodes",
+                                        "Property-binding": "",
+                                        "RouterLink": "/crmactioncodes",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Action codes"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "tats",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "tats",
+                                        "Property-binding": "",
+                                        "RouterLink": "/tats",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "TAT definations"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Column",
+                    "props": {
+                        "Class": "",
+                        "Columns": "3",
+                        "DB-table": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Repeat": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Column"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "comm_lb",
+                                    "props": {
+                                        "Class": "sub-header",
+                                        "Columns": "12",
+                                        "DisplayLabel": "",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "comm_lb",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Communications"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "emailserver",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "emailserver",
+                                        "Property-binding": "",
+                                        "RouterLink": "/emailserver",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Email server settings"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "emailtemplate",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "emailtemplate",
+                                        "Property-binding": "",
+                                        "RouterLink": "/emailtemplate",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Email templates"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "emailrules",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "emailrules",
+                                        "Property-binding": "",
+                                        "RouterLink": "/emailrules",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Email rules"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "smsc",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "smsc",
+                                        "Property-binding": "",
+                                        "RouterLink": "/smsc",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "SMSC Details"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "smstemplate",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "smstemplate",
+                                        "Property-binding": "",
+                                        "RouterLink": "/smstemplate",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "SMS templates"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "smsrules",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "smsrules",
+                                        "Property-binding": "",
+                                        "RouterLink": "/smsrules",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "SMS rules"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "whatsapp",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "#dlg",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "whatsapp",
+                                        "Property-binding": "",
+                                        "RouterLink": "/whatsapp",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Whatsapp settings"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "watemplate",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "#dlg",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "watemplate",
+                                        "Property-binding": "",
+                                        "RouterLink": "/watemplate",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Whatsapp template"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "warules",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "#dlg",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "warules",
+                                        "Property-binding": "",
+                                        "RouterLink": "/warules",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Whatsapp rules"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "noti_channels",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "noti_channels",
+                                        "Property-binding": "",
+                                        "RouterLink": "/notichannels",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Notification channels"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "acc_lb",
+                                    "props": {
+                                        "Class": "sub-header mt-4",
+                                        "Columns": "12",
+                                        "DisplayLabel": "",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "acc_lb",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Accounts"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "paymentgateway",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "paymentgateway",
+                                        "Property-binding": "",
+                                        "RouterLink": "/paymentgateway",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Payment gateway"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "paymethods",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "paymethods",
+                                        "Property-binding": "",
+                                        "RouterLink": "/paymethods",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Payment methods"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "banks",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "banks",
+                                        "Property-binding": "",
+                                        "RouterLink": "/banks",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Bank & collection details"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Column",
+                    "props": {
+                        "Class": "",
+                        "Columns": "3",
+                        "DB-table": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Repeat": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Column"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "seller_lb",
+                                    "props": {
+                                        "Class": "sub-header",
+                                        "Columns": "12",
+                                        "DisplayLabel": "",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "seller_lb",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Sellers configurations"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "sellertype",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "sellertype",
+                                        "Property-binding": "",
+                                        "RouterLink": "/sellertype",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Seller types"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "sellersubtype",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "sellersubtype",
+                                        "Property-binding": "",
+                                        "RouterLink": "/sellersubtype",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Seller subtype"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "sellercats",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "sellercats",
+                                        "Property-binding": "",
+                                        "RouterLink": "/sellercats",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Seller categories"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "sellerservtypes",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "sellerservtypes",
+                                        "Property-binding": "",
+                                        "RouterLink": "/sellerservtypes",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Type of services"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "prop_lb",
+                                    "props": {
+                                        "Class": "sub-header mt-4",
+                                        "Columns": "12",
+                                        "DisplayLabel": "",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "prop_lb",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Property configurations"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Link",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Property-binding": "",
+                                        "RouterLink": "/flattype",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Flat types"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Column",
+                    "props": {
+                        "Class": "",
+                        "Columns": "3",
+                        "DB-table": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Repeat": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Column"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "seller_lb",
+                                    "props": {
+                                        "Class": "sub-header",
+                                        "Columns": "12",
+                                        "DisplayLabel": "",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "seller_lb",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Application parameters"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                },
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "commtype",
+                                    "props": {
+                                        "Class": "",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "DB-table": "",
+                                        "Data-dismiss": "",
+                                        "Data-target": "",
+                                        "Data-toggle": "modal",
+                                        "DisplayLabel": "",
+                                        "Fa-icon": "",
+                                        "Group-class": "",
+                                        "Group-style": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "commtype",
+                                        "Property-binding": "",
+                                        "RouterLink": "/commtype",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Committee types"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Link"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Column",
+                    "props": {
+                        "Class": "",
+                        "Columns": "3",
+                        "DB-table": "",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Parent-class": "",
+                        "Parent-style": "",
+                        "Property-binding": "",
+                        "Repeat": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Column"
+                }
+            ],
+            "name": "Row",
+            "props": {
+                "Class": "row mt-3",
+                "DB-table": "",
+                "Hidden": "",
+                "ID": "",
+                "Name": "",
+                "Parent-class": "",
+                "Parent-style": "",
+                "Property-binding": "",
+                "Repeat": "",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Row"
+        },
+        {
+            "child": [
+                {
+                    "child": [
+                    ],
+                    "name": "Dialog-header",
+                    "props": {
+                        "Class": "modal-header",
+                        "Close-button": "Yes",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": "",
+                        "Title": "Not provisioned"
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-header"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Label",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "DisplayLabel": "",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "This module is <b>not yet provisioned</b>. Please consult service provider for the same."
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-body",
+                    "props": {
+                        "Class": "modal-body",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-body"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Button",
+                                    "props": {
+                                        "Class": "btn btn-default btn-sm pull-right",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "Data-dismiss": "modal",
+                                        "Data-target": "",
+                                        "Data-toggle": "",
+                                        "Fa-icon": "fa fa-times",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Ref": "",
+                                        "RouterLinkActive": "",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Close"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Button"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-footer",
+                    "props": {
+                        "Class": "modal-footer",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-footer"
+                }
+            ],
+            "name": "Dialog",
+            "props": {
+                "Class": "modal fade",
+                "Hidden": "",
+                "ID": "dlg",
+                "Name": "",
+                "Property-binding": "",
+                "Size": "Default",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Dialog"
+        },
+        {
+            "child": [
+                {
+                    "child": [
+                    ],
+                    "name": "Dialog-header",
+                    "props": {
+                        "Class": "modal-header",
+                        "Close-button": "Yes",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": "",
+                        "Title": "Entry restricted"
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-header"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Label",
+                                    "props": {
+                                        "Class": "",
+                                        "Columns": "12",
+                                        "DisplayLabel": "",
+                                        "For": "",
+                                        "FormType": "Standard",
+                                        "GroupWidth": "",
+                                        "HelpText": "",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Label class": "",
+                                        "Label-type": "span",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Required": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Your are <b>not authorized</b> to use this option. Please raise service request with service provider in case you need any assistance."
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Label"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-body",
+                    "props": {
+                        "Class": "modal-body",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-body"
+                },
+                {
+                    "child": [
+                        {
+                            "child": [
+                                {
+                                    "child": [
+                                    ],
+                                    "name": "Button",
+                                    "props": {
+                                        "Class": "btn btn-default btn-sm pull-right",
+                                        "ClickEvent": "",
+                                        "Columns": "12",
+                                        "Data-dismiss": "modal",
+                                        "Data-target": "",
+                                        "Data-toggle": "",
+                                        "Fa-icon": "fa fa-times",
+                                        "Hidden": "",
+                                        "ID": "",
+                                        "Icon": "",
+                                        "Model": "",
+                                        "Name": "",
+                                        "Parent-class": "",
+                                        "Parent-style": "",
+                                        "Property-binding": "",
+                                        "Readonly": "",
+                                        "Ref": "",
+                                        "RouterLinkActive": "",
+                                        "RouterParam": "",
+                                        "Style": "",
+                                        "TableColumnWidth": "",
+                                        "Value": "Close"
+                                    },
+                                    "tabpos": "4",
+                                    "type": "Button"
+                                }
+                            ],
+                            "name": "Row",
+                            "props": {
+                                "Class": "row",
+                                "DB-table": "",
+                                "Hidden": "",
+                                "ID": "",
+                                "Name": "",
+                                "Parent-class": "",
+                                "Parent-style": "",
+                                "Property-binding": "",
+                                "Repeat": "",
+                                "Style": ""
+                            },
+                            "tabpos": "3",
+                            "type": "Row"
+                        }
+                    ],
+                    "name": "Dialog-footer",
+                    "props": {
+                        "Class": "modal-footer",
+                        "Hidden": "",
+                        "ID": "",
+                        "Name": "",
+                        "Property-binding": "",
+                        "Style": ""
+                    },
+                    "tabpos": "2",
+                    "type": "Dialog-footer"
+                }
+            ],
+            "name": "Dialog",
+            "props": {
+                "Class": "modal fade",
+                "Hidden": "",
+                "ID": "dlg1",
+                "Name": "",
+                "Property-binding": "",
+                "Size": "Small",
+                "Style": ""
+            },
+            "tabpos": "1",
+            "type": "Dialog"
+        }
+    ],
+    "name": "Container",
+    "props": {
+        "Class": "container-fluid p-5",
+        "Hidden": "",
+        "ID": "",
+        "Name": "",
+        "Property-binding": "",
+        "Style": ""
+    },
+    "tabpos": "0",
+    "type": "Container"
+}

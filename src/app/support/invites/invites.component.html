@@ -1,0 +1,244 @@
+<form #f='ngForm'>
+	<div class='container-fluid p-5 '>
+		<div class='row '>
+			<div class='' class='col-sm-2'>
+				<div class='row '>
+					<div class='col-sm-12'>
+						<app-visitormenu></app-visitormenu>
+					</div>
+				</div>
+			</div>
+			<div class='' class='col-sm-10'>
+		<div class='row '>
+			<label class='page-header col-sm-2 '> My invitations
+			</label>
+			<label class='col-sm-8 '> 
+			</label>
+			<div class=' col-sm-2' style='text-align: right'>
+				<div class='btn-group '>
+					<a class='btn btn-primary btn-sm ' data-toggle='modal' routerLink='/inviteform'>
+						<i class='fa fa-plus'></i> Create new
+					</a>
+				</div>
+			</div>
+			<label class='descr col-sm-12 '> Last 20 invittations will be displayed. Rest of the invitations will be automatically archieved into offline mode. 
+			</label>
+		</div>
+		<div class='row '>
+			<div class='col-sm-12'>
+				<table class='table table-bordered table-sm '>
+					<thead>
+						<tr>
+							<th>Transaction ID</th>
+							<th>Event name</th>
+							<th>Request date</th>
+							<th>From date</th>
+							<th>To date</th>
+							<th></th>
+							<th></th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr *ngFor='let x of supp_visitor_invitationList'>
+							<td> {{ x.sysid }} </td>
+							<td>
+								<a class='' id='event_name' name='event_name' data-toggle='modal' routerLink='/inviteform' [queryParams]='{ sysid: x.sysid }'>
+									{{ x.event_name }}
+								</a>
+							</td>
+							<td> {{ x.request_date }} </td>
+							<td> {{ x.from_date }} </td>
+							<td> {{ x.to_date }} </td>
+							<td>
+								<a class='' style='color: blue' data-target='#d2' data-toggle='modal' href='#'>
+									<i class='fa fa-trash'></i> Delete
+								</a>
+							</td>
+							<td>
+								<a class='' style='color: red' data-target='#d1' data-toggle='modal' href='#'>
+									<i class='fa fa-times'></i> Cancel
+								</a>
+							</td>
+							<td>
+								<a class='' style='color: darkgreen' data-target='#d3' data-toggle='modal' (click)='get_selected_invite(x)' href='#'>
+									<i class='fa fa-search'></i> Show details
+								</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+			</div>
+		</div>
+	</div>
+	<div tabindex='-1' role='dialog' class='modal fade ' id='d1'>
+		<div class='modal-dialog' role='document'>
+			<div class='modal-content'>
+				<div class='modal-header '>
+					<div class='modal-title'><h5>Cancel request?</h5></div>
+					<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+						<span aria-hidden='true'>&times;</span>
+					</button>
+				</div>
+				<div class='modal-body '>
+			<div class='row '>
+				<label class='col-sm-12 '> Are you sure you want to cancel this request. You will not be able to activate this request again and need to raise new request if wants to do so.
+				</label>
+			</div>
+				</div>
+				<div class='modal-footer '>
+			<div class='row '>
+				<div class=' col-sm-12'>
+					<div class='btn-group '>
+						<button class='btn btn-primary btn-sm ' data-dismiss='modal'>
+							Close
+						</button>
+						<button class='btn btn-primary btn-sm '>
+							Submit request
+						</button>
+					</div>
+				</div>
+			</div>
+				</div>
+	</div>
+		</div>
+			</div>
+	<div tabindex='-1' role='dialog' class='modal fade ' id='d2'>
+		<div class='modal-dialog' role='document'>
+			<div class='modal-content'>
+				<div class='modal-header '>
+					<div class='modal-title'><h5>Delete request?</h5></div>
+					<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+						<span aria-hidden='true'>&times;</span>
+					</button>
+				</div>
+				<div class='modal-body '>
+			<div class='row '>
+				<label class='col-sm-12 '> Are you sure you want to delete this request. You will not be able to activate this request again and need to raise new request if wants to do so.
+				</label>
+			</div>
+				</div>
+				<div class='modal-footer '>
+			<div class='row '>
+				<div class=' col-sm-12'>
+					<div class='btn-group '>
+						<button class='btn btn-primary btn-sm ' data-dismiss='modal'>
+							Close
+						</button>
+						<button class='btn btn-primary btn-sm '>
+							Submit request
+						</button>
+					</div>
+				</div>
+			</div>
+				</div>
+	</div>
+		</div>
+			</div>
+	<div tabindex='-1' role='dialog' class='modal fade ' id='d3'>
+		<div class='modal-dialog modal-lg' role='document'>
+			<div class='modal-content'>
+				<div class='modal-header '>
+					<div class='modal-title'><h5>Invitation</h5></div>
+					<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+						<span aria-hidden='true'>&times;</span>
+					</button>
+				</div>
+				<div class='modal-body '>
+			<div class='row ' *ngFor = 'let x of supp_visitor_invitationList'>
+				<div class='' class='col-sm-4'>
+					<div class='row px-4 py-2 '>
+						<div class='col-sm-12'>
+							<qrcode class='align-self-center ' [qrdata]='x.sysid' [size]='128' [level]="'M'"></qrcode>
+						</div>
+						<div class='col-sm-12'>
+							<button class='btn btn-primary btn-sm mt-5 mb-2 btn-block ' id='wabtn' name='wa_btn'>
+								<i class='fab fa-whatsapp'></i> Send on Whatsapp
+							</button>
+						</div>
+						<div class='col-sm-12'>
+							<button class='btn btn-primary btn-sm mb-2 btn-block ' id='emailbtn' name='email_btn'>
+								<i class='far fa-envelope '></i> Send by E-mail
+							</button>
+						</div>
+						<div class='col-sm-12'>
+							<button class='btn btn-primary btn-sm mb-2 btn-block ' id='smsbtn' name='sms_btn'>
+								<i class='far fa-comment-alt '></i> Send by SMS
+							</button>
+						</div>
+						<div class='col-sm-12'>
+							<button class='btn btn-primary btn-sm mb-2 btn-block ' id='printbtn' name='print_btn'>
+								<i class='fa fa-print'></i> Print invite
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class='' class='col-sm-8'>
+					<div class='row '>
+						<label class='page-header col-sm-12 ' id='event_name' name='event_name'> {{ x.event_name }}
+						</label>
+						<div class='col-sm-12'>
+							<hr class='mb-2 '>
+						</div>
+						<label class='col-sm-6 ' id='sysid' name='sysid'> <b>Transaction ID:</b> {{ x.sysid }}
+						</label>
+						<label class='col-sm-6 ' id='status' name='status'> <b>Status:</b> {{ x.status }}
+						</label>
+						<label class='col-sm-12 ' id='member_id' name='member_id'> <b>Member name:</b> {{ x.member_id }}
+						</label>
+						<label class='col-sm-6 ' id='location_id' name='location_id'> <b>Location:</b> {{ x.location_id }}
+						</label>
+						<label class='col-sm-6 ' id='request_date' name='request_date'> <b>Request date:</b> {{ x.request_date }}
+						</label>
+						<label class='col-sm-6 ' id='from_date' name='from_date'> <b>From date:</b> {{ x.from_date }}
+						</label>
+						<label class='col-sm-6 ' id='from_time' name='from_time'> <b>From time:</b> {{ x.from_time }}
+						</label>
+						<label class='col-sm-6 ' id='to_date' name='to_date'> <b>To date:</b> {{ x.to_date }}
+						</label>
+						<label class='col-sm-6 ' id='to_time' name='to_time'> <b>To time:</b> {{ x.to_time }}
+						</label>
+						<label class='col-sm-12 ' id='visit_purpose' name='visit_purpose'> <b>Visit purpose:</b> {{ x.visit_purpose }}
+						</label>
+						<div class='col-sm-12'>
+							<hr class='mb-2 '>
+						</div>
+						<label class='col-sm-12 ' id='invite_text' name='invite_text'> <b>Invite text:</b> {{ x.invite_text }}
+						</label>
+						<div class='col-sm-12'>
+							<hr class='mb-2 '>
+						</div>
+						<label class='col-sm-6 ' id='request_type' name='request_type'> <b>Request type:</b> {{ x.request_type }}
+						</label>
+						<label class='col-sm-6 ' id='request_for' name='request_for'> <b>Request for:</b> {{ x.request_for }}
+						</label>
+						<label class='col-sm-6 ' id='approx_count' name='approx_count'> <b>Approx count:</b> {{ x.approx_count }}
+						</label>
+						<label class='col-sm-6 ' id='parking_req' name='parking_req'> <b>Parking required:</b> {{ x.parking_req }}
+						</label>
+						<div class='col-sm-12'>
+							<hr class='mb-2 '>
+						</div>
+						<label class='col-sm-12 ' style='color: #c70039'> <b>Invited guests</b>
+						</label>
+						<div class='col-sm-12'>
+							<hr class='mb-2 '>
+						</div>
+					</div>
+					<div class='row ' *ngFor = 'let x of guests_list'>
+						<label class='col-sm-8 ' id='person_name' style='color: darkblue' name='person_name'> {{ x.person_name }}
+						</label>
+						<label class='col-sm-4 ' id='phone1' style='color: darkblue' name='phone1'> {{ x.phone1 }}
+						</label>
+					</div>
+				</div>
+			</div>
+				</div>
+				<div class='modal-footer '>
+				</div>
+	</div>
+		</div>
+			</div>
+</form>

@@ -1,0 +1,166 @@
+<form #f='ngForm'>
+	<div class='container-fluid p-5 '>
+		<div class='row '>
+			<div class='' class='col-sm-2'>
+				<div class='row '>
+					<div class='col-sm-12'>
+						<app-secmenu></app-secmenu>
+					</div>
+				</div>
+			</div>
+			<div class='' class='col-sm-10'>
+		<div class='row '>
+			<label class='page-header col-sm-2 '> Pending requests
+			</label>
+			<label class='col-sm-7 '> 
+			</label>
+			<div class='col-sm-3'>
+				<div class='input-group'>
+					<input class='form-control ' id='search_box' name='search' placeholder='Enter search text' [(ngModel)]='search' #search_box="ngModel">
+					<div class='input-group-append search'>
+						<i class='fa fa-search'></i>
+					</div>
+				</div>
+			</div>
+			<label class='descr col-sm-12 '> Requests raised by security and visitor who do not have member\'s invite will be listed here. Once member approves the request, entry will disappear from here 
+			</label>
+		</div>
+		<div class='row '>
+			<div class='col-sm-12'>
+				<table class='table table-bordered table-sm '>
+					<thead>
+						<tr>
+							<th>Visitor name</th>
+							<th>Visitor phone</th>
+							<th>Vehicle type</th>
+							<th>Vehicle no</th>
+							<th>Host flat no</th>
+							<th>In date</th>
+							<th>In time</th>
+							<th>Status</th>
+							<th>Associate count</th>
+							<th>System ID</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr *ngFor='let x of supp_visitor_logList'>
+							<td>
+								<a class='' id='visitor_name' name='visitor_name' data-toggle='modal' href='#'>
+									{{ x.visitor_name }}
+								</a>
+							</td>
+							<td> {{ x.visitor_phone }} </td>
+							<td> {{ x.vehicle_type }} </td>
+							<td> {{ x.vehicle_no }} </td>
+							<td> {{ x.host_flat_no }} </td>
+							<td> {{ x.in_date }} </td>
+							<td> {{ x.in_time }} </td>
+							<td> {{ x.status }} </td>
+							<td> {{ x.ass_count }} </td>
+							<td> {{ x.sysid }} </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+			</div>
+		</div>
+	</div>
+	<div tabindex='-1' role='dialog' class='modal fade ' id='d1'>
+		<div class='modal-dialog' role='document'>
+			<div class='modal-content'>
+				<div class='modal-header '>
+					<div class='modal-title'><h5>Visior log details</h5></div>
+					<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+						<span aria-hidden='true'>&times;</span>
+					</button>
+				</div>
+				<div class='modal-body '>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='sysid'>Transaction ID</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='sysid' name='sysid' type='text' autocomplete='off' readonly [(ngModel)]='supp_visitor_log.sysid' #sysid="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='request_id'>Request ID</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='request_id' name='request_id' type='text' autocomplete='off' readonly [(ngModel)]='supp_visitor_log.request_id' #request_id="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='member_id'>Member name</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='member_id' name='member_id' type='text' autocomplete='off' readonly [(ngModel)]='supp_visitor_log.member_id' #member_id="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='in_datetime'>In datetime</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='in_datetime' name='in_datetime' type='text' autocomplete='off' readonly [(ngModel)]='supp_visitor_log.in_datetime' #in_datetime="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='out_datetime'>Out datetime</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='out_datetime' name='out_datetime' type='text' autocomplete='off' readonly [(ngModel)]='supp_visitor_log.out_datetime' #out_datetime="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='person_count'>Person count</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='person_count' name='person_count' type='text' autocomplete='off' readonly [(ngModel)]='supp_visitor_log.person_count' #person_count="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='vehicle_type'>Vehicle type</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='vehicle_type' name='vehicle_type' type='text' autocomplete='off' readonly [(ngModel)]='supp_visitor_log.vehicle_type' #vehicle_type="ngModel">
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='vehicle_no'>Vehicle no</label>
+						<div class='col-sm-8'>
+							<textarea class='form-control ' id='vehicle_no' name='vehicle_no' rows='5' autocomplete='off' readonly [(ngModel)]='supp_visitor_log.vehicle_no' #vehicle_no="ngModel"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='form-group row'>
+						<label class='col-sm-4 col-form-label' for='status'>Status</label>
+						<div class='col-sm-8'>
+							<input class='form-control ' id='status' name='status' type='text' autocomplete='off' readonly [(ngModel)]='supp_visitor_log.status' #status="ngModel">
+						</div>
+					</div>
+				</div>
+			</div>
+				</div>
+				<div class='modal-footer '>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<button class='btn btn-primary btn-sm ' data-dismiss='modal'>
+						Close
+					</button>
+				</div>
+			</div>
+				</div>
+	</div>
+		</div>
+			</div>
+</form>

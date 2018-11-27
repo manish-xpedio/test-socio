@@ -1,0 +1,158 @@
+<form #f='ngForm'>
+	<div class='container-fluid '>
+		<div class='row px-5 '>
+			<div class='' class='col-sm-2'>
+				<div class='row pt-5 sr-side '>
+					<div class='col-sm-12'>
+						<app-secmenu></app-secmenu>
+					</div>
+				</div>
+			</div>
+			<div class='' class='col-sm-10'>
+				<div class='row pt-5 pl-3 '>
+					<label class='page-header col-sm-3 '> Visitor requests
+					</label>
+					<label class='col-sm-6 '> 
+					</label>
+					<div class=' col-sm-3' style='text-align: right'>
+						<div class='btn-group '>
+							<button class='btn btn-primary btn-sm mr-1 ' id='savebtn' name='save_btn'>
+								<i class='fa fa-save'></i> Save
+							</button>
+							<button class='btn btn-primary btn-sm ' id='newbtn' name='new_btn'>
+								<i class='fa fa-plus'></i> New request
+							</button>
+						</div>
+					</div>
+					<div class='col-sm-12'>
+						<hr class=''>
+					</div>
+				</div>
+				<div class='row mt-3 '>
+					<div class='' class='col-sm-4'>
+						<div class='row mt-3 ' style='text-align: center' *ngIf='is_dummy'>
+							<div class='col-sm-12'>
+								<img class='img-fluid mb-2 ' name='dummy_img' src='./assets/visitor_photo.jpeg' height='auto'>
+							</div>
+						</div>
+						<div class='row mt-3 ml-2 ' *ngIf='!is_dummy'>
+							<div  class='col-sm-12'>
+								<webcam class='' (imageCapture)="handleImage($event)"
+								[trigger]="triggerObservable" [switchCamera]="nextWebcamObservable"
+            					[videoOptions]="videoOptions"
+            					(cameraSwitched)="cameraWasSwitched($event)"
+            					(initError)="handleInitError($event)" [allowCameraSwitch]="false" width='300'></webcam>
+							</div>
+						</div>
+						<div class='row '>
+							<div class=' col-sm-12' style='text-align: center'>
+								<div class='btn-group '>
+								<button class='btn btn-secondary btn-sm ' id='onoffbtn' name='onoff_btn' (click)='onoff_camera()'>
+									Make camera on
+								</button>
+								<button class='btn btn-primary btn-sm ' id='getImageBtn' name='getImage_btn' (click)='triggerSnapshot()'>
+									Take photo
+								</button>
+								</div>
+							</div>
+						</div>
+						<div class='row mt-3 ml-2 ' *ngIf='webcamImage'>
+							<div class='col-sm-12'>
+								<img class='img-fluid ' name='actual_img' [src]='webcamImage.imageAsDataUrl' height='auto'>
+							</div>
+						</div>
+					</div>
+					<div class='' class='col-sm-8'>
+						<div class='row '>
+							<div class='' class='col-sm-6'>
+								<div class='row '>
+									<div class='col-sm-12'>
+										<div class='form-group'>
+											<label for='visitor_name'>Visitor name</label>
+											<input class='form-control ' id='visitor_name' name='visitor_name' type='text' autocomplete='off' [(ngModel)]='supp_gatepass.visitor_name' #visitor_name="ngModel">
+										</div>
+									</div>
+									<div class='col-sm-12'>
+										<div class='form-group'>
+											<label for='visitor_phone'>Visitor phone</label>
+											<input class='form-control ' id='visitor_phone' name='visitor_phone' type='text' autocomplete='off' [(ngModel)]='supp_gatepass.visitor_phone' #visitor_phone="ngModel">
+										</div>
+									</div>
+									<div class='col-sm-12'>
+										<div class='form-group'>
+											<label for='vehicle_no'>Vehicle no</label>
+											<input class='form-control ' id='vehicle_no' name='vehicle_no' type='text' autocomplete='off' [(ngModel)]='supp_gatepass.vehicle_no' #vehicle_no="ngModel">
+										</div>
+									</div>
+									<div class='col-sm-12'>
+										<div class='form-group'>
+											<label for='host_flat_no'>Host flat no</label>
+											<input class='form-control ' id='host_flat_no' name='host_flat_no' type='text' autocomplete='off' [(ngModel)]='supp_gatepass.host_flat_no' #host_flat_no="ngModel">
+										</div>
+									</div>
+									<div class='col-sm-12'>
+										<div class='form-group'>
+											<label for='ass_count'>Associate count</label>
+											<input class='form-control ' id='ass_count' name='ass_count' type='text' autocomplete='off' [(ngModel)]='supp_gatepass.ass_count' #ass_count="ngModel">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class='' class='col-sm-6'>
+								<div class='row '>
+									<div class='col-sm-12'>
+										<div class='form-group'>
+											<label for='sysid'>Gate entry ID</label>
+											<input class='form-control ' id='sysid' name='sysid' type='text' autocomplete='off' readonly [(ngModel)]='supp_gatepass.sysid' #sysid="ngModel">
+										</div>
+									</div>
+									<div class='col-sm-6'>
+										<div class='form-group'>
+											<label for='in_date'>In date</label>
+											<input class='form-control ' id='in_date' name='in_date' type='text' autocomplete='off' readonly [(ngModel)]='supp_gatepass.in_date' #in_date="ngModel">
+										</div>
+									</div>
+									<div class='col-sm-6'>
+										<div class='form-group'>
+											<label for='in_time'>In time</label>
+											<input class='form-control ' id='in_time' name='in_time' type='text' autocomplete='off' readonly [(ngModel)]='supp_gatepass.in_time' #in_time="ngModel">
+										</div>
+									</div>
+									<div class='col-sm-6'>
+										<div class='form-group'>
+											<label for='out_date'>Out date</label>
+											<input class='form-control ' id='out_date' name='out_date' type='text' autocomplete='off' readonly [(ngModel)]='supp_gatepass.out_date' #out_date="ngModel">
+										</div>
+									</div>
+									<div class='col-sm-6'>
+										<div class='form-group'>
+											<label for='out_time'>Out time</label>
+											<input class='form-control ' id='out_time' name='out_time' type='text' autocomplete='off' readonly [(ngModel)]='supp_gatepass.out_time' #out_time="ngModel">
+										</div>
+									</div>
+									<div class='col-sm-12'>
+										<div class='form-group'>
+											<label for='req_id'>Host request ID</label>
+											<input class='form-control ' id='req_id' name='req_id' type='text' autocomplete='off' readonly [(ngModel)]='supp_gatepass.req_id' #req_id="ngModel">
+										</div>
+									</div>
+									<div class='col-sm-12'>
+										<div class='form-group'>
+											<label for='status'>Status</label>
+											<input class='form-control ' id='status' name='status' type='text' autocomplete='off' readonly [(ngModel)]='supp_gatepass.status' #status="ngModel">
+										</div>
+									</div>
+									<div class='col-sm-12'>
+										<button class='btn btn-danger btn-sm btn-block ' (click)='set_exit_status()'>
+											Mark visitor as exited
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

@@ -1,0 +1,65 @@
+<form #f='ngForm'>
+	<div class='container-fluid p-4 '>
+		<div class='row '>
+			<label class='page-header col-sm-2 '> Members profile
+			</label>
+			<label class='col-sm-7 '> 
+			</label>
+			<div class=' col-sm-3' style='text-align: right'>
+				<div class='btn-group '>
+					<a class='btn btn-primary btn-sm ' data-toggle='modal' routerLink='/memprofile'>
+						<i class='fa fa-plus'></i> Add new member
+					</a>
+					<button class='btn btn-primary btn-sm '>
+						<i class='fa fa-download'></i> Download list
+					</button>
+				</div>
+			</div>
+			<label class='descr col-sm-12 '> All active and inactive members are listed below. However, only active members will be downloaded into the list. Please refer report secion to get list of inactive members.
+			</label>
+			<label class='descr col-sm-12 '> Add only owners and tenants. Do not add any members who will not reside into the property or any travellers. For details please refer 
+							<a class='' style='color: #c70039' data-toggle='modal' routerLink='/bylaws' [queryParams]='{ sect_no: 31 }'>
+								membership guidelines (As per By-laws)
+							</a>
+			</label>
+		</div>
+		<div class='row '>
+			<div class='col-sm-12'>
+				<table class='table table-bordered table-sm '>
+					<thead>
+						<tr>
+							<th>Complete name</th>
+							<th>Wing</th>
+							<th>Flat no</th>
+							<th>Phone1</th>
+							<th>Email</th>
+							<th>Member type</th>
+							<th>System ID</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr *ngFor='let x of crm_membersList'>
+							<td>
+								<a class='' id='complete_name' name='complete_name' data-toggle='modal' href='#'>
+									{{ x.complete_name }}
+								</a>
+							</td>
+							<td> {{ x.wing_id }} </td>
+							<td> {{ x.flat_no }} </td>
+							<td> {{ x.phone1 }} </td>
+							<td> {{ x.email }} </td>
+							<td> {{ x.member_type }} </td>
+							<td> {{ x.sysid }} </td>
+							<td>
+								<a class='' data-toggle='modal' href='#'>
+									
+								</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</form>

@@ -1,0 +1,257 @@
+<form #f='ngForm'>
+<div class='container-fluid p-5 '>
+	<div class='row px-5 '>
+		<label class='page-header col-sm-2 '> Escaltion matrix</label>
+		<label class='col-sm-8 '> {{ crm_esc_matrix_status }}</label>
+		<div class=' col-sm-2' style='text-align: right'>
+			<div class='btn-group '>
+				<button class='btn btn-primary btn-sm ' id='add_btn' name='add_btn' data-target='#dlg' data-toggle='modal' (click)='clear_crm_esc_matrix()'>
+					<i class='fa fa-plus'></i> Add
+				</button>
+				<a class='btn btn-primary btn-sm ' id='back_btn' name='back_btn' data-toggle='modal' routerLink='/settings'>
+					<i class='fa fa-arrow-left'></i> Back
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class='row px-5 '>
+		<div class='col-sm-12'>
+			<table class='table table-bordered table-sm '>
+				<thead>
+					<tr>
+						<th>Matrix code</th>
+						<th>Level1 email</th>
+						<th>Level2 email</th>
+						<th>Level3 email</th>
+						<th>Status</th>
+						<th>System ID</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor='let x of crm_esc_matrixList'>
+						<td>
+							<a class='' id='matrix_code' name='matrix_code' data-target='#dlg' data-toggle='modal' (click)='current_record_crm_esc_matrix(x)' href='#'>
+								{{ x.matrix_code }}
+							</a>
+						</td>
+						<td> {{ x.level1_email }} </td>
+						<td> {{ x.level2_email }} </td>
+						<td> {{ x.level3_email }} </td>
+						<td> {{ x.status }} </td>
+						<td> {{ x.sysid }} </td>
+						<td>
+							<a class='' style='color: red' data-toggle='modal' (click)='delete_crm_esc_matrix(x.sysid)' href='#'>
+								<i class='fa fa-trash'></i> Delete
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div tabindex='-1' role='dialog' class='modal fade ' id='dlg'>
+		<div class='modal-dialog modal-lg' role='document'>
+			<div class='modal-content'>
+				<div class='modal-header '>
+					<div class='modal-title'><h5>Escaltion matrix</h5></div>
+					<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+						<span aria-hidden='true'>&times;</span>
+					</button>
+				</div>
+				<div class='modal-body '>
+			<div class='row '>
+				<div class='' class='col-sm-4'>
+					<div class='row '>
+						<div class='col-sm-12'>
+							<div class='form-group'>
+								<label for='sysid'>System ID</label>
+								<input class='form-control ' id='sysid' name='sysid' type='text' autocomplete='off' readonly [(ngModel)]='crm_esc_matrix.sysid' #sysid="ngModel">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='' class='col-sm-4'>
+					<div class='row '>
+						<div class='col-sm-12'>
+							<div class='form-group'>
+								<label for='matrix_code'>Matrix code</label>
+								<input class='form-control ' id='matrix_code' name='matrix_code' type='text' autocomplete='off' [(ngModel)]='crm_esc_matrix.matrix_code' #matrix_code="ngModel">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='' class='col-sm-4'>
+					<div class='row '>
+						<div class='col-sm-12'>
+							<div class='form-group'>
+								<label for='status'>Status</label>
+								<select class='form-control ' id='status' name='status' [(ngModel)]='crm_esc_matrix.status' #status="ngModel">
+									<option value=''></option>
+									<option value='Active'>Active</option>
+									<option value='Inactive'>Inactive</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='row mx-0 ' style='border-bottom: 1px solid #aaaa7f; border-top: 1px solid #aaaa7f; '>
+				<div class='' style='background-color: #01afff; color: #ffffff' class='col-sm-2'>
+					<div class='row ' style='text-align: center'>
+						<label class='col-sm-12 ' style='font-size: 40pt;'> <b>1</b></label>
+						<label class='col-sm-12 ' style='font-size: 16pt;'> LEVEL</label>
+					</div>
+				</div>
+				<div class='' class='col-sm-10'>
+					<div class='row mt-3 '>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-2 col-form-label' for='level1_email'>Level-1 email</label>
+								<div class='col-sm-10'>
+									<input class='form-control ' id='level1_email' name='level1_email' type='text' autocomplete='off' [(ngModel)]='crm_esc_matrix.level1_email' #level1_email="ngModel">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='row '>
+						<div class='' class='col-sm-6'>
+							<div class='row '>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='level1_phone'>Level-1 phone</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='level1_phone' name='level1_phone' type='text' autocomplete='off' [(ngModel)]='crm_esc_matrix.level1_phone' #level1_phone="ngModel">
+								</div>
+							</div>
+						</div>
+							</div>
+						</div>
+						<div class='' class='col-sm-6'>
+							<div class='row '>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='level1_dur'>Level-1 duration</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='level1_dur' name='level1_dur' type='text' autocomplete='off' [(ngModel)]='crm_esc_matrix.level1_dur' #level1_dur="ngModel">
+								</div>
+							</div>
+						</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='row mx-0 ' style='border-bottom: 1px solid #aaaa7f; '>
+				<div class='' style='background-color: #0000dc; color: #ffffff' class='col-sm-2'>
+					<div class='row ' style='text-align: center'>
+						<label class='col-sm-12 ' style='font-size: 40pt;'> <b>2</b></label>
+						<label class='col-sm-12 ' style='font-size: 16pt;'> LEVEL</label>
+					</div>
+				</div>
+				<div class='' class='col-sm-10'>
+					<div class='row mt-3 '>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-2 col-form-label' for='level2_email'>Level-2 email</label>
+								<div class='col-sm-10'>
+									<input class='form-control ' id='level2_email' name='level2_email' type='text' autocomplete='off' [(ngModel)]='crm_esc_matrix.level2_email' #level2_email="ngModel">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='row '>
+						<div class='' class='col-sm-6'>
+							<div class='row '>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='level2_phone'>Level-2 phone</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='level2_phone' name='level2_phone' type='text' autocomplete='off' [(ngModel)]='crm_esc_matrix.level2_phone' #level2_phone="ngModel">
+								</div>
+							</div>
+						</div>
+							</div>
+						</div>
+						<div class='' class='col-sm-6'>
+							<div class='row '>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='level2_dur'>Level-2 duration</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='level2_dur' name='level2_dur' type='text' autocomplete='off' [(ngModel)]='crm_esc_matrix.level2_dur' #level2_dur="ngModel">
+								</div>
+							</div>
+						</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='row mx-0 ' style='border-bottom: 1px solid #aaaa7f; '>
+				<div class='' style='background-color: #000094; color: #ffffff' class='col-sm-2'>
+					<div class='row ' style='text-align: center'>
+						<label class='col-sm-12 ' style='font-size: 40pt;'> <b>3</b></label>
+						<label class='col-sm-12 ' style='font-size: 16pt;'> LEVEL</label>
+					</div>
+				</div>
+				<div class='' class='col-sm-10'>
+					<div class='row mt-3 '>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-2 col-form-label' for='level3_email'>Level-3 email</label>
+								<div class='col-sm-10'>
+									<input class='form-control ' id='level3_email' name='level3_email' type='text' autocomplete='off' [(ngModel)]='crm_esc_matrix.level3_email' #level3_email="ngModel">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='row '>
+						<div class='' class='col-sm-6'>
+							<div class='row '>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='level3_phone'>Level-3 phone</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='level3_phone' name='level3_phone' type='text' autocomplete='off' [(ngModel)]='crm_esc_matrix.level3_phone' #level3_phone="ngModel">
+								</div>
+							</div>
+						</div>
+							</div>
+						</div>
+						<div class='' class='col-sm-6'>
+							<div class='row '>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='level3_dur'>Level-3 duration</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='level3_dur' name='level3_dur' type='text' autocomplete='off' [(ngModel)]='crm_esc_matrix.level3_dur' #level3_dur="ngModel">
+								</div>
+							</div>
+						</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+				</div>
+				<div class='modal-footer '>
+			<div class='row '>
+				<label class='pull-left '> {{ crm_esc_matrix_status }}</label>
+				<div class=' col-sm-5'>
+					<div class='btn-group pull-right '>
+						<button class='btn btn-primary btn-sm ' name='save_btn' (click)='save_crm_esc_matrix(f)'>
+							<i class='fa fa-save'></i> Save
+						</button>
+						<button class='btn btn-primary btn-sm ' name='close_btn' data-dismiss='modal'>
+							<i class='fa fa-remove'></i> Close
+						</button>
+					</div>
+				</div>
+			</div>
+				</div>
+	</div>
+		</div>
+			</div>
+</div>
+</form>

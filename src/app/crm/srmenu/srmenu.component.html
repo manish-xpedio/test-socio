@@ -1,0 +1,39 @@
+<form #f='ngForm'>
+<div class='row sr-side px-4 '>
+	<div class='' class='col-sm-12'>
+	<div class='row ' *ngFor = 'let x of side_menu_list'>
+	<div class='col-sm-12'>
+		<a class='btn btn-primary btn-sm btn-block ' style='margin-bottom: 10px;' data-toggle='modal' routerLink='/{{ x.menu_route }}'>
+			{{ x.menu_name }}
+		</a>
+	</div>
+	</div>
+				<div class='row p-2 ' style='background-color: #7f7f7f; color: #ffffff'>
+					<label class='col-sm-12 '> This option is to raise your queries, complaints or requests with management committee. This option will help you to raise your ticket and follow the progress it has made in order to resolve the same.
+					</label>
+					<label class='col-sm-12 '> These requests are in the form of tickets and has 3 types as mentioned below
+					</label>
+					<div class='col-sm-12'>
+						<ul class=''>
+							<li class=''>
+							<label class='col-sm-12 '> Enquiry
+							</label>
+							</li>
+							<li class=''>
+							<label class='col-sm-12 '> Requests
+							</label>
+							</li>
+							<li class=''>
+							<label class='col-sm-12 '> Complaints
+							</label>
+							</li>
+						</ul>
+					</div>
+					<label class='col-sm-12 '> Choose and appropriate category and mark correct severity to close your ticket with proper resolution.
+					</label>
+					<label class='col-sm-12 '> For emergency help please reach to <b>1800 123 123</b>
+					</label>
+				</div>
+	</div>
+</div>
+</form>

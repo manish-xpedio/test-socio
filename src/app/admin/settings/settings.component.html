@@ -1,0 +1,257 @@
+<form #f='ngForm'>
+<div class='container-fluid p-5 '>
+	<div class='row '>
+		<label class='page-header col-sm-12 '> Application settings
+		</label>
+		<div class='col-sm-12'>
+			<hr class=''>
+		</div>
+	</div>
+	<div class='row mt-3 '>
+		<div class='' class='col-sm-3'>
+			<div class='row '>
+				<label class='sub-header col-sm-12 ' name='sys_lb'> System parameters
+				</label>
+				<div class='col-sm-12'>
+					<a class='' name='logo' data-toggle='modal' routerLink='/logo'>
+						Logo
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' name='syscolors' data-target='#dlg' data-toggle='modal' routerLink='/syscolors'>
+						System colors
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' name='carousel' data-toggle='modal' routerLink='/carousel'>
+						Carousel
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' name='errdict' data-toggle='modal' routerLink='/errdict'>
+						Error dictionary
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' name='syslogs' data-toggle='modal' routerLink='/syslogs'>
+						System logs
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' name='bussentity' data-toggle='modal' routerLink='/bussentity'>
+						Business entities
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' id='dyna_flds' style='color: #aa0000' name='dyna_flds' data-target='#dlg1' data-toggle='modal' routerLink='/dyna_flds'>
+						Dynamic fields (Only for ATPL)
+					</a>
+				</div>
+				<label class='sub-header mt-4 col-sm-12 '> Customer management
+				</label>
+				<div class='col-sm-12'>
+					<a class='' name='tickettypes' data-toggle='modal' routerLink='/tickettypes'>
+						Ticket types
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' id='ticketsubtype' name='ticketsubtype' data-toggle='modal' routerLink='/ticketsubtype'>
+						Ticket sub-types
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' name='ticketcat' data-toggle='modal' routerLink='/ticketcat'>
+						Ticket categories
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' name='escmatrix' data-toggle='modal' routerLink='/escmatrix'>
+						Escalation matrix
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' id='actioncodes' name='actioncodes' data-toggle='modal' routerLink='/crmactioncodes'>
+						Action codes
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' name='tats' data-toggle='modal' routerLink='/tats'>
+						TAT definations
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class='' class='col-sm-3'>
+			<div class='row '>
+				<label class='sub-header col-sm-12 ' name='comm_lb'> Communications
+				</label>
+				<div class='col-sm-12'>
+					<a class='' name='emailserver' data-toggle='modal' routerLink='/emailserver'>
+						Email server settings
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' name='emailtemplate' data-toggle='modal' routerLink='/emailtemplate'>
+						Email templates
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' name='emailrules' data-toggle='modal' routerLink='/emailrules'>
+						Email rules
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' name='smsc' data-toggle='modal' routerLink='/smsc'>
+						SMSC Details
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' name='smstemplate' data-toggle='modal' routerLink='/smstemplate'>
+						SMS templates
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' name='smsrules' data-toggle='modal' routerLink='/smsrules'>
+						SMS rules
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' name='whatsapp' data-target='#dlg' data-toggle='modal' routerLink='/whatsapp'>
+						Whatsapp settings
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' name='watemplate' data-target='#dlg' data-toggle='modal' routerLink='/watemplate'>
+						Whatsapp template
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' name='warules' data-target='#dlg' data-toggle='modal' routerLink='/warules'>
+						Whatsapp rules
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' name='noti_channels' data-toggle='modal' routerLink='/notichannels'>
+						Notification channels
+					</a>
+				</div>
+				<label class='sub-header mt-4 col-sm-12 ' name='acc_lb'> Accounts
+				</label>
+				<div class='col-sm-12'>
+					<a class='' name='paymentgateway' data-toggle='modal' routerLink='/paymentgateway'>
+						Payment gateway
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' name='paymethods' data-toggle='modal' routerLink='/paymethods'>
+						Payment methods
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' name='banks' data-toggle='modal' routerLink='/banks'>
+						Bank & collection details
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class='' class='col-sm-3'>
+			<div class='row '>
+				<label class='sub-header col-sm-12 ' name='seller_lb'> Sellers configurations
+				</label>
+				<div class='col-sm-12'>
+					<a class='' name='sellertype' data-toggle='modal' routerLink='/sellertype'>
+						Seller types
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' name='sellersubtype' data-toggle='modal' routerLink='/sellersubtype'>
+						Seller subtype
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' name='sellercats' data-toggle='modal' routerLink='/sellercats'>
+						Seller categories
+					</a>
+				</div>
+				<div class='col-sm-12'>
+					<a class='' name='sellerservtypes' data-toggle='modal' routerLink='/sellerservtypes'>
+						Type of services
+					</a>
+				</div>
+				<label class='sub-header mt-4 col-sm-12 ' name='prop_lb'> Property configurations
+				</label>
+				<div class='col-sm-12'>
+					<a class='' data-toggle='modal' routerLink='/flattype'>
+						Flat types
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class='' class='col-sm-3'>
+			<div class='row '>
+				<label class='sub-header col-sm-12 ' name='seller_lb'> Application parameters
+				</label>
+				<div class='col-sm-12'>
+					<a class='' name='commtype' data-toggle='modal' routerLink='/commtype'>
+						Committee types
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div tabindex='-1' role='dialog' class='modal fade ' id='dlg'>
+		<div class='modal-dialog' role='document'>
+			<div class='modal-content'>
+				<div class='modal-header '>
+					<div class='modal-title'><h5>Not provisioned</h5></div>
+					<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+						<span aria-hidden='true'>&times;</span>
+					</button>
+				</div>
+				<div class='modal-body '>
+			<div class='row '>
+				<label class='col-sm-12 '> This module is <b>not yet provisioned</b>. Please consult service provider for the same.
+				</label>
+			</div>
+				</div>
+				<div class='modal-footer '>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<button class='btn btn-default btn-sm pull-right ' data-dismiss='modal'>
+						<i class='fa fa-times'></i> Close
+					</button>
+				</div>
+			</div>
+				</div>
+	</div>
+		</div>
+			</div>
+	<div tabindex='-1' role='dialog' class='modal fade ' id='dlg1'>
+		<div class='modal-dialog modal-sm' role='document'>
+			<div class='modal-content'>
+				<div class='modal-header '>
+					<div class='modal-title'><h5>Entry restricted</h5></div>
+					<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+						<span aria-hidden='true'>&times;</span>
+					</button>
+				</div>
+				<div class='modal-body '>
+			<div class='row '>
+				<label class='col-sm-12 '> Your are <b>not authorized</b> to use this option. Please raise service request with service provider in case you need any assistance.
+				</label>
+			</div>
+				</div>
+				<div class='modal-footer '>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<button class='btn btn-default btn-sm pull-right ' data-dismiss='modal'>
+						<i class='fa fa-times'></i> Close
+					</button>
+				</div>
+			</div>
+				</div>
+	</div>
+		</div>
+			</div>
+</div>
+</form>

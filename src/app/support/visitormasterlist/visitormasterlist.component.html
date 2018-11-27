@@ -1,0 +1,174 @@
+<form #f='ngForm'>
+<div class='container-fluid p-5 '>
+	<div class='row '>
+		<div class='' class='col-sm-2'>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<app-visitormenu></app-visitormenu>
+				</div>
+			</div>
+		</div>
+		<div class='' class='col-sm-10'>
+			<div class='row '>
+				<label class='page-header col-sm-2 '> Master list
+				</label>
+				<label class='col-sm-7 '> {{ supp_visitor_master_list_status }}
+				</label>
+				<div class=' col-sm-3' style='text-align: right'>
+					<div class='btn-group '>
+						<button class='btn btn-primary btn-sm ' data-target='#dlg' data-toggle='modal' (click)='clear_supp_visitor_master_list()'>
+							<i class='fa fa-plus'></i> Add
+						</button>
+						<a class='btn btn-primary btn-sm ' data-toggle='modal' routerLink='/settings'>
+							<i class='fa fa-arrow-left'></i> Back
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class='row '>
+				<div class='col-sm-12'>
+					<table class='table table-bordered table-sm '>
+						<thead>
+							<tr>
+								<th>System ID</th>
+								<th>Person name</th>
+								<th>Phone1</th>
+								<th>Phone2</th>
+								<th>Visitor type</th>
+								<th>Status</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr *ngFor='let x of supp_visitor_master_listList'>
+								<td> {{ x.sysid }} </td>
+								<td>
+									<a class='' id='person_name' name='person_name' data-target='#dlg' data-toggle='modal' (click)='current_record_supp_visitor_master_list(x)' href='#'>
+										{{ x.person_name }}
+									</a>
+								</td>
+								<td> {{ x.phone1 }} </td>
+								<td> {{ x.phone2 }} </td>
+								<td> {{ x.visitor_type }} </td>
+								<td> {{ x.status }} </td>
+								<td>
+									<a class='' id='delete_btn' style='color: red;' name='delete_btn' data-toggle='modal' (click)='delete_supp_visitor_master_list(x.sysid)' href='#'>
+										<i class='fa fa-trash'></i> Delete
+									</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div tabindex='-1' role='dialog' class='modal fade ' id='dlg'>
+				<div class='modal-dialog' role='document'>
+					<div class='modal-content'>
+						<div class='modal-header '>
+							<div class='modal-title'><h5>Visitor master list</h5></div>
+							<button type='button' class='close' data-dismiss='modal' aria-label='Close' #closeBtn>
+								<span aria-hidden='true'>&times;</span>
+							</button>
+						</div>
+						<div class='modal-body '>
+					<div class='row '>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='sysid'>System ID</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='sysid' name='sysid' type='text' autocomplete='off' readonly [(ngModel)]='supp_visitor_master_list.sysid' #sysid="ngModel">
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='person_name'>Person name</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='person_name' name='person_name' type='text' autocomplete='off' [(ngModel)]='supp_visitor_master_list.person_name' #person_name="ngModel">
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='phone1'>Phone1</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='phone1' name='phone1' type='text' autocomplete='off' [(ngModel)]='supp_visitor_master_list.phone1' #phone1="ngModel">
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='phone2'>Phone2</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='phone2' name='phone2' type='text' autocomplete='off' [(ngModel)]='supp_visitor_master_list.phone2' #phone2="ngModel">
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='email'>Email</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='email' name='email' type='text' autocomplete='off' [(ngModel)]='supp_visitor_master_list.email' #email="ngModel">
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='visitor_type'>Visitor type</label>
+								<div class='col-sm-8'>
+									<select class='form-control ' id='visitor_type' name='visitor_type' [(ngModel)]='supp_visitor_master_list.visitor_type' #visitor_type="ngModel">
+										<option value=''></option>
+										<option value='Relatives'>Relatives</option>
+										<option value='Friends'>Friends</option>
+										<option value='Vendor'>Vendor</option>
+										<option value='Owner'>Owner</option>
+										<option value='Others'>Others</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='age'>Age</label>
+								<div class='col-sm-8'>
+									<input class='form-control ' id='age' name='age' type='text' autocomplete='off' [(ngModel)]='supp_visitor_master_list.age' #age="ngModel">
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-12'>
+							<div class='form-group row'>
+								<label class='col-sm-4 col-form-label' for='status'>Status</label>
+								<div class='col-sm-8'>
+									<select class='form-control ' id='status' name='status' [(ngModel)]='supp_visitor_master_list.status' #status="ngModel">
+										<option value=''></option>
+										<option value='Active'>Active</option>
+										<option value='Inactive'>Inactive</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+						</div>
+						<div class='modal-footer '>
+					<label class='pull-left col-sm-8 '> {{ supp_visitor_master_list_status }}
+					</label>
+					<div class='row '>
+						<div class=' col-sm-4'>
+							<div class='btn-group pull-right '>
+								<button class='btn btn-primary btn-sm ' name='save_btn' (click)='save_supp_visitor_master_list(f)'>
+									<i class='fa fa-save'></i> Save
+								</button>
+								<button class='btn btn-primary btn-sm ' name='close_btn' data-dismiss='modal'>
+									<i class='fa fa-times'></i> Close
+								</button>
+							</div>
+						</div>
+					</div>
+						</div>
+			</div>
+				</div>
+					</div>
+		</div>
+	</div>
+</div>
+</form>
